@@ -1,8 +1,7 @@
 #!/usr/bin/python
 
 from flask import Flask, render_template, json, request
-from flask.ext.mysql import MySQL
-from werkzeug import generate_password_hash, check_password_hash
+import _mysql
 
 app = Flask(__name__)
 
@@ -21,14 +20,9 @@ tasks = [
     }
 ]
 
-mysql = MySQL()
- 
-# MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = '3342e8db85744734794d60c9c797bbcf6c24007d84debbf4'
-app.config['MYSQL_DATABASE_DB'] = 'widgets'
-app.config['MYSQL_DATABASE_HOST'] = 'localhost'
-mysql.init_app(app)
+db=_mysql.connect()
+db=_mysql.connect(host="localhost", user="root", passwd="3342e8db85744734794d60c9c797bbcf6c24007d84debbf4", db="widgets")
+
 
 
 
@@ -39,26 +33,14 @@ def get_tasks():
 @app.route('/test', methods=['GET'])
 def get_order():
     try:
-        conn = mysql.connect()
-        cursor = conn.cursor()
-        _hashed_password = generate_password_hash('3342e8db85744734794d60c9c797bbcf6c24007d84debbf4')
-
-        cursor.callproc('sp_createUser',('test','vvass@test.com',_hashed_password))
-
-        data = cursor.fetchall()
-
-        if len(data) is 0:
-            conn.commit()
-            return json.dumps({'message':'User created'})
-        else:
-            return json.dumps({'error':str(data[0])})
+        db.query("""SELECT * FROM orders""")
+        results=db.store_result()
 
 
     except Exception as e:
         return json.dumps({'error':str(e)})
     finally:
-        cursor.close()
-        conn.close()
+        return db.close()
 
 
 
