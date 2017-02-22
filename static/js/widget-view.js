@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
   $('body').load(function(){
 
     console.log("this is up");
