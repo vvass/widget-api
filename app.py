@@ -224,6 +224,30 @@ def search_by_category(cat):
         cursor.close()
         db.close()
 
+@app.route('/getWidgets', methods=['GET'])
+def search_by_category(cat):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+
+    query = """SELECT * FROM orders"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return json.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return json.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0')

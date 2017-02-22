@@ -1,12 +1,8 @@
 $(function(){
 
-  alert("yo");
-
-  $('body').ready(function(){
-    console.log("You have body ready");
-
+  function loadWidgets() {
     $.ajax({
-      url: '/getAvalQuantity/6',
+      url: '/getWidgets',
       type: 'GET',
       success: function(response){
         console.log(response);
@@ -15,8 +11,11 @@ $(function(){
         console.log(error);
       }
     });
+  }
 
 
+  $('body').ready(function(){
+    loadWidgets();
   });
 
 });
