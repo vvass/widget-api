@@ -75,6 +75,33 @@ def delete_order(order):
         cursor.close()
         db.close()
 
+@app.route('/incCount/<orderId>', methods=['POST','GET'])
+def inc_order(orderId):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=orderId)
+
+    query = """SELECT @count := `count` FROM orders WHERE id=%(_id)s; UPDATE orders SET count=@count+1 WHERE id=%(_id)s;"""
+
+
+    try:
+
+        cursor.execute(query,param)
+        db.commit()
+
+        return json.dumps({'success':str('you deleted it')})
+
+
+    except Exception as e:
+        return json.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+
 
 
 if __name__ == '__main__':
