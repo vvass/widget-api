@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from flask import Flask, render_template, json, request
+from flask import Flask, render_template, json, request, send_from_directory
 import MySQLdb
 import _mysql
 from widgets import test
