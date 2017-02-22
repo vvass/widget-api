@@ -67,6 +67,28 @@ def get_by_category(cat,siz,fin):
         cursor.close()
         db.close()
 
+@app.route('/deleteOrder/<order>', methods=['POST','GET'])
+def get_by_category(order):
+
+    param = dict(_id=order)
+
+    query = """DELETE FROM `orders` WHERE id=%(_id)s"""
+
+    try:
+
+        cursor.execute(query,param)
+        db.commit()
+
+        return json.dumps({'success':str('you deleted it')})
+
+
+    except Exception as e:
+        return json.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 
 
 if __name__ == '__main__':
