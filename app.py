@@ -2,7 +2,6 @@
 
 from flask import Flask, render_template, json, request
 import MySQLdb
-
 import _mysql
 
 app = Flask(__name__)
@@ -23,7 +22,7 @@ tasks = [
 ]
 
 db=_mysql.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-
+c=db.cursor()
 
 
 
@@ -36,6 +35,9 @@ def get_order():
     try:
         db.query("""SELECT * FROM orders""")
         results=db.store_result()
+        r=results.fetch_row()
+        for row in r:
+            print row[0]
 
 
     except Exception as e:
