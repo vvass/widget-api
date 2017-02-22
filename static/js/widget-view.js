@@ -14,7 +14,7 @@ $(function(){
   }
 
 
-  $('body').ready(function(){
+  $('#widget-grid').onload(function(){
     loadWidgets();
   });
 
