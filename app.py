@@ -34,7 +34,7 @@ def get_main():
 
 @app.route('/widgetView', methods=['GET'])
 def widget_view():
-    return send_from_directory('templates', 'widget-view.html')
+    return render_template('widget-view.html')
 
 
 
