@@ -1,16 +1,18 @@
 $(function(){
-  $('#btnCreateWidget').click(function(){
+  $('body').load(function(){
 
-    $.ajax({
-      url: '/widgetCreate',
-      data: $('form').serialize(),
-      type: 'POST',
-      success: function(response){
-        console.log(response);
-      },
-      error: function(error){
-        console.log(error);
-      }
-    });
+    console.log("this is up");
+
+    // $.ajax({
+    //   url: '/widgetCreate',
+    //   data: $('form').serialize(),
+    //   type: 'POST',
+    //   success: function(response){
+    //     console.log(response);
+    //   },
+    //   error: function(error){
+    //     console.log(error);
+    //   }
+    // });
   });
 });

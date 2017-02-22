@@ -26,7 +26,7 @@ tasks = [
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-# TEMAPLATES
+# TEMAPLATE ROUTES
 
 @app.route('/enter', methods=['GET'])
 def get_main():
