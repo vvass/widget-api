@@ -4,7 +4,6 @@ from flask import Flask, render_template, json, request
 import MySQLdb
 import _mysql
 from widgets import test
-from routes import get_main, widget_view
 
 app = Flask(__name__, static_url_path='')
 
