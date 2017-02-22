@@ -20,14 +20,9 @@ tasks = [
         'done': False
     }
 ]
+
+
 db=MySQLdb
-
-
-def connect():
-
-
-def closeAll():
-
 
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
