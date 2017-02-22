@@ -1,6 +1,7 @@
 $(function(){
   $('window').on(function(){
 
+    alert("yo");
     console.log("this is up");
 
     // $.ajax({
