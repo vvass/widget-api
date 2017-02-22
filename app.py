@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from flask import Flask, render_template, json, request
+from flask import Flask, render_template, json, request, send_from_directory
 import MySQLdb
 import _mysql
 
@@ -25,33 +25,18 @@ tasks = [
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-@app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
-def get_by_category(cat,siz,fin):
+# TEMAPLATES
 
-    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-    cursor=db.cursor()
-
-    param = dict(_category=cat, _size=siz, _finish=fin)
-
-    query = """INSERT INTO orders (`category`,`size`,`finish`) VALUES ( %(_category)s, %(_size)s, %(_finish)s )"""
-
-    try:
-
-        cursor.execute(query,param)
-        db.commit()
-
-        return json.dumps({'success':str('you did it')})
+@app.route('/browse', methods=['GET'])
+def get_main():
+    return send_from_directory('html', 'templates/index.html')
 
 
-    except Exception as e:
-        return json.dumps({'error':str(e)})
 
-    finally:
-        cursor.close()
-        db.close()
+# APIs
 
-@app.route('/deleteOrder/<order>', methods=['DELETE'])
-def delete_order(order):
+@app.route('/deleteWidget/<order>', methods=['DELETE'])
+def delete_widget(order):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
@@ -176,6 +161,80 @@ def add_widget(cat,siz,fin,count,quant):
         cursor.close()
         db.close()
 
+@app.route('/searchBySize/<siz>', methods=['POST','GET'])
+def search_by_size(siz):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_size=siz)
+
+    query = """SELECT * FROM orders WHERE size=%(_size)s"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return json.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return json.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+@app.route('/searchByFinish/<fin>', methods=['POST','GET'])
+def search_by_finish(fin):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_fin=fin)
+
+    query = """SELECT * FROM orders WHERE finish=%(_fin)s"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return json.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return json.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+@app.route('/searchByCategory/<cat>', methods=['POST','GET'])
+def search_by_category(cat):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_cat=cat)
+
+    query = """SELECT * FROM orders WHERE categroy=%(_cat)s"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return json.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return json.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
 
 
 if __name__ == '__main__':
