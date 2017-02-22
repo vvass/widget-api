@@ -25,7 +25,7 @@ tasks = [
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-@app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
+@app.route('/createOrder/<cat/<siz>/<fin>', methods=['POST','GET'])
 def get_by_category(cat,siz,fin):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
@@ -150,6 +150,32 @@ def update_aval_quantity(id,newValue):
     finally:
         cursor.close()
         db.close()
+
+@app.route('/addNewWidget/<cat>/<siz>/<fin>/<count>/<quant>', methods=['POST','GET'])
+def add_widget(cat,siz,fin,count,quant):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_cat=cat,_siz=siz,_fin=fin,_count=count,_quant=quant)
+
+    query = """INSERT INTO orders (category,size,finish,count,avalQuantity) VALUES (%(_cat)s,%(_siz)s,%(_fin)s,%(_count)s,%(_quant)s)"""
+
+    try:
+
+        cursor.execute(query,param)
+        db.commit()
+
+        return json.dumps({'success':str('you have a new value ')})
+
+
+    except Exception as e:
+        return json.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 
 
 if __name__ == '__main__':
