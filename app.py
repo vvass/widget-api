@@ -49,6 +49,7 @@ def get_order():
 def get_by_category(cat,siz,fin):
     try:
         c.execute("INSERT INTO orders (`category`,`size`,`finish`) VALUES (%s,%s,%s), (cat,siz,fin)")
+        return json.dumps({'success':str('you did it')})
     except Exception as e:
         return json.dumps({'error':str(e)})
     finally:
