@@ -11,6 +11,7 @@ $(function(){
         console.log(response);
 
         $('#widget-grid').accordion();
+        widgetAccordion
 
 
 
@@ -22,8 +23,9 @@ $(function(){
     });
   }
 
-  function widgetAccordion() {
-
+  function widgetAccordion(result) {
+    var widgets = jQuery.parseJSON(result)
+    console.log(widgets);
   }
 
 
