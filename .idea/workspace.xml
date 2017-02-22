@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,40 +20,39 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="227" column="21" lean-forward="false" selection-start-line="227" selection-start-column="21" selection-end-line="227" selection-end-column="21" />
+                <state relative-caret-position="619">
+                  <caret line="246" column="37" lean-forward="true" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="41" />
                   <folding>
-                    <element signature="e#19#95#0" expanded="true" />
-                    <element signature="e#536#1025#0" expanded="false" />
-                    <element signature="e#787#896#0" expanded="false" />
-                    <element signature="e#992#1025#0" expanded="false" />
-                    <element signature="e#1114#1693#0" expanded="false" />
-                    <element signature="e#1451#1564#0" expanded="false" />
-                    <element signature="e#1660#1693#0" expanded="false" />
-                    <element signature="e#1791#2290#0" expanded="false" />
-                    <element signature="e#2410#2935#0" expanded="false" />
-                    <element signature="e#2701#2806#0" expanded="false" />
-                    <element signature="e#2902#2935#0" expanded="false" />
-                    <element signature="e#3069#3689#0" expanded="false" />
-                    <element signature="e#3656#3689#0" expanded="false" />
-                    <element signature="e#3779#4271#0" expanded="false" />
-                    <element signature="e#4365#4857#0" expanded="false" />
-                    <element signature="e#4955#5449#0" expanded="false" />
-                    <marker date="1487798319000" expanded="true" signature="448:6015" ph="INSERT INTO orders... " />
-                    <marker date="1487798319000" expanded="false" signature="727:764" ph="DELETE FROM " />
-                    <marker date="1487798319000" expanded="true" signature="1307:1426" ph="UPDATE order... " />
-                    <marker date="1487798319000" expanded="true" signature="1979:2030" ph="SELECT * FRO... orders" />
-                    <marker date="1487798319000" expanded="true" signature="2617:2678" ph="UPDATE order... " />
-                    <marker date="1487798319000" expanded="true" signature="2661:2678" ph="SELECT * FRO... orders" />
-                    <marker date="1487798319000" expanded="true" signature="3303:3421" ph="INSERT into orders... " />
-                    <marker date="1487798319000" expanded="true" signature="3309:3421" ph="insert into orders... " />
-                    <marker date="1487798319000" expanded="true" signature="3970:4011" ph="SELECT avalQ... orders" />
-                    <marker date="1487798319000" expanded="true" signature="4555:4597" ph="SELECT * FRO... orders" />
-                    <marker date="1487798319000" expanded="true" signature="5145:5189" ph="SELECT * FRO... orders" />
-                    <marker date="1487798319000" expanded="true" signature="5686:5706" ph="SELECT * FRO... orders" />
+                    <element signature="e#591#1080#0" expanded="false" />
+                    <element signature="e#842#951#0" expanded="false" />
+                    <element signature="e#1047#1080#0" expanded="false" />
+                    <element signature="e#1169#1748#0" expanded="false" />
+                    <element signature="e#1506#1619#0" expanded="false" />
+                    <element signature="e#1715#1748#0" expanded="false" />
+                    <element signature="e#1846#2345#0" expanded="false" />
+                    <element signature="e#2465#2990#0" expanded="false" />
+                    <element signature="e#2756#2861#0" expanded="false" />
+                    <element signature="e#2957#2990#0" expanded="false" />
+                    <element signature="e#3124#3744#0" expanded="false" />
+                    <element signature="e#3711#3744#0" expanded="false" />
+                    <element signature="e#3834#4326#0" expanded="false" />
+                    <element signature="e#4420#4912#0" expanded="false" />
+                    <element signature="e#5010#5504#0" expanded="false" />
+                    <marker date="1487805702000" expanded="true" signature="503:6070" ph="INSERT INTO orders... " />
+                    <marker date="1487805702000" expanded="false" signature="782:819" ph="DELETE FROM " />
+                    <marker date="1487805702000" expanded="true" signature="1362:1481" ph="UPDATE order... " />
+                    <marker date="1487805702000" expanded="true" signature="2034:2085" ph="SELECT * FRO... orders" />
+                    <marker date="1487805702000" expanded="true" signature="2672:2733" ph="UPDATE order... " />
+                    <marker date="1487805702000" expanded="true" signature="2716:2733" ph="SELECT * FRO... orders" />
+                    <marker date="1487805702000" expanded="true" signature="3358:3476" ph="INSERT into orders... " />
+                    <marker date="1487805702000" expanded="true" signature="3364:3476" ph="insert into orders... " />
+                    <marker date="1487805702000" expanded="true" signature="4025:4066" ph="SELECT avalQ... orders" />
+                    <marker date="1487805702000" expanded="true" signature="4610:4652" ph="SELECT * FRO... orders" />
+                    <marker date="1487805702000" expanded="true" signature="5200:5244" ph="SELECT * FRO... orders" />
+                    <marker date="1487805702000" expanded="true" signature="5741:5761" ph="SELECT * FRO... orders" />
                   </folding>
                 </state>
               </provider>
@@ -70,10 +70,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="705">
+                <state relative-caret-position="765">
                   <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
                   <folding>
                     <element signature="e#2051#2057#0" expanded="true" />
@@ -112,7 +112,7 @@
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="390">
-                  <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+                  <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/routes.py" />
         <option value="$PROJECT_DIR$/widgets.py" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/widget-view.html" />
+        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/js/widget-view.js" />
       </list>
     </option>
@@ -932,7 +932,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29910000" />
+    <option name="totallyTimeSpent" value="30984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1022,34 +1022,33 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#19#95#0" expanded="true" />
-            <element signature="e#536#1025#0" expanded="false" />
-            <element signature="e#787#896#0" expanded="false" />
-            <element signature="e#992#1025#0" expanded="false" />
-            <element signature="e#1114#1693#0" expanded="false" />
-            <element signature="e#1451#1564#0" expanded="false" />
-            <element signature="e#1660#1693#0" expanded="false" />
-            <element signature="e#1791#2290#0" expanded="false" />
-            <element signature="e#2410#2935#0" expanded="false" />
-            <element signature="e#2701#2806#0" expanded="false" />
-            <element signature="e#2902#2935#0" expanded="false" />
-            <element signature="e#3069#3689#0" expanded="false" />
-            <element signature="e#3656#3689#0" expanded="false" />
-            <element signature="e#3779#4271#0" expanded="false" />
-            <element signature="e#4365#4857#0" expanded="false" />
-            <element signature="e#4955#5449#0" expanded="false" />
-            <marker date="1487798319000" expanded="true" signature="448:6015" ph="INSERT INTO orders... " />
-            <marker date="1487798319000" expanded="false" signature="727:764" ph="DELETE FROM " />
-            <marker date="1487798319000" expanded="true" signature="1307:1426" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="1979:2030" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="2617:2678" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="2661:2678" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="3303:3421" ph="INSERT into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3309:3421" ph="insert into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3970:4011" ph="SELECT avalQ... orders" />
-            <marker date="1487798319000" expanded="true" signature="4555:4597" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5145:5189" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5686:5706" ph="SELECT * FRO... orders" />
+            <element signature="e#591#1080#0" expanded="false" />
+            <element signature="e#842#951#0" expanded="false" />
+            <element signature="e#1047#1080#0" expanded="false" />
+            <element signature="e#1169#1748#0" expanded="false" />
+            <element signature="e#1506#1619#0" expanded="false" />
+            <element signature="e#1715#1748#0" expanded="false" />
+            <element signature="e#1846#2345#0" expanded="false" />
+            <element signature="e#2465#2990#0" expanded="false" />
+            <element signature="e#2756#2861#0" expanded="false" />
+            <element signature="e#2957#2990#0" expanded="false" />
+            <element signature="e#3124#3744#0" expanded="false" />
+            <element signature="e#3711#3744#0" expanded="false" />
+            <element signature="e#3834#4326#0" expanded="false" />
+            <element signature="e#4420#4912#0" expanded="false" />
+            <element signature="e#5010#5504#0" expanded="false" />
+            <marker date="1487805702000" expanded="true" signature="503:6070" ph="INSERT INTO orders... " />
+            <marker date="1487805702000" expanded="false" signature="782:819" ph="DELETE FROM " />
+            <marker date="1487805702000" expanded="true" signature="1362:1481" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2034:2085" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="2672:2733" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2716:2733" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="3358:3476" ph="INSERT into orders... " />
+            <marker date="1487805702000" expanded="true" signature="3364:3476" ph="insert into orders... " />
+            <marker date="1487805702000" expanded="true" signature="4025:4066" ph="SELECT avalQ... orders" />
+            <marker date="1487805702000" expanded="true" signature="4610:4652" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5200:5244" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5741:5761" ph="SELECT * FRO... orders" />
           </folding>
         </state>
       </provider>
@@ -1113,34 +1112,33 @@
         <state relative-caret-position="735">
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <element signature="e#19#95#0" expanded="true" />
-            <element signature="e#536#1025#0" expanded="false" />
-            <element signature="e#787#896#0" expanded="false" />
-            <element signature="e#992#1025#0" expanded="false" />
-            <element signature="e#1114#1693#0" expanded="false" />
-            <element signature="e#1451#1564#0" expanded="false" />
-            <element signature="e#1660#1693#0" expanded="false" />
-            <element signature="e#1791#2290#0" expanded="false" />
-            <element signature="e#2410#2935#0" expanded="false" />
-            <element signature="e#2701#2806#0" expanded="false" />
-            <element signature="e#2902#2935#0" expanded="false" />
-            <element signature="e#3069#3689#0" expanded="false" />
-            <element signature="e#3656#3689#0" expanded="false" />
-            <element signature="e#3779#4271#0" expanded="false" />
-            <element signature="e#4365#4857#0" expanded="false" />
-            <element signature="e#4955#5449#0" expanded="false" />
-            <marker date="1487798319000" expanded="true" signature="448:6015" ph="INSERT INTO orders... " />
-            <marker date="1487798319000" expanded="false" signature="727:764" ph="DELETE FROM " />
-            <marker date="1487798319000" expanded="true" signature="1307:1426" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="1979:2030" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="2617:2678" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="2661:2678" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="3303:3421" ph="INSERT into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3309:3421" ph="insert into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3970:4011" ph="SELECT avalQ... orders" />
-            <marker date="1487798319000" expanded="true" signature="4555:4597" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5145:5189" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5686:5706" ph="SELECT * FRO... orders" />
+            <element signature="e#591#1080#0" expanded="false" />
+            <element signature="e#842#951#0" expanded="false" />
+            <element signature="e#1047#1080#0" expanded="false" />
+            <element signature="e#1169#1748#0" expanded="false" />
+            <element signature="e#1506#1619#0" expanded="false" />
+            <element signature="e#1715#1748#0" expanded="false" />
+            <element signature="e#1846#2345#0" expanded="false" />
+            <element signature="e#2465#2990#0" expanded="false" />
+            <element signature="e#2756#2861#0" expanded="false" />
+            <element signature="e#2957#2990#0" expanded="false" />
+            <element signature="e#3124#3744#0" expanded="false" />
+            <element signature="e#3711#3744#0" expanded="false" />
+            <element signature="e#3834#4326#0" expanded="false" />
+            <element signature="e#4420#4912#0" expanded="false" />
+            <element signature="e#5010#5504#0" expanded="false" />
+            <marker date="1487805702000" expanded="true" signature="503:6070" ph="INSERT INTO orders... " />
+            <marker date="1487805702000" expanded="false" signature="782:819" ph="DELETE FROM " />
+            <marker date="1487805702000" expanded="true" signature="1362:1481" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2034:2085" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="2672:2733" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2716:2733" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="3358:3476" ph="INSERT into orders... " />
+            <marker date="1487805702000" expanded="true" signature="3364:3476" ph="insert into orders... " />
+            <marker date="1487805702000" expanded="true" signature="4025:4066" ph="SELECT avalQ... orders" />
+            <marker date="1487805702000" expanded="true" signature="4610:4652" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5200:5244" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5741:5761" ph="SELECT * FRO... orders" />
           </folding>
         </state>
       </provider>
@@ -1150,34 +1148,33 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#19#95#0" expanded="true" />
-            <element signature="e#536#1025#0" expanded="false" />
-            <element signature="e#787#896#0" expanded="false" />
-            <element signature="e#992#1025#0" expanded="false" />
-            <element signature="e#1114#1693#0" expanded="false" />
-            <element signature="e#1451#1564#0" expanded="false" />
-            <element signature="e#1660#1693#0" expanded="false" />
-            <element signature="e#1791#2290#0" expanded="false" />
-            <element signature="e#2410#2935#0" expanded="false" />
-            <element signature="e#2701#2806#0" expanded="false" />
-            <element signature="e#2902#2935#0" expanded="false" />
-            <element signature="e#3069#3689#0" expanded="false" />
-            <element signature="e#3656#3689#0" expanded="false" />
-            <element signature="e#3779#4271#0" expanded="false" />
-            <element signature="e#4365#4857#0" expanded="false" />
-            <element signature="e#4955#5449#0" expanded="false" />
-            <marker date="1487798319000" expanded="true" signature="448:6015" ph="INSERT INTO orders... " />
-            <marker date="1487798319000" expanded="false" signature="727:764" ph="DELETE FROM " />
-            <marker date="1487798319000" expanded="true" signature="1307:1426" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="1979:2030" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="2617:2678" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="2661:2678" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="3303:3421" ph="INSERT into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3309:3421" ph="insert into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3970:4011" ph="SELECT avalQ... orders" />
-            <marker date="1487798319000" expanded="true" signature="4555:4597" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5145:5189" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5686:5706" ph="SELECT * FRO... orders" />
+            <element signature="e#591#1080#0" expanded="false" />
+            <element signature="e#842#951#0" expanded="false" />
+            <element signature="e#1047#1080#0" expanded="false" />
+            <element signature="e#1169#1748#0" expanded="false" />
+            <element signature="e#1506#1619#0" expanded="false" />
+            <element signature="e#1715#1748#0" expanded="false" />
+            <element signature="e#1846#2345#0" expanded="false" />
+            <element signature="e#2465#2990#0" expanded="false" />
+            <element signature="e#2756#2861#0" expanded="false" />
+            <element signature="e#2957#2990#0" expanded="false" />
+            <element signature="e#3124#3744#0" expanded="false" />
+            <element signature="e#3711#3744#0" expanded="false" />
+            <element signature="e#3834#4326#0" expanded="false" />
+            <element signature="e#4420#4912#0" expanded="false" />
+            <element signature="e#5010#5504#0" expanded="false" />
+            <marker date="1487805702000" expanded="true" signature="503:6070" ph="INSERT INTO orders... " />
+            <marker date="1487805702000" expanded="false" signature="782:819" ph="DELETE FROM " />
+            <marker date="1487805702000" expanded="true" signature="1362:1481" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2034:2085" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="2672:2733" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2716:2733" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="3358:3476" ph="INSERT into orders... " />
+            <marker date="1487805702000" expanded="true" signature="3364:3476" ph="insert into orders... " />
+            <marker date="1487805702000" expanded="true" signature="4025:4066" ph="SELECT avalQ... orders" />
+            <marker date="1487805702000" expanded="true" signature="4610:4652" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5200:5244" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5741:5761" ph="SELECT * FRO... orders" />
           </folding>
         </state>
       </provider>
@@ -1224,43 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="227" column="21" lean-forward="false" selection-start-line="227" selection-start-column="21" selection-end-line="227" selection-end-column="21" />
-          <folding>
-            <element signature="e#19#95#0" expanded="true" />
-            <element signature="e#536#1025#0" expanded="false" />
-            <element signature="e#787#896#0" expanded="false" />
-            <element signature="e#992#1025#0" expanded="false" />
-            <element signature="e#1114#1693#0" expanded="false" />
-            <element signature="e#1451#1564#0" expanded="false" />
-            <element signature="e#1660#1693#0" expanded="false" />
-            <element signature="e#1791#2290#0" expanded="false" />
-            <element signature="e#2410#2935#0" expanded="false" />
-            <element signature="e#2701#2806#0" expanded="false" />
-            <element signature="e#2902#2935#0" expanded="false" />
-            <element signature="e#3069#3689#0" expanded="false" />
-            <element signature="e#3656#3689#0" expanded="false" />
-            <element signature="e#3779#4271#0" expanded="false" />
-            <element signature="e#4365#4857#0" expanded="false" />
-            <element signature="e#4955#5449#0" expanded="false" />
-            <marker date="1487798319000" expanded="true" signature="448:6015" ph="INSERT INTO orders... " />
-            <marker date="1487798319000" expanded="false" signature="727:764" ph="DELETE FROM " />
-            <marker date="1487798319000" expanded="true" signature="1307:1426" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="1979:2030" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="2617:2678" ph="UPDATE order... " />
-            <marker date="1487798319000" expanded="true" signature="2661:2678" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="3303:3421" ph="INSERT into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3309:3421" ph="insert into orders... " />
-            <marker date="1487798319000" expanded="true" signature="3970:4011" ph="SELECT avalQ... orders" />
-            <marker date="1487798319000" expanded="true" signature="4555:4597" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5145:5189" ph="SELECT * FRO... orders" />
-            <marker date="1487798319000" expanded="true" signature="5686:5706" ph="SELECT * FRO... orders" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/widgets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1271,7 +1231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
+        <state relative-caret-position="765">
           <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding>
             <element signature="e#2051#2057#0" expanded="true" />
@@ -1289,10 +1249,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="246" column="37" lean-forward="true" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="41" />
+          <folding>
+            <element signature="e#591#1080#0" expanded="false" />
+            <element signature="e#842#951#0" expanded="false" />
+            <element signature="e#1047#1080#0" expanded="false" />
+            <element signature="e#1169#1748#0" expanded="false" />
+            <element signature="e#1506#1619#0" expanded="false" />
+            <element signature="e#1715#1748#0" expanded="false" />
+            <element signature="e#1846#2345#0" expanded="false" />
+            <element signature="e#2465#2990#0" expanded="false" />
+            <element signature="e#2756#2861#0" expanded="false" />
+            <element signature="e#2957#2990#0" expanded="false" />
+            <element signature="e#3124#3744#0" expanded="false" />
+            <element signature="e#3711#3744#0" expanded="false" />
+            <element signature="e#3834#4326#0" expanded="false" />
+            <element signature="e#4420#4912#0" expanded="false" />
+            <element signature="e#5010#5504#0" expanded="false" />
+            <marker date="1487805702000" expanded="true" signature="503:6070" ph="INSERT INTO orders... " />
+            <marker date="1487805702000" expanded="false" signature="782:819" ph="DELETE FROM " />
+            <marker date="1487805702000" expanded="true" signature="1362:1481" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2034:2085" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="2672:2733" ph="UPDATE order... " />
+            <marker date="1487805702000" expanded="true" signature="2716:2733" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="3358:3476" ph="INSERT into orders... " />
+            <marker date="1487805702000" expanded="true" signature="3364:3476" ph="insert into orders... " />
+            <marker date="1487805702000" expanded="true" signature="4025:4066" ph="SELECT avalQ... orders" />
+            <marker date="1487805702000" expanded="true" signature="4610:4652" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5200:5244" ph="SELECT * FRO... orders" />
+            <marker date="1487805702000" expanded="true" signature="5741:5761" ph="SELECT * FRO... orders" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding />
         </state>
       </provider>

@@ -24,7 +24,7 @@ $(function(){
   }
 
   function widgetAccordion(result) {
-    var widgets = $.parseJSON(result);
+    var widgets = JSON.parse(result);
     console.log(widgets);
   }
 
