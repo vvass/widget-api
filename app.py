@@ -126,30 +126,30 @@ def get_avalable_quantity(id):
         cursor.close()
         db.close()
 
-@app.route('/updateAvalQuantity/<id>/<newValue>', methods=['POST','GET'])
-def get_avalable_quantity(id,newValue):
-
-    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-    cursor=db.cursor()
-
-    param = dict(_id=id,_newValue=newValue)
-
-    query = """UPDATE orders SET avalQuantity=%(_newValue)s WHERE id=%(_id)s"""
-
-    try:
-
-        cursor.execute(query,param)
-        db.commit()
-
-        return json.dumps({'success':str('you did it')})
-
-
-    except Exception as e:
-        return json.dumps({'error':str(e)})
-
-    finally:
-        cursor.close()
-        db.close()
+# @app.route('/updateAvalQuantity/<id>/<newValue>', methods=['POST','GET'])
+# def get_avalable_quantity(id,newValue):
+#
+#     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+#     cursor=db.cursor()
+#
+#     param = dict(_id=id,_newValue=newValue)
+#
+#     query = """UPDATE orders SET avalQuantity=%(_newValue)s WHERE id=%(_id)s"""
+#
+#     try:
+#
+#         cursor.execute(query,param)
+#         db.commit()
+#
+#         return json.dumps({'success':str('you did it')})
+#
+#
+#     except Exception as e:
+#         return json.dumps({'error':str(e)})
+#
+#     finally:
+#         cursor.close()
+#         db.close()
 
 
 if __name__ == '__main__':
