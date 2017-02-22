@@ -25,7 +25,7 @@ tasks = [
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-@app.route('/createOrder/<cat/<siz>/<fin>', methods=['POST','GET'])
+@app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
 def get_by_category(cat,siz,fin):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
