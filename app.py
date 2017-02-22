@@ -27,9 +27,13 @@ def get_tasks():
 
 # TEMAPLATES
 
-@app.route('/browse', methods=['GET'])
+@app.route('/enter', methods=['GET'])
 def get_main():
     return send_from_directory('templates', 'index.html')
+
+@app.route('/widgetView', methods=['GET'])
+def widget_view():
+    return send_from_directory('templates', 'widget-view.html')
 
 
 
