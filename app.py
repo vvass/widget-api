@@ -20,10 +20,16 @@ tasks = [
         'done': False
     }
 ]
-
-db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+db=MySQLdb
 cursor=db.cursor()
 
+def connect():
+    db.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+
+
+def closeAll():
+    cursor.close()
+    db.close()
 
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
@@ -32,6 +38,8 @@ def get_tasks():
 
 @app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
 def get_by_category(cat,siz,fin):
+
+    connect()
 
     param = dict(_category=cat, _size=siz, _finish=fin)
 
@@ -49,10 +57,12 @@ def get_by_category(cat,siz,fin):
         return json.dumps({'error':str(e)})
 
     finally:
-        return json.dumps({'error':str("Something really bad happened")})
+        closeAll()
 
 @app.route('/deleteOrder/<order>', methods=['DELETE'])
 def delete_order(order):
+
+    connect()
 
     param = dict(_id=order)
 
@@ -70,7 +80,7 @@ def delete_order(order):
         return json.dumps({'error':str(e)})
 
     finally:
-        return json.dumps({'error':str("Something really bad happened")})
+        closeAll()
 
 
 
