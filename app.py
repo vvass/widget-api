@@ -29,7 +29,7 @@ def get_tasks():
 
 @app.route('/browse', methods=['GET'])
 def get_main():
-    return send_from_directory('html', 'templates/index.html')
+    return send_from_directory('templates', 'index.html')
 
 
 
