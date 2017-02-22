@@ -11,7 +11,7 @@ $(function(){
         console.log(response);
 
         $('#widget-grid').accordion();
-        widgetAccordion
+        widgetAccordion();
 
 
 
