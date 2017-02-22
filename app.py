@@ -30,21 +30,6 @@ cursor=db.cursor()
 def get_tasks():
     return jsonify({'tasks': tasks})
 
-@app.route('/test', methods=['GET'])
-def get_order():
-    try:
-        db.query("""SELECT * FROM orders""")
-        results=db.store_result()
-        r=results.fetch_row()
-        for row in r:
-            print row[0]
-
-
-    except Exception as e:
-        return json.dumps({'error':str(e)})
-    finally:
-        return db.close()
-
 @app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
 def get_by_category(cat,siz,fin):
 
@@ -64,8 +49,7 @@ def get_by_category(cat,siz,fin):
         return json.dumps({'error':str(e)})
 
     finally:
-        cursor.close()
-        db.close()
+        return json.dumps({'error':str("Something really bad happened")})
 
 @app.route('/deleteOrder/<order>', methods=['DELETE'])
 def delete_order(order):
