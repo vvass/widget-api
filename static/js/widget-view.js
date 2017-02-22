@@ -1,5 +1,5 @@
 $(function(){
-  $('window').load(function(){
+  $('window').on(function(){
 
     console.log("this is up");
 
