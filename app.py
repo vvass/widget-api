@@ -83,7 +83,7 @@ def inc_order(orderId):
 
     param = dict(_id=orderId)
 
-    query = """SELECT @count := `count` FROM orders WHERE id=%(_id)s; UPDATE orders SET count=@count+1 WHERE id=%(_id)s;"""
+    query = """UPDATE orders SET count=1 WHERE id=%(_id)s;"""
 
 
     try:
