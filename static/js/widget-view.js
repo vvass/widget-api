@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $('body').load(function(){
+$(function(){
+  $('window').load(function(){
 
     console.log("this is up");
 
