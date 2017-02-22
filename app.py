@@ -67,7 +67,7 @@ def get_by_category(cat,siz,fin):
         cursor.close()
         db.close()
 
-@app.route('/deleteOrder/<order>', methods=['DELETE'])
+@app.route('/deleteOrder/<order>', methods=['POST','GET'])
 def delete_order(order):
 
     param = dict(_id=order)
