@@ -20,7 +20,6 @@ tasks = [
     }
 ]
 
-db=_mysql.connect()
 db=_mysql.connect(host="localhost", user="root", passwd="3342e8db85744734794d60c9c797bbcf6c24007d84debbf4", db="widgets")
 
 
