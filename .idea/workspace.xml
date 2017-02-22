@@ -20,15 +20,15 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="555">
+              <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
               <folding>
                 <element signature="e#19#74#0" expanded="true" />
                 <element signature="e#760#1032#0" expanded="false" />
-                <marker date="1487729170000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
-                <marker date="1487729170000" expanded="true" signature="1242:1338" ph="INSERT INTO orders... " />
-                <marker date="1487729170000" expanded="true" signature="1242:1651" ph="INSERT INTO orders... " />
-                <marker date="1487729170000" expanded="true" signature="1387:1388" ph="INSERT INTO orders... " />
+                <marker date="1487729384000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
+                <marker date="1487729384000" expanded="true" signature="1210:1306" ph="INSERT INTO orders... " />
+                <marker date="1487729384000" expanded="true" signature="1210:1619" ph="INSERT INTO orders... " />
+                <marker date="1487729384000" expanded="true" signature="1355:1356" ph="INSERT INTO orders... " />
               </folding>
             </state>
           </provider>
@@ -861,7 +861,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8153000" />
+    <option name="totallyTimeSpent" value="8363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -919,10 +919,10 @@
           <folding>
             <element signature="e#19#74#0" expanded="true" />
             <element signature="e#760#1032#0" expanded="false" />
-            <marker date="1487729170000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
-            <marker date="1487729170000" expanded="true" signature="1242:1338" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1242:1651" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1387:1388" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
+            <marker date="1487729384000" expanded="true" signature="1210:1306" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1210:1619" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1355:1356" ph="INSERT INTO orders... " />
           </folding>
         </state>
       </provider>
@@ -988,10 +988,10 @@
           <folding>
             <element signature="e#19#74#0" expanded="true" />
             <element signature="e#760#1032#0" expanded="false" />
-            <marker date="1487729170000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
-            <marker date="1487729170000" expanded="true" signature="1242:1338" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1242:1651" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1387:1388" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
+            <marker date="1487729384000" expanded="true" signature="1210:1306" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1210:1619" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1355:1356" ph="INSERT INTO orders... " />
           </folding>
         </state>
       </provider>
@@ -1003,10 +1003,10 @@
           <folding>
             <element signature="e#19#74#0" expanded="true" />
             <element signature="e#760#1032#0" expanded="false" />
-            <marker date="1487729170000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
-            <marker date="1487729170000" expanded="true" signature="1242:1338" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1242:1651" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1387:1388" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
+            <marker date="1487729384000" expanded="true" signature="1210:1306" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1210:1619" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1355:1356" ph="INSERT INTO orders... " />
           </folding>
         </state>
       </provider>
@@ -1067,15 +1067,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="555">
+          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
           <folding>
             <element signature="e#19#74#0" expanded="true" />
             <element signature="e#760#1032#0" expanded="false" />
-            <marker date="1487729170000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
-            <marker date="1487729170000" expanded="true" signature="1242:1338" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1242:1651" ph="INSERT INTO orders... " />
-            <marker date="1487729170000" expanded="true" signature="1387:1388" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="785:805" ph="SELECT * FRO... orders" />
+            <marker date="1487729384000" expanded="true" signature="1210:1306" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1210:1619" ph="INSERT INTO orders... " />
+            <marker date="1487729384000" expanded="true" signature="1355:1356" ph="INSERT INTO orders... " />
           </folding>
         </state>
       </provider>

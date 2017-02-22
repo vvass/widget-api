@@ -46,13 +46,10 @@ def get_order():
         return db.close()
 
 @app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
-def get_by_category(cat,siz,fin)
+def get_by_category(cat,siz,fin):
 
-    param = {
-        '_category' : cat
-        '_size': siz
-        '_finish': fin
-    }
+    param = dict(_category=cat, _size=siz, _finish=fin)
+
     query = """INSERT INTO orders (`category`,`size`,`finish`) VALUES ( %(_category)s, %(_size)s, %(_finish)s )"""
 
     try:
