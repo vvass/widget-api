@@ -83,7 +83,7 @@ def inc_order(orderId):
 
     param = dict(_id=orderId)
 
-    query = """UPDATE orders SET count=1 WHERE id=%(_id)s;"""
+    query = """update orders, (SELECT count as prevCount FROM orders WHERE id=%(_id)s) as t2 set count=t2.prevCount+1 where id=%(_id)s;"""
 
 
     try:
