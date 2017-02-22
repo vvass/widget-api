@@ -67,7 +67,7 @@ def get_by_category(cat,siz,fin):
         cursor.close()
         db.close()
 
-@app.route('/deleteOrder/<order>', methods=['POST','GET'])
+@app.route('/deleteOrder/<order>', methods=['DELETE'])
 def delete_order(order):
 
     param = dict(_id=order)
@@ -86,8 +86,7 @@ def delete_order(order):
         return json.dumps({'error':str(e)})
 
     finally:
-        cursor.close()
-        db.close()
+        return json.dumps({'error':str("Something really bad happened")})
 
 
 
