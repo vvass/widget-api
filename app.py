@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 from flask import Flask, render_template, json, request
+import MySQLdb
+
 import _mysql
 
 app = Flask(__name__)
@@ -20,7 +22,7 @@ tasks = [
     }
 ]
 
-db=_mysql.connect(host="localhost", user="root", passwd="3342e8db85744734794d60c9c797bbcf6c24007d84debbf4", db="widgets")
+db=_mysql.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
 
 
 
