@@ -22,7 +22,7 @@ tasks = [
 ]
 
 db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-c=db.cursor()
+cursor=db.cursor()
 
 
 
@@ -45,15 +45,21 @@ def get_order():
     finally:
         return db.close()
 
-@app.route('/createOrder/<cat>/<siz>/<fin>', methods=['GET'])
+@app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
 def get_by_category(cat,siz,fin):
     try:
-        c.execute("INSERT INTO orders (`category`,`size`,`finish`) VALUES (%s,%s,%s), (cat,siz,fin)")
+        cursor.execute("INSERT INTO orders (`category`,`size`,`finish`) VALUES (%s,%s,%s), (cat,siz,fin)")
+        db.commit()
+
         return json.dumps({'success':str('you did it')})
+
+
     except Exception as e:
         return json.dumps({'error':str(e)})
+    
     finally:
-        return db.close()
+        cursor.close()
+        db.close()
 
 
 
