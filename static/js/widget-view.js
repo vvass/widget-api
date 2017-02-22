@@ -1,5 +1,8 @@
 $(function(){
 
+  loadWidgets();
+
+
   function loadWidgets() {
     $.ajax({
       url: '/getWidgets',
@@ -13,9 +16,5 @@ $(function(){
     });
   }
 
-
-  $('#widget-grid').onload(function(){
-    loadWidgets();
-  });
 
 });
