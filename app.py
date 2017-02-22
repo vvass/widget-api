@@ -3,6 +3,7 @@
 from flask import Flask, render_template, json, request, send_from_directory
 import MySQLdb
 import _mysql
+from a import test
 
 app = Flask(__name__, static_url_path='')
 
@@ -34,6 +35,8 @@ def get_main():
 @app.route('/widgetView', methods=['GET'])
 def widget_view():
     return send_from_directory('templates', 'widget-view.html')
+
+
 
 
 
@@ -205,7 +208,7 @@ def search_by_finish(fin):
         cursor.execute(query,param)
         data=cursor.fetchall()
 
-        return json.dumps({'success':str(data)})
+        return json.dumps({'success':str(test())})
 
 
     except Exception as e:
