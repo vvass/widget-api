@@ -127,7 +127,7 @@ def get_avalable_quantity(id):
         db.close()
 
 @app.route('/updateAvalQuantity/<id>/<newValue>', methods=['POST','GET'])
-def get_avalable_quantity(id,newValue):
+def update_aval_quantity(id,newValue):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
