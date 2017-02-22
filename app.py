@@ -46,9 +46,18 @@ def get_order():
         return db.close()
 
 @app.route('/createOrder/<cat>/<siz>/<fin>', methods=['POST','GET'])
-def get_by_category(cat,siz,fin):
+def get_by_category(cat,siz,fin)
+
+    param = {
+        '_category' : cat
+        '_size': siz
+        '_finish': fin
+    }
+    query = """INSERT INTO orders (`category`,`size`,`finish`) VALUES ( %(_category)s, %(_size)s, %(_finish)s )"""
+
     try:
-        cursor.execute("INSERT INTO orders (`category`,`size`,`finish`) VALUES (%s,%s,%s), (cat,siz,fin)")
+
+        cursor.execute(query,param)
         db.commit()
 
         return json.dumps({'success':str('you did it')})
@@ -56,7 +65,7 @@ def get_by_category(cat,siz,fin):
 
     except Exception as e:
         return json.dumps({'error':str(e)})
-    
+
     finally:
         cursor.close()
         db.close()
