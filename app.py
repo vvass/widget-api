@@ -27,7 +27,15 @@ tasks = [
 def get_tasks():
     return jsonify({'tasks': tasks})
 
+# TEMAPLATES
 
+@app.route('/enter', methods=['GET'])
+def get_main():
+    return send_from_directory('templates', 'index.html')
+
+@app.route('/widgetView', methods=['GET'])
+def widget_view():
+    return send_from_directory('templates', 'widget-view.html')
 
 
 
