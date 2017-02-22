@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/widget-view.html" afterPath="$PROJECT_DIR$/templates/widget-view.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,13 +61,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="390">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <element signature="e#1623#1629#0" expanded="true" />
+                <element signature="e#1013#1019#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,13 +95,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+            <state relative-caret-position="238">
+              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="41" selection-end-column="14" />
               <folding>
-                <element signature="e#1765#1771#0" expanded="true" />
+                <element signature="e#2349#2355#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,9 +152,9 @@
         <option value="$PROJECT_DIR$/static/index.js" />
         <option value="$PROJECT_DIR$/templates/widgets-create.html" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
-        <option value="$PROJECT_DIR$/templates/widget-view.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/widget-view.html" />
       </list>
     </option>
   </component>
@@ -902,7 +903,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19068000" />
+    <option name="totallyTimeSpent" value="19165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1007,7 +1008,7 @@
         <state relative-caret-position="315">
           <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
           <folding>
-            <element signature="e#1623#1629#0" expanded="true" />
+            <element signature="e#1013#1019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,7 +1044,7 @@
         <state relative-caret-position="358">
           <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding>
-            <element signature="e#1765#1771#0" expanded="true" />
+            <element signature="e#2349#2355#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1164,16 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding>
-            <element signature="e#1765#1771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1217,10 +1208,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#1623#1629#0" expanded="true" />
+            <element signature="e#1013#1019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="41" selection-end-column="14" />
+          <folding>
+            <element signature="e#2349#2355#0" expanded="true" />
           </folding>
         </state>
       </provider>
