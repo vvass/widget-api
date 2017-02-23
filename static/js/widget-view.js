@@ -25,13 +25,13 @@ $(function(){
 
   function widgetAccordion(result) {
 
-    var mapping = mapResults(results);
+    var mapping = mapResults(result);
 
     console.log(mapping);
 
   }
 
-  function mapResults(results) {
+  function mapResults(result) {
     var widgets = JSON.parse(result);
     var data = widgets.success
       .replace(/'/g,'')
