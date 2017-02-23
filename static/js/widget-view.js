@@ -51,9 +51,11 @@ $(function(){
   }
 
   function createWidgetHTML(mapping) {
-    for(var subArray in mapping) {
-      console.log(subArray);
-    }
+
+    mapping.map(function(item) {
+      console.log(item);
+    });
+
   }
 
 });
