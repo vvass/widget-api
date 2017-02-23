@@ -33,7 +33,7 @@ $(function(){
       .replace(/\)\)/g,')')
       .replace(/\), \(/g,")*(");
 
-    var array = data.split(*);
+    var array = data.split('*');
 
 
 
