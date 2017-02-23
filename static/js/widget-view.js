@@ -52,8 +52,8 @@ $(function(){
     mapping.map(function(item) {
       console.log(item);
 
-      var html = '<fieldset>' +
-        '<h3>' + item[1] + '</h3>' +
+      var html ='<h3>' + item[1] + '</h3>' +
+        '<fieldset>' +
         '<div>' +
         '<p>' +
           item[2] + ' ' + item[3] +
