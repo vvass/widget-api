@@ -25,7 +25,7 @@ $(function(){
       success: function(response){
         console.log(response);
         widgetAccordion(response);
-        
+
         buttonColumn();
 
         $('#widget-grid').accordion({
@@ -88,7 +88,7 @@ $(function(){
   }
 
   function buttonColumn() {
-    $("#widget-grid").append('<button type="button" class="btn btn-default">Add Widget</button>');
+    $("#filter-buttons").append('<button type="button" class="btn btn-default">Add Widget</button>');
   }
 
 });
