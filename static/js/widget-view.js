@@ -27,6 +27,7 @@ $(function(){
     var widgets = JSON.parse(result);
     var data = widgets.success
       .replace(/'/g,'')
+      .replace(/, /g,'')
       .replace(/L,/g,',')
       .replace(/L\)/g,')')
       .replace(/\(\(/g,'(')
