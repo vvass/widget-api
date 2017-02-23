@@ -52,10 +52,11 @@ $(function(){
 
   function createWidgetHTML(mapping) {
 
-    var legend
-
-    $.each(mapping, function(index){
-      console.log(index);
+    mapping.map(function(item) {
+      console.log(item);
+      $.each(item, function(index){
+        console.log(index);
+      });
     });
 
   }
