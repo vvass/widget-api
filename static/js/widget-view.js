@@ -32,7 +32,7 @@ $(function(){
       .replace(/L\)/g,')')
       .replace(/\(\(/g,'(')
       .replace(/\)\)/g,')')
-      .replace(/\), \(/g,")*(");
+      .replace(/\),\(/g,")*(");
 
     var array = data.split('*');
     var sarray = array[0].split(',');
