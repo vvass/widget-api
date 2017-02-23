@@ -2,6 +2,11 @@ $(function(){
 
   loadWidgets();
 
+  var finishes = new Object();
+  finishes[1] = "GOLD";
+  finishes[2] = "SILVER";
+  finishes[3] = "BRONZE";
+
 
   function loadWidgets() {
     $.ajax({
@@ -53,7 +58,11 @@ $(function(){
   function createWidgetHTML(mapping) {
 
     mapping.map(function(item) {
-      console.log(item);
+      console.log(finishes);
+
+
+
+
 
       var html ='<h3>' + item[1] + '</h3>' +
         '<div>' +
