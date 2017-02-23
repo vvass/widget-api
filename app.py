@@ -41,11 +41,11 @@ def delete_widget(order):
         cursor.execute(query,param)
         db.commit()
 
-        return json.dumps({'success':str('you deleted it')})
+        return simplejson.dumps({'success':str('you deleted it')})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
@@ -67,11 +67,11 @@ def inc_order(orderId):
         cursor.execute(query,param)
         db.commit()
 
-        return json.dumps({'success':str('you incremented it')})
+        return simplejson.dumps({'success':str('you incremented it')})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
@@ -92,11 +92,11 @@ def get_avalable_quantity(id):
         cursor.execute(query,param)
         data=cursor.fetchall()
 
-        return json.dumps({'success':str(data)})
+        return simplejson.dumps({'success':str(data)})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
@@ -117,11 +117,11 @@ def update_aval_quantity(id,newValue):
         cursor.execute(query,param)
         db.commit()
 
-        return json.dumps({'success':str('you did it')})
+        return simplejson.dumps({'success':str('you did it')})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
@@ -142,11 +142,11 @@ def add_widget(cat,siz,fin,count,quant):
         cursor.execute(query,param)
         db.commit()
 
-        return json.dumps({'success':str('you have a new value ')})
+        return simplejson.dumps({'success':str('you have a new value ')})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
@@ -167,11 +167,11 @@ def search_by_size(siz):
         cursor.execute(query,param)
         data=cursor.fetchall()
 
-        return json.dumps({'success':str(data)})
+        return simplejson.dumps({'success':str(data)})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
@@ -192,11 +192,11 @@ def search_by_finish(fin):
         cursor.execute(query,param)
         data=cursor.fetchall()
 
-        return json.dumps({'success':str(data)})
+        return simplejson.dumps({'success':str(data)})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
@@ -217,11 +217,11 @@ def search_by_category(cat):
         cursor.execute(query,param)
         data=cursor.fetchall()
 
-        return json.dumps({'success':str(data)})
+        return simplejson.dumps({'success':str(data)})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
