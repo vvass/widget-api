@@ -25,7 +25,12 @@ $(function(){
 
   function widgetAccordion(result) {
     var widgets = JSON.parse(result);
-    console.log(widgets.success);
+    var data = widget.success.replace("'",'"');
+
+    
+
+
+    console.log(data);
   }
 
 
