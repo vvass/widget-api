@@ -34,7 +34,7 @@ $(function(){
       .replace(/\), \(/g,")*(");
 
     var array = data.split('*');
-    var sarray = array[0].split(,);
+    var sarray = array[0].split(',');
 
 
 
