@@ -240,12 +240,12 @@ def get_widgets_list():
 
         cursor.execute(query)
         data=cursor.fetchall()
-        str=""
+        s=""
 
         for row in cursor:
-            str+=row.replace("'",'"')
+            s+=row.replace("'",'"')
 
-        return simplejson.dumps({'success':str})
+        return simplejson.dumps({'success':s})
 
 
     except Exception as e:
