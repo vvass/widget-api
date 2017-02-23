@@ -239,7 +239,7 @@ def get_widgets_list():
     try:
 
         cursor.execute(query)
-        data=str(cursor.fetchall())
+        data=''.join(str(cursor.fetchall()))
 
         print data
         data.replace("'",'"')
