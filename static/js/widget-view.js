@@ -9,8 +9,6 @@ $(function(){
       type: 'GET',
       success: function(response){
         console.log(response);
-
-
         widgetAccordion(response);
 
 
@@ -60,7 +58,7 @@ $(function(){
       var html ='<h3>' + item[1] + '</h3>' +
         '<div>' +
         '<p>' +
-          item[2] + ' ' + item[3] +
+          'Inventory: ' + item[2]
         '</p>' +
         '</div>';
 

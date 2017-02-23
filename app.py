@@ -206,7 +206,7 @@ def get_widgets():
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
-    query = """SELECT * FROM widget"""
+    query = """SELECT id,name,inventory,finish,size,types FROM widget"""
 
     try:
 
