@@ -24,6 +24,14 @@ $(function(){
   }
 
   function widgetAccordion(result) {
+
+    var mapping = mapResults(results);
+
+    console.log(mapping);
+
+  }
+
+  function mapResults(results) {
     var widgets = JSON.parse(result);
     var data = widgets.success
       .replace(/'/g,'')
@@ -37,9 +45,9 @@ $(function(){
     var array = data.split('*');
     for(var i=0;i < array.length; i++){
       array[i] = array[i].replace(/\)|\(/g,'').split(',');
-      console.log(array[i]);
     }
 
+    return array;
   }
 
 
