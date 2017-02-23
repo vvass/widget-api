@@ -88,7 +88,9 @@ $(function(){
   }
 
   function buttonColumn() {
-    $("#filter-buttons").append('<button type="button" class="btn btn-default">Add Widget</button>');
+    $("#filter-buttons").append('<button type="button" class="btn btn-default">Finish</button>');
+    $("#filter-buttons").append('<button type="button" class="btn btn-default">Size</button>');
+    $("#filter-buttons").append('<button type="button" class="btn btn-default">Types</button>');
   }
 
 });
