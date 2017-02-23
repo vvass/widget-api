@@ -31,6 +31,8 @@ $(function(){
           collapsible: true
         });
 
+        buttonColumn();
+
       },
       error: function(error){
         console.log(error);
@@ -68,10 +70,6 @@ $(function(){
   function createWidgetHTML(mapping) {
 
     mapping.map(function(item) {
-      console.log();
-
-
-
 
       var html ='<h3>' + item[1] + '</h3>' +
         '<div>' +
@@ -88,6 +86,11 @@ $(function(){
 
     });
 
+  }
+
+  function buttonColumn() {
+
+    $("widget-grid").append('<button type="button" class="btn btn-default">Default</button>');
   }
 
 });
