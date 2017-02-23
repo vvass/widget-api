@@ -13,6 +13,11 @@ $(function(){
 
         widgetAccordion(response);
 
+
+        $('#widget-grid').accordion({
+          collapsible: true
+        });
+
       },
       error: function(error){
         console.log(error);
@@ -61,9 +66,6 @@ $(function(){
 
 
       $("#widget-grid").append(html);
-      $('#widget-grid').accordion({
-        collapsible: true
-      });
 
     });
 
