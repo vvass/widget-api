@@ -242,7 +242,7 @@ def get_widgets_list():
         data=cursor.fetchall()
         str=""
 
-        for row in cursor
+        for row in cursor:
             str+=row.replace("'",'"')
 
         return simplejson.dumps({'success':str})
