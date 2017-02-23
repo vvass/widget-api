@@ -30,9 +30,10 @@ $(function(){
       .replace(/L,/g,',')
       .replace(/L\)/g,')')
       .replace(/\(\(/g,'(')
-      .replace(/\)\)/g,')');
+      .replace(/\)\)/g,')')
+      .replace(/\), \(/g,")*(");
 
-    var array = data.split("), (");
+    var array = data.split(*);
 
 
 
