@@ -51,12 +51,16 @@ $(function(){
 
     mapping.map(function(item) {
       console.log(item);
-      $("#widget-grid").append("<fieldset>")
-        .append("<legend>"+item[0]+"</legend>")
-        .append("<p>")
-        .append(item[1])
-        .append("</lp>")
-        .append("</fieldset>")
+
+      var html = '<fieldset>' +
+        '<legend>"+item[1]+"</legend>' +
+        '<p>' +
+          item[2] + ' ' + item[3] +
+        '</p>' +
+        '</fieldset>';
+
+
+      $("#widget-grid").append(html)
 
     });
 
