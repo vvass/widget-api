@@ -27,7 +27,7 @@ $(function(){
 
     var mapping = mapResults(result);
 
-    console.log(mapping);
+    var innerHTML = createWidgetHTML(mapping)
 
   }
 
@@ -50,5 +50,10 @@ $(function(){
     return array;
   }
 
+  function createWidgetHTML(mapping) {
+    for(var subArray in mapping) {
+      console.log(subArray);
+    }
+  }
 
 });
