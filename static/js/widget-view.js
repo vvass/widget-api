@@ -5,7 +5,7 @@ $(function(){
 
   function loadWidgets() {
     $.ajax({
-      url: '/getOrders',
+      url: '/getWidgets',
       type: 'GET',
       success: function(response){
         console.log(response);
