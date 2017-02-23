@@ -28,13 +28,16 @@ $(function(){
     var data = widgets.success
       .replace(/'/g,'"')
       .replace(/L,/g,',')
-      .replace(/L\)/g,')');
+      .replace(/L\)/g,')')
+      .replace(/\(\(/g,'(')
+      .replace(/\)\)/g,')');
+
+    var array = data.split("), (");
 
 
 
 
-
-    console.log(data);
+    console.log(array);
   }
 
 
