@@ -13,9 +13,6 @@ $(function(){
         $('#widget-grid').accordion();
         widgetAccordion(response);
 
-
-
-
       },
       error: function(error){
         console.log(error);
@@ -54,9 +51,13 @@ $(function(){
 
     mapping.map(function(item) {
       console.log(item);
-      $.each(item, function(index){
-        console.log(index);
-      });
+      $("#widget-grid").append("<fieldset>")
+        .append("<legend>"+item[0]+"</legend>")
+        .append("<p>")
+        .append(item[1])
+        .append("</lp>")
+        .append("</fieldset>")
+
     });
 
   }
