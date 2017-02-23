@@ -53,13 +53,11 @@ $(function(){
       console.log(item);
 
       var html ='<h3>' + item[1] + '</h3>' +
-        '<fieldset>' +
         '<div>' +
         '<p>' +
           item[2] + ' ' + item[3] +
         '</p>' +
-        '</div>' +
-        '</fieldset>';
+        '</div>';
 
 
       $("#widget-grid").append(html);
