@@ -241,6 +241,7 @@ def get_widgets_list():
         cursor.execute(query)
         data=str(cursor.fetchall())
 
+        print data
         data.replace("'",'"')
 
 
