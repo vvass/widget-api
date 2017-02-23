@@ -7,6 +7,16 @@ $(function(){
   finishes[2] = "SILVER";
   finishes[3] = "BRONZE";
 
+  var sizes = new Object();
+  sizes[1] = "Large";
+  sizes[2] = "Medium";
+  sizes[3] = "Small";
+
+  var types = new Object();
+  types[1] = "Wid Ext Edition";
+  types[2] = "Ext Ext Edition";
+  types[3] = "Gold Widget";
+
 
   function loadWidgets() {
     $.ajax({
@@ -58,7 +68,7 @@ $(function(){
   function createWidgetHTML(mapping) {
 
     mapping.map(function(item) {
-      console.log(finishes[item[3]]);
+      console.log();
 
 
 
@@ -67,9 +77,9 @@ $(function(){
         '<div>' +
           '<p>' +
             'Inventory: ' + item[2] + "<br/>" +
-            'Finish ' + item[3] + "<br/>" +
-            'Size ' + item[4] + "<br/>" +
-            'Type ' + item[5] + "<br/>" +
+            'Finish ' + finishes[item[3]] + "<br/>" +
+            'Size ' + sizes[item[4]] + "<br/>" +
+            'Type ' + types[item[5]] + "<br/>" +
           '</p>' +
         '</div>';
 
