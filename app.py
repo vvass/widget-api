@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from flask import Flask, render_template, request, send_from_directory
-import simplejson as json
+import simplejson
 
 
 import MySQLdb
@@ -239,13 +239,15 @@ def get_widgets_list():
     try:
 
         cursor.execute(query)
-        data=cursor.fetchall()
+        data=simplejson.dumps(cursor.fetchall())
 
-        return json.dumps({'success':str(data)})
+
+
+        return simplejson.dumps({'success':str(data)})
 
 
     except Exception as e:
-        return json.dumps({'error':str(e)})
+        return simplejson.dumps({'error':str(e)})
 
     finally:
         cursor.close()
