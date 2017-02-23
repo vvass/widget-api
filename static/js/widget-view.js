@@ -34,11 +34,12 @@ $(function(){
       .replace(/\), \(/g,")*(");
 
     var array = data.split('*');
+    var sarray = array[0].split(,);
 
 
 
 
-    console.log(array);
+    console.log(sarray);
   }
 
 
