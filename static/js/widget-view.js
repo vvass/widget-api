@@ -25,13 +25,12 @@ $(function(){
       success: function(response){
         console.log(response);
         widgetAccordion(response);
-
+        
+        buttonColumn();
 
         $('#widget-grid').accordion({
           collapsible: true
         });
-
-        buttonColumn();
 
       },
       error: function(error){
@@ -89,7 +88,7 @@ $(function(){
   }
 
   function buttonColumn() {
-    $("#widget-grid").append('<button type="button" class="btn btn-default">Default</button>');
+    $("#widget-grid").append('<button type="button" class="btn btn-default">Add Widget</button>');
   }
 
 });
