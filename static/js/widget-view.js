@@ -53,7 +53,7 @@ $(function(){
       console.log(item);
 
       var html = '<fieldset>' +
-        '<legend>"+item[1]+"</legend>' +
+        '<legend>' + item[1] + '</legend>' +
         '<p>' +
           item[2] + ' ' + item[3] +
         '</p>' +
