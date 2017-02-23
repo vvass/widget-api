@@ -152,56 +152,6 @@ def add_widget(cat,siz,fin,count,quant):
         cursor.close()
         db.close()
 
-@app.route('/searchBySize/<siz>', methods=['POST','GET'])
-def search_by_size(siz):
-
-    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-    cursor=db.cursor()
-
-    param = dict(_size=siz)
-
-    query = """SELECT * FROM orders WHERE size=%(_size)s"""
-
-    try:
-
-        cursor.execute(query,param)
-        data=cursor.fetchall()
-
-        return simplejson.dumps({'success':str(data)})
-
-
-    except Exception as e:
-        return simplejson.dumps({'error':str(e)})
-
-    finally:
-        cursor.close()
-        db.close()
-
-@app.route('/searchByFinish/<fin>', methods=['POST','GET'])
-def search_by_finish(fin):
-
-    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-    cursor=db.cursor()
-
-    param = dict(_fin=fin)
-
-    query = """SELECT * FROM orders WHERE finish=%(_fin)s"""
-
-    try:
-
-        cursor.execute(query,param)
-        data=cursor.fetchall()
-
-        return simplejson.dumps({'success':str(data)})
-
-
-    except Exception as e:
-        return simplejson.dumps({'error':str(e)})
-
-    finally:
-        cursor.close()
-        db.close()
-
 @app.route('/searchByCategory/<cat>', methods=['POST','GET'])
 def search_by_category(cat):
 
@@ -227,42 +177,19 @@ def search_by_category(cat):
         cursor.close()
         db.close()
 
-@app.route('/getWidgets', methods=['GET'])
-def get_widgets_list():
+@app.route('/getOrders', methods=['POST','GET'])
+def search_by_category(cat):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
-
-    query = """SELECT * FROM widget"""
-
-    try:
-
-        cursor.execute(query)
-        data=cursor.fetchall()
-
-        return simplejson.dumps({'success':str(data)})
-
-
-    except Exception as e:
-        return simplejson.dumps({'error':str(e)})
-
-    finally:
-        cursor.close()
-        db.close()
-
-@app.route('/getOrders', methods=['GET'])
-def get_orders_list():
-
-    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-    cursor=db.cursor()
-
+    param = dict(_cat=cat)
 
     query = """SELECT * FROM orders"""
 
     try:
 
-        cursor.execute(query)
+        cursor.execute(query,param)
         data=cursor.fetchall()
 
         return simplejson.dumps({'success':str(data)})
