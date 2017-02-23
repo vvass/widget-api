@@ -178,7 +178,7 @@ def search_by_category(cat):
         db.close()
 
 @app.route('/getOrders', methods=['POST','GET'])
-def search_by_category(cat):
+def get_orders(cat):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
