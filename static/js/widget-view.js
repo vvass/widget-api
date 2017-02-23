@@ -25,13 +25,11 @@ $(function(){
 
   function widgetAccordion(result) {
     var widgets = JSON.parse(result);
-    var data = JSON.parse(
-      widgets.success
-        .replace(/'/g,'"')
-        .replace(/L,/g,',')
-        .replace(/L\)/g,')')
-        .replace(/(\d+)/g,"\"$1\"")
-    );
+    var data = widgets.success
+      .replace(/'/g,'"')
+      .replace(/L,/g,',')
+      .replace(/L\)/g,')')
+      .replace(/(\d+)/g,"\"$1\"");
 
 
 
