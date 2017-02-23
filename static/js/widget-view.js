@@ -10,7 +10,7 @@ $(function(){
       success: function(response){
         console.log(response);
 
-        $('#widget-grid').accordion();
+
         widgetAccordion(response);
 
       },
@@ -60,7 +60,8 @@ $(function(){
         '</fieldset>';
 
 
-      $("#widget-grid").append(html)
+      $("#widget-grid").append(html);
+      $('#widget-grid').accordion();
 
     });
 
