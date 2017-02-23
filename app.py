@@ -239,13 +239,13 @@ def get_widgets_list():
     try:
 
         cursor.execute(query)
-        data=cursor.fetchall()
+        data=str(cursor.fetchall())
 
         data.replace("'",'"')
 
 
 
-        return simplejson.dumps({'success':str(data)})
+        return simplejson.dumps({'success':data})
 
 
     except Exception as e:
