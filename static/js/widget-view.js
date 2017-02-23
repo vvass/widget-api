@@ -29,7 +29,7 @@ $(function(){
       .replace(/'/g,'"')
       .replace(/L,/g,',')
       .replace(/L\)/g,')')
-      .replace(/(\d+)|(\w\d)/g,"\"$1\"");
+      .replace(/(\d+)/g,"\"$1\"");
 
 
 
