@@ -89,7 +89,7 @@ $(function(){
   }
 
   function buttonColumn() {
-
+    console.log("here");
     $("widget-grid").append('<button type="button" class="btn btn-default">Default</button>');
   }
 
