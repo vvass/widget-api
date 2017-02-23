@@ -241,6 +241,8 @@ def get_widgets_list():
         cursor.execute(query)
         data=cursor.fetchall()
 
+        data.replace("'",""")
+
 
 
         return simplejson.dumps({'success':str(data)})
