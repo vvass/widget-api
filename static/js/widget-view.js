@@ -58,10 +58,10 @@ $(function(){
       var html ='<h3>' + item[1] + '</h3>' +
         '<div>' +
         '<p>' +
-          'Inventory: ' + item[2] + "\n" +
-          'Finish ' + item[2] + "\n" +
-          'Size ' + item[2] + "\n" +
-          'Type ' + item[2] + "\n" +
+          'Inventory: ' + item[2] + "<br/>" +
+          'Finish ' + item[2] + "<br/>" +
+          'Size ' + item[2] + "<br/>" +
+          'Type ' + item[2] + "<br/>" +
         '</p>' +
         '</div>';
 
