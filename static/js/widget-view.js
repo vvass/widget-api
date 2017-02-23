@@ -58,8 +58,7 @@ $(function(){
   function createWidgetHTML(mapping) {
 
     mapping.map(function(item) {
-      console.log(finishes);
-
+      console.log(finishes[item[3]]);
 
 
 
