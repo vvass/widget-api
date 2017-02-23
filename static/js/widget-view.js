@@ -53,15 +53,19 @@ $(function(){
       console.log(item);
 
       var html = '<fieldset>' +
-        '<legend>' + item[1] + '</legend>' +
+        '<h3>' + item[1] + '</h3>' +
+        '<div>' +
         '<p>' +
           item[2] + ' ' + item[3] +
         '</p>' +
+        '</div>' +
         '</fieldset>';
 
 
       $("#widget-grid").append(html);
-      $('#widget-grid').accordion();
+      $('#widget-grid').accordion({
+        collapsible: true
+      });
 
     });
 
