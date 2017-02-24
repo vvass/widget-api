@@ -26,6 +26,7 @@ $(function(){
         console.log(response);
         widgetAccordion(response);
 
+        setupPop();
         buttonColumn();
 
         $('#widget-grid').accordion({
@@ -100,17 +101,7 @@ $(function(){
       autoOpen: false,
       height: 400,
       width: 350,
-      modal: true,
-      buttons: {
-        "Create a Widget": true,
-        Cancel: function() {
-          dialog.dialog( "close" );
-        }
-      },
-      close: function() {
-        form[ 0 ].reset();
-        allFields.removeClass( "ui-state-error" );
-      }
+      modal: true
     });
   }
 
