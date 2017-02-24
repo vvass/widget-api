@@ -33,6 +33,7 @@ body {
     left:50%;
 }
 
-#dialog-form {
-
+.ui-accordion-header {
+    cursor: hand;
+    background-color: #0072ff;
 }
