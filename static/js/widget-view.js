@@ -27,6 +27,7 @@ $(function(){
         widgetAccordion(response);
         setupPop();
         buttonFilterContainer();
+        clickToEditInventory();
 
         $('#widget-grid').accordion({
           collapsible: true,
