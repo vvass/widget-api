@@ -160,7 +160,7 @@ $(function(){
     var mapping = mapResults(results);
     console.log(mapping);
 
-    $("#checkbox-size-options")
+    $("#checkbox-"+"size"+"-options")
       .append(
         '<fieldset>' +
           '<legend>Select a Size: </legend>' +
