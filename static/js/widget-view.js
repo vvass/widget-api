@@ -214,8 +214,11 @@ $(function(){
     });
     $("#checkbox-form").find("form").each(function() {
       if($(this).hasClass("text"))
-        selected.push($(this).text());
+        console.log(this);
+        // selected.push($(this).text());
     });
+
+
 
     console.log(selected);
   }
