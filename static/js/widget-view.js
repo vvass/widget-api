@@ -241,6 +241,8 @@ $(function(){
   }
 
   function findValueFromEnumObject(arrayValue,ENUMOBJECT) {
+    console.log(ENUMOBJECT);
+    console.log(arrayValue);
     for(var key in ENUMOBJECT){
       if(ENUMOBJECT[key] == arrayValue){
         return key;
