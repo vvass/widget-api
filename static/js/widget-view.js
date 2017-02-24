@@ -98,7 +98,7 @@ $(function(){
   // EDIT INV
   
   function clickToEditInventory() {
-    $("#widget-grid").find("div").find("span").child().each(function () {
+    $("#widget-grid").find("span").children().each(function () {
       $(this).click(function () {
         console.log(this);
         var prev = $(this).prev();
