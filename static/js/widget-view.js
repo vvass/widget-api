@@ -101,7 +101,7 @@ $(function(){
   function clickToEditInventory(item) {
     $(".ui-icon-pencil").click(function () {
 
-      console.log($(this).prev());
+      console.log($(this).parent());
       // $(this).html('Inventory: <input type="text"></p>');
       // $(this).html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
 
