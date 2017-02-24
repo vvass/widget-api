@@ -45,3 +45,8 @@ body {
 #dialog-form {
     display: none;
 }
+
+.ui-icon .ui-icon-pencil:hover {
+    cursor: hand;
+    background-color: #bedeff;
+}
