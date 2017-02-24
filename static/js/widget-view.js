@@ -102,6 +102,8 @@ $(function(){
       $(this).click(function () {
         console.log(this);
         $(this).empty();
+        $(this).parent().html('<p>Inventory: ' + 34523 + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+
         // prev.after();
       })
     })
