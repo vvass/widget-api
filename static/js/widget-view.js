@@ -74,7 +74,7 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<span>' +
-            '<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>' +
+            '<p class="editable-inventory">Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>' +
             '<p>Finish ' + ENUMFINISHES[item[3]] + '<p/>' +
             '<p>Size ' + ENUMSIZES[item[4]] + '<p/>' +
             '<p>Type ' + ENUMTYPES[item[5]] + '<p/>' +
@@ -83,9 +83,9 @@ $(function(){
 
       $("#widget-grid").append(html);
 
-    });
+      clickToEditInventory(item);
 
-    clickToEditInventory(item);
+    });
 
   }
 
@@ -99,15 +99,13 @@ $(function(){
   // EDIT INV
   
   function clickToEditInventory(item) {
-    $("#widget-grid").find("span").children().each(function () {
-      $(this).click(function () {
-        console.log(this);
-        $(this).empty();
-        $(this).html('<p>Inventory: ' + 34523 + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+    $(".editable-inventory").click(function () {
+      console.log(this);
+      $(this).empty();
+      $(this).html('<p>Inventory: ' + 34523 + ' <span class="ui-icon ui-icon-pencil"></span><p>');
 
-        // prev.after();
-      })
-    })
+      // prev.after();
+    });
   }
   
   // POPUP
