@@ -102,11 +102,8 @@ $(function(){
       modal: true,
       buttons: {
         Ok: function() {
-
-
-          getSelectedOptions();
-
-          saveWidget();
+          
+          saveWidget(getSelectedOptions());
           $("#checkbox-form").empty();
           $("#checkbox-options").empty();
           $( this ).dialog( "close" );

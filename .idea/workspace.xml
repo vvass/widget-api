@@ -113,19 +113,19 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="818">
-                  <caret line="220" column="92" lean-forward="false" selection-start-line="220" selection-start-column="92" selection-end-line="220" selection-end-column="92" />
+                <state relative-caret-position="227">
+                  <caret line="104" column="10" lean-forward="false" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
                   <folding>
                     <element signature="e#412#795#0" expanded="false" />
                     <element signature="e#832#924#0" expanded="false" />
                     <element signature="e#956#1379#0" expanded="false" />
                     <element signature="e#1418#1847#0" expanded="false" />
                     <element signature="e#1884#2237#0" expanded="false" />
-                    <element signature="e#3263#3460#0" expanded="false" />
-                    <element signature="e#3502#3699#0" expanded="false" />
-                    <element signature="e#3738#3935#0" expanded="false" />
-                    <element signature="e#3970#4434#0" expanded="false" />
-                    <element signature="e#4487#5494#0" expanded="false" />
+                    <element signature="e#3259#3456#0" expanded="false" />
+                    <element signature="e#3498#3695#0" expanded="false" />
+                    <element signature="e#3734#3931#0" expanded="false" />
+                    <element signature="e#3966#4430#0" expanded="false" />
+                    <element signature="e#4483#5490#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -167,6 +167,7 @@
       <find>setupPop</find>
       <find>getSelectedOptions</find>
       <find>ui-state-error</find>
+      <find>saveWidget</find>
     </findStrings>
     <replaceStrings>
       <replace>simplejson</replace>
@@ -965,7 +966,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70048000" />
+    <option name="totallyTimeSpent" value="70114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1103,11 +1104,11 @@
             <element signature="e#956#1379#0" expanded="false" />
             <element signature="e#1418#1847#0" expanded="false" />
             <element signature="e#1884#2237#0" expanded="false" />
-            <element signature="e#3263#3460#0" expanded="false" />
-            <element signature="e#3502#3699#0" expanded="false" />
-            <element signature="e#3738#3935#0" expanded="false" />
-            <element signature="e#3970#4434#0" expanded="false" />
-            <element signature="e#4487#5494#0" expanded="false" />
+            <element signature="e#3259#3456#0" expanded="false" />
+            <element signature="e#3498#3695#0" expanded="false" />
+            <element signature="e#3734#3931#0" expanded="false" />
+            <element signature="e#3966#4430#0" expanded="false" />
+            <element signature="e#4483#5490#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1311,19 +1312,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="220" column="92" lean-forward="false" selection-start-line="220" selection-start-column="92" selection-end-line="220" selection-end-column="92" />
+        <state relative-caret-position="227">
+          <caret line="104" column="10" lean-forward="false" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
           <folding>
             <element signature="e#412#795#0" expanded="false" />
             <element signature="e#832#924#0" expanded="false" />
             <element signature="e#956#1379#0" expanded="false" />
             <element signature="e#1418#1847#0" expanded="false" />
             <element signature="e#1884#2237#0" expanded="false" />
-            <element signature="e#3263#3460#0" expanded="false" />
-            <element signature="e#3502#3699#0" expanded="false" />
-            <element signature="e#3738#3935#0" expanded="false" />
-            <element signature="e#3970#4434#0" expanded="false" />
-            <element signature="e#4487#5494#0" expanded="false" />
+            <element signature="e#3259#3456#0" expanded="false" />
+            <element signature="e#3498#3695#0" expanded="false" />
+            <element signature="e#3734#3931#0" expanded="false" />
+            <element signature="e#3966#4430#0" expanded="false" />
+            <element signature="e#4483#5490#0" expanded="false" />
           </folding>
         </state>
       </provider>
