@@ -103,6 +103,11 @@ $(function(){
       modal: true,
       buttons: {
         Ok: function() {
+          $("#checkbox-options").empty();
+          $( this ).dialog( "close" );
+        },
+        CLOSE: function() {
+          $("#checkbox-options").empty();
           $( this ).dialog( "close" );
         }
       }
@@ -166,9 +171,9 @@ $(function(){
             '<label for="radio-'+radioButoonValue+'"> '+ mapping[0][1] +' </label>' +
             '<input type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue) +'">' +
             '<label for="radio-'+ (radioButoonValue+1) +'"> '+ mapping[1][1] +' </label>' +
-            '<input type="radio" name="radio-'+ (radioButoonValue+1) +'" id="radio-'+ (radioButoonValue+1) +'">' +
+            '<input type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue+1) +'">' +
             '<label for="radio-'+ (radioButoonValue+2) +'"> '+ mapping[2][1] +' </label>' +
-            '<input type="radio" name="radio-'+ (radioButoonValue+2) +'" id="radio-'+ (radioButoonValue+2) +'">' +
+            '<input type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue+2) +'">' +
         '</fieldset>');
 
     radioButoonValue += 3;
