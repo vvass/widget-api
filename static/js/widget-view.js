@@ -238,6 +238,8 @@ $(function(){
 
   function findValueFromEnumArrays(arrayValue,ENUMARRAY) {
     for (var i=0; i < ENUMARRAY.length; i++) {
+      console.log(i,arrayValue,ENUMARRAY[i]);
+
       if(ENUMARRAY[i] == arrayValue){
         return i;
       }
