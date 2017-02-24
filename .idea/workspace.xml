@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/widget-view.html" afterPath="$PROJECT_DIR$/templates/widget-view.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +20,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.50061053">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="530">
@@ -70,11 +71,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="46" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -109,14 +110,14 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="705">
-                  <caret line="175" column="84" lean-forward="false" selection-start-line="175" selection-start-column="84" selection-end-line="175" selection-end-column="84" />
+                <state relative-caret-position="555">
+                  <caret line="165" column="14" lean-forward="true" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
                   <folding>
                     <element signature="e#988#1411#0" expanded="false" />
                     <element signature="e#1916#2269#0" expanded="false" />
-                    <element signature="e#3108#3305#0" expanded="false" />
-                    <marker date="1487949602000" expanded="false" signature="3347:3544" ph="{...}" />
-                    <marker date="1487949602000" expanded="false" signature="3583:3780" ph="{...}" />
+                    <element signature="e#3007#3204#0" expanded="false" />
+                    <marker date="1487949823000" expanded="false" signature="3246:3443" ph="{...}" />
+                    <marker date="1487949823000" expanded="false" signature="3482:3679" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -181,8 +182,8 @@
         <option value="$PROJECT_DIR$/widgets.py" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/static/css/widget-view.css" />
-        <option value="$PROJECT_DIR$/templates/widget-view.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/widget-view.html" />
         <option value="$PROJECT_DIR$/static/js/widget-view.js" />
       </list>
     </option>
@@ -954,7 +955,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62610000" />
+    <option name="totallyTimeSpent" value="62960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1085,9 +1086,9 @@
           <folding>
             <element signature="e#988#1411#0" expanded="false" />
             <element signature="e#1916#2269#0" expanded="false" />
-            <element signature="e#3108#3305#0" expanded="false" />
-            <marker date="1487949602000" expanded="false" signature="3347:3544" ph="{...}" />
-            <marker date="1487949602000" expanded="false" signature="3583:3780" ph="{...}" />
+            <element signature="e#3007#3204#0" expanded="false" />
+            <marker date="1487949823000" expanded="false" signature="3246:3443" ph="{...}" />
+            <marker date="1487949823000" expanded="false" signature="3482:3679" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1234,14 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
@@ -1279,16 +1272,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="175" column="84" lean-forward="false" selection-start-line="175" selection-start-column="84" selection-end-line="175" selection-end-column="84" />
+        <state relative-caret-position="555">
+          <caret line="165" column="14" lean-forward="true" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
           <folding>
             <element signature="e#988#1411#0" expanded="false" />
             <element signature="e#1916#2269#0" expanded="false" />
-            <element signature="e#3108#3305#0" expanded="false" />
-            <marker date="1487949602000" expanded="false" signature="3347:3544" ph="{...}" />
-            <marker date="1487949602000" expanded="false" signature="3583:3780" ph="{...}" />
+            <element signature="e#3007#3204#0" expanded="false" />
+            <marker date="1487949823000" expanded="false" signature="3246:3443" ph="{...}" />
+            <marker date="1487949823000" expanded="false" signature="3482:3679" ph="{...}" />
           </folding>
         </state>
       </provider>

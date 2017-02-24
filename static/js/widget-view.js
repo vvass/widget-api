@@ -115,12 +115,9 @@ $(function(){
       dialog.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
-
-      $("#checkbox-widget-options").append('<fieldset>');
-      fillSizesCheckBoxes('/getSizes');
-      fillFinishesCheckBoxes('/getFinishes');
-      fillTypesCheckBoxes('/getTypes');
-      $("#checkbox-widget-options").append('</fieldset>');
+      fillSizesCheckBoxes('/getSizes',size);
+      fillFinishesCheckBoxes('/getFinishes',finish);
+      fillTypesCheckBoxes('/getTypes',type);
     });
 
   }
@@ -161,19 +158,21 @@ $(function(){
     });
   }
 
-  function setUpRadioButtonHTML(results) {
+  function setUpRadioButtonHTML(results, category) {
     var mapping = mapResults(results);
     console.log(mapping);
 
-    $("#checkbox-widget-options")
+    $("#checkbox-"+category+"-options")
       .append(
-        '<legend>Select a Size: </legend>' +
-        '<label for="radio-'+radioButoonValue+'"> '+ mapping[0][1] +' </label>' +
-        '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue) +'">' +
-        '<label for="radio-'+ (radioButoonValue+1) +'"> '+ mapping[1][1] +' </label>' +
-        '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+1) +'">' +
-        '<label for="radio-'+ (radioButoonValue+2) +'"> '+ mapping[2][1] +' </label>' +
-        '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+2) +'">');
+        '<fieldset>' +
+          '<legend>Select a Size: </legend>' +
+            '<label for="radio-'+radioButoonValue+'"> '+ mapping[0][1] +' </label>' +
+            '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue) +'">' +
+            '<label for="radio-'+ (radioButoonValue+1) +'"> '+ mapping[1][1] +' </label>' +
+            '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+1) +'">' +
+            '<label for="radio-'+ (radioButoonValue+2) +'"> '+ mapping[2][1] +' </label>' +
+            '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+2) +'">' +
+        '</fieldset>');
 
     radioButoonValue += 3;
 
