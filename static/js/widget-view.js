@@ -136,7 +136,7 @@ $(function(){
         console.log(response);
 
         var mapping = mapResults(response);
-        return mapping;
+        console.log(mapping);
 
       },
       error: function(error){
