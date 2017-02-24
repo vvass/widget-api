@@ -240,7 +240,7 @@ $(function(){
     console.log(arrayValue);
     console.log(ENUMOBJECT);
 
-    for(var key in ENUMOBJECT)
+    for(var key in ENUMOBJECT){
       console.log(key);
     }
 
