@@ -107,10 +107,6 @@ $(function(){
           $( this ).dialog( "close" );
         }
       }
-    }).position({
-      my: "center",
-      at: "center",
-      of: window
     });
 
     $("#new-widget-button").append('<button type="button" class="btn btn-default">Create New Widget</button>');
