@@ -114,7 +114,7 @@ $(function(){
       dialog.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
-      console.log(fillSize());
+      fillSize();
     });
 
   }
@@ -142,9 +142,16 @@ $(function(){
       error: function(error){
         console.log(error);
       }
+    }).then(function(results) {
+      setSizes(results);
+    }).catch(function () {
+      alert("We had an Error with Sizes");
     });
   }
 
+  function setSizes(results) {
+    console.log("setsizes", results);
+  }
 
 
 });
