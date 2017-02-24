@@ -101,8 +101,7 @@ $(function(){
     $("#widget-grid").find("span").children().each(function () {
       $(this).click(function () {
         console.log(this);
-        var prev = $(this).prev();
-        prev.empty();
+        $(this).empty();
         // prev.after();
       })
     })
