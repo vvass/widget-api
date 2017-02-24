@@ -169,9 +169,9 @@ $(function(){
       .append(
         '<fieldset>' +
           '<form>' +
-            '<label for="name">Name</label>' +
+            '<label for="name">Name</label><br/>' +
             '<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">' +
-            '<label for="name">Available Inventory</label>' +
+            '<label for="name">Available Inventory</label><br/>' +
             '<input type="text" name="inv" id="inv" class="text ui-widget-content ui-corner-all">' +
            '</form>' +
         '</fieldset>'
