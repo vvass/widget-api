@@ -236,17 +236,12 @@ $(function(){
     // });
   }
 
-  function findValueFromEnumArrays(arrayValue,ENUMARRAY) {
+  function findValueFromEnumArrays(arrayValue,ENUMOBJECT) {
     console.log(arrayValue);
-    console.log(ENUMARRAY);
+    console.log(ENUMOBJECT);
 
-    for (var i=0; i < ENUMARRAY.length; i++) {
-
-      console.log(i);
-
-      if(ENUMARRAY[i] == arrayValue){
-        return i;
-      }
+    for(var key in ENUMOBJECT)
+      console.log(key);
     }
 
   }
