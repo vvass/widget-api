@@ -27,7 +27,6 @@ $(function(){
         widgetAccordion(response);
         setupPop();
         buttonFilterContainer();
-        clickToEditInventory();
 
         $('#widget-grid').accordion({
           collapsible: true,
@@ -86,6 +85,8 @@ $(function(){
 
     });
 
+    clickToEditInventory(item);
+
   }
 
   function buttonFilterContainer() {
@@ -97,12 +98,12 @@ $(function(){
 
   // EDIT INV
   
-  function clickToEditInventory() {
+  function clickToEditInventory(item) {
     $("#widget-grid").find("span").children().each(function () {
       $(this).click(function () {
         console.log(this);
         $(this).empty();
-        $(this).parent().html('<p>Inventory: ' + 34523 + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+        $(this).html('<p>Inventory: ' + 34523 + ' <span class="ui-icon ui-icon-pencil"></span><p>');
 
         // prev.after();
       })
