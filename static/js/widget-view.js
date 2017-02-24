@@ -165,7 +165,7 @@ $(function(){
   }
 
   function createTextBoxWidgetName() {
-    $("#checkbox-options")
+    $("#checkbox-form")
       .append(
         '<fieldset>' +
           '<form>' +
@@ -191,16 +191,16 @@ $(function(){
         '<fieldset>' +
           '<legend>Select a Size: </legend>' +
             '<label for="radio-'+radioButoonValue+'"> '+ mapping[0][1] +' </label>' +
-            '<input type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue) +'">' +
+            '<input class="checkbox-input" type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue) +'">' +
             '<label for="radio-'+ (radioButoonValue+1) +'"> '+ mapping[1][1] +' </label>' +
-            '<input type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue+1) +'">' +
+            '<input class="checkbox-input" type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue+1) +'">' +
             '<label for="radio-'+ (radioButoonValue+2) +'"> '+ mapping[2][1] +' </label>' +
-            '<input type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue+2) +'">' +
+            '<input class="checkbox-input" type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue+2) +'">' +
         '</fieldset>');
 
     radioButoonValue += 3;
 
-    $("input").checkboxradio({
+    $("input.checkbox-input").checkboxradio({
       icon: false
     });
   }
