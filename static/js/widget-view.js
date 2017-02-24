@@ -27,7 +27,7 @@ $(function(){
         widgetAccordion(response);
 
         setupPop();
-        buttonColumn();
+        buttonFilterContainer();
 
         $('#widget-grid').accordion({
           collapsible: true,
@@ -89,7 +89,7 @@ $(function(){
 
   }
 
-  function buttonColumn() {
+  function buttonFilterContainer() {
     $("#filter-buttons").append('<h4>Filter by: </h4>');
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Finish</button>');
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Size</button>');
@@ -97,13 +97,20 @@ $(function(){
   }
 
   function setupPop() {
-    $( "#dialog-message" ).dialog({
+    $("#dialog-message" ).dialog({
       modal: true,
       buttons: {
         Ok: function() {
           $( this ).dialog( "close" );
         }
       }
+    });
+  }
+
+  function setupNewWidgetButton() {
+    $("#new-widget-button").append('<button type="button" class="btn btn-default">Create New Widget</button>');
+    $("#new-widget-button" ).button().on( "click", function() {
+      $("#dialog-message" ).dialog( "open" );
     });
   }
 
