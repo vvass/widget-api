@@ -212,7 +212,7 @@ $(function(){
       if($(this).hasClass("ui-checkboxradio-checked"))
         selected.push($(this).text());
     });
-    $("#checkbox-form").find("form").each(function() {
+    $("#checkbox-form").find("form").find("input").each(function() {
       console.log(this);
 
       if($(this).hasClass("text"))
