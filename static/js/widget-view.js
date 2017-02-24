@@ -167,14 +167,14 @@ $(function(){
   function createTextBoxWidgetName() {
     $("#checkbox-options")
       .append(
-        '<form>' +
-          '<fieldset>' +
+        '<fieldset>' +
+          '<form>' +
             '<label for="name">Name</label>' +
             '<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">' +
             '<label for="name">Available Inventory</label>' +
             '<input type="text" name="inv" id="inv" class="text ui-widget-content ui-corner-all">' +
-           '</fieldset>' +
-        '</form>'
+           '</form>' +
+        '</fieldset>'
       )
   }
 
