@@ -136,9 +136,9 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      var mapping = mapResults(response);
+      var mapping = mapResults(results);
       console.log(mapping);
-      setSizes(results);
+      setSizes(mapping);
     });
   }
 
