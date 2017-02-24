@@ -3,9 +3,9 @@ $(function(){
   loadWidgets();
 
   var ENUMFINISHES = new Object();
-  ENUMFINISHES[1] = "GOLD";
-  ENUMFINISHES[2] = "SILVER";
-  ENUMFINISHES[3] = "BRONZE";
+  ENUMFINISHES[1] = "Gold";
+  ENUMFINISHES[2] = "Silver";
+  ENUMFINISHES[3] = "Bronze";
 
   var ENUMSIZES = new Object();
   ENUMSIZES[1] = "Large";

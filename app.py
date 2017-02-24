@@ -280,7 +280,7 @@ def save_widget(siz,fin,typ,inv,name):
 
     param = dict(_siz=siz, _fin=fin, _typ=typ, _inv=inv,  _name=name)
 
-    query = """INSERT INTO widget (`size`,`finish`,`types`,`inventory`,`name`) VALUES ( str(%(_siz)s), str(%(_fin)s), str(%(_typ)s), %(_inv)s, str(%(_name)s) )"""
+    query = """INSERT INTO widget (`size`,`finish`,`types`,`inventory`,`name`) VALUES (%(_siz)s,%(_fin)s,%(_typ)s,%(_inv)s,%(_name)s)"""
 
     try:
 
