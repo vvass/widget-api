@@ -132,17 +132,12 @@ $(function(){
     $.ajax({
       url: '/getSizes',
       type: 'GET',
-      success: function(response){
-        console.log(response);
-
-        var mapping = mapResults(response);
-        console.log(mapping);
-
-      },
       error: function(error){
         console.log(error);
       }
     }).then(function(results) {
+      var mapping = mapResults(response);
+      console.log(mapping);
       setSizes(results);
     });
   }
