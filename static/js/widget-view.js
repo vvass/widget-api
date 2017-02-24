@@ -99,7 +99,7 @@ $(function(){
   // EDIT INV
   
   function clickToEditInventory() {
-    $("#widget-grid").find("div").find(span).each(function () {
+    $("#widget-grid").find("div").find("span").each(function () {
       console.log(this);
     })
   }
