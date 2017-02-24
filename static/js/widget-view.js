@@ -139,7 +139,7 @@ $(function(){
       var mapping = mapResults(results);
       console.log(mapping);
 
-      $("#checkbox-widget-options").append(' +
+      $("#checkbox-widget-options").append(
         '<fieldset>' +
           '<legend>Select a Size: </legend>' +
             '<label for="radio-1">mapping[0][1]</label>' +
