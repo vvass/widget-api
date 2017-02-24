@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,8 +113,8 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="637">
-                  <caret line="225" column="131" lean-forward="false" selection-start-line="225" selection-start-column="131" selection-end-line="225" selection-end-column="131" />
+                <state relative-caret-position="607">
+                  <caret line="190" column="78" lean-forward="false" selection-start-line="190" selection-start-column="78" selection-end-line="190" selection-end-column="78" />
                   <folding>
                     <element signature="e#412#795#0" expanded="false" />
                     <element signature="e#832#924#0" expanded="false" />
@@ -126,7 +125,6 @@
                     <element signature="e#3488#3685#0" expanded="false" />
                     <element signature="e#3724#3921#0" expanded="false" />
                     <element signature="e#3956#4420#0" expanded="false" />
-                    <element signature="e#4473#5480#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -967,7 +965,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70354000" />
+    <option name="totallyTimeSpent" value="70498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1109,7 +1107,6 @@
             <element signature="e#3488#3685#0" expanded="false" />
             <element signature="e#3724#3921#0" expanded="false" />
             <element signature="e#3956#4420#0" expanded="false" />
-            <element signature="e#4473#5480#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1313,8 +1310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="225" column="131" lean-forward="false" selection-start-line="225" selection-start-column="131" selection-end-line="225" selection-end-column="131" />
+        <state relative-caret-position="607">
+          <caret line="190" column="78" lean-forward="false" selection-start-line="190" selection-start-column="78" selection-end-line="190" selection-end-column="78" />
           <folding>
             <element signature="e#412#795#0" expanded="false" />
             <element signature="e#832#924#0" expanded="false" />
@@ -1325,7 +1322,6 @@
             <element signature="e#3488#3685#0" expanded="false" />
             <element signature="e#3724#3921#0" expanded="false" />
             <element signature="e#3956#4420#0" expanded="false" />
-            <element signature="e#4473#5480#0" expanded="false" />
           </folding>
         </state>
       </provider>
