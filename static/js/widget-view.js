@@ -103,6 +103,8 @@ $(function(){
       modal: true,
       buttons: {
         Ok: function() {
+
+          saveWidget();
           $("#checkbox-options").empty();
           $( this ).dialog( "close" );
         },
@@ -161,6 +163,25 @@ $(function(){
     });
   }
 
+  function createTextBoxWidgetName() {
+    $("#checkbox-options")
+      .append(
+        '<form>' +
+          '<fieldset>' +
+            '<label for="name">Name</label>' +
+            '<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">' +
+            '<label for="name">Available Inventory</label>' +
+            '<input type="text" name="inv" id="inv" class="text ui-widget-content ui-corner-all">' +
+           '</fieldset>' +
+        '</form>'
+      )
+  }
+
+  function createTextBoxWidgetInv() {
+    $("#checkbox-options")
+      .append()
+  }
+
   function setUpRadioButtonHTML(results, category) {
     var mapping = mapResults(results);
 
@@ -183,6 +204,16 @@ $(function(){
     });
   }
 
-
+  function saveWidget(size,finish,type,inv,name) {
+    $.ajax({
+      url: '/saveWidget/'+size+'/'+finish+'/'+type+'/'+inv+'/'+name,
+      type: 'GET',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function(results) {
+      $("<div title='Basic dialog'>Test message</div>").dialog();
+    });
+  }
 
 });

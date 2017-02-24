@@ -127,30 +127,7 @@ def update_aval_quantity(id,newValue):
         cursor.close()
         db.close()
 
-@app.route('/addNewWidget/<cat>/<siz>/<fin>/<count>/<quant>', methods=['POST','GET'])
-def add_widget(cat,siz,fin,count,quant):
 
-    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-    cursor=db.cursor()
-
-    param = dict(_cat=cat,_siz=siz,_fin=fin,_count=count,_quant=quant)
-
-    query = """INSERT INTO orders (category,size,finish,count,avalQuantity) VALUES (%(_cat)s,%(_siz)s,%(_fin)s,%(_count)s,%(_quant)s)"""
-
-    try:
-
-        cursor.execute(query,param)
-        db.commit()
-
-        return simplejson.dumps({'success':str('you have a new value ')})
-
-
-    except Exception as e:
-        return simplejson.dumps({'error':str(e)})
-
-    finally:
-        cursor.close()
-        db.close()
 
 @app.route('/searchByCategory/<cat>', methods=['POST','GET'])
 def search_by_category(cat):
@@ -272,7 +249,6 @@ def get_finishes():
         cursor.close()
         db.close()
 
-
 @app.route('/getTypes', methods=['POST','GET'])
 def get_types():
 
@@ -295,6 +271,35 @@ def get_types():
     finally:
         cursor.close()
         db.close()
+
+@app.route('/saveWidget/<siz>/<fin>/<typ>/<inv>/<name>', methods=['POST','GET'])
+def add_widget(siz,fin,typ,inv,name):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_siz=siz, _fin=fin, _typ=typ, _inv=inv,  _name=name)
+
+    query = """INSERT INTO orders (size,finish,types,inventory,name) VALUES (%(_siz)s,%(_fin)s,%(_typ)s,%(_inv)s,%(_name)s)"""
+
+    try:
+
+        cursor.execute(query,param)
+        db.commit()
+
+        return simplejson.dumps({'success':str('you have a new value ')})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+
+
+
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0')
