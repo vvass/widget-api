@@ -2,20 +2,20 @@ $(function(){
 
   loadWidgets();
 
-  var finishes = new Object();
-  finishes[1] = "GOLD";
-  finishes[2] = "SILVER";
-  finishes[3] = "BRONZE";
+  var ENUMFINISHES = new Object();
+  ENUMFINISHES[1] = "GOLD";
+  ENUMFINISHES[2] = "SILVER";
+  ENUMFINISHES[3] = "BRONZE";
 
-  var sizes = new Object();
-  sizes[1] = "Large";
-  sizes[2] = "Medium";
-  sizes[3] = "Small";
+  var ENUMSIZES = new Object();
+  ENUMSIZES[1] = "Large";
+  ENUMSIZES[2] = "Medium";
+  ENUMSIZES[3] = "Small";
 
-  var types = new Object();
-  types[1] = "Wid Ext Edition";
-  types[2] = "Ext Ext Edition";
-  types[3] = "Gold Widget";
+  var ENUMTYPES = new Object();
+  ENUMTYPES[1] = "Wid Ext Edition";
+  ENUMTYPES[2] = "Ext Ext Edition";
+  ENUMTYPES[3] = "Gold Widget";
 
   var radioButoonValue = 1;
 
@@ -75,9 +75,9 @@ $(function(){
         '<div>' +
           '<p>' +
             'Inventory: ' + item[2] + "<br/>" +
-            'Finish ' + finishes[item[3]] + "<br/>" +
-            'Size ' + sizes[item[4]] + "<br/>" +
-            'Type ' + types[item[5]] + "<br/>" +
+            'Finish ' + ENUMFINISHES[item[3]] + "<br/>" +
+            'Size ' + ENUMSIZES[item[4]] + "<br/>" +
+            'Type ' + ENUMTYPES[item[5]] + "<br/>" +
           '</p>' +
         '</div>';
 
@@ -222,15 +222,27 @@ $(function(){
 
   function saveWidget(sel) {
 
-    $.ajax({
-      url: '/saveWidget/'+sel[0].toString()+'/'+sel[1].toString()+'/'+sel[2].toString()+'/'+sel[3].toString()+'/'+sel[4].toString(),
-      type: 'POST',
-      error: function(error){
-        console.log(error);
+    var sizeNum = findValueFromEnumArrays(sel[0],ENUMSIZES);
+    console.log(sizeNum);
+
+    // $.ajax({
+    //   url: '/saveWidget/'+sel[0].toString()+'/'+sel[1].toString()+'/'+sel[2].toString()+'/'+sel[3].toString()+'/'+sel[4].toString(),
+    //   type: 'POST',
+    //   error: function(error){
+    //     console.log(error);
+    //   }
+    // }).then(function(results) {
+    //   $("<div title='Basic dialog'>Test message</div>").dialog();
+    // });
+  }
+
+  function findValueFromEnumArrays(arrayValue,ENUMARRAY) {
+    for (var i=0; i < ENUMARRAY.length; i++) {
+      if(ENUMARRAY[i] == arrayValue){
+        return i;
       }
-    }).then(function(results) {
-      $("<div title='Basic dialog'>Test message</div>").dialog();
-    });
+    }
+
   }
 
 });

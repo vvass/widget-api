@@ -273,14 +273,14 @@ def get_types():
         db.close()
 
 @app.route('/saveWidget/<siz>/<fin>/<typ>/<inv>/<name>', methods=['POST','GET'])
-def add_widget(siz,fin,typ,inv,name):
+def save_widget(siz,fin,typ,inv,name):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
     param = dict(_siz=siz, _fin=fin, _typ=typ, _inv=inv,  _name=name)
 
-    query = """INSERT INTO widget (size,finish,types,inventory,name) VALUES (%(_siz)s,%(_fin)s,%(_typ)s,%(_inv)s,%(_name)s)"""
+    query = """INSERT INTO widget (`size`,`finish`,`types`,`inventory`,`name`) VALUES ( str(%(_siz)s), str(%(_fin)s), str(%(_typ)s), %(_inv)s, str(%(_name)s) )"""
 
     try:
 
