@@ -104,7 +104,7 @@ $(function(){
         Ok: function() {
 
 
-          var options = getSelectedOptions();
+          getSelectedOptions();
 
           saveWidget();
           $("#checkbox-form").empty();
@@ -208,8 +208,9 @@ $(function(){
   function getSelectedOptions() {
 
     console.log("get selected");
-    var kids = $("#checkbox-options").find("label").is(".ui-checkboxradio-checked");
-    console.log("selected",kids);
+    var kids = $("#checkbox-options").find("label").each(function() {
+      console.log(this);
+    });
   }
 
   function saveWidget(size,finish,type,inv,name) {
