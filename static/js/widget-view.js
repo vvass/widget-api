@@ -24,9 +24,7 @@ $(function(){
       url: '/getWidgets',
       type: 'GET',
       success: function(response){
-        console.log(response);
         widgetAccordion(response);
-
         setupPop();
         buttonFilterContainer();
 
@@ -98,7 +96,6 @@ $(function(){
   }
 
   function setupPop() {
-    console.log("setupPop");
     dialog = $("#dialog-form" ).dialog({
       autoOpen: false,
       hide: "explode",
@@ -113,12 +110,9 @@ $(function(){
 
     $("#new-widget-button").append('<button type="button" class="btn btn-default create-new-widget">Create New Widget</button>');
     $("#new-widget-button" ).button().on( "click", function() {
-      console.log("dialog");
       dialog.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
-
-      console.log("create new widget");
       fillSizesCheckBoxes('/getSizes','size');
       fillFinishesCheckBoxes('/getFinishes','finish');
       fillTypesCheckBoxes('/getTypes','type');
@@ -166,7 +160,7 @@ $(function(){
     var mapping = mapResults(results);
     console.log(mapping);
 
-    $("#checkbox-"+category+"-options")
+    $("#checkbox-size-options")
       .append(
         '<fieldset>' +
           '<legend>Select a Size: </legend>' +
