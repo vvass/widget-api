@@ -101,7 +101,7 @@ $(function(){
   function clickToEditInventory(item) {
     $(".editable-inventory").click(function () {
       $(this).empty();
-      $(this).html('<p class="done-editing-inventory">Inventory: <input></input></p>');
+      $(this).html('<p class="done-editing-inventory">Inventory: </p><input type="text">');
 
 
 
