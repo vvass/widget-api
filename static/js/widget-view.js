@@ -236,20 +236,28 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      $("<div title='Basic dialog'>Test message</div>").dialog();
+      $("<div title='Basic dialog'>Test message</div>").dialog({
+        button: {
+          Ok: function() {
+            reload_dialog();
+          },
+        }
+      });
     });
   }
 
   function findValueFromEnumObject(arrayValue,ENUMOBJECT) {
-    console.log(ENUMOBJECT);
-    console.log(arrayValue);
     for(var key in ENUMOBJECT){
       if(ENUMOBJECT[key] == arrayValue){
-        console.log(key);
         return key;
       }
     }
 
+  }
+
+  function reload_dialog() {
+    $('#widget-grid').empty();
+    loadWidgets();
   }
 
 });
