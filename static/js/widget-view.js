@@ -114,7 +114,7 @@ $(function(){
       dialog.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
-      fillSize();
+      fillSizesCheckBoxes();
     });
 
   }
@@ -128,7 +128,7 @@ $(function(){
 
   }
 
-  function fillSize() {
+  function fillSizesCheckBoxes() {
     $.ajax({
       url: '/getSizes',
       type: 'GET',
@@ -138,13 +138,36 @@ $(function(){
     }).then(function(results) {
       var mapping = mapResults(results);
       console.log(mapping);
-      setSizes(mapping);
+
+      $("#checkbox-widget-options").append(' +
+        '<fieldset>' +
+          '<legend>Select a Size: </legend>' +
+            '<label for="radio-1">mapping[0][1]</label>' +
+            '<input type="radio" name="radio-1" id="radio-1">' +
+            '<label for="radio-2">mapping[1][1]</label>' +
+            '<input type="radio" name="radio-1" id="radio-2">' +
+            '<label for="radio-3">mapping[2][1]</label>' +
+            '<input type="radio" name="radio-1" id="radio-3">' +
+        '</fieldset>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     });
   }
 
-  function setSizes(results) {
-    console.log("setsizes", results);
-  }
+
+
 
 
 });
