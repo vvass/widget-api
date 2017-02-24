@@ -213,12 +213,8 @@ $(function(){
         selected.push($(this).text());
     });
     $("#checkbox-form").find("form").find("input").each(function() {
-      console.log($(this).val());
-
-      if($(this).hasClass("text"))
-        console.log(this);
-
-      // selected.push($(this).text());
+      if($(this).val().length != 0)
+        selected.push($(this).text());
     });
 
 
