@@ -230,7 +230,7 @@ $(function(){
 
 
     $.ajax({
-      url: '/saveWidget/'+sizeNum+'/'+finishNum+'/'+typeNum+'/'+inventory+'/'+name,
+      url: '/saveWidget/'+sizeNum+'/'+finishNum+'/'+typeNum+'/'+name+'/'+inventory,
       type: 'POST',
       error: function(error){
         console.log(error);
