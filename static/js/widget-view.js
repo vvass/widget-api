@@ -102,7 +102,7 @@ $(function(){
       modal: true,
       buttons: {
         Ok: function() {
-          
+
           saveWidget(getSelectedOptions());
           $("#checkbox-form").empty();
           $("#checkbox-options").empty();
