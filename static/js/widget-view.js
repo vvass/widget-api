@@ -222,13 +222,15 @@ $(function(){
 
   function saveWidget(sel) {
 
-    var sizeNum = findValueFromEnumObject(sel[0],ENUMSIZES);
-    var finishNum= findValueFromEnumObject(sel[1],ENUMFINISHES);
-    var typeNum= findValueFromEnumObject(sel[2],ENUMTYPES);
-    console.log(sizeNum);
+    var sizeNum = findValueFromEnumObject(sel[0],ENUMSIZES),
+        finishNum = findValueFromEnumObject(sel[1],ENUMFINISHES),
+        typeNum = findValueFromEnumObject(sel[2],ENUMTYPES),
+        inventory = sel[3],
+        name = sel[4];
+
 
     $.ajax({
-      url: '/saveWidget/'+sizeNum+'/'+finishNum+'/'+typeNum+'/'+sel[3].toString()+'/'+sel[4].toString(),
+      url: '/saveWidget/'+sizeNum+'/'+finishNum+'/'+typeNum+'/'+inventory+'/'+name,
       type: 'POST',
       error: function(error){
         console.log(error);
