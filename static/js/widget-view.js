@@ -241,7 +241,9 @@ $(function(){
     console.log(ENUMOBJECT);
 
     for(var key in ENUMOBJECT){
-      console.log(key);
+      if(ENUMOBJECT[key] == arrayValue){
+        return key;
+      }
     }
 
   }
