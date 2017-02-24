@@ -223,7 +223,7 @@ $(function(){
   function saveWidget(sel) {
 
     $.ajax({
-      url: '/saveWidget/'+sel[0]+'/'+sel[1]+'/'+sel[2]+'/'+sel[3]+'/'+sel[4],
+      url: '/saveWidget/'+sel[0].toString()+'/'+sel[1].toString()+'/'+sel[2].toString()+'/'+sel[3].toString()+'/'+sel[4].toString(),
       type: 'POST',
       error: function(error){
         console.log(error);

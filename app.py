@@ -287,7 +287,7 @@ def add_widget(siz,fin,typ,inv,name):
         cursor.execute(query,param)
         db.commit()
 
-        return simplejson.dumps({'success':str('you have a new value ')})
+        return simplejson.dumps({'success':str('you have a new widget ')})
 
 
     except Exception as e:
