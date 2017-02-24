@@ -24,28 +24,18 @@
 
         <div class="col-lg-6" id="widget-grid"></div>
 
-        <div id="dialog-form" title="Create new Widget">
-            <form>
-                <fieldset>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
-
-                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
-                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-                </fieldset>
-            </form>
+        <div id="dialog-message" title="Download complete">
+            <p>
+                <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+                Your files have downloaded successfully into the My Downloads folder.
+            </p>
+            <p>
+                Currently using <b>36% of your storage space</b>.
+            </p>
         </div>
 
 
     </div>
-
-    <footer class="footer">
-        <p>&copy; Company 2017</p>
-    </footer>
 </body>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
