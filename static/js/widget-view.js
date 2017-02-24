@@ -207,11 +207,13 @@ $(function(){
 
   function getSelectedOptions() {
 
-    console.log("get selected");
+    var selected = [];
     var kids = $("#checkbox-options").find("label").each(function() {
       if($(this).hasClass("ui-checkboxradio-checked"))
-        console.log(this);
+        selected.push($(this).val());
     });
+
+    console.log(selected);
   }
 
   function saveWidget(size,finish,type,inv,name) {
