@@ -222,7 +222,7 @@ $(function(){
 
   function saveWidget(sel) {
 
-    var sizeNum = findValueFromEnumArrays(sel[1],ENUMSIZES);
+    var sizeNum = findValueFromEnumArrays(sel[0],ENUMSIZES);
     console.log(sizeNum);
 
     // $.ajax({
