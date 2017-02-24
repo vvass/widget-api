@@ -97,7 +97,7 @@ $(function(){
   }
 
   function setupPop() {
-    dialog = $("#dialog-message" ).dialog({
+    dialog = $("#dialog-form" ).dialog({
       autoOpen: false,
       hide: "explode",
       position: "top",
