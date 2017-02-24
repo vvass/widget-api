@@ -46,7 +46,7 @@ body {
     display: none;
 }
 
-span.ui-icon-pencil:hover {
+span.ui-icon.ui-icon-pencil:hover {
     cursor: hand;
     background-color: #bedeff;
 }

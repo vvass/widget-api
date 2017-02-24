@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/widget-view.css" afterPath="$PROJECT_DIR$/static/css/widget-view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -143,7 +142,7 @@
             <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="720">
-                  <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+                  <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -982,7 +981,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74969000" />
+    <option name="totallyTimeSpent" value="75040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1354,7 +1353,7 @@
     <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding />
         </state>
       </provider>
