@@ -34,7 +34,7 @@ body {
 }
 
 .ui-accordion-header:hover {
-    cursor: hand;
+    cursor: pointer;
     background-color: #bedeff;
 }
 
@@ -47,6 +47,6 @@ body {
 }
 
 span.ui-icon.ui-icon-pencil:hover {
-    cursor: hand;
+    cursor: pointer;
     background-color: #bedeff;
 }
