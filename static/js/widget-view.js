@@ -213,13 +213,16 @@ $(function(){
         selected.push($(this).text());
     });
     $("#checkbox-form").find("form").each(function() {
+      console.log(this);
+
       if($(this).hasClass("text"))
         console.log(this);
-        // selected.push($(this).text());
+
+      // selected.push($(this).text());
     });
 
 
-
+    //TODO make sure to check that we have proper selection
     console.log(selected);
   }
 
