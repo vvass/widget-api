@@ -222,24 +222,23 @@ $(function(){
 
   function saveWidget(sel) {
 
-    var sizeNum = findValueFromEnumArrays(sel[0],ENUMSIZES);
+    var sizeNum = findValueFromEnumObject(sel[0],ENUMSIZES);
+    var finishNum= findValueFromEnumObject(sel[1],ENUMFINISHES);
+    var typeNum= findValueFromEnumObject(sel[2],ENUMTYPES);
     console.log(sizeNum);
 
-    // $.ajax({
-    //   url: '/saveWidget/'+sel[0].toString()+'/'+sel[1].toString()+'/'+sel[2].toString()+'/'+sel[3].toString()+'/'+sel[4].toString(),
-    //   type: 'POST',
-    //   error: function(error){
-    //     console.log(error);
-    //   }
-    // }).then(function(results) {
-    //   $("<div title='Basic dialog'>Test message</div>").dialog();
-    // });
+    $.ajax({
+      url: '/saveWidget/'+sizeNum+'/'+finishNum+'/'+typeNum+'/'+sel[3].toString()+'/'+sel[4].toString(),
+      type: 'POST',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function(results) {
+      $("<div title='Basic dialog'>Test message</div>").dialog();
+    });
   }
 
-  function findValueFromEnumArrays(arrayValue,ENUMOBJECT) {
-    console.log(arrayValue);
-    console.log(ENUMOBJECT);
-
+  function findValueFromEnumObject(arrayValue,ENUMOBJECT) {
     for(var key in ENUMOBJECT){
       if(ENUMOBJECT[key] == arrayValue){
         return key;
