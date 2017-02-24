@@ -99,7 +99,6 @@ $(function(){
     dialog = $("#dialog-form" ).dialog({
       autoOpen: false,
       hide: "explode",
-      position: "top",
       modal: true,
       buttons: {
         Ok: function() {
