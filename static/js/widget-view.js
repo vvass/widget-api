@@ -213,7 +213,7 @@ $(function(){
         selected.push($(this).text());
     });
     $("#checkbox-form").find("form").find("input").each(function() {
-      if($(this).val() && !$(this).val().lenght === 0 )
+      if($(this).val())
         selected.push($(this).val());
     });
 
