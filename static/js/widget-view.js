@@ -123,6 +123,7 @@ $(function(){
       fillSizesCheckBoxes('/getSizes');
       fillFinishesCheckBoxes('/getFinishes');
       fillTypesCheckBoxes('/getTypes');
+      createTextBoxWidgetName();
     });
 
   }
