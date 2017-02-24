@@ -112,13 +112,13 @@
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="458">
-                  <caret line="162" column="27" lean-forward="false" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+                  <caret line="161" column="32" lean-forward="false" selection-start-line="161" selection-start-column="32" selection-end-line="161" selection-end-column="32" />
                   <folding>
                     <element signature="e#956#1379#0" expanded="false" />
                     <element signature="e#1418#1847#0" expanded="false" />
                     <element signature="e#1884#2237#0" expanded="false" />
                     <element signature="e#3456#3653#0" expanded="false" />
-                    <marker date="1487950938000" expanded="false" signature="3220:3417" ph="{...}" />
+                    <marker date="1487951187000" expanded="false" signature="3220:3417" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -957,7 +957,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63704000" />
+    <option name="totallyTimeSpent" value="63952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1090,7 +1090,7 @@
             <element signature="e#1418#1847#0" expanded="false" />
             <element signature="e#1884#2237#0" expanded="false" />
             <element signature="e#3456#3653#0" expanded="false" />
-            <marker date="1487950938000" expanded="false" signature="3220:3417" ph="{...}" />
+            <marker date="1487951187000" expanded="false" signature="3220:3417" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1289,13 +1289,13 @@
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
-          <caret line="162" column="27" lean-forward="false" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+          <caret line="161" column="32" lean-forward="false" selection-start-line="161" selection-start-column="32" selection-end-line="161" selection-end-column="32" />
           <folding>
             <element signature="e#956#1379#0" expanded="false" />
             <element signature="e#1418#1847#0" expanded="false" />
             <element signature="e#1884#2237#0" expanded="false" />
             <element signature="e#3456#3653#0" expanded="false" />
-            <marker date="1487950938000" expanded="false" signature="3220:3417" ph="{...}" />
+            <marker date="1487951187000" expanded="false" signature="3220:3417" ph="{...}" />
           </folding>
         </state>
       </provider>

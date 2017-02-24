@@ -158,9 +158,8 @@ $(function(){
 
   function setUpRadioButtonHTML(results, category) {
     var mapping = mapResults(results);
-    console.log(mapping);
 
-    $("#checkbox-"+category+"-options")
+    $('#checkbox-' + category + '-options')
       .append(
         '<fieldset>' +
           '<legend>Select a Size: </legend>' +
