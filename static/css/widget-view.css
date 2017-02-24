@@ -32,3 +32,7 @@ body {
     bottom:0;
     left:50%;
 }
+
+.ui-dialog .ui-state-error {
+    padding: .3em;
+}

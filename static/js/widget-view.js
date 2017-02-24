@@ -95,4 +95,23 @@ $(function(){
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Types</button>');
   }
 
+  function setupPop() {
+    dialog = $( "#dialog-form" ).dialog({
+      autoOpen: false,
+      height: 400,
+      width: 350,
+      modal: true,
+      buttons: {
+        "Create a Widget": true,
+        Cancel: function() {
+          dialog.dialog( "close" );
+        }
+      },
+      close: function() {
+        form[ 0 ].reset();
+        allFields.removeClass( "ui-state-error" );
+      }
+    });
+  }
+
 });
