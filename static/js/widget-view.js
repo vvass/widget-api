@@ -213,7 +213,7 @@ $(function(){
         selected.push($(this).text());
     });
     $("#checkbox-form").find("form").find("input").each(function() {
-      console.log($(this).text());
+      console.log($(this).val());
 
       if($(this).hasClass("text"))
         console.log(this);
