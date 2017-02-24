@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/widget-view.html" afterPath="$PROJECT_DIR$/templates/widget-view.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,8 +106,8 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="608">
-                  <caret line="102" column="22" lean-forward="false" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+                <state relative-caret-position="773">
+                  <caret line="113" column="7" lean-forward="false" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
                   <folding>
                     <element signature="e#960#1383#0" expanded="false" />
                   </folding>
@@ -947,7 +946,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56379000" />
+    <option name="totallyTimeSpent" value="56523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1254,8 +1253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="102" column="22" lean-forward="false" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+        <state relative-caret-position="773">
+          <caret line="113" column="7" lean-forward="false" selection-start-line="113" selection-start-column="7" selection-end-line="113" selection-end-column="7" />
           <folding>
             <element signature="e#960#1383#0" expanded="false" />
           </folding>
