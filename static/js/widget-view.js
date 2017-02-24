@@ -82,7 +82,6 @@ $(function(){
           '</span>' +
         '</div>';
 
-
       $("#widget-grid").append(html);
 
     });
@@ -101,7 +100,9 @@ $(function(){
   function clickToEditInventory() {
     $("#widget-grid").find("div").find("span").each(function () {
       $(this).click(function () {
-
+        var prev = $(this).prev();
+        prev.empty();
+        // prev.after();
       })
     })
   }
