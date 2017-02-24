@@ -249,6 +249,52 @@ def get_sizes():
         cursor.close()
         db.close()
 
+@app.route('/getFinishes', methods=['POST','GET'])
+def get_finishes():
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    query = """SELECT * FROM finishes;"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+
+@app.route('/getTypes', methods=['POST','GET'])
+def get_types():
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    query = """SELECT * FROM types;"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0')

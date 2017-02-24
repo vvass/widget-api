@@ -114,23 +114,47 @@ $(function(){
       dialog.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
-      fillSizesCheckBoxes();
+      fillSizesCheckBoxes('/getSizes');
+      fillFinishesCheckBoxes('/getFinishes');
+      fillTypesCheckBoxes('/getTypes');
+
     });
 
   }
 
-  function fillSizesCheckBoxes() {
+  function fillSizesCheckBoxes(path) {
     $.ajax({
-      url: '/getSizes',
+      url: path,
       type: 'GET',
       error: function(error){
         console.log(error);
       }
     }).then(function(results) {
-
       setUpRadioButtonHTML(results);
+    });
+  }
 
+  function fillFinishesCheckBoxes(path) {
+    $.ajax({
+      url: path,
+      type: 'GET',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function(results) {
+      setUpRadioButtonHTML(results);
+    });
+  }
 
+  function fillTypesCheckBoxes(path) {
+    $.ajax({
+      url: path,
+      type: 'GET',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function(results) {
+      setUpRadioButtonHTML(results);
     });
   }
 
