@@ -74,10 +74,10 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<p>' +
-            'Inventory: ' + item[2] + "<br/>" +
-            'Finish ' + ENUMFINISHES[item[3]] + "<br/>" +
-            'Size ' + ENUMSIZES[item[4]] + "<br/>" +
-            'Type ' + ENUMTYPES[item[5]] + "<br/>" +
+            'Inventory: ' + item[2] + '<button type="button" class="btn btn-default ui-icon-pencil"></button><br/>' +
+            'Finish ' + ENUMFINISHES[item[3]] + '<br/>' +
+            'Size ' + ENUMSIZES[item[4]] + '<br/>' +
+            'Type ' + ENUMTYPES[item[5]] + '<br/>' +
           '</p>' +
         '</div>';
 
@@ -95,6 +95,12 @@ $(function(){
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Types</button>');
   }
 
+  // EDIT INV
+  
+  
+  
+  // POPUP
+  
   function setupPop() {
     dialog = $("#dialog-form" ).dialog({
       autoOpen: false,
