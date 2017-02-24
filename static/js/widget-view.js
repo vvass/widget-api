@@ -72,7 +72,7 @@ $(function(){
 
     mapping.map(function(item) {
 
-      var html ='<h3>' + item[1] + '</h3>' +
+      var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<p>' +
             'Inventory: ' + item[2] + "<br/>" +
