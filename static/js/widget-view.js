@@ -104,6 +104,8 @@ $(function(){
       modal: true,
       buttons: {
         Ok: function() {
+
+
           $( this ).dialog( "close" );
         }
       }
