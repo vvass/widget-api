@@ -97,7 +97,7 @@ $(function(){
   }
 
   function setupPop() {
-    $("#dialog-message" ).dialog({
+    dialog = $("#dialog-message" ).dialog({
       modal: true,
       buttons: {
         Ok: function() {
@@ -105,13 +105,12 @@ $(function(){
         }
       }
     });
-  }
 
-  function setupNewWidgetButton() {
     $("#new-widget-button").append('<button type="button" class="btn btn-default">Create New Widget</button>');
     $("#new-widget-button" ).button().on( "click", function() {
-      $("#dialog-message" ).dialog( "open" );
+      dialog.dialog( "open" );
     });
   }
+
 
 });

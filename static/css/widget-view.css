@@ -35,5 +35,9 @@ body {
 
 .ui-accordion-header:hover {
     cursor: hand;
-    background-color: #8ac9ff;
+    background-color: #bedeff;
+}
+
+#new-widget-button {
+    background-color: aliceblue;
 }
