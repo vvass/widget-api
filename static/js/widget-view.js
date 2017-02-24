@@ -174,7 +174,7 @@ $(function(){
         '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+2) +'">' +
         '</fieldset>');
 
-    radioButoonValue += 2;
+    radioButoonValue += 3;
 
     $("input").checkboxradio({
       icon: false
