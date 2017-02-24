@@ -25,4 +25,7 @@ body {
 
 .footer {
     border-top: none;
+    height: 100px;
+    margin: auto;
+    width: 400px;
 }
