@@ -113,8 +113,8 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="785">
-                  <caret line="215" column="24" lean-forward="false" selection-start-line="215" selection-start-column="24" selection-end-line="215" selection-end-column="24" />
+                <state relative-caret-position="755">
+                  <caret line="213" column="34" lean-forward="false" selection-start-line="213" selection-start-column="34" selection-end-line="213" selection-end-column="34" />
                   <folding>
                     <element signature="e#412#795#0" expanded="false" />
                     <element signature="e#832#924#0" expanded="false" />
@@ -125,7 +125,7 @@
                     <element signature="e#3502#3699#0" expanded="false" />
                     <element signature="e#3738#3935#0" expanded="false" />
                     <element signature="e#3970#4434#0" expanded="false" />
-                    <element signature="e#5807#6087#0" expanded="false" />
+                    <element signature="e#5855#6135#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -965,7 +965,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68713000" />
+    <option name="totallyTimeSpent" value="68797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1107,7 +1107,7 @@
             <element signature="e#3502#3699#0" expanded="false" />
             <element signature="e#3738#3935#0" expanded="false" />
             <element signature="e#3970#4434#0" expanded="false" />
-            <element signature="e#5807#6087#0" expanded="false" />
+            <element signature="e#5855#6135#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1311,8 +1311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="215" column="24" lean-forward="false" selection-start-line="215" selection-start-column="24" selection-end-line="215" selection-end-column="24" />
+        <state relative-caret-position="755">
+          <caret line="213" column="34" lean-forward="false" selection-start-line="213" selection-start-column="34" selection-end-line="213" selection-end-column="34" />
           <folding>
             <element signature="e#412#795#0" expanded="false" />
             <element signature="e#832#924#0" expanded="false" />
@@ -1323,7 +1323,7 @@
             <element signature="e#3502#3699#0" expanded="false" />
             <element signature="e#3738#3935#0" expanded="false" />
             <element signature="e#3970#4434#0" expanded="false" />
-            <element signature="e#5807#6087#0" expanded="false" />
+            <element signature="e#5855#6135#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -209,8 +209,10 @@ $(function(){
 
     var selected = [];
     var kids = $("#checkbox-options").find("label").each(function() {
-      if($(this).hasClass("ui-checkboxradio-checked"))
-        selected.push($(this).val());
+      if($(this).hasClass("ui-checkboxradio-checked")) {
+        console.log($(this).text());
+        selected.push($(this).text());
+      }
     });
 
     console.log(selected);
