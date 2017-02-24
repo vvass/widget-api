@@ -74,7 +74,7 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<p>' +
-            'Inventory: ' + item[2] + '<button type="button" class="btn btn-default ui-icon-pencil"></button><br/>' +
+            'Inventory: ' + item[2] + '<span class="ui-icon ui-icon-pencil"></span><br/>' +
             'Finish ' + ENUMFINISHES[item[3]] + '<br/>' +
             'Size ' + ENUMSIZES[item[4]] + '<br/>' +
             'Type ' + ENUMTYPES[item[5]] + '<br/>' +
