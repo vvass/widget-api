@@ -206,7 +206,10 @@ $(function(){
   }
 
   function getSelectedOptions() {
-    $("#")
+
+    console.log("get selected");
+    var kids = $("#checkbox-options").find("label").is(".ui-checkboxradio-checked");
+    console.log("selected",kids);
   }
 
   function saveWidget(size,finish,type,inv,name) {
