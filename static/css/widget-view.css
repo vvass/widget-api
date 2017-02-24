@@ -33,7 +33,7 @@ body {
     left:50%;
 }
 
-.ui-accordion-header {
+.ui-accordion-header:hover {
     cursor: hand;
     background-color: #0072ff;
 }
