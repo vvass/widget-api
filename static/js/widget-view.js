@@ -103,11 +103,16 @@ $(function(){
       buttons: {
         Ok: function() {
 
+
+          var options = getSelectedOptions();
+
           saveWidget();
+          $("#checkbox-form").empty();
           $("#checkbox-options").empty();
           $( this ).dialog( "close" );
         },
         CLOSE: function() {
+          $("#checkbox-form").empty();
           $("#checkbox-options").empty();
           $( this ).dialog( "close" );
         }
@@ -122,7 +127,7 @@ $(function(){
       fillSizesCheckBoxes('/getSizes');
       fillFinishesCheckBoxes('/getFinishes');
       fillTypesCheckBoxes('/getTypes');
-      createTextBoxWidgetName();
+      createTextBoxsPopup();
     });
 
   }
@@ -163,7 +168,7 @@ $(function(){
     });
   }
 
-  function createTextBoxWidgetName() {
+  function createTextBoxsPopup() {
     $("#checkbox-form")
       .append(
         '<fieldset>' +
@@ -175,11 +180,6 @@ $(function(){
            '</form>' +
         '</fieldset>'
       )
-  }
-
-  function createTextBoxWidgetInv() {
-    $("#checkbox-options")
-      .append()
   }
 
   function setUpRadioButtonHTML(results, category) {
@@ -197,6 +197,7 @@ $(function(){
             '<input class="checkbox-input" type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue+2) +'">' +
         '</fieldset>');
 
+    //TODO more dynamic way of adding categories
     radioButoonValue += 3;
 
     $("input.checkbox-input").checkboxradio({
@@ -204,10 +205,15 @@ $(function(){
     });
   }
 
+  function getSelectedOptions() {
+    $("#")
+  }
+
   function saveWidget(size,finish,type,inv,name) {
+
     $.ajax({
       url: '/saveWidget/'+size+'/'+finish+'/'+type+'/'+inv+'/'+name,
-      type: 'GET',
+      type: 'POST',
       error: function(error){
         console.log(error);
       }
