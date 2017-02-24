@@ -128,7 +128,7 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results,'size');
+      setUpRadioButtonHTML(results);
     });
   }
 
@@ -140,7 +140,7 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results,'finish');
+      setUpRadioButtonHTML(results);
     });
   }
 
@@ -152,14 +152,14 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results,'type');
+      setUpRadioButtonHTML(results);
     });
   }
 
   function setUpRadioButtonHTML(results, category) {
     var mapping = mapResults(results);
 
-    $("#checkbox-" + category + "-options")
+    $("#checkbox-options")
       .append(
         '<fieldset>' +
           '<legend>Select a Size: </legend>' +
