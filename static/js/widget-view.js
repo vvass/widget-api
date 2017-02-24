@@ -144,8 +144,6 @@ $(function(){
       }
     }).then(function(results) {
       setSizes(results);
-    }).catch(function () {
-      alert("We had an Error with Sizes");
     });
   }
 
