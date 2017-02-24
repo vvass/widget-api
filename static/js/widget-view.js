@@ -239,6 +239,7 @@ $(function(){
       $("<div title='Basic dialog'>Test message</div>").dialog({
         button: {
           CLOSE: function() {
+            console.log("CLose");
             reload_dialog();
           },
         }
@@ -256,6 +257,8 @@ $(function(){
   }
 
   function reload_dialog() {
+
+    console.log("empty");
     $('#widget-grid').empty();
     loadWidgets();
   }
