@@ -100,11 +100,13 @@ $(function(){
   
   function clickToEditInventory(item) {
     $(".editable-inventory").click(function () {
-      console.log(this);
       $(this).empty();
-      $(this).html('<p>Inventory: ' + 34523 + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+      $(this).html('<input></input>');
 
-      // prev.after();
+
+
+      // $(this).html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+
     });
   }
   
