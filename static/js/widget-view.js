@@ -238,10 +238,11 @@ $(function(){
 
   function findValueFromEnumArrays(arrayValue,ENUMARRAY) {
     console.log(arrayValue);
-    console.log(ENUMARRAY);
+    console.log(ENUMARRAY.length);
 
     for (var i=0; i < ENUMARRAY.length; i++) {
-      console.log(i,arrayValue,ENUMARRAY[i]);
+
+      console.log(i);
 
       if(ENUMARRAY[i] == arrayValue){
         return i;
