@@ -100,6 +100,7 @@ $(function(){
   function clickToEditInventory() {
     $("#widget-grid").find("div").find("span").each(function () {
       $(this).click(function () {
+        console.log(this);
         var prev = $(this).prev();
         prev.empty();
         // prev.after();
