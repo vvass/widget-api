@@ -29,7 +29,8 @@ $(function(){
         buttonColumn();
 
         $('#widget-grid').accordion({
-          collapsible: true
+          collapsible: true,
+          heightStyle: "content"
         });
 
       },
@@ -88,6 +89,7 @@ $(function(){
   }
 
   function buttonColumn() {
+    $("#filter-buttons").append('<h4>Filter by: </h4>');
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Finish</button>');
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Size</button>');
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Types</button>');
