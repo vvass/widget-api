@@ -237,11 +237,9 @@ $(function(){
       }
     }).then(function(results) {
       $("<div title='Basic dialog'>Test message</div>").dialog({
-        button: {
-          CLOSE: function() {
-            console.log("CLose");
-            reload_dialog();
-          },
+        close: function() {
+          console.log("CLose");
+          reload_dialog();
         }
       });
     });
