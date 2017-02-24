@@ -137,7 +137,7 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results);
+      setUpRadioButtonHTML(results, 'Size');
     });
   }
 
@@ -149,7 +149,7 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results);
+      setUpRadioButtonHTML(results, 'Finish');
     });
   }
 
@@ -161,7 +161,7 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results);
+      setUpRadioButtonHTML(results, 'Type');
     });
   }
 
@@ -185,7 +185,7 @@ $(function(){
     $("#checkbox-options")
       .append(
         '<fieldset>' +
-          '<legend>Select a Size: </legend>' +
+          '<legend>Select a '+category+': </legend>' +
             '<label for="radio-'+radioButoonValue+'">'+ mapping[0][1] +'</label>' +
             '<input class="checkbox-input" type="radio" name="radio-'+ (radioButoonValue) +'" id="radio-'+ (radioButoonValue) +'">' +
             '<label for="radio-'+ (radioButoonValue+1) +'">'+ mapping[1][1] +'</label>' +
@@ -222,7 +222,7 @@ $(function(){
 
   function saveWidget(sel) {
 
-    var sizeNum = findValueFromEnumArrays(sel[0],ENUMSIZES);
+    var sizeNum = findValueFromEnumArrays(sel[1],ENUMSIZES);
     console.log(sizeNum);
 
     // $.ajax({
