@@ -177,6 +177,9 @@ def search_by_category(cat):
         cursor.close()
         db.close()
 
+
+# NEW
+
 @app.route('/getOrders', methods=['POST','GET'])
 def get_orders():
 
@@ -207,6 +210,29 @@ def get_widgets():
     cursor=db.cursor()
 
     query = """SELECT id,name,inventory,finish,size,types FROM widget"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+@app.route('/getSizes', methods=['POST','GET'])
+def get_sizes():
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    query = """SELECT * FROM sizes;"""
 
     try:
 

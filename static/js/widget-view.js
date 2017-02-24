@@ -104,18 +104,47 @@ $(function(){
       modal: true,
       buttons: {
         Ok: function() {
-
-
           $( this ).dialog( "close" );
         }
       }
     });
 
-    $("#new-widget-button").append('<button type="button" class="btn btn-default">Create New Widget</button>');
+    $("#new-widget-button").append('<button type="button" class="btn btn-default create-new-widget">Create New Widget</button>');
     $("#new-widget-button" ).button().on( "click", function() {
       dialog.dialog( "open" );
     });
+    $(".create-new-widget").click(function () {
+      console.log(fillSize());
+    });
+
   }
+
+  function setupCheckBoxOptions() {
+
+    $("#checkbox-widget-options")
+
+
+
+
+  }
+
+  function fillSize() {
+    $.ajax({
+      url: '/getSizes',
+      type: 'GET',
+      success: function(response){
+        console.log(response);
+
+        var mapping = mapResults(response);
+        return mapping;
+
+      },
+      error: function(error){
+        console.log(error);
+      }
+    });
+  }
+
 
 
 });
