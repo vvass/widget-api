@@ -74,7 +74,7 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<span>' +
-            '<p class="editable-inventory">Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>' +
+            '<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil editable-inventory"></span><p>' +
             '<p>Finish ' + ENUMFINISHES[item[3]] + '<p/>' +
             '<p>Size ' + ENUMSIZES[item[4]] + '<p/>' +
             '<p>Type ' + ENUMTYPES[item[5]] + '<p/>' +
@@ -99,11 +99,9 @@ $(function(){
   // EDIT INV
   
   function clickToEditInventory(item) {
-    $(".editable-inventory").unbind("click").click(function () {
+    $(".editable-inventory").click(function () {
       $(this).empty();
       $(this).html('<p class="done-editing-inventory">Inventory: <input type="text"></p>');
-
-
 
       // $(this).html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
 
