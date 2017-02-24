@@ -218,14 +218,15 @@ $(function(){
     });
 
 
-    //TODO make sure to check that we have proper selection
-    console.log(selected);
+    //TODO make sure to check that we have proper selection and that everything is filled in
+    //TODO inventory should be a number
+    return selected;
   }
 
-  function saveWidget(size,finish,type,inv,name) {
+  function saveWidget(sel) {
 
     $.ajax({
-      url: '/saveWidget/'+size+'/'+finish+'/'+type+'/'+inv+'/'+name,
+      url: '/saveWidget/'+sel[0]+'/'+sel[1]+'/'+sel[2]+'/'+sel[3]+'/'+sel[4],
       type: 'POST',
       error: function(error){
         console.log(error);
