@@ -113,9 +113,9 @@ $(function(){
       dialog.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
-      fillSizesCheckBoxes('/getSizes','size');
-      fillFinishesCheckBoxes('/getFinishes','finish');
-      fillTypesCheckBoxes('/getTypes','type');
+      fillSizesCheckBoxes('/getSizes');
+      fillFinishesCheckBoxes('/getFinishes');
+      fillTypesCheckBoxes('/getTypes');
     });
 
   }
@@ -128,7 +128,7 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results);
+      setUpRadioButtonHTML(results,'size');
     });
   }
 
@@ -140,7 +140,7 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results);
+      setUpRadioButtonHTML(results,'finish');
     });
   }
 
@@ -152,14 +152,14 @@ $(function(){
         console.log(error);
       }
     }).then(function(results) {
-      setUpRadioButtonHTML(results);
+      setUpRadioButtonHTML(results,'type');
     });
   }
 
   function setUpRadioButtonHTML(results, category) {
     var mapping = mapResults(results);
 
-    $('#checkbox-' + category + '-options')
+    $("#checkbox-" + category + "-options")
       .append(
         '<fieldset>' +
           '<legend>Select a Size: </legend>' +
