@@ -115,9 +115,9 @@ $(function(){
       dialog.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
-      fillSizesCheckBoxes('/getSizes',size);
-      fillFinishesCheckBoxes('/getFinishes',finish);
-      fillTypesCheckBoxes('/getTypes',type);
+      fillSizesCheckBoxes('/getSizes','size');
+      fillFinishesCheckBoxes('/getFinishes','finish');
+      fillTypesCheckBoxes('/getTypes','type');
     });
 
   }
