@@ -238,7 +238,7 @@ $(function(){
     }).then(function(results) {
       $("<div title='Basic dialog'>Test message</div>").dialog({
         button: {
-          Ok: function() {
+          CLOSE: function() {
             reload_dialog();
           },
         }

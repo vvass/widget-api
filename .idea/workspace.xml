@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="" />
+    <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,9 +113,11 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="548">
-                  <caret line="240" column="26" lean-forward="false" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
+                <state relative-caret-position="659">
+                  <caret line="240" column="15" lean-forward="false" selection-start-line="240" selection-start-column="15" selection-end-line="240" selection-end-column="15" />
                   <folding>
+                    <element signature="e#1004#1427#0" expanded="false" />
+                    <element signature="e#1466#1907#0" expanded="false" />
                     <element signature="e#1944#2297#0" expanded="false" />
                     <element signature="e#2469#2645#0" expanded="false" />
                     <element signature="e#2673#2804#0" expanded="false" />
@@ -128,8 +132,8 @@
                     <element signature="e#5537#5562#0" expanded="false" />
                     <element signature="e#5685#5786#0" expanded="false" />
                     <element signature="e#5934#6022#0" expanded="false" />
-                    <marker date="1487966066000" expanded="false" signature="5602:6087" ph="{...}" />
-                    <marker date="1487966066000" expanded="false" signature="5856:5925" ph="{...}" />
+                    <marker date="1487966123000" expanded="false" signature="5602:6087" ph="{...}" />
+                    <marker date="1487966123000" expanded="false" signature="5856:5925" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -976,7 +980,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73367000" />
+    <option name="totallyTimeSpent" value="73424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1109,6 +1113,8 @@
         <state relative-caret-position="15">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding>
+            <element signature="e#1004#1427#0" expanded="false" />
+            <element signature="e#1466#1907#0" expanded="false" />
             <element signature="e#1944#2297#0" expanded="false" />
             <element signature="e#2469#2645#0" expanded="false" />
             <element signature="e#2673#2804#0" expanded="false" />
@@ -1123,8 +1129,8 @@
             <element signature="e#5537#5562#0" expanded="false" />
             <element signature="e#5685#5786#0" expanded="false" />
             <element signature="e#5934#6022#0" expanded="false" />
-            <marker date="1487966066000" expanded="false" signature="5602:6087" ph="{...}" />
-            <marker date="1487966066000" expanded="false" signature="5856:5925" ph="{...}" />
+            <marker date="1487966123000" expanded="false" signature="5602:6087" ph="{...}" />
+            <marker date="1487966123000" expanded="false" signature="5856:5925" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1328,9 +1334,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="240" column="26" lean-forward="false" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
+        <state relative-caret-position="659">
+          <caret line="240" column="15" lean-forward="false" selection-start-line="240" selection-start-column="15" selection-end-line="240" selection-end-column="15" />
           <folding>
+            <element signature="e#1004#1427#0" expanded="false" />
+            <element signature="e#1466#1907#0" expanded="false" />
             <element signature="e#1944#2297#0" expanded="false" />
             <element signature="e#2469#2645#0" expanded="false" />
             <element signature="e#2673#2804#0" expanded="false" />
@@ -1345,8 +1353,8 @@
             <element signature="e#5537#5562#0" expanded="false" />
             <element signature="e#5685#5786#0" expanded="false" />
             <element signature="e#5934#6022#0" expanded="false" />
-            <marker date="1487966066000" expanded="false" signature="5602:6087" ph="{...}" />
-            <marker date="1487966066000" expanded="false" signature="5856:5925" ph="{...}" />
+            <marker date="1487966123000" expanded="false" signature="5602:6087" ph="{...}" />
+            <marker date="1487966123000" expanded="false" signature="5856:5925" ph="{...}" />
           </folding>
         </state>
       </provider>
