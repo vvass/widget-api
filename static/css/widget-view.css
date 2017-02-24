@@ -46,6 +46,6 @@ body {
     display: none;
 }
 
-.ui-dialog-titlebar {
+.ui-dialog {
     background-color: azure;
 }
