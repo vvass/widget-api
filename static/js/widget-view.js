@@ -245,6 +245,7 @@ $(function(){
     console.log(arrayValue);
     for(var key in ENUMOBJECT){
       if(ENUMOBJECT[key] == arrayValue){
+        console.log(key);
         return key;
       }
     }
