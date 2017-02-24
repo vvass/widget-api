@@ -237,6 +237,9 @@ $(function(){
   }
 
   function findValueFromEnumArrays(arrayValue,ENUMARRAY) {
+    console.log(arrayValue);
+    console.log(ENUMARRAY);
+
     for (var i=0; i < ENUMARRAY.length; i++) {
       console.log(i,arrayValue,ENUMARRAY[i]);
 
