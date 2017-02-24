@@ -238,8 +238,7 @@ $(function(){
     }).then(function(results) {
       $("<div title='Basic dialog'>Test message</div>").dialog({
         close: function() {
-          console.log("CLose");
-          reload_dialog();
+          window.location.reload();
         }
       });
     });
@@ -254,11 +253,5 @@ $(function(){
 
   }
 
-  function reload_dialog() {
-
-    console.log("empty");
-    $('#widget-grid').empty();
-    loadWidgets();
-  }
 
 });
