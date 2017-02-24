@@ -173,7 +173,7 @@ $(function(){
         '<label for="radio-'+ (radioButoonValue+1) +'"> '+ mapping[1][1] +' </label>' +
         '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+1) +'">' +
         '<label for="radio-'+ (radioButoonValue+2) +'"> '+ mapping[2][1] +' </label>' +
-        '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+2) +'">';
+        '<input type="radio" name="radio-1" id="radio-'+ (radioButoonValue+2) +'">');
 
     radioButoonValue += 3;
 
