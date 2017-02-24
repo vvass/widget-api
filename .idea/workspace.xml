@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/widget-view.html" afterPath="$PROJECT_DIR$/templates/widget-view.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +16,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50061053">
+    <splitter split-orientation="horizontal" split-proportion="0.23260073">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
@@ -112,8 +111,8 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="593">
-                  <caret line="161" column="17" lean-forward="false" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
+                <state relative-caret-position="668">
+                  <caret line="166" column="69" lean-forward="false" selection-start-line="166" selection-start-column="69" selection-end-line="166" selection-end-column="69" />
                   <folding>
                     <element signature="e#956#1379#0" expanded="false" />
                     <element signature="e#1418#1847#0" expanded="false" />
@@ -956,7 +955,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64318000" />
+    <option name="totallyTimeSpent" value="64462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1285,8 +1284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="161" column="17" lean-forward="false" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
+        <state relative-caret-position="668">
+          <caret line="166" column="69" lean-forward="false" selection-start-line="166" selection-start-column="69" selection-end-line="166" selection-end-column="69" />
           <folding>
             <element signature="e#956#1379#0" expanded="false" />
             <element signature="e#1418#1847#0" expanded="false" />
