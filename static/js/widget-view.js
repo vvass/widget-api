@@ -150,7 +150,7 @@ $(function(){
               '<label for="radio-3"> '+ mapping[2][1] +' </label>' +
               '<input type="radio" name="radio-1" id="radio-3">' +
           '</fieldset>');
-      $("#checkbox-widget-options").checkboxradio({
+      $("input").checkboxradio({
         icon: false
       });
 
