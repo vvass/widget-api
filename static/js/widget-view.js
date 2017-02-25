@@ -103,9 +103,9 @@ $(function(){
       console.log("clicked");
 
       $(".editable-inventory").empty();
-      $(".editable-inventory").html('Inventory: <input type="text"></p>');
+      $(".editable-inventory").html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
       $(".editable-inventory").focusout(function () {
-        item[2] = $(this).find("input").val();
+        item[2] = $("#newly-edited-input-inv").val();
         console.log($(this).find("input"));
         updateInventory(item);
         $(this).empty().html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
