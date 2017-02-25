@@ -105,9 +105,37 @@ $(function(){
       $(".editable-inventory").empty();
       $(".editable-inventory").html('Inventory: <input type="text"></p>');
       $(".editable-inventory").focusout(function () {
+        item[2] = $(this).find("input").val();
+        console.log(item[2]);
+        updateInventory(item);
         $(this).empty().html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
       });
 
+    });
+  }
+
+  function updateInventory(item) {
+    console.log(item);
+    var id = item[0], inventoryNum = item[2];
+
+
+    $.ajax({
+      url: '/updateInventory',
+      type: 'GET',
+      success: function(response){
+        widgetAccordion(response);
+        setupPop();
+        buttonFilterContainer();
+
+        $('#widget-grid').accordion({
+          collapsible: true,
+          heightStyle: "content"
+        });
+
+      },
+      error: function(error){
+        console.log(error);
+      }
     });
   }
   
