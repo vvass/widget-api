@@ -108,7 +108,7 @@ $(function(){
         console.log("clicked",item);
 
 
-        hideChildren()
+        hideChildren(item);
 
         $(".editable-inventory-"+item[0])
           .html('Inventory: <input type="text">')
@@ -118,7 +118,7 @@ $(function(){
               item[2] = $(this).find("input").val();
 
               updateInventory(item[0],item[2]);
-              showChildren();
+              showChildren(item);
 
               $(this)
                 .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
@@ -134,7 +134,7 @@ $(function(){
 
   }
 
-  function hideChildren() {
+  function hideChildren(item) {
     $(".editable-inventory-"+item[0])
       .each(function() {
         $(this).hide();
