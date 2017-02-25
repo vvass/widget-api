@@ -92,7 +92,7 @@ $(function(){
             .empty()
             .html('Inventory: <input type="text">')
             .focusout(function () {
-              $(this).find("input").removeClass(".error-not-numberic-input");
+              $(this).find("input").css(".error-not-numberic-input");
               if($.isNumeric( $(this).find("input").val()) ) {
                 item[2] = $(this).find("input").val();
                 $(this)
@@ -100,7 +100,7 @@ $(function(){
                   .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
               }
               else {
-                $(this).find("input").addClass(".error-not-numberic-input");
+                $(this).find("input").css("border","2px solid #c13131");
               }
 
 
