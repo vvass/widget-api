@@ -93,7 +93,7 @@ $(function(){
             .html('Inventory: <input type="text">')
             .focusout(function () {
               $(this).removeClass(".error-not-numberic-input");
-              if($(this).find("input").val().isNumeric()) {
+              if($.isNumeric( $(this).find("input").val()) ) {
                 item[2] = $(this).find("input").val();
                 $(this)
                   .empty()
