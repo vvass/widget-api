@@ -112,13 +112,20 @@ $(function(){
 
         $("#temporary-input-span-" + item[0] +" > input")
           .focusout(function () {
-            console.log("focusout",item);
+
+            if($.isNumeric( $(this).find("input").val()) ) {
+              item[2] = $(this).find("input").val();
+              console.log(item[2]);
+            }
+
           });
+
+
+
 
 
       })
       .focusout(function () {
-        console.log("focusout",item);
 
         if($.isNumeric( $(this).find("input").val()) ) {
           item[2] = $(this).find("input").val();
