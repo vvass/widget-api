@@ -90,7 +90,7 @@ $(function(){
           .html('Inventory: <input type="text">');
 
       });
-      console.log($(".editable-inventory-"+item[0]).find("input"));
+      $(".editable-inventory-"+item[0]).find("input").css("background", "red");
 
 
       $(".editable-inventory-"+item[0]).find("input").focusout(function () {
