@@ -129,7 +129,7 @@ $(function(){
           });
 
 
-        $("#temporary-input-span-" + item[0] + "> span:nth-child(1)").html('Inventory: ' + item[2]);
+        $("#temporary-input-span-" + item[0] + "> span:nth-child(1)").text('Inventory: ' + item[2]);
 
 
 
