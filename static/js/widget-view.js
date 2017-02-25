@@ -107,11 +107,10 @@ $(function(){
 
         console.log("clicked",item);
 
-
         hideChildren(item);
 
         $(".editable-inventory-"+item[0])
-          .html('Inventory: <input type="text">')
+          .append('Inventory: <input type="text">')
           .focusout(function () {
 
             if($.isNumeric( $(this).find("input").val()) ) {
