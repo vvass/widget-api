@@ -100,7 +100,7 @@ $(function(){
   
   function clickToEditInventory(item) {
     $(".ui-icon-pencil").click(function () {
-      console.log(this);
+      console.log($(this).prev());
 
       $(this).prev().empty();
       $(this).html('Inventory: <input type="text"></p>');
