@@ -289,7 +289,7 @@ def update_inventory(id,newValue):
         cursor.execute(query,param)
         db.commit()
 
-        return simplejson.dumps({'success':str('you did it')})
+        return simplejson.dumps({'success':str('you updated inventory')})
 
 
     except Exception as e:

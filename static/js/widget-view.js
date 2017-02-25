@@ -135,7 +135,7 @@ $(function(){
   function updateInventory(id,inventoryNum) {
 
     $.ajax({
-      url: '/updateInventory/id/inventoryNum',
+      url: '/updateInventory/'+id+'/'+inventoryNum,
       type: 'POST',
       error: function(error){
         console.log(error);
