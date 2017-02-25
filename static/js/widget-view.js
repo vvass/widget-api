@@ -108,7 +108,7 @@ $(function(){
         hideChildren(item);
 
         $(".editable-inventory-"+item[0])
-          .append('Inventory: <input type="text">');
+          .append('<span id="temp-span">Inventory: <input type="text"><span>');
 
 
       })
@@ -122,6 +122,7 @@ $(function(){
           showChildren(item);
 
           $(".editable-inventory-"+item[0]).find("i").remove();
+          $("#temp-span").remove();
 
           $(this)
             .html(
