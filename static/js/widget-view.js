@@ -100,7 +100,7 @@ $(function(){
               }
               else {
                 $(this).find("input").css("border","2px solid #c13131");
-                $(this).find("input").after('<p>Must be Numeric!</p>').css("color","red");
+                $(this).after('Must be Numeric!').css("color","red");
               }
 
 
