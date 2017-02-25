@@ -21,7 +21,7 @@ def widget_view():
     return render_template('widget-view.html')
 
 @app.route('/orders', methods=['GET'])
-def widget_view():
+def orders_view():
     return render_template('orders.html')
 
 
