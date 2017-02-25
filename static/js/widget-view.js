@@ -117,6 +117,10 @@ $(function(){
               item[2] = $(this).val();
               console.log(item[2]);
             }
+            else {
+              $(this).css("border","2px solid red");
+              $(this).append('<i>&ensp;Must be Numeric!<i>');
+            }
 
           });
 
