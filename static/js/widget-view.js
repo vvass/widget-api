@@ -106,7 +106,7 @@ $(function(){
       $(".editable-inventory").html('Inventory: <input type="text"></p>');
       $(".editable-inventory").focusout(function () {
         $(this).empty().html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
-      };
+      });
 
     });
   }
