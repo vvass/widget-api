@@ -74,7 +74,8 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<span>' +
-            '<p class="editable-inventory-'+item[0]+'">Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span></p>' +
+            '<p class="editable-inventory-'+item[0]+'">Inventory: ' + item[2] +
+              ' <span class="ui-icon ui-icon-pencil"></span></p>' +
             '<p>Finish ' + ENUMFINISHES[item[3]] + '</p>' +
             '<p>Size ' + ENUMSIZES[item[4]] + '</p>' +
             '<p>Type ' + ENUMTYPES[item[5]] + '</p>' +
@@ -91,11 +92,18 @@ $(function(){
             .empty()
             .html('Inventory: <input type="text">')
             .focusout(function () {
-              item[2] = $(this).find("input").val();
+              $(this).removeClass(".error-not-numberic-input");
+              if($(this).find("input").val().isNumeric()) {
+                item[2] = $(this).find("input").val();
+                $(this)
+                  .empty()
+                  .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
+              }
+              else {
+                $(this).addClass(".error-not-numberic-input");
+              }
 
-              $(this)
-                .empty()
-                .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
+
             });
 
         });
