@@ -110,7 +110,7 @@ $(function(){
         $(".editable-inventory-"+item[0])
           .append('<span id="temporary-input-span-' + item[0] + '">Inventory: <input type="text"></span>');
 
-        $("#temporary-input-span")
+        $("#temporary-input-span"+item[0])
           .focusout(function () {
             console.log("focusout",item);
           });
