@@ -108,29 +108,30 @@ $(function(){
         hideChildren(item);
 
         $(".editable-inventory-"+item[0])
-          .append('Inventory: <input type="text">')
-          .focusout(function () {
+          .append('Inventory: <input type="text">');
 
-            if($.isNumeric( $(this).find("input").val()) ) {
-              item[2] = $(this).find("input").val();
 
-              updateInventory(item[0],item[2]);
-              showChildren(item);
+      })
+      .focusout(function () {
 
-              $(".editable-inventory-"+item[0]).find("i").remove();
+        if($.isNumeric( $(this).find("input").val()) ) {
+          item[2] = $(this).find("input").val();
 
-              $(this)
-                .html(
-                  '<span>Inventory: ' + item[2] + '</span>' +
-                  '<span class="ui-icon ui-icon-pencil"></span>'
-                );
-            }
-            else {
-              $(this).find("input").css("border","2px solid red");
-              $(".editable-inventory-"+item[0]).append('<i>&ensp;Must be Numeric!<i>');
-            }
+          updateInventory(item[0],item[2]);
+          showChildren(item);
 
-          });
+          $(".editable-inventory-"+item[0]).find("i").remove();
+
+          $(this)
+            .html(
+              '<span>Inventory: ' + item[2] + '</span>' +
+              '<span class="ui-icon ui-icon-pencil"></span>'
+            );
+        }
+        else {
+          $(this).find("input").css("border","2px solid red");
+          $(".editable-inventory-"+item[0]).append('<i>&ensp;Must be Numeric!<i>');
+        }
 
       });
 
