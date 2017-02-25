@@ -87,12 +87,14 @@ $(function(){
         console.log("clicked",item);
         $(".editable-inventory-"+item[0])
           .empty()
-          .html('Inventory: <input id="newly-edited-input-inv" type="text"></p>')
-          .focusout(function () {
-            $(this)
-              .empty()
-              .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
-          });
+          .html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
+
+      });
+
+      $(".editable-inventory-"+item[0]).find("input").focusout(function () {
+        $(this)
+          .empty()
+          .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
       });
 
     });
@@ -108,21 +110,7 @@ $(function(){
   }
 
   // EDIT INV
-  
-  function clickToEditInventory(item) {
-    $(".ui-icon-pencil").click(function () {
-      console.log("clicked",item);
 
-      $(".editable-inventory"+item[0]).empty();
-      $(".editable-inventory"+item[0]).html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
-      $(".editable-inventory"+item[0]).focusout(function () {
-        // item[2] = $("#newly-edited-input-inv").val();
-        // updateInventory(item);
-
-      });
-
-    });
-  }
 
   function updateInventory(item) {
     console.log(item);
