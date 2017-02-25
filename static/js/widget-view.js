@@ -100,13 +100,13 @@ $(function(){
   
   function clickToEditInventory(item) {
     $(".ui-icon-pencil").click(function () {
-
+      console.log("clicked");
 
       $(".editable-inventory").empty();
       $(".editable-inventory").html('Inventory: <input type="text"></p>');
       $(".editable-inventory").focusout(function () {
         item[2] = $(this).find("input").val();
-        console.log(item[2]);
+        console.log($(this).find("input"));
         updateInventory(item);
         $(this).empty().html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
       });
@@ -121,7 +121,7 @@ $(function(){
 
     $.ajax({
       url: '/updateInventory',
-      type: 'GET',
+      type: 'POST',
       success: function(response){
         widgetAccordion(response);
         setupPop();
