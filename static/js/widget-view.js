@@ -83,12 +83,12 @@ $(function(){
 
       $("#widget-grid").append(html);
 
-    });
+      $(".ui-icon-pencil").click(function () {
+        console.log("clicked",item);
+        $(".editable-inventory"+item[0]).empty();
+      };
 
-    mapping.map(function (item) {
-      clickToEditInventory(item);
     });
-
 
 
   }
