@@ -85,7 +85,9 @@ $(function(){
 
       $(".editable-inventory-"+item[0]).find("span").click(function () {
         console.log("clicked",item);
-        $(".editable-inventory"+item[0]).empty();
+        $(".editable-inventory-"+item[0])
+          .empty()
+          .html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
       });
 
     });
