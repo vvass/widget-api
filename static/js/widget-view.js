@@ -92,6 +92,9 @@ $(function(){
             .html('Inventory: <input type="text">')
             .focusout(function () {
               console.log("here");
+              $(this)
+                .empty()
+                .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span></p>');
             });
 
         });
@@ -101,9 +104,8 @@ $(function(){
       $(".editable-inventory-"+item[0]).find("input").focusout(function () {
 
         console.log("here");
-        $(this)
-          .empty()
-          .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span></p>');
+
+
       });
 
     });
