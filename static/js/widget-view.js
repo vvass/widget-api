@@ -113,6 +113,9 @@ $(function(){
 
             if($.isNumeric( $(this).find("input").val()) ) {
               item[2] = $(this).find("input").val();
+
+              updateInventory(item[0],item[2]);
+
               $(this)
                 .empty()
                 .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
@@ -129,29 +132,16 @@ $(function(){
   }
 
 
-  function updateInventory(item) {
-    console.log(item);
-    var id = item[0], inventoryNum = item[2];
-
+  function updateInventory(id,inventoryNum) {
 
     $.ajax({
       url: '/updateInventory/id/inventoryNum',
       type: 'POST',
-      success: function(response){
-        widgetAccordion(response);
-        setupPop();
-        buttonFilterContainer();
-
-        $('#widget-grid').accordion({
-          collapsible: true,
-          heightStyle: "content"
-        });
-
-      },
       error: function(error){
         console.log(error);
       }
     });
+
   }
   
   // POPUP
