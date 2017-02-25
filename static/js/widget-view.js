@@ -74,7 +74,7 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<span>' +
-            '<p class="editable-inventory">Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span></p>' +
+            '<p class="editable-inventory-'+item[0]+'">Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span></p>' +
             '<p>Finish ' + ENUMFINISHES[item[3]] + '</p>' +
             '<p>Size ' + ENUMSIZES[item[4]] + '</p>' +
             '<p>Type ' + ENUMTYPES[item[5]] + '</p>' +
@@ -102,11 +102,10 @@ $(function(){
     $(".ui-icon-pencil").click(function () {
       console.log("clicked");
 
-      $(".editable-inventory").empty();
-      $(".editable-inventory").html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
-      $(".editable-inventory").focusout(function () {
+      $(".editable-inventory"+item[0]).empty();
+      $(".editable-inventory"+item[0]).html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
+      $(".editable-inventory"+item[0]).focusout(function () {
         item[2] = $("#newly-edited-input-inv").val();
-        console.log($(this).find("input"));
         updateInventory(item);
         $(this).empty().html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
       });
@@ -120,7 +119,7 @@ $(function(){
 
 
     $.ajax({
-      url: '/updateInventory',
+      url: '/updateInventory/id/inventoryNum',
       type: 'POST',
       success: function(response){
         widgetAccordion(response);
