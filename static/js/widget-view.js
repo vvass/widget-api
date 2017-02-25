@@ -84,41 +84,9 @@ $(function(){
 
       $("#widget-grid").append(html);
 
-      $(".editable-inventory-"+item[0])
-        .find("span")
-        .click(function () {
-          console.log("clicked",item);
-          $(".editable-inventory-"+item[0])
-            .empty()
-            .html('Inventory: <input type="text">')
-            .focusout(function () {
-              if($.isNumeric( $(this).find("input").val()) ) {
-                item[2] = $(this).find("input").val();
-                $(this)
-                  .empty()
-                  .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
-              }
-              else {
-                $(this).find("input").css("border","2px solid red");
-                $(".editable-inventory-"+item[0]).append('<i>&ensp;Must be Numeric!<i>');
-              }
-
-
-            });
-
-        });
-
-
-
-      $(".editable-inventory-"+item[0]).find("input").focusout(function () {
-
-        console.log("here");
-
-
-      });
+      editingLogicForInventory(item);
 
     });
-
 
   }
 
@@ -130,6 +98,35 @@ $(function(){
   }
 
   // EDIT INV
+
+  function editingLogicForInventory(item) {
+
+    $(".editable-inventory-"+item[0])
+      .find("span")
+      .click(function () {
+
+        console.log("clicked",item);
+        $(".editable-inventory-"+item[0])
+          .empty()
+          .html('Inventory: <input type="text">')
+          .focusout(function () {
+
+            if($.isNumeric( $(this).find("input").val()) ) {
+              item[2] = $(this).find("input").val();
+              $(this)
+                .empty()
+                .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
+            }
+            else {
+              $(this).find("input").css("border","2px solid red");
+              $(".editable-inventory-"+item[0]).append('<i>&ensp;Must be Numeric!<i>');
+            }
+
+          });
+
+      });
+
+  }
 
 
   function updateInventory(item) {
