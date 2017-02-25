@@ -83,7 +83,7 @@ $(function(){
 
       $("#widget-grid").append(html);
 
-      $(".ui-icon-pencil").click(function () {
+      $(".editable-inventory-"+item[0]).find("span").click(function () {
         console.log("clicked",item);
         $(".editable-inventory"+item[0]).empty();
       });
