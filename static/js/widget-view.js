@@ -87,11 +87,13 @@ $(function(){
         console.log("clicked",item);
         $(".editable-inventory-"+item[0])
           .empty()
-          .html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
+          .html('Inventory: <input type="text"></p>');
 
       });
 
       $(".editable-inventory-"+item[0]).find("input").focusout(function () {
+
+        console.log("here");
         $(this)
           .empty()
           .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
