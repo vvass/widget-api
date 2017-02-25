@@ -87,17 +87,18 @@ $(function(){
         console.log("clicked",item);
         $(".editable-inventory-"+item[0])
           .empty()
-          .html('Inventory: <input type="text"></p>');
+          .html('<p>Inventory: <input type="text"></p>');
 
       });
       console.log($(".editable-inventory-"+item[0]).find("input"));
+
 
       $(".editable-inventory-"+item[0]).find("input").focusout(function () {
 
         console.log("here");
         $(this)
           .empty()
-          .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+          .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span></p>');
       });
 
     });
