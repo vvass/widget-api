@@ -149,7 +149,7 @@ $(function(){
     $("#temporary-input-span-" + item[0]).remove();
 
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").show();
-    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev.show();
+    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev().show();
   }
 
   function updateInventory(id,inventoryNum) {
