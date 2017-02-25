@@ -106,8 +106,11 @@ $(function(){
       .click(function () {
 
         console.log("clicked",item);
+
+
+        hideChildren()
+
         $(".editable-inventory-"+item[0])
-          .empty()
           .html('Inventory: <input type="text">')
           .focusout(function () {
 
@@ -115,9 +118,9 @@ $(function(){
               item[2] = $(this).find("input").val();
 
               updateInventory(item[0],item[2]);
+              showChildren();
 
               $(this)
-                .empty()
                 .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
             }
             else {
@@ -129,6 +132,20 @@ $(function(){
 
       });
 
+  }
+
+  function hideChildren() {
+    $(".editable-inventory-"+item[0])
+      .each(function() {
+        $(this).hide();
+      });
+  }
+
+  function showChildren() {
+    $(".editable-inventory-"+item[0])
+      .each(function() {
+        $(this).show();
+      });
   }
 
 
