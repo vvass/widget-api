@@ -282,7 +282,7 @@ def update_inventory(id,newValue):
 
     param = dict(_id=id,_newValue=newValue)
 
-    query = """UPDATE widget SET avalQuantity=%(_newValue)s WHERE id=%(_id)s"""
+    query = """UPDATE widget SET inventory=%(_newValue)s WHERE id=%(_id)s"""
 
     try:
 
