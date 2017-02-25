@@ -108,7 +108,12 @@ $(function(){
         hideChildren(item);
 
         $(".editable-inventory-"+item[0])
-          .append('<span id="temp-span">Inventory: <input type="text"></span>');
+          .append('<span id="temporary-input-span">Inventory: <input type="text"></span>');
+
+        $("#temporary-input-span")
+          .focusout(function () {
+            console.log("focusout",item);
+          });
 
 
       })
