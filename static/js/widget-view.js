@@ -116,7 +116,6 @@ $(function(){
               item[2] = $(this).val();
 
               updateInventory(item[0],item[2]);
-
               showChildren(item);
 
             }
@@ -143,7 +142,7 @@ $(function(){
   }
 
   function showChildren(item) {
-
+    $("#temporary-input-span-" + item[0] + "> span:nth-child(1)").html('Inventory: ' + item[2]);
     $("#temporary-input-span-" + item[0]).remove();
 
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").show();
