@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/widget-view.js" afterPath="$PROJECT_DIR$/static/js/widget-view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/widget-view.css" afterPath="$PROJECT_DIR$/static/css/widget-view.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,7 +106,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="410">
@@ -138,11 +138,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="widget-view.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="795">
-                  <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="26" />
+                <state relative-caret-position="810">
+                  <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -212,8 +212,8 @@
         <option value="$PROJECT_DIR$/templates/widget-view.html" />
         <option value="$PROJECT_DIR$/templates/widgets-create.html" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/static/css/widget-view.css" />
         <option value="$PROJECT_DIR$/static/js/widget-view.js" />
+        <option value="$PROJECT_DIR$/static/css/widget-view.css" />
       </list>
     </option>
   </component>
@@ -984,7 +984,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82089000" />
+    <option name="totallyTimeSpent" value="82215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -1330,14 +1330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -1365,6 +1357,14 @@
             <element signature="e#8365#8478#0" expanded="false" />
             <marker date="1487985985000" expanded="false" signature="7426:7495" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

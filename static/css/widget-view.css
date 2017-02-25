@@ -52,5 +52,5 @@ span.ui-icon.ui-icon-pencil:hover {
 }
 
 .error-not-numberic-input {
-    border:2px solid #c13131;
+    border:2px solid #c13131 !important;
 }
