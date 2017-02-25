@@ -87,7 +87,7 @@ $(function(){
         console.log("clicked",item);
         $(".editable-inventory-"+item[0])
           .empty()
-          .html('<p>Inventory: <input type="text"></p>');
+          .html('Inventory: <input type="text">');
 
       });
       console.log($(".editable-inventory-"+item[0]).find("input"));
