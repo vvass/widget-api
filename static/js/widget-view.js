@@ -74,7 +74,7 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<span>' +
-            '<p class="editable-inventory-'+item[0]+'">Inventory: ' + item[2] +
+            '<p class="editable-inventory-'+item[0]+'"><span>Inventory: ' + item[2] + '</span>' +
               ' <span class="ui-icon ui-icon-pencil"></span></p>' +
             '<p>Finish ' + ENUMFINISHES[item[3]] + '</p>' +
             '<p>Size ' + ENUMSIZES[item[4]] + '</p>' +
@@ -135,9 +135,7 @@ $(function(){
 
   function hideChildren(item) {
     $(".editable-inventory-"+item[0])
-      .each(function() {
-        $(this).hide();
-      });
+      .find("span").hide();
   }
 
   function showChildren() {
