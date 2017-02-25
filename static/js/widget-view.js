@@ -87,7 +87,12 @@ $(function(){
         console.log("clicked",item);
         $(".editable-inventory-"+item[0])
           .empty()
-          .html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
+          .html('Inventory: <input id="newly-edited-input-inv" type="text"></p>')
+          .focusout(function () {
+            $(this)
+              .empty()
+              .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+          });
       });
 
     });
@@ -113,7 +118,7 @@ $(function(){
       $(".editable-inventory"+item[0]).focusout(function () {
         // item[2] = $("#newly-edited-input-inv").val();
         // updateInventory(item);
-        $(this).empty().html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
+
       });
 
     });
