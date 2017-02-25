@@ -108,7 +108,7 @@ $(function(){
         hideChildren(item);
 
         $(".editable-inventory-"+item[0])
-          .append('<span id="temp-span">Inventory: <input type="text"><span>');
+          .append('<span id="temp-span">Inventory: <input type="text"></span>');
 
 
       })
@@ -140,8 +140,8 @@ $(function(){
   }
 
   function hideChildren(item) {
-    $(".editable-inventory-"+item[0])
-      .find("span").hide();
+    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").hide();
+    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev().hide();
   }
 
   function showChildren(item) {
