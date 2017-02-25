@@ -125,7 +125,9 @@ $(function(){
               $(".editable-inventory-"+item[0]).append('<i style="color:red">&ensp;Must be Numeric!<i>');
             }
           })
-          .focusin(fadeOutWarning(item));
+          .focusin(function () {
+            $(".editable-inventory-"+item[0]+" > i").fadeOut("slow");
+          });
 
 
 
@@ -146,10 +148,6 @@ $(function(){
 
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").show();
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev().show();
-  }
-
-  function fadeOutWarning(item) {
-    $(".editable-inventory-"+item[0]+" > i").fadeOut();
   }
 
   function updateInventory(id,inventoryNum) {
