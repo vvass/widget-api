@@ -129,9 +129,9 @@ $(function(){
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev().show();
   }
 
-  function checkIfNumeric(item) {
-    if($.isNumeric( $(this).val()) ) {
-      item[2] = $(this).val();
+  function checkIfNumeric(tag,item) {
+    if($.isNumeric( $("#temporary-input-span-" + item[0] +" > input").val()) ) {
+      item[2] = $("#temporary-input-span-" + item[0] +" > input").val();
 
       updateInventory(item[0],item[2]);
 
