@@ -113,6 +113,7 @@ $(function(){
 
       })
       .focusout(function () {
+        console.log("focusout",item);
 
         if($.isNumeric( $(this).find("input").val()) ) {
           item[2] = $(this).find("input").val();
