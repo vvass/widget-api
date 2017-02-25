@@ -100,40 +100,17 @@ $(function(){
   // EDIT INV
 
   function editingLogicForInventory(item) {
+
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil")
       .click(function () {
-
-        console.log("clicked",item);
-
         hideChildren(item);
 
         $(".editable-inventory-"+item[0])
           .append('<span id="temporary-input-span-' + item[0] + '">Inventory: <input type="text"></span>');
 
         $("#temporary-input-span-" + item[0] +" > input")
-          .focusout(function () {
-
-            if($.isNumeric( $(this).val()) ) {
-              item[2] = $(this).val();
-
-              updateInventory(item[0],item[2]);
-
-              showChildren(item);
-
-            }
-            else {
-              $(this).css("border","2px solid red");
-              $(".editable-inventory-"+item[0]).append('<i style="color:red">&ensp;Must be Numeric!<i>');
-            }
-
-          })
-          .focusin(function () {
-            $(".editable-inventory-"+item[0]+" > i").remove();
-          });
-
-
-
-
+          .focusout(checkIfNumeric(item))
+          .focusin(fadeOutWarning(item));
 
       });
 
@@ -150,6 +127,25 @@ $(function(){
 
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").show();
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev().show();
+  }
+
+  function checkIfNumeric(item) {
+    if($.isNumeric( $(this).val()) ) {
+      item[2] = $(this).val();
+
+      updateInventory(item[0],item[2]);
+
+      showChildren(item);
+
+    }
+    else {
+      $(this).css("border","2px solid red");
+      $(".editable-inventory-"+item[0]).append('<i style="color:red">&ensp;Must be Numeric!<i>');
+    }
+  }
+
+  function fadeOutWarning(item) {
+    $(".editable-inventory-"+item[0]+" > i").fadeOut();
   }
 
   function updateInventory(id,inventoryNum) {
