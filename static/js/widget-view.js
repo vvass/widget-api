@@ -111,6 +111,7 @@ $(function(){
           .append('<span id="temporary-input-span-' + item[0] + '">Inventory: <input type="text"></span>');
 
         $("#temporary-input-span"+item[0])
+          .find("input")
           .focusout(function () {
             console.log("focusout",item);
           });
