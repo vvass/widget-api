@@ -100,9 +100,7 @@ $(function(){
   // EDIT INV
 
   function editingLogicForInventory(item) {
-
-    $(".editable-inventory-"+item[0])
-      .find("span")
+    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil")
       .click(function () {
 
         console.log("clicked",item);
