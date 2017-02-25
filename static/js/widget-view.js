@@ -117,8 +117,6 @@ $(function(){
 
               updateInventory(item[0],item[2]);
               showChildren(item);
-
-
             }
             else {
               $(this).css("border","2px solid red");

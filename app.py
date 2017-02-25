@@ -20,6 +20,10 @@ def get_main():
 def widget_view():
     return render_template('widget-view.html')
 
+@app.route('/orders', methods=['GET'])
+def widget_view():
+    return render_template('orders.html')
+
 
 
 
