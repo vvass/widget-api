@@ -100,7 +100,7 @@ $(function(){
               }
               else {
                 $(this).find("input").css("border","2px solid red");
-                $(".editable-inventory-"+item[0]).append('Must be Numeric!');
+                $(".editable-inventory-"+item[0]).append('&ensp;Must be Numeric!');
               }
 
 
