@@ -116,6 +116,9 @@ $(function(){
             if($.isNumeric( $(this).val()) ) {
               item[2] = $(this).val();
 
+              updateInventory(item[0],item[2]);
+
+              showChildren(item);
 
             }
             else {
@@ -123,34 +126,14 @@ $(function(){
               $(".editable-inventory-"+item[0]).append('<i style="color:red">&ensp;Must be Numeric!<i>');
             }
 
+          })
+          .focusin(function () {
+            $(".editable-inventory-"+item[0]+" > i").remove();
           });
 
 
 
 
-
-      })
-      .focusout(function () {
-
-        if($.isNumeric( $(this).find("input").val()) ) {
-          item[2] = $(this).find("input").val();
-
-          updateInventory(item[0],item[2]);
-          showChildren(item);
-
-          $(".editable-inventory-"+item[0]).find("i").remove();
-          $("#temp-span").remove();
-
-          $(this)
-            .html(
-              '<span>Inventory: ' + item[2] + '</span>' +
-              '<span class="ui-icon ui-icon-pencil"></span>'
-            );
-        }
-        else {
-          $(this).find("input").css("border","2px solid red");
-          $(".editable-inventory-"+item[0]).append('<i>&ensp;Must be Numeric!<i>');
-        }
 
       });
 
@@ -162,8 +145,11 @@ $(function(){
   }
 
   function showChildren(item) {
-    $(".editable-inventory-"+item[0])
-      .find("span").show();
+
+    $("#temporary-input-span-" + item[0]).remove();
+
+    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").show();
+    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev.show();
   }
 
   function updateInventory(id,inventoryNum) {
