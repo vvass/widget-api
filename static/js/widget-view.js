@@ -69,7 +69,7 @@ $(function(){
 
   function createWidgetHTML(mapping) {
 
-    mapping.map(function(item) {
+    mapping.map(function (item) {
 
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
@@ -83,9 +83,13 @@ $(function(){
 
       $("#widget-grid").append(html);
 
-      clickToEditInventory(item);
-
     });
+
+    mapping.map(function (item) {
+      clickToEditInventory(item);
+    });
+
+
 
   }
 
@@ -105,8 +109,8 @@ $(function(){
       $(".editable-inventory"+item[0]).empty();
       $(".editable-inventory"+item[0]).html('Inventory: <input id="newly-edited-input-inv" type="text"></p>');
       $(".editable-inventory"+item[0]).focusout(function () {
-        item[2] = $("#newly-edited-input-inv").val();
-        updateInventory(item);
+        // item[2] = $("#newly-edited-input-inv").val();
+        // updateInventory(item);
         $(this).empty().html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
       });
 
