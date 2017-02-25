@@ -115,11 +115,12 @@ $(function(){
 
             if($.isNumeric( $(this).val()) ) {
               item[2] = $(this).val();
-              console.log(item[2]);
+
+
             }
             else {
               $(this).css("border","2px solid red");
-              $(".editable-inventory-"+item[0]).append('<i>&ensp;Must be Numeric!<i>');
+              $(".editable-inventory-"+item[0]).append('<i style="color:red">&ensp;Must be Numeric!<i>');
             }
 
           });
