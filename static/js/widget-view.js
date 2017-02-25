@@ -86,7 +86,7 @@ $(function(){
       $(".ui-icon-pencil").click(function () {
         console.log("clicked",item);
         $(".editable-inventory"+item[0]).empty();
-      };
+      });
 
     });
 
