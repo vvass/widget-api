@@ -122,7 +122,10 @@ $(function(){
               $(".editable-inventory-"+item[0]).find("i").remove();
 
               $(this)
-                .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
+                .html(
+                  '<span>Inventory: ' + item[2] + '</span>' +
+                  '<span class="ui-icon ui-icon-pencil"></span>'
+                );
             }
             else {
               $(this).find("input").css("border","2px solid red");
