@@ -119,7 +119,7 @@ $(function(){
             }
             else {
               $(this).css("border","2px solid red");
-              $(this).append('<i>&ensp;Must be Numeric!<i>');
+              $(".editable-inventory-"+item[0]).append('<i>&ensp;Must be Numeric!<i>');
             }
 
           });
