@@ -83,14 +83,19 @@ $(function(){
 
       $("#widget-grid").append(html);
 
-      $(".editable-inventory-"+item[0]).find("span").click(function () {
-        console.log("clicked",item);
-        $(".editable-inventory-"+item[0])
-          .empty()
-          .html('Inventory: <input type="text">');
+      $(".editable-inventory-"+item[0])
+        .find("span")
+        .click(function () {
+          console.log("clicked",item);
+          $(".editable-inventory-"+item[0])
+            .empty()
+            .html('Inventory: <input type="text">')
+            .focusout(function () {
+              console.log("here");
+            });
 
-      });
-      $(".editable-inventory-"+item[0]).find("input").css("background", "red");
+        });
+
 
 
       $(".editable-inventory-"+item[0]).find("input").focusout(function () {
