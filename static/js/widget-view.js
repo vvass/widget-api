@@ -118,6 +118,7 @@ $(function(){
               updateInventory(item[0],item[2]);
               showChildren(item);
 
+
             }
             else {
               $(this).css("border","2px solid red");
@@ -129,7 +130,7 @@ $(function(){
           });
 
 
-        $("#temporary-input-span-" + item[0] + "> span:nth-child(1)").text('Inventory: ' + item[2]);
+
 
 
 
@@ -143,6 +144,7 @@ $(function(){
   }
 
   function showChildren(item) {
+    $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").prev().html('Inventory: ' + item[2]);
     $("#temporary-input-span-" + item[0]).remove();
 
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").show();
