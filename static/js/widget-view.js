@@ -129,6 +129,7 @@ $(function(){
           });
 
 
+        $("#temporary-input-span-" + item[0] + "> span:nth-child(1)").html('Inventory: ' + item[2]);
 
 
 
@@ -142,7 +143,6 @@ $(function(){
   }
 
   function showChildren(item) {
-    $("#temporary-input-span-" + item[0] + "> span:nth-child(1)").html('Inventory: ' + item[2]);
     $("#temporary-input-span-" + item[0]).remove();
 
     $(".editable-inventory-"+item[0]+" > span.ui-icon.ui-icon-pencil").show();
