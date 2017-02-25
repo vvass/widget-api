@@ -103,7 +103,7 @@ $(function(){
 
 
       $(".editable-inventory").empty();
-      $(".editable-inventory").parent().html('Inventory: <input type="text"></p>');
+      $(".editable-inventory").html('Inventory: <input type="text"></p>');
       // $(this).html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span><p>');
 
     });
