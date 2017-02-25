@@ -140,7 +140,7 @@ $(function(){
       .find("span").hide();
   }
 
-  function showChildren() {
+  function showChildren(item) {
     $(".editable-inventory-"+item[0])
       .find("span").show();
   }
