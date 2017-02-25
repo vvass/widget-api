@@ -50,7 +50,3 @@ span.ui-icon.ui-icon-pencil:hover {
     cursor: pointer;
     background-color: #bedeff;
 }
-
-.error-not-numberic-input {
-    border:2px solid #c13131;
-}
