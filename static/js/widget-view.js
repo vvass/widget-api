@@ -91,10 +91,11 @@ $(function(){
             .empty()
             .html('Inventory: <input type="text">')
             .focusout(function () {
-              console.log("here");
+              item[2] = $(this).find(input).val();
+
               $(this)
                 .empty()
-                .html('<p>Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span></p>');
+                .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
             });
 
         });
