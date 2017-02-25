@@ -99,8 +99,8 @@ $(function(){
                   .html('Inventory: ' + item[2] + ' <span class="ui-icon ui-icon-pencil"></span>');
               }
               else {
-                $(this).find("input").css("border","2px solid #c13131");
-                $(this).after('Must be Numeric!').css("color","red");
+                $(this).find("input").css("border","2px solid red");
+                $(".editable-inventory-"+item[0]).append('Must be Numeric!').css("color","red");
               }
 
 
