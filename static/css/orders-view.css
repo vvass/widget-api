@@ -19,3 +19,7 @@ span.ui-icon.ui-icon-circle-plus:hover {
     background-color: #bedeff;
 }
 
+tbody > tr > td:hover {
+    background-color: #d3dbff;
+}
+
