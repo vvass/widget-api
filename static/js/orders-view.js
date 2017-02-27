@@ -65,7 +65,7 @@ $(function(){
         console.log(error);
       }
       })
-    ).then(function (data) {
+    ).done(function (data) {
 
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
@@ -77,9 +77,6 @@ $(function(){
 
 
 
-    }).done(function () {
-
-      console.log("done everthing");
     });
   }
 
@@ -93,7 +90,7 @@ $(function(){
             console.log(error);
           }
         }).then(function (data) {
-          var inventory = JSON.parse(data).success.replace(/\(+|,|\)|'/g,'')
+          var inventory = JSON.parse(data).success.replace(/\(+|,|\)|L'/g,'')
           console.log(inventory);
           orderData.push({
             "id": array[0],
