@@ -80,8 +80,6 @@ $(function(){
               "options": createOptionButtons(array[i][0])
             });
 
-
-
             if(orderData.length-1 == i) {
               dataSource.read();
             }
@@ -110,12 +108,32 @@ $(function(){
 
 
     $("span.ui-icon.ui-icon-circle-plus").click(function () {
-      alert("asdf");
+
+
+      var parent = $(this).parent();
+      console.log(parent.firstChild().text());
+      // processOrder(id,newInventory);
+
     });
 
     $("span.ui-icon.ui-icon-circle-close").click(function () {
       alert("asdf");
     });
+  }
+
+  function processOrder(id,newInventory) {
+
+    $.ajax({
+      url: '/updateInventoryFromOrder/'+ id + '/' + newInventory,
+      type: 'GET',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function (response) {
+      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
+    });
+
+
   }
 
 

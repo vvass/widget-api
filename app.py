@@ -351,7 +351,6 @@ def create_order(id,amount):
         cursor.close()
         db.close()
 
-
 @app.route('/updateInventoryFromOrder/<id>/<inventory>', methods=['POST','GET'])
 def update_inventory_from_order(id,inventory):
 
