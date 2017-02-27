@@ -78,6 +78,8 @@ $(function(){
             "inventory": inventory - array[i][2],
             "options": createOptionButtons()
           });
+          
+          addEventToButtons();
 
           if(orderData.length-1 == i) {
             dataSource.read();
@@ -96,6 +98,13 @@ $(function(){
     var html =  '<span class="ui-icon ui-icon-circle-plus"></span>' +
       '<span class="ui-icon ui-icon-circle-close"></span>';
 
+    return html;
+
+  }
+
+  function addEventToButtons() {
+
+
     $("span.ui-icon.ui-icon-circle-plus").click(function () {
       alert("asdf");
     });
@@ -103,9 +112,6 @@ $(function(){
     $("span.ui-icon.ui-icon-circle-close").click(function () {
       alert("asdf");
     });
-
-    return html;
-
   }
 
 
