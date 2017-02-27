@@ -76,10 +76,10 @@ $(function(){
             "name": name,
             "amount": array[i][2],
             "inventory": inventory - array[i][2],
-            "options": createOptionButtons()
+            "options": createOptionButtons(array[i][0])
           });
 
-          addEventToButtons();
+
 
           if(orderData.length-1 == i) {
             dataSource.read();
@@ -93,10 +93,10 @@ $(function(){
 
   } // end of getData
 
-  function createOptionButtons() {
+  function createOptionButtons(orderId) {
 
-    var html =  '<span class="ui-icon ui-icon-circle-plus"></span>' +
-      '<span class="ui-icon ui-icon-circle-close"></span>';
+    var html =  '<span class="ui-icon order-' + orderId + ' ui-icon-circle-plus"></span>' +
+      '<span class="ui-icon order-' + orderId + ' ui-icon-circle-close" onload="addEventToButtons()"></span>';
 
     return html;
 

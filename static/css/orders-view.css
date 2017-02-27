@@ -16,10 +16,10 @@
 span.ui-icon.ui-icon-circle-close:hover,
 span.ui-icon.ui-icon-circle-plus:hover {
     cursor: pointer;
-    background-color: #d6dfff;
+    background-color: #dbddff;
 }
 
-tbody > tr:hover {
-    background-color: #d3dbff;
+.metrotable > tbody > tr:hover {
+    background-color: #b7bee0;
 }
 
