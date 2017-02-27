@@ -75,7 +75,8 @@ $(function(){
             "widgetId": array[i][1],
             "name": name,
             "amount": array[i][2],
-            "inventory": inventory - array[i][2]
+            "inventory": inventory - array[i][2],
+            "options": ''
           });
 
           if(orderData.length-1 == i) {

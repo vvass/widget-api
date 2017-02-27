@@ -151,7 +151,6 @@ $(function(){
 
   }
 
-
   function createOrder(id, amount) {
 
     $.ajax({
@@ -167,8 +166,6 @@ $(function(){
     });
 
   }
-
-
 
 
   // EDIT INV
