@@ -14,6 +14,12 @@ $(function(){
     }
   });
 
+  var fetchData = function(dataUrls,id) {
+    return $.ajax({
+      type: 'GET',
+      url: dataUrls + '/' + id
+    });
+  };
 
 
   function mapResults(result) {
@@ -45,11 +51,23 @@ $(function(){
       }
     }).then(function (response) {
 
+      console.log(response);
+
       var array = mapResults(response);
       for(var i=0; i < array.length; i++){
 
         var id = array[i][1];
-        getName(id, array[i]);
+        // var name  = getName(id, array[i]);
+        // var inventory = getInventory(array[1], array);
+
+
+
+        // var getNames = fetchData('/getOrders', id);
+        // var getInventory = fetchData('/getOrders', id);
+
+
+
+
 
       }
 
@@ -69,13 +87,6 @@ $(function(){
 
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
-      $.when(
-        getInventory(array[1],name,array)
-      ).then(function () {
-        console.log("we here");
-      })
-
-
 
     });
   }
@@ -89,9 +100,10 @@ $(function(){
           error: function(error){
             console.log(error);
           }
-        }).then(function (data) {
+        })
+      ).then(function (data) {
+
           var inventory = JSON.parse(data).success.replace(/\(+|,|\)|L|'/g,'')
-          console.log(inventory);
           orderData.push({
             "id": array[0],
             "widgetId": array[1],
@@ -99,8 +111,7 @@ $(function(){
             "amount": array[2],
             "inventory": inventory
           })
-        })
-      );
+        )};
   }
 
 
