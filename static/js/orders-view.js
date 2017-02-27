@@ -66,21 +66,18 @@ $(function(){
         var getName = fetchData('/getWidgetName', id),
           getInventory = fetchData('/getInventory',id);
 
-        $.when(array, getName,getInventory).then(function (array, name,inventory) {
+        $.when(array, i, getName,getInventory).then(function (array, i,name,inventory) {
 
           var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
             inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
 
-          console.log(name, inventory);
-
-          console.log(array);
-          // orderData.push({
-          //   "id": 1,
-          //   "widgetId": array[i][1],
-          //   "name": name,
-          //   "amount": array[i][2],
-          //   "inventory": inventory - array[i][2]
-          // });
+          orderData.push({
+            "id": array[i][0],
+            "widgetId": array[i][1],
+            "name": name,
+            "amount": array[i][2],
+            "inventory": inventory - array[i][2]
+          });
 
         });
 
