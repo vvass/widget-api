@@ -103,7 +103,9 @@ $(function(){
   function addPlusIcon() {
 
     console.log("here");
-    $("h3.ui-accordion-header")
+    $("#widget-grid")
+      .find("h3")
+      .each()
       .append('<span class="ui-icon ui-icon-plus"></span>')
   }
 
