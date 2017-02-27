@@ -69,7 +69,7 @@ $(function(){
 
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
-      orderData.push({"id": array[0], "widgetId": array[1], "name": name, "inventory": array[2]});
+      orderData.push({"id": array[0], "widgetId": array[1], "name": name, "amount": array[2]});
 
     }).then(function (res) {
       dataSource.read();
