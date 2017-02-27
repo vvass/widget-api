@@ -64,7 +64,7 @@ $(function(){
         var getName = fetchData('/getWidgetName', id),
           getInventory = fetchData('/getInventory',id);
 
-        $.when(getName,getInventory).then(function (name,inventory) {
+        $.when(getName,getInventory,array[i]).then(function (name,inventory,array) {
 
           var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
             inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
