@@ -24,7 +24,6 @@ $(function(){
     });
   };
 
-
   function mapResults(result) {
     var widgets = JSON.parse(result);
     var data = widgets.success
@@ -79,19 +78,16 @@ $(function(){
             "inventory": inventory - array[i][2]
           });
 
-          console.log(orderData);
-
           if(orderData.length-1 == i) {
             dataSource.read();
           }
 
-        });
+        }); // end of when
 
       } // end of for loop
 
     }); // end of then
 
   } // end of getData
-
 
 });
