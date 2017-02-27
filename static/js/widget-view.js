@@ -75,6 +75,7 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<span>' +
+            '<p id="widget-id">' + item[0] + '</p>' +
             '<p class="editable-inventory-'+item[0]+'"><span>Inventory: ' + item[2] + '</span>' +
               ' <span class="ui-icon ui-icon-pencil"></span></p>' +
             '<p>Finish ' + ENUMFINISHES[item[3]] + '</p>' +
@@ -143,10 +144,27 @@ $(function(){
       var widgetName = $(this).parent().text();
 
       $("#widget-name").html(widgetName);
-
       $("#spinner-tag").show();
       dialog.dialog( "open" );
 
+
+    });
+
+  }
+
+  function getWidgetId()
+
+  function createOrder(id, ammount) {
+
+    $.ajax({
+      url: '/createOrder/' + id+ '/' + amount,
+      type: 'GET',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function(results) {
+
+      return mapResults(results);
 
     });
 
@@ -222,6 +240,7 @@ $(function(){
   // POPUP
   
   function setupPop() {
+
     dialog = $("#dialog-form" ).dialog({
       autoOpen: false,
       hide: "explode",

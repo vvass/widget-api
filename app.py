@@ -111,7 +111,7 @@ def search_by_category(cat):
 
 # NEW
 
-@app.route('/getOrders', methods=['POST','GET'])
+@app.route('/getOrders', methods=['GET'])
 def get_orders():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
@@ -134,7 +134,7 @@ def get_orders():
         cursor.close()
         db.close()
 
-@app.route('/getWidgetName/<id>', methods=['POST','GET'])
+@app.route('/getWidgetName/<id>', methods=['GET'])
 def get_widget_name(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
@@ -159,7 +159,7 @@ def get_widget_name(id):
         cursor.close()
         db.close()
 
-@app.route('/getWidgets', methods=['POST','GET'])
+@app.route('/getWidgets', methods=['GET'])
 def get_widgets():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
@@ -182,7 +182,7 @@ def get_widgets():
         cursor.close()
         db.close()
 
-@app.route('/getSizes', methods=['POST','GET'])
+@app.route('/getSizes', methods=['GET'])
 def get_sizes():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
@@ -205,7 +205,7 @@ def get_sizes():
         cursor.close()
         db.close()
 
-@app.route('/getFinishes', methods=['POST','GET'])
+@app.route('/getFinishes', methods=['GET'])
 def get_finishes():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
@@ -228,7 +228,7 @@ def get_finishes():
         cursor.close()
         db.close()
 
-@app.route('/getTypes', methods=['POST','GET'])
+@app.route('/getTypes', methods=['GET'])
 def get_types():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
@@ -325,6 +325,32 @@ def get_inventory(id):
     finally:
         cursor.close()
         db.close()
+
+@app.route('/createOrder/<id>/<amount>', methods=['POST','GET'])
+def create_order(id,inventory):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id,_amount=amount)
+
+    query = """INSERT INTO orders (widgetId,amount) VALUES (%(_id)s,%(_amount)s);"""
+
+    try:
+
+        cursor.execute(query,param)
+        db.commit()
+
+        return simplejson.dumps({'success':str('you added a order')})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 
 @app.route('/updateInventoryFromOrder/<id>/<inventory>', methods=['POST','GET'])
 def update_inventory_from_order(id,inventory):
