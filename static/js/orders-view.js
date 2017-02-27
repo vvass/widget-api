@@ -65,27 +65,31 @@ $(function(){
         var getName = fetchData('/getWidgetName', id),
           getInventory = fetchData('/getInventory',id);
 
-        $.when(array, i, getName,getInventory).then(function (array, i,name,inventory) {
+        $.when(array, i, getName,getInventory)
+          .then(function (array, i,name,inventory) {
 
-          var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
-            inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
+            var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
+              inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
 
-          orderData.push({
-            "id": array[i][0],
-            "widgetId": array[i][1],
-            "name": name,
-            "amount": array[i][2],
-            "inventory": inventory - array[i][2],
-            "options": createOptionButtons(array[i][0])
-          });
+            orderData.push({
+              "id": array[i][0],
+              "widgetId": array[i][1],
+              "name": name,
+              "amount": array[i][2],
+              "inventory": inventory - array[i][2],
+              "options": createOptionButtons(array[i][0])
+            });
 
 
 
-          if(orderData.length-1 == i) {
-            dataSource.read();
-          }
+            if(orderData.length-1 == i) {
+              dataSource.read();
+            }
 
-        }); // end of when
+          })
+          .then(function () {
+            addEventToButtons();
+          }); // end of when
 
       } // end of for loop
 
@@ -96,7 +100,7 @@ $(function(){
   function createOptionButtons(orderId) {
 
     var html =  '<span class="ui-icon order-' + orderId + ' ui-icon-circle-plus"></span>' +
-      '<span class="ui-icon order-' + orderId + ' ui-icon-circle-close" onload="addEventToButtons()"></span>';
+      '<span class="ui-icon order-' + orderId + ' ui-icon-circle-close"></span>';
 
     return html;
 
