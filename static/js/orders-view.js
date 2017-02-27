@@ -56,7 +56,6 @@ $(function(){
       for(var i=0; i < array.length; i++){
 
         var id = array[i][1];
-        var name  = getName(id, array[i]);
         // var inventory = getInventory(array[1], array);
 
 
