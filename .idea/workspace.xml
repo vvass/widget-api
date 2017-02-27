@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/orders-view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/widget-view.css" afterPath="$PROJECT_DIR$/static/css/widget-view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/orders.html" afterPath="$PROJECT_DIR$/templates/orders.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +19,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5525862">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="659">
-                  <caret line="304" column="20" lean-forward="false" selection-start-line="304" selection-start-column="20" selection-end-line="304" selection-end-column="20" />
+                <state relative-caret-position="828">
+                  <caret line="303" column="37" lean-forward="false" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
                   <folding>
                     <element signature="e#19#89#0" expanded="true" />
                     <element signature="e#651#1152#0" expanded="false" />
@@ -45,25 +41,25 @@
                     <element signature="e#5222#5854#0" expanded="false" />
                     <element signature="e#5821#5854#0" expanded="false" />
                     <element signature="e#5967#6512#0" expanded="false" />
-                    <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
-                    <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
-                    <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-                    <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
-                    <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
-                    <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
-                    <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
-                    <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
-                    <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
-                    <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
-                    <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
-                    <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
-                    <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
-                    <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
-                    <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
-                    <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
-                    <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
-                    <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
-                    <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
+                    <marker date="1488205828000" expanded="true" signature="563:8513" ph="INSERT INTO orders... " />
+                    <marker date="1488205828000" expanded="false" signature="842:879" ph="DELETE FROM " />
+                    <marker date="1488205828000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+                    <marker date="1488205828000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+                    <marker date="1488205828000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+                    <marker date="1488205828000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+                    <marker date="1488205828000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+                    <marker date="1488205828000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+                    <marker date="1488205828000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+                    <marker date="1488205828000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+                    <marker date="1488205828000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+                    <marker date="1488205828000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+                    <marker date="1488205828000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+                    <marker date="1488205828000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+                    <marker date="1488205828000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+                    <marker date="1488205828000" expanded="true" signature="7441:7549" ph="UPDATE widge... " />
+                    <marker date="1488205828000" expanded="true" signature="7447:7542" ph="update widge... " />
+                    <marker date="1488205828000" expanded="true" signature="7494:7523" ph="select amoun... orders" />
+                    <marker date="1488205828000" expanded="true" signature="8133:8186" ph="UPDATE order... " />
                   </folding>
                 </state>
               </provider>
@@ -89,7 +85,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
@@ -215,6 +211,7 @@
       <find>clickToEditInventory</find>
       <find>input</find>
       <find>btnSignUp</find>
+      <find>update_inventory</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -243,9 +240,9 @@
         <option value="$PROJECT_DIR$/templates/widget-view.html" />
         <option value="$PROJECT_DIR$/static/js/widget-view.js" />
         <option value="$PROJECT_DIR$/static/css/widget-view.css" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/orders.html" />
         <option value="$PROJECT_DIR$/static/js/orders-view.js" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -1018,7 +1015,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96708000" />
+    <option name="totallyTimeSpent" value="96776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1133,25 +1130,25 @@
             <element signature="e#5222#5854#0" expanded="false" />
             <element signature="e#5821#5854#0" expanded="false" />
             <element signature="e#5967#6512#0" expanded="false" />
-            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
-            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
-            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
-            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
-            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
-            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
-            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
-            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
-            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
-            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
-            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="563:8513" ph="INSERT INTO orders... " />
+            <marker date="1488205828000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488205828000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488205828000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488205828000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488205828000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488205828000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488205828000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488205828000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488205828000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7441:7549" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7447:7542" ph="update widge... " />
+            <marker date="1488205828000" expanded="true" signature="7494:7523" ph="select amoun... orders" />
+            <marker date="1488205828000" expanded="true" signature="8133:8186" ph="UPDATE order... " />
           </folding>
         </state>
       </provider>
@@ -1260,25 +1257,25 @@
             <element signature="e#5222#5854#0" expanded="false" />
             <element signature="e#5821#5854#0" expanded="false" />
             <element signature="e#5967#6512#0" expanded="false" />
-            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
-            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
-            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
-            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
-            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
-            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
-            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
-            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
-            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
-            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
-            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="563:8513" ph="INSERT INTO orders... " />
+            <marker date="1488205828000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488205828000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488205828000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488205828000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488205828000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488205828000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488205828000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488205828000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488205828000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7441:7549" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7447:7542" ph="update widge... " />
+            <marker date="1488205828000" expanded="true" signature="7494:7523" ph="select amoun... orders" />
+            <marker date="1488205828000" expanded="true" signature="8133:8186" ph="UPDATE order... " />
           </folding>
         </state>
       </provider>
@@ -1304,25 +1301,25 @@
             <element signature="e#5222#5854#0" expanded="false" />
             <element signature="e#5821#5854#0" expanded="false" />
             <element signature="e#5967#6512#0" expanded="false" />
-            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
-            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
-            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
-            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
-            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
-            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
-            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
-            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
-            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
-            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
-            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="563:8513" ph="INSERT INTO orders... " />
+            <marker date="1488205828000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488205828000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488205828000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488205828000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488205828000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488205828000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488205828000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488205828000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488205828000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7441:7549" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7447:7542" ph="update widge... " />
+            <marker date="1488205828000" expanded="true" signature="7494:7523" ph="select amoun... orders" />
+            <marker date="1488205828000" expanded="true" signature="8133:8186" ph="UPDATE order... " />
           </folding>
         </state>
       </provider>
@@ -1365,50 +1362,6 @@
           <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding>
             <element signature="e#657#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="304" column="20" lean-forward="false" selection-start-line="304" selection-start-column="20" selection-end-line="304" selection-end-column="20" />
-          <folding>
-            <element signature="e#19#89#0" expanded="true" />
-            <element signature="e#651#1152#0" expanded="false" />
-            <element signature="e#902#1017#0" expanded="false" />
-            <element signature="e#1119#1152#0" expanded="false" />
-            <element signature="e#1241#1832#0" expanded="false" />
-            <element signature="e#1578#1697#0" expanded="false" />
-            <element signature="e#1799#1832#0" expanded="false" />
-            <element signature="e#1932#2441#0" expanded="false" />
-            <element signature="e#2520#2968#0" expanded="false" />
-            <element signature="e#3044#3526#0" expanded="false" />
-            <element signature="e#3598#4046#0" expanded="false" />
-            <element signature="e#4124#4575#0" expanded="false" />
-            <element signature="e#4647#5095#0" expanded="false" />
-            <element signature="e#5222#5854#0" expanded="false" />
-            <element signature="e#5821#5854#0" expanded="false" />
-            <element signature="e#5967#6512#0" expanded="false" />
-            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
-            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
-            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
-            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
-            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
-            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
-            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
-            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
-            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
-            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
-            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
-            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
-            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
           </folding>
         </state>
       </provider>
@@ -1483,6 +1436,50 @@
         <state relative-caret-position="120">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="303" column="37" lean-forward="false" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
+          <folding>
+            <element signature="e#19#89#0" expanded="true" />
+            <element signature="e#651#1152#0" expanded="false" />
+            <element signature="e#902#1017#0" expanded="false" />
+            <element signature="e#1119#1152#0" expanded="false" />
+            <element signature="e#1241#1832#0" expanded="false" />
+            <element signature="e#1578#1697#0" expanded="false" />
+            <element signature="e#1799#1832#0" expanded="false" />
+            <element signature="e#1932#2441#0" expanded="false" />
+            <element signature="e#2520#2968#0" expanded="false" />
+            <element signature="e#3044#3526#0" expanded="false" />
+            <element signature="e#3598#4046#0" expanded="false" />
+            <element signature="e#4124#4575#0" expanded="false" />
+            <element signature="e#4647#5095#0" expanded="false" />
+            <element signature="e#5222#5854#0" expanded="false" />
+            <element signature="e#5821#5854#0" expanded="false" />
+            <element signature="e#5967#6512#0" expanded="false" />
+            <marker date="1488205828000" expanded="true" signature="563:8513" ph="INSERT INTO orders... " />
+            <marker date="1488205828000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488205828000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488205828000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488205828000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488205828000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488205828000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488205828000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488205828000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488205828000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7441:7549" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7447:7542" ph="update widge... " />
+            <marker date="1488205828000" expanded="true" signature="7494:7523" ph="select amoun... orders" />
+            <marker date="1488205828000" expanded="true" signature="8133:8186" ph="UPDATE order... " />
+          </folding>
         </state>
       </provider>
     </entry>

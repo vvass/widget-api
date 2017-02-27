@@ -301,8 +301,8 @@ def get_inventory(id):
         cursor.close()
         db.close()
 
-@app.route('/updateInventory/<id>/<inventory>', methods=['POST','GET'])
-def update_inventory(id,inventory):
+@app.route('/updateInventoryFromOrder/<id>/<inventory>', methods=['POST','GET'])
+def update_inventory_from_order(id,inventory):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
