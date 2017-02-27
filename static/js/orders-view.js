@@ -56,24 +56,24 @@ $(function(){
       }
     }).then(function (response) {
 
-      this.array = mapResults(response);
-      for(var i=0; i < this.array.length; i++) {
+      array = mapResults(response);
+      for(var i=0; i < array.length; i++) {
 
-        var id = this.array[i][1];
+        var id = array[i][1];
         // var inventory = getInventory(array[1], array);
 
 
         var getName = fetchData('/getWidgetName', id),
           getInventory = fetchData('/getInventory',id);
 
-        $.when(getName,getInventory).then(function (name,inventory) {
+        $.when(array, getName,getInventory).then(function (array, name,inventory) {
 
           var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
             inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
 
           console.log(name, inventory);
 
-          console.log(this.array);
+          console.log(array);
           // orderData.push({
           //   "id": 1,
           //   "widgetId": array[i][1],
