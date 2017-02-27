@@ -29,12 +29,26 @@
         </div>
 
         <div id="orders-grid">
+            <table id="datas" >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Inventory</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3"></td>
+                    </tr>
+                </tbody>
+            </table>
+
             <script id="template" type="text/x-kendo-template">
                 <tr>
-                    <td>#= rank #</td>
-                    <td>#= rating #</td>
-                    <td>#= title #</td>
-                    <td>#= year #</td>
+                    <td>#= id #</td>
+                    <td>#= name #</td>
+                    <td>#= invnetory #</td>
                 </tr>
             </script>
         </div>

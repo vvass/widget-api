@@ -13,7 +13,7 @@ $(function(){
   var dataSource = new kendo.data.DataSource({
     data: datas,
     change: function () {
-      $("#orders-grid").html(kendo.render(template, this.view()));
+      $("#datas tbody").html(kendo.render(template, this.view()));
     }
   };
 
