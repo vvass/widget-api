@@ -1,5 +1,6 @@
 $(function(){
 
+  var vm = this;
 
   var orderData = [];
 
@@ -46,7 +47,7 @@ $(function(){
 
   function getData() {
 
-    var vm = this;
+
 
     $.ajax({
       url: '/getOrders',
