@@ -78,7 +78,7 @@ $(function(){
             "inventory": inventory - array[i][2],
             "options": createOptionButtons()
           });
-          
+
           addEventToButtons();
 
           if(orderData.length-1 == i) {
