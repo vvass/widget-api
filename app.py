@@ -134,6 +134,31 @@ def get_orders():
         cursor.close()
         db.close()
 
+@app.route('/getWidgetName/<id>', methods=['POST','GET'])
+def get_widget_name(id):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id)
+
+    query = """SELECT name FROM widget WHERE id=%(_id)s"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 @app.route('/getWidgets', methods=['POST','GET'])
 def get_widgets():
 

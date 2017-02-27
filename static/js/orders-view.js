@@ -29,7 +29,9 @@ $(function(){
       url: '/getOrders',
       type: 'GET',
       success: function(response){
-        console.log(mapResults(response));
+        for(var i=0; i<response.length; i++){
+          console.log(aggData(response[i]));
+        }
       },
       error: function(error){
         console.log(error);
@@ -56,6 +58,22 @@ $(function(){
     return array;
   }
 
+  function aggData(row) {
+    return {"id": row[0], "name": getName(row[1]), "inventory": row[2] }
 
+  }
+
+  function getName(id){
+    $.ajax({
+      url: '/getWidgetName/' + id,
+      type: 'GET',
+      success: function(response){
+        console.log(mapResults(response));
+      },
+      error: function(error){
+        console.log(error);
+      }
+    });
+  }
 
 });
