@@ -65,35 +65,45 @@ $(function(){
         console.log(error);
       }
       })
-    ).done(function (data) {
+    ).then(function (data) {
 
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
-      var inventory = getInventory(array[1]);
+      $when(
+        getInventory(array[1],name,array)
+      ).then(function () {
+        console.log("we here");
+      })
 
 
-        // orderData.push({
-        //   "id": array[0],
-        //   "widgetId": array[1],
-        //   "name": name,
-        //   "amount": array[2],
-        //   "inventory":
-        // })
+
+    }).done(function () {
+
+      console.log("done everthing");
     });
   }
 
-  function getInventory(id) {
+  function getInventory(id,name,array) {
 
-      $.ajax({
-        url: '/getInventory/' + id,
-        type: 'GET',
-        error: function(error){
-          console.log(error);
-        }
-      }).then(function (data) {
-        console.log(data.replace(/\(+|,|\)|'/g,''));
-        return data.replace(/\(+|,|\)|'/g,'');
-      });
+      $.when(
+        $.ajax({
+          url: '/getInventory/' + id,
+          type: 'GET',
+          error: function(error){
+            console.log(error);
+          }
+        }).then(function (data) {
+          var inventory = JSON.parse(data).success.replace(/\(+|,|\)|'/g,'')
+          console.log(inventory);
+          orderData.push({
+            "id": array[0],
+            "widgetId": array[1],
+            "name": name,
+            "amount": array[2],
+            "inventory": inventory
+          })
+        })
+      );
   }
 
 
