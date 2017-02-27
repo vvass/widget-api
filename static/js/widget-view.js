@@ -101,7 +101,7 @@ $(function(){
   // ADD PLUS ICON
 
   function addPlusIcon() {
-    $("ui-accordion-header-icon ui-icon ui-icon-triangle-1-s")
+    $("h3.ui-accordion-header")
       .append('<span class="ui-icon ui-icon-plus"></span>')
   }
 
