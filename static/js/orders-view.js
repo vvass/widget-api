@@ -33,15 +33,16 @@ $(function(){
 
       console.log("this");
 
+      var names = [];
       var array = mapResults(response);
       for(var i=0; i < array.length; i++){
 
-        console.log(getName());
-
+         names.push(getName(array[i][1]));
+          // console.log({"id": row[0], "name": results, "inventory": row[2] });
       }
 
     }).then(function (result) {
-      console.log("here");
+      console.log(names);
     });
   }
 
@@ -64,9 +65,9 @@ $(function(){
     return array;
   }
 
-  function getName(array){
+  function getName(id){
     $.ajax({
-      url: '/getWidgetName/' + array[i][1],
+      url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
         console.log(mapResults(response)[0][0]);
@@ -76,8 +77,6 @@ $(function(){
       error: function(error){
         console.log(error);
       }
-    }).then(function (name) {
-      console.log({"id": row[0], "name": name, "inventory": row[2] });
     });
   }
 
