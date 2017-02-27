@@ -276,6 +276,29 @@ def update_inventory(id,newValue):
         cursor.close()
         db.close()
 
+@app.route('/getOrders', methods=['GET'])
+def get_orders():
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    query = """SELECT * FROM orders"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 @app.route('/getInventory/<id>', methods=['GET'])
 def get_inventory(id):
 

@@ -8,6 +8,8 @@ $(function(){
     { "id": 3,  "name": "test2", "inventory": 1235 }
   ];
 
+  var orderData = [];
+
   var template = kendo.template($("#template").html());
 
   var dataSource = new kendo.data.DataSource({
@@ -19,31 +21,39 @@ $(function(){
 
   dataSource.read();
 
-  // $("#orders-grid").kendoGrid({
-  //   dataSource: {
-  //     type: "odata",
-  //     data: datas,
-  //     pageSize: 20
-  //   },
-  //   height: 550,
-  //   groupable: false,
-  //   sortable: false,
-  //   pageable: {
-  //     refresh: true,
-  //     pageSizes: true,
-  //     buttonCount: 5
-  //   },
-  //   columns: [{
-  //     field: "id",
-  //     title: "Id"
-  //   }, {
-  //     field: "name",
-  //     title: "Name"
-  //   }, {
-  //     field: "inventory",
-  //     title: "Inventory"
-  //   }]
-  // });
+
+  function getData() {
+    $.ajax({
+      url: '/getOrders',
+      type: 'GET',
+      success: function(response){
+        console.log(mapResults(response));
+      },
+      error: function(error){
+        console.log(error);
+      }
+    });
+  }
+
+  function mapResults(result) {
+    var widgets = JSON.parse(result);
+    var data = widgets.success
+      .replace(/'/g,'')
+      .replace(/, /g,',')
+      .replace(/L,/g,',')
+      .replace(/L\)/g,')')
+      .replace(/\(\(/g,'(')
+      .replace(/\)\)/g,')')
+      .replace(/\),\(/g,")*(");
+
+    var array = data.split('*');
+    for(var i=0;i < array.length; i++){
+      array[i] = array[i].replace(/\)|\(/g,'').split(',');
+    }
+
+    return array;
+  }
+
 
 
 });
