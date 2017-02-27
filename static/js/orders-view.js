@@ -94,7 +94,7 @@ $(function(){
   function createOptionButtons() {
 
     var html =  '<span class="ui-icon ui-icon-circle-plus"></span>' +
-      '<span class="ui-icon-circle-close"></span>';
+      '<span class="ui-icon ui-icon-circle-close"></span>';
 
     return html;
 
