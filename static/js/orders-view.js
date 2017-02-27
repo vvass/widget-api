@@ -8,8 +8,13 @@ $(function(){
     { "id": 3,  "name": "test2", "inventory": 1235 }
   ];
 
+  var template = kendo.template($("#template").html());
+
   var dataSource = new kendo.data.DataSource({
-    data: datas
+    data: datas,
+    change: function () {
+      $("#orders-grid").html(kendo.render(template, this.view()));
+    }
   };
 
   dataSource.read();
