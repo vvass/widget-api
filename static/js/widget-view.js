@@ -152,7 +152,6 @@ $(function(){
 
   }
 
-  function getWidgetId()
 
   function createOrder(id, ammount) {
 
