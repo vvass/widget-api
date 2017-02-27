@@ -66,18 +66,17 @@ $(function(){
         $.ajax({
         url: '/getWidgetName/' + id,
         type: 'GET',
-        success: function(response){
-          mapResults(response)[0][0];
-        },
         error: function(error){
         console.log(error);
       }
       })
     ).done(function (data,testStatus,jqXHR) {
 
-      console.log(array);
-      console.log(JSON.parse(data));
-      orderData.push({"id": array[0], "name": JSON.parse(data).success, "inventory": array[2]});
+      var name = mapResults(JSON.parse(data).success);
+
+
+      console.log(name);
+      orderData.push({"id": array[0], "name": name, "inventory": array[2]});
 
     }).then(function (res) {
       console.log(orderData);
