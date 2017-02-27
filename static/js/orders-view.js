@@ -36,8 +36,8 @@ $(function(){
       var array = mapResults(response);
       for(var i=0; i < array.length; i++){
 
-        console.log(getName(array[i][1]));
-          // console.log({"id": row[0], "name": results, "inventory": row[2] });
+        console.log(getName());
+
       }
 
     }).then(function (result) {
@@ -64,9 +64,9 @@ $(function(){
     return array;
   }
 
-  function getName(id){
+  function getName(array){
     $.ajax({
-      url: '/getWidgetName/' + id,
+      url: '/getWidgetName/' + array[i][1],
       type: 'GET',
       success: function(response){
         console.log(mapResults(response)[0][0]);
@@ -76,6 +76,8 @@ $(function(){
       error: function(error){
         console.log(error);
       }
+    }).then(function (name) {
+      console.log({"id": row[0], "name": name, "inventory": row[2] });
     });
   }
 
