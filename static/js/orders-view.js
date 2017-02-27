@@ -18,7 +18,7 @@ $(function(){
     return $.ajax({
       type: 'GET',
       url: dataUrls + '/' + id
-    });
+    }).responseText;
   };
 
 
