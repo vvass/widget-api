@@ -1,12 +1,7 @@
 $(function(){
 
-  var datas= [
-    { "id": 1,  "name": "test", "inventory": 123 },
-    { "id": 2,  "name": "test1", "inventory": 1234 },
-    { "id": 3,  "name": "test2", "inventory": 1235 }
-  ];
 
-  var orderData = [], names = [];
+  var orderData = [];
 
   getData();
 

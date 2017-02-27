@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/orders-view.js" afterPath="$PROJECT_DIR$/static/js/orders-view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/orders.html" afterPath="$PROJECT_DIR$/templates/orders.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +20,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.46034482">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="356">
@@ -76,11 +77,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="orders.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="orders.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/orders.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+                <state relative-caret-position="540">
+                  <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -156,11 +157,13 @@
           <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
-                  <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+                <state relative-caret-position="810">
+                  <caret line="75" column="4" lean-forward="true" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
                   <folding>
-                    <element signature="e#1041#1078#0" expanded="false" />
-                    <element signature="e#1430#1467#0" expanded="false" />
+                    <element signature="e#762#1089#0" expanded="false" />
+                    <element signature="e#776#893#0" expanded="false" />
+                    <element signature="e#850#887#0" expanded="false" />
+                    <element signature="e#1239#1276#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -224,10 +227,10 @@
       <find>input</find>
       <find>update_inventory</find>
       <find>btnSignUp</find>
-      <find>get_orders</find>
       <find>then</find>
       <find>console</find>
       <find>JSON</find>
+      <find>get_orders</find>
     </findStrings>
     <replaceStrings>
       <replace>simplejson</replace>
@@ -257,9 +260,9 @@
         <option value="$PROJECT_DIR$/static/css/widget-view.css" />
         <option value="$PROJECT_DIR$/static/js/widget-view.js" />
         <option value="$PROJECT_DIR$/static/css/orders-view.css" />
-        <option value="$PROJECT_DIR$/templates/orders.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/js/orders-view.js" />
+        <option value="$PROJECT_DIR$/templates/orders.html" />
       </list>
     </option>
   </component>
@@ -1032,7 +1035,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103576000" />
+    <option name="totallyTimeSpent" value="103899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1408,14 +1411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -1502,12 +1497,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="810">
+          <caret line="75" column="4" lean-forward="true" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
           <folding>
-            <element signature="e#1041#1078#0" expanded="false" />
-            <element signature="e#1430#1467#0" expanded="false" />
+            <element signature="e#762#1089#0" expanded="false" />
+            <element signature="e#776#893#0" expanded="false" />
+            <element signature="e#850#887#0" expanded="false" />
+            <element signature="e#1239#1276#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
