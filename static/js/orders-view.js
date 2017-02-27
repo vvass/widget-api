@@ -73,8 +73,10 @@ $(function(){
     ).done(function (data,testStatus,jqXHR) {
 
       var result = JSON.parse(data).success;
-      console.log(result);
-      var name = mapResults(result);
+      console.log(result
+        .replace(/\(+|,|\)|'/g,'')
+      );
+      var name = result.replace(/\(+|,|\)|'/g,'');
       console.log(name);
 
 
