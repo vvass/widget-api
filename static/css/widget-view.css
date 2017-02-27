@@ -39,7 +39,12 @@ body {
 }
 
 span.ui-icon.ui-icon-plus:hover {
-    background-color: #8698b4;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    background-color: #7b92ff;
 }
 
 #new-widget-button {

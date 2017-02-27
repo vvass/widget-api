@@ -152,8 +152,8 @@
           <file leaf-file-name="widget-view.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+                <state relative-caret-position="690">
+                  <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -998,7 +998,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93680000" />
+    <option name="totallyTimeSpent" value="93776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1398,8 +1398,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="690">
+          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding />
         </state>
       </provider>
