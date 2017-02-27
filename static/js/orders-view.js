@@ -79,6 +79,8 @@ $(function(){
             "inventory": inventory - array[i][2]
           });
 
+          console.log(orderData);
+
         });
 
       } // end of for loop
