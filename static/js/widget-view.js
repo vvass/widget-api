@@ -127,7 +127,7 @@ $(function(){
       }
     });
 
-    spinner = $( "#inventory-spinner" ).spinner({
+    spinner = $( "#spinner" ).spinner({
       min: 0
     });
 
