@@ -67,8 +67,8 @@ $(function(){
         // var getInventory = fetchData('/getOrders', id);
 
         $.when(getName,getInventory).then(function (name,inventory) {
-          console.log(JSON.parse(name[0]).success);
-          console.log(JSON.parse(inventory[0]).success);
+          console.log(JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''));
+          console.log(JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, ''));
         })
 
 
