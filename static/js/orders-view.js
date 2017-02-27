@@ -103,15 +103,15 @@ $(function(){
         })
       ).then(function (data) {
 
-          var inventory = JSON.parse(data).success.replace(/\(+|,|\)|L|'/g,'')
-          orderData.push({
-            "id": array[0],
-            "widgetId": array[1],
-            "name": name,
-            "amount": array[2],
-            "inventory": inventory
-          })
-        )};
+        var inventory = JSON.parse(data).success.replace(/\(+|,|\)|L|'/g, '')
+        orderData.push({
+          "id": array[0],
+          "widgetId": array[1],
+          "name": name,
+          "amount": array[2],
+          "inventory": inventory
+        });
+      });
   }
 
 
