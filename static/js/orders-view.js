@@ -19,7 +19,7 @@ $(function(){
     }
   });
 
-  dataSource.read();
+
 
 
   function getData() {
@@ -31,13 +31,17 @@ $(function(){
       }
     }).then(function (response) {
 
+      console.log("this");
+
       var array = mapResults(response);
       for(var i=0; i < array.length; i++){
 
-        getName(array[i][1]);
+        console.log(getName(array[i][1]));
           // console.log({"id": row[0], "name": results, "inventory": row[2] });
       }
 
+    }).then(function (result) {
+      console.log("here");
     });
   }
 
@@ -65,13 +69,11 @@ $(function(){
       url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
-        orderData.push(mapResults(response)[0][0]);
+        return mapResults(response)[0][0];
       },
       error: function(error){
         console.log(error);
       }
-    }).then(function (result) {
-      console.log(orderData);
     });
   }
 

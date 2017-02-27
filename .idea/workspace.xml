@@ -155,11 +155,11 @@
           <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="810">
-                  <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+                <state relative-caret-position="540">
+                  <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
                   <folding>
-                    <element signature="e#590#627#0" expanded="false" />
-                    <element signature="e#910#1333#0" expanded="false" />
+                    <element signature="e#570#607#0" expanded="false" />
+                    <element signature="e#990#1413#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -1029,7 +1029,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100510000" />
+    <option name="totallyTimeSpent" value="100735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1497,11 +1497,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+        <state relative-caret-position="540">
+          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
-            <element signature="e#590#627#0" expanded="false" />
-            <element signature="e#910#1333#0" expanded="false" />
+            <element signature="e#570#607#0" expanded="false" />
+            <element signature="e#990#1413#0" expanded="false" />
           </folding>
         </state>
       </provider>
