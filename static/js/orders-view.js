@@ -32,7 +32,7 @@ $(function(){
         var array = mapResults(response);
         for(var i=0; i < array.length; i++){
 
-          console.log(aggData(array[1]));
+          console.log(aggData(array[i]));
         }
       },
       error: function(error){
