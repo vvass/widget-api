@@ -120,12 +120,10 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="167" column="3" lean-forward="true" selection-start-line="167" selection-start-column="3" selection-end-line="167" selection-end-column="3" />
+                <state relative-caret-position="1118">
+                  <caret line="97" column="94" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="94" />
                   <folding>
                     <element signature="e#1027#1450#0" expanded="false" />
-                    <element signature="e#1489#2175#0" expanded="false" />
-                    <element signature="e#2212#2565#0" expanded="false" />
                     <element signature="e#2612#3485#0" expanded="false" />
                     <element signature="e#3522#3750#0" expanded="false" />
                     <element signature="e#3810#4746#0" expanded="false" />
@@ -1040,7 +1038,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113244000" />
+    <option name="totallyTimeSpent" value="113513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1224,8 +1222,6 @@
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding>
             <element signature="e#1027#1450#0" expanded="false" />
-            <element signature="e#1489#2175#0" expanded="false" />
-            <element signature="e#2212#2565#0" expanded="false" />
             <element signature="e#2612#3485#0" expanded="false" />
             <element signature="e#3522#3750#0" expanded="false" />
             <element signature="e#3810#4746#0" expanded="false" />
@@ -1480,14 +1476,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="167" column="3" lean-forward="true" selection-start-line="167" selection-start-column="3" selection-end-line="167" selection-end-column="3" />
+        <state relative-caret-position="1118">
+          <caret line="97" column="94" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="94" />
           <folding>
             <element signature="e#1027#1450#0" expanded="false" />
-            <element signature="e#1489#2175#0" expanded="false" />
-            <element signature="e#2212#2565#0" expanded="false" />
             <element signature="e#2612#3485#0" expanded="false" />
             <element signature="e#3522#3750#0" expanded="false" />
             <element signature="e#3810#4746#0" expanded="false" />
@@ -1515,14 +1517,6 @@
             <marker date="1488227940000" expanded="true" signature="4553:4559" ph=" " />
             <marker date="1488227940000" expanded="false" signature="9070:9139" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>

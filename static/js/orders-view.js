@@ -76,7 +76,7 @@ $(function(){
             "name": name,
             "amount": array[i][2],
             "inventory": inventory - array[i][2],
-            "options": '<div>Something</div>'
+            "options": createOptionButtons()
           });
 
           if(orderData.length-1 == i) {
@@ -90,5 +90,16 @@ $(function(){
     }); // end of then
 
   } // end of getData
+
+  function createOptionButtons() {
+
+    var html =  '<span class="ui-icon ui-icon-circle-plus"></span>' +
+      '<span class="ui-icon-circle-close"></span>';
+
+    return html;
+
+  }
+
+
 
 });
