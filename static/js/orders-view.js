@@ -69,10 +69,7 @@ $(function(){
 
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
-      $.when(
-
-
-        var inventory = getInventory(array[1])-array[2];
+      var inventory = getInventory(array[1]);
 
 
         // orderData.push({
@@ -82,9 +79,6 @@ $(function(){
         //   "amount": array[2],
         //   "inventory":
         // })
-      ).then(function (response) {
-        console.log(response);
-      });
     });
   }
 
