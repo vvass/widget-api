@@ -121,9 +121,7 @@ $(function(){
         Ok: function() {
 
 
-          $( "#getvalue" ).on( "click", function() {
             alert( spinner.spinner( "value" ) );
-          });
 
           $("#spinner-tag").hide();
           $( this ).dialog( "close" );
@@ -147,7 +145,6 @@ $(function(){
       console.log("parent", parent);
 
       $("#spinner-tag").show();
-
       dialog.dialog( "open" );
 
 
