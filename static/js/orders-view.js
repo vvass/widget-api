@@ -50,14 +50,12 @@ $(function(){
       }
     }).then(function (response) {
 
-      console.log("this");
-
       var array = mapResults(response);
       for(var i=0; i < array.length; i++){
 
         var id = array[i][1];
-        getName(id, array);
-        //
+        getName(id, array[i]);
+
       }
 
     });
@@ -69,7 +67,6 @@ $(function(){
         url: '/getWidgetName/' + id,
         type: 'GET',
         success: function(response){
-          console.log(mapResults(response)[0][0]);
           mapResults(response)[0][0];
         },
         error: function(error){
@@ -77,7 +74,10 @@ $(function(){
       }
       })
     ).done(function (data,testStatus,jqXHR) {
-      console.log("got name");
+
+      console.log(array);
+      console.log(data);
+      orderData.push({"id": array[0], "name": data, "inventory": array[2]});
 
     });;
   }
