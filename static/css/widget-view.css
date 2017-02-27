@@ -38,7 +38,7 @@ body {
     background-color: #bedeff;
 }
 
-.ui-icon-plus:hover {
+span.ui-icon.ui-icon-plus:hover {
     background-color: #8698b4;
 }
 
