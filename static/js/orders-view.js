@@ -78,10 +78,10 @@ $(function(){
           "inventory": getInventory(array[1])-array[2]
         })
       ).then(function () {
-        console.log("why here");
+        console.log("why here",orderData);
       });
     }).then(function (res) {
-      console.log("done here");
+      console.log("done here",orderData);
     });
   }
 
@@ -95,7 +95,7 @@ $(function(){
         }
       })
     ).then(function (res) {
-      console.log("and here");
+      console.log("and here",orderData);
     });
   }
 
