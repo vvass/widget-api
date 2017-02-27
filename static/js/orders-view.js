@@ -72,7 +72,10 @@ $(function(){
       })
     ).done(function (data,testStatus,jqXHR) {
 
-      var name = mapResults(JSON.parse(data).success);
+      var result = JSON.parse(data).success;
+      console.log(result);
+      var name = mapResults(result);
+      console.log(name);
 
 
       console.log(name);
