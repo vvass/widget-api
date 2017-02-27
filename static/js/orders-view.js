@@ -68,7 +68,7 @@ $(function(){
 
         $.when(getName,getInventory).then(function (name,inventory) {
           console.log(name);
-          console.log(invnentory);
+          console.log(inventory);
         })
 
 
