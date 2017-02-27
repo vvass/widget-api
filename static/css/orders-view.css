@@ -14,7 +14,7 @@
 }
 
 span.ui-icon.ui-icon-circle-close:hover,
-span.ui-icon.ui-icon-circle-plus {
+span.ui-icon.ui-icon-circle-plus:hover {
     cursor: pointer;
     background-color: #bedeff;
 }

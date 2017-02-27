@@ -96,7 +96,11 @@ $(function(){
     var html =  '<span class="ui-icon ui-icon-circle-plus"></span>' +
       '<span class="ui-icon ui-icon-circle-close"></span>';
 
-    $(".ui-icon-circle-plus").click(function () {
+    $("span.ui-icon.ui-icon-circle-plus").click(function () {
+      alert("asdf");
+    });
+
+    $("span.ui-icon.ui-icon-circle-close").click(function () {
       alert("asdf");
     });
 
