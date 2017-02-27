@@ -102,13 +102,13 @@ $(function(){
 
   function addPlusIcon() {
 
-    console.log("here");
     $("#widget-grid")
       .find("h3")
       .each(function () {
         $(this).append('   <span class="ui-icon ui-icon-plus"></span>')
 
-      })
+      });
+
   }
 
 
