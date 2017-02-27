@@ -6,7 +6,7 @@ $(function(){
     { "id": 3,  "name": "test2", "inventory": 1235 }
   ];
 
-  var orderData = [];
+  var orderData = [], names = [];
 
   getData();
 
@@ -20,33 +20,6 @@ $(function(){
   });
 
 
-
-
-  function getData() {
-
-    var names = [];
-
-    $.ajax({
-      url: '/getOrders',
-      type: 'GET',
-      error: function(error){
-        console.log(error);
-      }
-    }).then(function (response) {
-
-      console.log("this");
-
-      var array = mapResults(response);
-      for(var i=0; i < array.length; i++){
-
-         names.push(getName(array[i][1]));
-          // console.log({"id": row[0], "name": results, "inventory": row[2] });
-      }
-
-    }).then(function (result) {
-      console.log(names);
-    });
-  }
 
   function mapResults(result) {
     var widgets = JSON.parse(result);
@@ -67,19 +40,46 @@ $(function(){
     return array;
   }
 
-  function getName(id){
+  function getData() {
+
+    $.ajax({
+      url: '/getOrders',
+      type: 'GET',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function (response) {
+
+      console.log("this");
+
+      var array = mapResults(response);
+      for(var i=0; i < array.length; i++){
+
+        var id = array[i][1];
+        $.when(getName(id, array)).then(function (data,testStatus,jqXHR) {
+          console.log(got name);
+          
+        })
+        //
+      }
+
+    });
+  }
+
+  function getName(id, array){
     $.ajax({
       url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
         console.log(mapResults(response)[0][0]);
-        return mapResults(response)[0][0];
-
+        mapResults(response)[0][0];
       },
       error: function(error){
         console.log(error);
       }
     });
   }
+
+
 
 });
