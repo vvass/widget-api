@@ -108,9 +108,39 @@ $(function(){
         $(this).append('   <span class="ui-icon ui-icon-plus"></span>');
       });
 
-    $(".ui-icon-plus").click(function () {
-      alert("asdfds");
+    dialog = $("#dialog-order" ).dialog({
+      autoOpen: false,
+      hide: "explode",
+      modal: true,
+      buttons: {
+        Ok: function() {
+
+          $( this ).dialog( "close" );
+
+        },
+        CLOSE: function() {
+
+
+          $( this ).dialog( "close" );
+
+        }
+      }
     });
+
+    $(".ui-icon-plus").click(function () {
+
+      var parent = $(this).parent();
+
+      console.log("parent", parent);
+
+      dialog.dialog( "open" );
+
+
+    });
+
+  }
+
+  function openOrderPopUp() {
 
   }
 
@@ -204,7 +234,7 @@ $(function(){
 
     $("#new-widget-button").append('<button type="button" class="btn btn-default create-new-widget">Create New Widget</button>');
     $("#new-widget-button" ).button().on( "click", function() {
-      dialog.dialog( "open" );
+
     });
     $(".create-new-widget").click(function () {
       fillSizesCheckBoxes('/getSizes');
