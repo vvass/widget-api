@@ -127,6 +127,11 @@ $(function(){
       }
     });
 
+    spinner = $( "#inventory-spinner" ).spinner({
+      min: 0
+    });
+
+
     $(".ui-icon-plus").click(function () {
 
       var parent = $(this).parent();
