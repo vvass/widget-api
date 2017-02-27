@@ -110,7 +110,6 @@ $(function(){
         $(this).append('   <span class="ui-icon ui-icon-plus"></span>');
       });
 
-
     spinner = $( "#spinner" ).spinner({
       min: 0
     });
@@ -122,8 +121,11 @@ $(function(){
       buttons: {
         Ok: function() {
 
+          var id = $("#widget-id").text();
+          console.log(id);
+          var amount = spinner.spinner( "value" );
 
-            alert( spinner.spinner( "value" ) );
+          createOrder(id,amount);
 
           $("#spinner-tag").hide();
           $( this ).dialog( "close" );
