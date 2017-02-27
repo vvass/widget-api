@@ -57,7 +57,7 @@ $(function(){
 
         var id = array[i][1];
         $.when(getName(id, array)).then(function (data,testStatus,jqXHR) {
-          console.log(got name);
+          console.log("got name");
           
         })
         //
