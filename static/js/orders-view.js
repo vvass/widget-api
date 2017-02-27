@@ -73,15 +73,8 @@ $(function(){
     ).done(function (data,testStatus,jqXHR) {
 
       var result = JSON.parse(data).success;
-      console.log(result
-        .replace(/\(+|,|\)|'/g,'')
-      );
       var name = result.replace(/\(+|,|\)|'/g,'');
-      console.log(name);
-
-
-      console.log(name);
-      orderData.push({"id": array[0], "name": name, "inventory": array[2]});
+      orderData.push({"id": array[0], "widgetId": array[1], "name": name, "inventory": array[2]});
 
     }).then(function (res) {
       console.log(orderData);
