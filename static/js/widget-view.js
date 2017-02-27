@@ -125,12 +125,13 @@ $(function(){
             alert( spinner.spinner( "value" ) );
           });
 
+          $("#spinner-tag").hide();
           $( this ).dialog( "close" );
 
         },
         CLOSE: function() {
 
-
+          $("#spinner-tag").hide();
           $( this ).dialog( "close" );
 
         }
@@ -144,6 +145,8 @@ $(function(){
       var parent = $(this).parent();
 
       console.log("parent", parent);
+
+      $("#spinner-tag").show();
 
       dialog.dialog( "open" );
 
