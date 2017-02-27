@@ -77,7 +77,7 @@ $(function(){
       orderData.push({"id": array[0], "widgetId": array[1], "name": name, "inventory": array[2]});
 
     }).then(function (res) {
-      console.log(orderData);
+      dataSource.read();
     });
   }
 
