@@ -156,8 +156,8 @@
           <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="780">
-                  <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+                <state relative-caret-position="810">
+                  <caret line="75" column="19" lean-forward="false" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
                   <folding>
                     <element signature="e#425#462#0" expanded="false" />
                     <element signature="e#508#931#0" expanded="false" />
@@ -1033,7 +1033,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108371000" />
+    <option name="totallyTimeSpent" value="108410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1503,8 +1503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+        <state relative-caret-position="810">
+          <caret line="75" column="19" lean-forward="false" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
           <folding>
             <element signature="e#425#462#0" expanded="false" />
             <element signature="e#508#931#0" expanded="false" />

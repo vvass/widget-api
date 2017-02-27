@@ -71,9 +71,9 @@ $(function(){
 
           console.log(name, inventory);
 
-          console.log(array[i][0]);
+          console.log(array);
           orderData.push({
-            "id": array[i][0],
+            "id": 1,
             "widgetId": array[i][1],
             "name": name,
             "amount": array[i][2],
