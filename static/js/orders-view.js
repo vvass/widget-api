@@ -65,17 +65,39 @@ $(function(){
         console.log(error);
       }
       })
-    ).done(function (data,testStatus,jqXHR) {
+    ).done(function (data) {
 
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
-      orderData.push({"id": array[0], "widgetId": array[1], "name": name, "amount": array[2], "inventory": 0});
-
+      $.when(
+        orderData.push({
+          "id": array[0],
+          "widgetId": array[1],
+          "name": name,
+          "amount": array[2],
+          "inventory": getInventory(array[1])-array[2]
+        })
+      ).then(function () {
+        console.log("why here");
+      });
     }).then(function (res) {
-      dataSource.read();
+      console.log("done here");
     });
   }
 
+  function getInventory(id) {
+    $.when(
+      $.ajax({
+        url: '/getInventory/' + id,
+        type: 'GET',
+        error: function(error){
+          console.log(error);
+        }
+      })
+    ).then(function (res) {
+      console.log("and here");
+    });
+  }
 
 
 });
