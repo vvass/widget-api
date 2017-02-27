@@ -56,10 +56,7 @@ $(function(){
       for(var i=0; i < array.length; i++){
 
         var id = array[i][1];
-        $.when(getName(id, array)).done(function (data,testStatus,jqXHR) {
-          console.log("got name");
-          
-        })
+        getName(id, array);
         //
       }
 
@@ -67,17 +64,22 @@ $(function(){
   }
 
   function getName(id, array){
-    $.ajax({
-      url: '/getWidgetName/' + id,
-      type: 'GET',
-      success: function(response){
-        console.log(mapResults(response)[0][0]);
-        mapResults(response)[0][0];
-      },
-      error: function(error){
+    $.when(
+        $.ajax({
+        url: '/getWidgetName/' + id,
+        type: 'GET',
+        success: function(response){
+          console.log(mapResults(response)[0][0]);
+          mapResults(response)[0][0];
+        },
+        error: function(error){
         console.log(error);
       }
-    });
+      })
+    ).done(function (data,testStatus,jqXHR) {
+      console.log("got name");
+
+    });;
   }
 
 
