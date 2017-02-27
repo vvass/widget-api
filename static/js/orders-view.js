@@ -76,7 +76,7 @@ $(function(){
             "name": name,
             "amount": array[i][2],
             "inventory": inventory - array[i][2],
-            "options": ''
+            "options": '<div>Something</div>'
           });
 
           if(orderData.length-1 == i) {
