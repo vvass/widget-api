@@ -70,7 +70,7 @@ $(function(){
       url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
-        console.log(response);
+        console.log(mapResults(response)[0]);
       },
       error: function(error){
         console.log(error);
