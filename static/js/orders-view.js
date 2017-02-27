@@ -110,8 +110,8 @@ $(function(){
     $("span.ui-icon.ui-icon-circle-plus").click(function () {
 
 
-      var parent = $(this).parent().parent().parent();
-      console.log(parent);
+      var parent = $(this).parent().parent();
+      console.log(parent.find("td").text());
       // console.log(parent.first().text());
       // processOrder(id,newInventory);
 
