@@ -76,8 +76,8 @@ $(function(){
     ).done(function (data,testStatus,jqXHR) {
 
       console.log(array);
-      console.log(data.success);
-      orderData.push({"id": array[0], "name": data.success, "inventory": array[2]});
+      console.log(JSON.parse(data));
+      orderData.push({"id": array[0], "name": JSON.parse(data).success, "inventory": array[2]});
 
     }).then(function (res) {
       console.log(orderData);
