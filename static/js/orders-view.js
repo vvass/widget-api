@@ -32,7 +32,9 @@ $(function(){
         var array = mapResults(response);
         for(var i=0; i < array.length; i++){
 
-          console.log(aggData(array[i]));
+          aggData(array[i]).then(function(results){
+            console.log({"id": row[0], "name": results), "inventory": row[2] });
+          });
         }
       },
       error: function(error){
@@ -61,7 +63,7 @@ $(function(){
   }
 
   function aggData(row) {
-    return {"id": row[0], "name": getName(row[1]), "inventory": row[2] }
+    return getName(row[1]);
 
   }
 
@@ -70,7 +72,7 @@ $(function(){
       url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
-        console.log(mapResults(response)[0][0]);
+        return mapResults(response)[0][0];
       },
       error: function(error){
         console.log(error);
