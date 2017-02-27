@@ -81,33 +81,6 @@ def inc_order(orderId):
         cursor.close()
         db.close()
 
-@app.route('/getAvalQuantity/<id>', methods=['POST','GET'])
-def get_avalable_quantity(id):
-
-    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
-    cursor=db.cursor()
-
-    param = dict(_id=id)
-
-    query = """SELECT avalQuantity,id FROM orders WHERE id=%(_id)s"""
-
-    try:
-
-        cursor.execute(query,param)
-        data=cursor.fetchall()
-
-        return simplejson.dumps({'success':str(data)})
-
-
-    except Exception as e:
-        return simplejson.dumps({'error':str(e)})
-
-    finally:
-        cursor.close()
-        db.close()
-
-
-
 
 
 @app.route('/searchByCategory/<cat>', methods=['POST','GET'])
@@ -303,7 +276,80 @@ def update_inventory(id,newValue):
         cursor.close()
         db.close()
 
+@app.route('/getInventory/<id>', methods=['GET'])
+def get_inventory(id):
 
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id)
+
+    query = """SELECT inventory FROM widget WHERE id=%(_id)s"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+@app.route('/updateInventory/<id>/<inventory>', methods=['POST','GET'])
+def update_inventory(id,inventory):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id,_inventory=inventory)
+
+    query = """UPDATE widget SET inventory=(%(_inventory)s - (SELECT amount FROM orders WHERE id=%(_id)s)) where id=%(_id)s;"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+@app.route('/setOrderAmount/<id>/<amount>', methods=['POST','GET'])
+def set_order_amount(id,amount):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id,_amount=amount)
+
+    query = """UPDATE orders SET amount=%(_amount)s where id=%(_id)s;"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0')

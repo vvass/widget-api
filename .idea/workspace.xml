@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/orders-view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/widget-view.css" afterPath="$PROJECT_DIR$/static/css/widget-view.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/orders.html" afterPath="$PROJECT_DIR$/templates/orders.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,14 +20,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47413793">
+    <splitter split-orientation="horizontal" split-proportion="0.5525862">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="23" />
+                <state relative-caret-position="659">
+                  <caret line="304" column="20" lean-forward="false" selection-start-line="304" selection-start-column="20" selection-end-line="304" selection-end-column="20" />
                   <folding>
                     <element signature="e#19#89#0" expanded="true" />
                     <element signature="e#651#1152#0" expanded="false" />
@@ -32,29 +36,34 @@
                     <element signature="e#1241#1832#0" expanded="false" />
                     <element signature="e#1578#1697#0" expanded="false" />
                     <element signature="e#1799#1832#0" expanded="false" />
-                    <element signature="e#1930#2441#0" expanded="false" />
-                    <element signature="e#2543#3052#0" expanded="false" />
-                    <element signature="e#3131#3579#0" expanded="false" />
-                    <element signature="e#3655#4137#0" expanded="false" />
-                    <element signature="e#4209#4657#0" expanded="false" />
-                    <element signature="e#4735#5186#0" expanded="false" />
-                    <element signature="e#5258#5706#0" expanded="false" />
-                    <element signature="e#5833#6465#0" expanded="false" />
-                    <element signature="e#6432#6465#0" expanded="false" />
-                    <marker date="1487994610000" expanded="true" signature="563:7179" ph="INSERT INTO orders... " />
-                    <marker date="1487994610000" expanded="false" signature="842:879" ph="DELETE FROM " />
-                    <marker date="1487994610000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-                    <marker date="1487994610000" expanded="true" signature="2118:2169" ph="SELECT * FRO... orders" />
-                    <marker date="1487994610000" expanded="true" signature="2733:2777" ph="SELECT * FRO... orders" />
-                    <marker date="1487994610000" expanded="true" signature="3293:3307" ph="SELECT * FRO... orders" />
-                    <marker date="1487994610000" expanded="true" signature="3293:3313" ph="SELECT * FRO... orders" />
-                    <marker date="1487994610000" expanded="true" signature="3817:3871" ph="SELECT * FRO... widget" />
-                    <marker date="1487994610000" expanded="true" signature="4371:4390" ph="SELECT * FRO... sizes" />
-                    <marker date="1487994610000" expanded="true" signature="4377:4390" ph="select * fro... sizes" />
-                    <marker date="1487994610000" expanded="true" signature="4897:4919" ph="SELECT * FRO... finishes" />
-                    <marker date="1487994610000" expanded="true" signature="5420:5439" ph="SELECT * FRO... types" />
-                    <marker date="1487994610000" expanded="true" signature="6066:6184" ph="INSERT INTO widget... " />
-                    <marker date="1487994610000" expanded="true" signature="6785:6843" ph="UPDATE widge... " />
+                    <element signature="e#1932#2441#0" expanded="false" />
+                    <element signature="e#2520#2968#0" expanded="false" />
+                    <element signature="e#3044#3526#0" expanded="false" />
+                    <element signature="e#3598#4046#0" expanded="false" />
+                    <element signature="e#4124#4575#0" expanded="false" />
+                    <element signature="e#4647#5095#0" expanded="false" />
+                    <element signature="e#5222#5854#0" expanded="false" />
+                    <element signature="e#5821#5854#0" expanded="false" />
+                    <element signature="e#5967#6512#0" expanded="false" />
+                    <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
+                    <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
+                    <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+                    <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+                    <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+                    <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+                    <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+                    <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+                    <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+                    <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+                    <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+                    <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+                    <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+                    <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+                    <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+                    <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
+                    <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
+                    <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
+                    <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
                   </folding>
                 </state>
               </provider>
@@ -63,18 +72,28 @@
           <file leaf-file-name="orders.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/orders.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="92" lean-forward="false" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+                <state relative-caret-position="450">
+                  <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="widget-view.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="45" />
+                <state relative-caret-position="180">
+                  <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -106,11 +125,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="855">
-                  <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
                   <folding>
                     <element signature="e#903#995#0" expanded="false" />
                     <element signature="e#1027#1450#0" expanded="false" />
@@ -149,11 +168,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="widget-view.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="690">
-                  <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -168,8 +187,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -220,12 +239,13 @@
         <option value="$PROJECT_DIR$/widgets.py" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/templates/widgets-create.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/widget-view.html" />
-        <option value="$PROJECT_DIR$/templates/orders.html" />
         <option value="$PROJECT_DIR$/static/js/widget-view.js" />
         <option value="$PROJECT_DIR$/static/css/widget-view.css" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/orders.html" />
+        <option value="$PROJECT_DIR$/static/js/orders-view.js" />
       </list>
     </option>
   </component>
@@ -998,7 +1018,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93776000" />
+    <option name="totallyTimeSpent" value="96708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1037,6 +1057,40 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07863384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1070,29 +1124,34 @@
             <element signature="e#1241#1832#0" expanded="false" />
             <element signature="e#1578#1697#0" expanded="false" />
             <element signature="e#1799#1832#0" expanded="false" />
-            <element signature="e#1930#2441#0" expanded="false" />
-            <element signature="e#2543#3052#0" expanded="false" />
-            <element signature="e#3131#3579#0" expanded="false" />
-            <element signature="e#3655#4137#0" expanded="false" />
-            <element signature="e#4209#4657#0" expanded="false" />
-            <element signature="e#4735#5186#0" expanded="false" />
-            <element signature="e#5258#5706#0" expanded="false" />
-            <element signature="e#5833#6465#0" expanded="false" />
-            <element signature="e#6432#6465#0" expanded="false" />
-            <marker date="1487994610000" expanded="true" signature="563:7179" ph="INSERT INTO orders... " />
-            <marker date="1487994610000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1487994610000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1487994610000" expanded="true" signature="2118:2169" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="2733:2777" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3307" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3313" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3817:3871" ph="SELECT * FRO... widget" />
-            <marker date="1487994610000" expanded="true" signature="4371:4390" ph="SELECT * FRO... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4377:4390" ph="select * fro... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4897:4919" ph="SELECT * FRO... finishes" />
-            <marker date="1487994610000" expanded="true" signature="5420:5439" ph="SELECT * FRO... types" />
-            <marker date="1487994610000" expanded="true" signature="6066:6184" ph="INSERT INTO widget... " />
-            <marker date="1487994610000" expanded="true" signature="6785:6843" ph="UPDATE widge... " />
+            <element signature="e#1932#2441#0" expanded="false" />
+            <element signature="e#2520#2968#0" expanded="false" />
+            <element signature="e#3044#3526#0" expanded="false" />
+            <element signature="e#3598#4046#0" expanded="false" />
+            <element signature="e#4124#4575#0" expanded="false" />
+            <element signature="e#4647#5095#0" expanded="false" />
+            <element signature="e#5222#5854#0" expanded="false" />
+            <element signature="e#5821#5854#0" expanded="false" />
+            <element signature="e#5967#6512#0" expanded="false" />
+            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
+            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
+            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
+            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
           </folding>
         </state>
       </provider>
@@ -1192,29 +1251,34 @@
             <element signature="e#1241#1832#0" expanded="false" />
             <element signature="e#1578#1697#0" expanded="false" />
             <element signature="e#1799#1832#0" expanded="false" />
-            <element signature="e#1930#2441#0" expanded="false" />
-            <element signature="e#2543#3052#0" expanded="false" />
-            <element signature="e#3131#3579#0" expanded="false" />
-            <element signature="e#3655#4137#0" expanded="false" />
-            <element signature="e#4209#4657#0" expanded="false" />
-            <element signature="e#4735#5186#0" expanded="false" />
-            <element signature="e#5258#5706#0" expanded="false" />
-            <element signature="e#5833#6465#0" expanded="false" />
-            <element signature="e#6432#6465#0" expanded="false" />
-            <marker date="1487994610000" expanded="true" signature="563:7179" ph="INSERT INTO orders... " />
-            <marker date="1487994610000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1487994610000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1487994610000" expanded="true" signature="2118:2169" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="2733:2777" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3307" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3313" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3817:3871" ph="SELECT * FRO... widget" />
-            <marker date="1487994610000" expanded="true" signature="4371:4390" ph="SELECT * FRO... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4377:4390" ph="select * fro... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4897:4919" ph="SELECT * FRO... finishes" />
-            <marker date="1487994610000" expanded="true" signature="5420:5439" ph="SELECT * FRO... types" />
-            <marker date="1487994610000" expanded="true" signature="6066:6184" ph="INSERT INTO widget... " />
-            <marker date="1487994610000" expanded="true" signature="6785:6843" ph="UPDATE widge... " />
+            <element signature="e#1932#2441#0" expanded="false" />
+            <element signature="e#2520#2968#0" expanded="false" />
+            <element signature="e#3044#3526#0" expanded="false" />
+            <element signature="e#3598#4046#0" expanded="false" />
+            <element signature="e#4124#4575#0" expanded="false" />
+            <element signature="e#4647#5095#0" expanded="false" />
+            <element signature="e#5222#5854#0" expanded="false" />
+            <element signature="e#5821#5854#0" expanded="false" />
+            <element signature="e#5967#6512#0" expanded="false" />
+            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
+            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
+            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
+            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
           </folding>
         </state>
       </provider>
@@ -1231,29 +1295,34 @@
             <element signature="e#1241#1832#0" expanded="false" />
             <element signature="e#1578#1697#0" expanded="false" />
             <element signature="e#1799#1832#0" expanded="false" />
-            <element signature="e#1930#2441#0" expanded="false" />
-            <element signature="e#2543#3052#0" expanded="false" />
-            <element signature="e#3131#3579#0" expanded="false" />
-            <element signature="e#3655#4137#0" expanded="false" />
-            <element signature="e#4209#4657#0" expanded="false" />
-            <element signature="e#4735#5186#0" expanded="false" />
-            <element signature="e#5258#5706#0" expanded="false" />
-            <element signature="e#5833#6465#0" expanded="false" />
-            <element signature="e#6432#6465#0" expanded="false" />
-            <marker date="1487994610000" expanded="true" signature="563:7179" ph="INSERT INTO orders... " />
-            <marker date="1487994610000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1487994610000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1487994610000" expanded="true" signature="2118:2169" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="2733:2777" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3307" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3313" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3817:3871" ph="SELECT * FRO... widget" />
-            <marker date="1487994610000" expanded="true" signature="4371:4390" ph="SELECT * FRO... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4377:4390" ph="select * fro... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4897:4919" ph="SELECT * FRO... finishes" />
-            <marker date="1487994610000" expanded="true" signature="5420:5439" ph="SELECT * FRO... types" />
-            <marker date="1487994610000" expanded="true" signature="6066:6184" ph="INSERT INTO widget... " />
-            <marker date="1487994610000" expanded="true" signature="6785:6843" ph="UPDATE widge... " />
+            <element signature="e#1932#2441#0" expanded="false" />
+            <element signature="e#2520#2968#0" expanded="false" />
+            <element signature="e#3044#3526#0" expanded="false" />
+            <element signature="e#3598#4046#0" expanded="false" />
+            <element signature="e#4124#4575#0" expanded="false" />
+            <element signature="e#4647#5095#0" expanded="false" />
+            <element signature="e#5222#5854#0" expanded="false" />
+            <element signature="e#5821#5854#0" expanded="false" />
+            <element signature="e#5967#6512#0" expanded="false" />
+            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
+            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
+            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
+            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
           </folding>
         </state>
       </provider>
@@ -1290,53 +1359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="e#19#89#0" expanded="true" />
-            <element signature="e#651#1152#0" expanded="false" />
-            <element signature="e#902#1017#0" expanded="false" />
-            <element signature="e#1119#1152#0" expanded="false" />
-            <element signature="e#1241#1832#0" expanded="false" />
-            <element signature="e#1578#1697#0" expanded="false" />
-            <element signature="e#1799#1832#0" expanded="false" />
-            <element signature="e#1930#2441#0" expanded="false" />
-            <element signature="e#2543#3052#0" expanded="false" />
-            <element signature="e#3131#3579#0" expanded="false" />
-            <element signature="e#3655#4137#0" expanded="false" />
-            <element signature="e#4209#4657#0" expanded="false" />
-            <element signature="e#4735#5186#0" expanded="false" />
-            <element signature="e#5258#5706#0" expanded="false" />
-            <element signature="e#5833#6465#0" expanded="false" />
-            <element signature="e#6432#6465#0" expanded="false" />
-            <marker date="1487994610000" expanded="true" signature="563:7179" ph="INSERT INTO orders... " />
-            <marker date="1487994610000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1487994610000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1487994610000" expanded="true" signature="2118:2169" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="2733:2777" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3307" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3293:3313" ph="SELECT * FRO... orders" />
-            <marker date="1487994610000" expanded="true" signature="3817:3871" ph="SELECT * FRO... widget" />
-            <marker date="1487994610000" expanded="true" signature="4371:4390" ph="SELECT * FRO... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4377:4390" ph="select * fro... sizes" />
-            <marker date="1487994610000" expanded="true" signature="4897:4919" ph="SELECT * FRO... finishes" />
-            <marker date="1487994610000" expanded="true" signature="5420:5439" ph="SELECT * FRO... types" />
-            <marker date="1487994610000" expanded="true" signature="6066:6184" ph="INSERT INTO widget... " />
-            <marker date="1487994610000" expanded="true" signature="6785:6843" ph="UPDATE widge... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="92" lean-forward="false" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1347,18 +1369,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="659">
+          <caret line="304" column="20" lean-forward="false" selection-start-line="304" selection-start-column="20" selection-end-line="304" selection-end-column="20" />
+          <folding>
+            <element signature="e#19#89#0" expanded="true" />
+            <element signature="e#651#1152#0" expanded="false" />
+            <element signature="e#902#1017#0" expanded="false" />
+            <element signature="e#1119#1152#0" expanded="false" />
+            <element signature="e#1241#1832#0" expanded="false" />
+            <element signature="e#1578#1697#0" expanded="false" />
+            <element signature="e#1799#1832#0" expanded="false" />
+            <element signature="e#1932#2441#0" expanded="false" />
+            <element signature="e#2520#2968#0" expanded="false" />
+            <element signature="e#3044#3526#0" expanded="false" />
+            <element signature="e#3598#4046#0" expanded="false" />
+            <element signature="e#4124#4575#0" expanded="false" />
+            <element signature="e#4647#5095#0" expanded="false" />
+            <element signature="e#5222#5854#0" expanded="false" />
+            <element signature="e#5821#5854#0" expanded="false" />
+            <element signature="e#5967#6512#0" expanded="false" />
+            <marker date="1488204515000" expanded="true" signature="563:8493" ph="INSERT INTO orders... " />
+            <marker date="1488204515000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488204515000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488204515000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488204515000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488204515000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488204515000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488204515000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488204515000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488204515000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488204515000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488204515000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7421:7529" ph="UPDATE widge... " />
+            <marker date="1488204515000" expanded="true" signature="7427:7522" ph="update widge... " />
+            <marker date="1488204515000" expanded="true" signature="7474:7503" ph="select amoun... orders" />
+            <marker date="1488204515000" expanded="true" signature="8113:8166" ph="UPDATE order... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
           <folding>
             <element signature="e#903#995#0" expanded="false" />
             <element signature="e#1027#1450#0" expanded="false" />
@@ -1396,10 +1462,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/widget-view.css">
+    <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
