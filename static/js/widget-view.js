@@ -140,7 +140,7 @@ $(function(){
 
     $(".ui-icon-plus").click(function () {
 
-      var parent = $(this).parent();
+      var parent = $(this).parent().text();
 
       console.log("parent", parent);
 
@@ -151,6 +151,7 @@ $(function(){
     });
 
   }
+
 
 
 
