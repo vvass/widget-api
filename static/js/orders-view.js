@@ -18,7 +18,7 @@ $(function(){
     return $.ajax({
       type: 'GET',
       url: dataUrls + '/' + id
-    }).responseText;
+    });
   };
 
 
@@ -60,7 +60,7 @@ $(function(){
 
 
 
-        var name = fetchData('/getWidgetName', id);
+        var name = JSON.parse(fetchData('/getWidgetName', id)).success.replace(/\(+|,|\)|'/g,'');
         console.log(name);
         // var getInventory = fetchData('/getOrders', id);
 
