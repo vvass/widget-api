@@ -26,20 +26,19 @@ $(function(){
     $.ajax({
       url: '/getOrders',
       type: 'GET',
-      success: function(response){
-        console.log("respnse" , response);
-
-        var array = mapResults(response);
-        for(var i=0; i < array.length; i++){
-
-          aggData(array[i]).then(function(results){
-            console.log({"id": row[0], "name": results, "inventory": row[2] });
-          });
-        }
-      },
       error: function(error){
         console.log(error);
       }
+    }).then(function (response) {
+      console.log("respnse" , response);
+
+      var array = mapResults(response);
+      for(var i=0; i < array.length; i++){
+
+        console.log(getName(array[i][1]));
+          // console.log({"id": row[0], "name": results, "inventory": row[2] });
+      }
+
     });
   }
 
@@ -60,11 +59,6 @@ $(function(){
     }
 
     return array;
-  }
-
-  function aggData(row) {
-    return getName(row[1]);
-
   }
 
   function getName(id){
