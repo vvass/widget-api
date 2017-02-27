@@ -105,8 +105,10 @@ $(function(){
     console.log("here");
     $("#widget-grid")
       .find("h3")
-      .each()
-      .append('<span class="ui-icon ui-icon-plus"></span>')
+      .each(function () {
+        $(this).append('<span class="ui-icon ui-icon-plus"></span>')
+
+      })
   }
 
 
