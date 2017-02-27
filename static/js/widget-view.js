@@ -75,7 +75,7 @@ $(function(){
       var html ='<h3 class="header-hover">' + item[1] + '</h3>' +
         '<div>' +
           '<span>' +
-            '<p id="widget-id">' + item[0] + '</p>' +
+            '<p id="widget-id" style="display:none">' + item[0] + '</p>' +
             '<p class="editable-inventory-'+item[0]+'"><span>Inventory: ' + item[2] + '</span>' +
               ' <span class="ui-icon ui-icon-pencil"></span></p>' +
             '<p>Finish ' + ENUMFINISHES[item[3]] + '</p>' +
@@ -83,6 +83,7 @@ $(function(){
             '<p>Type ' + ENUMTYPES[item[5]] + '</p>' +
           '</span>' +
         '</div>';
+
 
       $("#widget-grid").append(html);
 
