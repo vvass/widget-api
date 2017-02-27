@@ -27,6 +27,7 @@ $(function(){
         widgetAccordion(response);
         setupPop();
         buttonFilterContainer();
+        addPlusIcon();
 
         $('#widget-grid').accordion({
           collapsible: true,
@@ -96,6 +97,14 @@ $(function(){
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Size</button>');
     $("#filter-buttons").append('<button type="button" class="btn btn-default">Types</button>');
   }
+
+  // ADD PLUS ICON
+
+  function addPlusIcon() {
+    $("ui-accordion-header-icon ui-icon ui-icon-triangle-1-s")
+      .append('<span class="ui-icon ui-icon-plus"></span>')
+  }
+
 
   // EDIT INV
 
