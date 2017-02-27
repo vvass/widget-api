@@ -1,7 +1,5 @@
 $(function(){
 
-  console.log("grid");
-
   var datas= [
     { "id": 1,  "name": "test", "inventory": 123 },
     { "id": 2,  "name": "test1", "inventory": 1234 },
@@ -33,7 +31,8 @@ $(function(){
 
         var array = mapResults(response);
         for(var i=0; i < array.length; i++){
-          console.log(aggData(response[i]));
+
+          console.log(aggData(array[1]));
         }
       },
       error: function(error){
@@ -71,7 +70,7 @@ $(function(){
       url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
-        console.log(mapResults(response));
+        console.log(response);
       },
       error: function(error){
         console.log(error);

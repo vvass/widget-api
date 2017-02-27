@@ -157,9 +157,12 @@
           <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-                  <folding />
+                <state relative-caret-position="510">
+                  <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#818#855#0" expanded="false" />
+                    <element signature="e#899#1322#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -1027,7 +1030,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99198000" />
+    <option name="totallyTimeSpent" value="99423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1501,9 +1504,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="510">
+          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="e#818#855#0" expanded="false" />
+            <element signature="e#899#1322#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
