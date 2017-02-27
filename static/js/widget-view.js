@@ -108,12 +108,22 @@ $(function(){
         $(this).append('   <span class="ui-icon ui-icon-plus"></span>');
       });
 
+
+    spinner = $( "#spinner" ).spinner({
+      min: 0
+    });
+
     dialog = $("#dialog-order" ).dialog({
       autoOpen: false,
       hide: "explode",
       modal: true,
       buttons: {
         Ok: function() {
+
+
+          $( "#getvalue" ).on( "click", function() {
+            alert( spinner.spinner( "value" ) );
+          });
 
           $( this ).dialog( "close" );
 
@@ -127,9 +137,6 @@ $(function(){
       }
     });
 
-    spinner = $( "#spinner" ).spinner({
-      min: 0
-    });
 
 
     $(".ui-icon-plus").click(function () {
@@ -145,9 +152,6 @@ $(function(){
 
   }
 
-  function openOrderPopUp() {
-
-  }
 
 
   // EDIT INV
