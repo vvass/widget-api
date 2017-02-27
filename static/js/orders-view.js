@@ -66,11 +66,14 @@ $(function(){
       url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
+        console.log(mapResults(response)[0][0]);
         return mapResults(response)[0][0];
       },
       error: function(error){
         console.log(error);
       }
+    }).then(function (result) {
+      console.log(result);
     });
   }
 
