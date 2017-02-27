@@ -54,3 +54,7 @@ span.ui-icon.ui-icon-pencil:hover {
     cursor: pointer;
     background-color: #bedeff;
 }
+
+#spinner-tag {
+    display: none;
+}
