@@ -30,12 +30,11 @@ $(function(){
         console.log(error);
       }
     }).then(function (response) {
-      console.log("respnse" , response);
 
       var array = mapResults(response);
       for(var i=0; i < array.length; i++){
 
-        console.log(getName(array[i][1]));
+        getName(array[i][1]);
           // console.log({"id": row[0], "name": results, "inventory": row[2] });
       }
 
@@ -66,14 +65,13 @@ $(function(){
       url: '/getWidgetName/' + id,
       type: 'GET',
       success: function(response){
-        console.log(mapResults(response)[0][0]);
-        return mapResults(response)[0][0];
+        orderData.push(mapResults(response)[0][0]);
       },
       error: function(error){
         console.log(error);
       }
     }).then(function (result) {
-      console.log(result);
+      console.log(orderData);
     });
   }
 
