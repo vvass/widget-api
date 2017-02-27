@@ -69,6 +69,7 @@ $(function(){
           var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
             inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
 
+          console.log(name, inventory);
 
           console.log(array);
           orderData.push({
