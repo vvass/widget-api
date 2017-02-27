@@ -69,7 +69,7 @@ $(function(){
 
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
-      $when(
+      $.when(
         getInventory(array[1],name,array)
       ).then(function () {
         console.log("we here");
