@@ -81,6 +81,10 @@ $(function(){
 
           console.log(orderData);
 
+          if(orderData.length-1 == i) {
+            dataSource.read();
+          }
+
         });
 
       } // end of for loop
