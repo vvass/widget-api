@@ -56,7 +56,7 @@ $(function(){
     });
   }
 
-  function getName(id, array){
+  function getName(id, array) {
     $.when(
         $.ajax({
         url: '/getWidgetName/' + id,
@@ -70,33 +70,36 @@ $(function(){
       var result = JSON.parse(data).success;
       var name = result.replace(/\(+|,|\)|'/g,'');
       $.when(
-        orderData.push({
-          "id": array[0],
-          "widgetId": array[1],
-          "name": name,
-          "amount": array[2],
-          "inventory": getInventory(array[1])-array[2]
-        })
-      ).then(function () {
-        console.log("why here",orderData);
+
+
+        var inventory = getInventory(array[1])-array[2];
+
+
+        // orderData.push({
+        //   "id": array[0],
+        //   "widgetId": array[1],
+        //   "name": name,
+        //   "amount": array[2],
+        //   "inventory":
+        // })
+      ).then(function (response) {
+        console.log(response);
       });
-    }).then(function (res) {
-      console.log("done here",orderData);
     });
   }
 
   function getInventory(id) {
-    $.when(
+
       $.ajax({
         url: '/getInventory/' + id,
         type: 'GET',
         error: function(error){
           console.log(error);
         }
-      })
-    ).then(function (res) {
-      console.log("and here",orderData);
-    });
+      }).then(function (data) {
+        console.log(data.replace(/\(+|,|\)|'/g,''));
+        return data.replace(/\(+|,|\)|'/g,'');
+      });
   }
 
 

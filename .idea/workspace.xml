@@ -158,14 +158,15 @@
           <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1110">
-                  <caret line="97" column="38" lean-forward="false" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+                <state relative-caret-position="960">
+                  <caret line="85" column="28" lean-forward="false" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
                   <folding>
                     <element signature="e#762#1089#0" expanded="false" />
                     <element signature="e#776#893#0" expanded="false" />
                     <element signature="e#850#887#0" expanded="false" />
-                    <element signature="e#1239#1276#0" expanded="false" />
-                    <element signature="e#1937#1978#0" expanded="false" />
+                    <element signature="e#1240#1277#0" expanded="false" />
+                    <element signature="e#1902#1943#0" expanded="false" />
+                    <marker date="1488219595000" expanded="true" signature="1121:1767" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -1037,7 +1038,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104547000" />
+    <option name="totallyTimeSpent" value="104790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1515,14 +1516,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="97" column="38" lean-forward="false" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
+        <state relative-caret-position="960">
+          <caret line="85" column="28" lean-forward="false" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
           <folding>
             <element signature="e#762#1089#0" expanded="false" />
             <element signature="e#776#893#0" expanded="false" />
             <element signature="e#850#887#0" expanded="false" />
-            <element signature="e#1239#1276#0" expanded="false" />
-            <element signature="e#1937#1978#0" expanded="false" />
+            <element signature="e#1240#1277#0" expanded="false" />
+            <element signature="e#1902#1943#0" expanded="false" />
+            <marker date="1488219595000" expanded="true" signature="1121:1767" ph="{...}" />
           </folding>
         </state>
       </provider>
