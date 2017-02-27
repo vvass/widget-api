@@ -23,6 +23,9 @@ $(function(){
 
 
   function getData() {
+
+    var names = [];
+
     $.ajax({
       url: '/getOrders',
       type: 'GET',
@@ -33,7 +36,6 @@ $(function(){
 
       console.log("this");
 
-      var names = [];
       var array = mapResults(response);
       for(var i=0; i < array.length; i++){
 
