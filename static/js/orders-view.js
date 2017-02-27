@@ -111,7 +111,8 @@ $(function(){
 
 
       var parent = $(this).parent();
-      console.log(parent.firstChild().text());
+      console.log(parent);
+      console.log(parent.first().text());
       // processOrder(id,newInventory);
 
     });
