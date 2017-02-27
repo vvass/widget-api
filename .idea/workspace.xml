@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/orders-view.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/orders-view.js" afterPath="$PROJECT_DIR$/static/js/orders-view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/orders.html" afterPath="$PROJECT_DIR$/templates/orders.html" />
     </list>
@@ -76,21 +78,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="orders.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="orders.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/orders.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="28" />
+                <state relative-caret-position="945">
+                  <caret line="63" column="52" lean-forward="false" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -122,7 +124,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="900">
@@ -175,6 +177,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="orders-view.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/static/css/orders-view.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -183,9 +195,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -215,8 +227,8 @@
       <find>btnSignUp</find>
     </findStrings>
     <replaceStrings>
-      <replace>'</replace>
       <replace>simplejson</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -242,8 +254,9 @@
         <option value="$PROJECT_DIR$/static/css/widget-view.css" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/js/widget-view.js" />
-        <option value="$PROJECT_DIR$/templates/orders.html" />
         <option value="$PROJECT_DIR$/static/js/orders-view.js" />
+        <option value="$PROJECT_DIR$/static/css/orders-view.css" />
+        <option value="$PROJECT_DIR$/templates/orders.html" />
       </list>
     </option>
   </component>
@@ -1016,7 +1029,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97497000" />
+    <option name="totallyTimeSpent" value="97818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1375,50 +1388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="303" column="37" lean-forward="false" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
-          <folding>
-            <element signature="e#19#89#0" expanded="true" />
-            <element signature="e#651#1152#0" expanded="false" />
-            <element signature="e#902#1017#0" expanded="false" />
-            <element signature="e#1119#1152#0" expanded="false" />
-            <element signature="e#1241#1832#0" expanded="false" />
-            <element signature="e#1578#1697#0" expanded="false" />
-            <element signature="e#1799#1832#0" expanded="false" />
-            <element signature="e#1932#2441#0" expanded="false" />
-            <element signature="e#2520#2968#0" expanded="false" />
-            <element signature="e#3044#3526#0" expanded="false" />
-            <element signature="e#3598#4046#0" expanded="false" />
-            <element signature="e#4124#4575#0" expanded="false" />
-            <element signature="e#4647#5095#0" expanded="false" />
-            <element signature="e#5222#5854#0" expanded="false" />
-            <element signature="e#5821#5854#0" expanded="false" />
-            <element signature="e#5967#6512#0" expanded="false" />
-            <marker date="1488205828000" expanded="true" signature="563:8513" ph="INSERT INTO orders... " />
-            <marker date="1488205828000" expanded="false" signature="842:879" ph="DELETE FROM " />
-            <marker date="1488205828000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
-            <marker date="1488205828000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
-            <marker date="1488205828000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
-            <marker date="1488205828000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
-            <marker date="1488205828000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
-            <marker date="1488205828000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
-            <marker date="1488205828000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
-            <marker date="1488205828000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
-            <marker date="1488205828000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
-            <marker date="1488205828000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
-            <marker date="1488205828000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
-            <marker date="1488205828000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
-            <marker date="1488205828000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
-            <marker date="1488205828000" expanded="true" signature="7441:7549" ph="UPDATE widge... " />
-            <marker date="1488205828000" expanded="true" signature="7447:7542" ph="update widge... " />
-            <marker date="1488205828000" expanded="true" signature="7494:7523" ph="select amoun... orders" />
-            <marker date="1488205828000" expanded="true" signature="8133:8186" ph="UPDATE order... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/widget-view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1468,18 +1437,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/orders.html">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="828">
+          <caret line="303" column="37" lean-forward="false" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
+          <folding>
+            <element signature="e#19#89#0" expanded="true" />
+            <element signature="e#651#1152#0" expanded="false" />
+            <element signature="e#902#1017#0" expanded="false" />
+            <element signature="e#1119#1152#0" expanded="false" />
+            <element signature="e#1241#1832#0" expanded="false" />
+            <element signature="e#1578#1697#0" expanded="false" />
+            <element signature="e#1799#1832#0" expanded="false" />
+            <element signature="e#1932#2441#0" expanded="false" />
+            <element signature="e#2520#2968#0" expanded="false" />
+            <element signature="e#3044#3526#0" expanded="false" />
+            <element signature="e#3598#4046#0" expanded="false" />
+            <element signature="e#4124#4575#0" expanded="false" />
+            <element signature="e#4647#5095#0" expanded="false" />
+            <element signature="e#5222#5854#0" expanded="false" />
+            <element signature="e#5821#5854#0" expanded="false" />
+            <element signature="e#5967#6512#0" expanded="false" />
+            <marker date="1488205828000" expanded="true" signature="563:8513" ph="INSERT INTO orders... " />
+            <marker date="1488205828000" expanded="false" signature="842:879" ph="DELETE FROM " />
+            <marker date="1488205828000" expanded="true" signature="1434:1553" ph="UPDATE order... " />
+            <marker date="1488205828000" expanded="true" signature="2122:2166" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2696" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="2682:2702" ph="SELECT * FRO... orders" />
+            <marker date="1488205828000" expanded="true" signature="3206:3260" ph="SELECT * FRO... widget" />
+            <marker date="1488205828000" expanded="true" signature="3760:3779" ph="SELECT * FRO... sizes" />
+            <marker date="1488205828000" expanded="true" signature="3766:3779" ph="select * fro... sizes" />
+            <marker date="1488205828000" expanded="true" signature="4286:4308" ph="SELECT * FRO... finishes" />
+            <marker date="1488205828000" expanded="true" signature="4809:4828" ph="SELECT * FRO... types" />
+            <marker date="1488205828000" expanded="true" signature="5455:5573" ph="INSERT INTO widget... " />
+            <marker date="1488205828000" expanded="true" signature="6174:6232" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="6780:6825" ph="SELECT inven... widget" />
+            <marker date="1488205828000" expanded="true" signature="6801:6825" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7441:7549" ph="UPDATE widge... " />
+            <marker date="1488205828000" expanded="true" signature="7447:7542" ph="update widge... " />
+            <marker date="1488205828000" expanded="true" signature="7494:7523" ph="select amoun... orders" />
+            <marker date="1488205828000" expanded="true" signature="8133:8186" ph="UPDATE order... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/orders-view.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="52" lean-forward="false" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
           <folding />
         </state>
       </provider>

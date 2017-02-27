@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.material.min.css" />
     <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.material.mobile.min.css" />
 
-    <link href="{{url_for('static', filename='css/widget-view.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/orders-view.css')}}" rel="stylesheet">
 
 </head>
 
@@ -29,20 +29,22 @@
         </div>
 
         <div id="orders-grid">
-            <table id="datas" >
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Inventory</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="3"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="data-section k-content">
+                <table id="datas" class="metrotable" >
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Inventory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <script id="template" type="text/x-kendo-template">
                 <tr>
@@ -59,7 +61,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="{{url_for('static', filename='js/widget-view.js')}}"></script>
+<script src="{{url_for('static', filename='js/orders-view.js')}}"></script>
 
 <script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
 

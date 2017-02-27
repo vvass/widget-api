@@ -15,7 +15,7 @@ $(function(){
     change: function () {
       $("#datas tbody").html(kendo.render(template, this.view()));
     }
-  };
+  });
 
   dataSource.read();
 
