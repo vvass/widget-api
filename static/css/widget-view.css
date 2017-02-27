@@ -38,6 +38,10 @@ body {
     background-color: #bedeff;
 }
 
+.ui-icon-plus:hover {
+    background-color: #8698b4;
+}
+
 #new-widget-button {
     padding-top: 25px;
 }
