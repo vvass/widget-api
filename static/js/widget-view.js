@@ -140,9 +140,9 @@ $(function(){
 
     $(".ui-icon-plus").click(function () {
 
-      var parent = $(this).parent().text();
+      var widgetName = $(this).parent().text();
 
-      console.log("parent", parent);
+      $("#widget-name").html(widgetName);
 
       $("#spinner-tag").show();
       dialog.dialog( "open" );
