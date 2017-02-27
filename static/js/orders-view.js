@@ -55,7 +55,6 @@ $(function(){
     }).then(function (response) {
 
       var array = mapResults(response);
-      console.log(array);
       for(var i=0; i < array.length; i++) {
 
         var id = array[i][1];
@@ -70,6 +69,8 @@ $(function(){
           var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
             inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
 
+
+          console.log(array);
           // orderData.push({
           //   "id": array[i][0],
           //   "widgetId": array[i][1],
@@ -78,9 +79,6 @@ $(function(){
           //   "inventory": inventory - array[i][2]
           // });
 
-        }).done(function () {
-          console.log("here");
-          // dataSource.read();
         });
 
       } // end of for loop
