@@ -71,13 +71,13 @@ $(function(){
 
 
           console.log(array);
-          // orderData.push({
-          //   "id": array[i][0],
-          //   "widgetId": array[i][1],
-          //   "name": name,
-          //   "amount": array[i][2],
-          //   "inventory": inventory - array[i][2]
-          // });
+          orderData.push({
+            "id": array[i][0],
+            "widgetId": array[i][1],
+            "name": name,
+            "amount": array[i][2],
+            "inventory": inventory - array[i][2]
+          });
 
         });
 
