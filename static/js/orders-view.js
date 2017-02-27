@@ -59,12 +59,17 @@ $(function(){
         // var inventory = getInventory(array[1], array);
 
 
+        var getName = fetchData('/getWidgetName', id),
+          getInventory = fetchData('/getInventory',id);
 
-        var name = JSON.parse(fetchData('/getWidgetName', id)).success.replace(/\(+|,|\)|'/g,'');
-        console.log(name);
+
+
         // var getInventory = fetchData('/getOrders', id);
 
-
+        $.when(getName,getInventory).then(function (name,inventory) {
+          console.log(name);
+          console.log(invnentory);
+        })
 
 
 
