@@ -90,7 +90,7 @@ $(function(){
             console.log(error);
           }
         }).then(function (data) {
-          var inventory = JSON.parse(data).success.replace(/\(+|,|\)|L'/g,'')
+          var inventory = JSON.parse(data).success.replace(/\(+|,|\)|L|'/g,'')
           console.log(inventory);
           orderData.push({
             "id": array[0],
