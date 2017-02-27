@@ -327,7 +327,7 @@ def get_inventory(id):
         db.close()
 
 @app.route('/createOrder/<id>/<amount>', methods=['POST','GET'])
-def create_order(id,inventory):
+def create_order(id,amount):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
