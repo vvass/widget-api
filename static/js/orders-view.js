@@ -71,14 +71,14 @@ $(function(){
 
           console.log(name, inventory);
 
-          console.log(array);
-          orderData.push({
-            "id": 1,
-            "widgetId": array[i][1],
-            "name": name,
-            "amount": array[i][2],
-            "inventory": inventory - array[i][2]
-          });
+          console.log(array[i]);
+          // orderData.push({
+          //   "id": 1,
+          //   "widgetId": array[i][1],
+          //   "name": name,
+          //   "amount": array[i][2],
+          //   "inventory": inventory - array[i][2]
+          // });
 
         });
 
