@@ -108,6 +108,10 @@ $(function(){
         $(this).append('   <span class="ui-icon ui-icon-plus"></span>');
       });
 
+    $(".ui-icon-plus").click(function () {
+      alert("asdfds");
+    });
+
   }
 
 
