@@ -2,7 +2,6 @@ $(function(){
 
 
   var orderData = [];
-  var array;
 
   getData();
 
@@ -47,6 +46,8 @@ $(function(){
 
   function getData() {
 
+    var vm = this;
+
     $.ajax({
       url: '/getOrders',
       type: 'GET',
@@ -55,10 +56,10 @@ $(function(){
       }
     }).then(function (response) {
 
-      array = mapResults(response);
-      for(var i=0; i < array.length; i++) {
+      vm.array = mapResults(response);
+      for(var i=0; i < vm.array.length; i++) {
 
-        var id = array[i][1];
+        var id = vm.array[i][1];
         // var inventory = getInventory(array[1], array);
 
 
@@ -72,7 +73,7 @@ $(function(){
 
           console.log(name, inventory);
 
-          console.log(array[i]);
+          console.log(vm.array[i]);
           // orderData.push({
           //   "id": 1,
           //   "widgetId": array[i][1],
