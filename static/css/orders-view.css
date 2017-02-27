@@ -1,14 +1,21 @@
 .grid-section {
     overflow: auto;
 }
+
 .metrotable {
     width: 100%;
     border-collapse: collapse;
 }
 
-.metrotable > thead > tr > th
-{
+.metrotable > thead > tr > th {
     font-size: 1.3em;
     padding-top: 0;
     padding-bottom: 5px;
 }
+
+span.ui-icon.ui-icon-circle-close:hover,
+span.ui-icon.ui-icon-circle-plus {
+    cursor: pointer;
+    background-color: #bedeff;
+}
+
