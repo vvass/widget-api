@@ -33,7 +33,7 @@ $(function(){
         for(var i=0; i < array.length; i++){
 
           aggData(array[i]).then(function(results){
-            console.log({"id": row[0], "name": results), "inventory": row[2] });
+            console.log({"id": row[0], "name": results, "inventory": row[2] });
           });
         }
       },

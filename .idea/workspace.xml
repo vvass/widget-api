@@ -158,8 +158,8 @@
                 <state relative-caret-position="525">
                   <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
                   <folding>
-                    <element signature="e#923#960#0" expanded="false" />
-                    <element signature="e#1004#1427#0" expanded="false" />
+                    <element signature="e#922#959#0" expanded="false" />
+                    <element signature="e#1003#1426#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -1029,7 +1029,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99940000" />
+    <option name="totallyTimeSpent" value="99971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1500,8 +1500,8 @@
         <state relative-caret-position="525">
           <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
           <folding>
-            <element signature="e#923#960#0" expanded="false" />
-            <element signature="e#1004#1427#0" expanded="false" />
+            <element signature="e#922#959#0" expanded="false" />
+            <element signature="e#1003#1426#0" expanded="false" />
           </folding>
         </state>
       </provider>
