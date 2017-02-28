@@ -53,11 +53,11 @@ $(function(){
         field: "amount",
         title: "Order Amount"
       }, {
-        field: "Inventory Left",
-        title: "inventory"
+        field: "inventory Left",
+        title: "Inventory"
       }, {
-        field: "Options",
-        title: "",
+        field: "options",
+        title: "Options",
         width: 150
       }]
     });
