@@ -170,6 +170,10 @@ $(function(){
       $.ajax({
         url: '/deleteOrder/'+ dataItem.id,
         type: 'POST',
+        success: function (response) {
+          var grid = $("#grid").data("kendoGrid");
+          grid.removeRow($(this).closest("tr"));
+        }
         error: function(error){
           console.log(error);
         }
