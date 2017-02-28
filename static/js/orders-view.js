@@ -33,6 +33,10 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
+      editable: {
+        confirmation: true,
+        cancelDelete: "No"
+      },
       columns: [{
         // template: "<div class='customer-photo'" +
         // "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
@@ -123,7 +127,6 @@ $(function(){
             if(orderData.length-1 == i) {
               dataSource.read();
               newGrid();
-              addEventToButtons();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
 
