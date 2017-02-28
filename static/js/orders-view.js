@@ -57,8 +57,7 @@ $(function(){
         title: "Widget Name"
       }, {
         field: "amount",
-        title: "Order Amount",
-        template:
+        title: "Order Amount"
       }, {
         field: "inventory",
         title: "Inventory Left"
