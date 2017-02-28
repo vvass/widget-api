@@ -20,7 +20,6 @@ $(function(){
     $("#grid").kendoGrid({
       dataSource: {
         data: orderData,
-        pageSize: 10,
         schema: {
           model: {
             id: "id",
@@ -118,7 +117,6 @@ $(function(){
             if(orderData.length-1 == i) {
               newGrid();
               var grid = $("#grid").data("kendoGrid");
-              grid.setDataSource(dataSource);
 
             }
 
