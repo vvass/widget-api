@@ -150,7 +150,7 @@ $(function(){
 
   function addEventToButtons() {
 
-    $("table > tbody > tr > td:nth-child(4)").click(function () {
+    $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(4)").click(function () {
       alert("asdfasdf");
     });
 
