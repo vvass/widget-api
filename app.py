@@ -359,7 +359,7 @@ def update_inventory_from_order(id,inventory):
 
     param = dict(_id=id,_inventory=inventory)
 
-    query = """UPDATE widget SET inventory=(%(_inventory)s - (SELECT amount FROM orders WHERE id=%(_id)s)) where id=%(_id)s;"""
+    query = """UPDATE widget SET inventory=%(_inventory)s where id=%(_id)s;"""
 
     try:
 

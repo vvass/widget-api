@@ -131,13 +131,17 @@ $(function(){
         console.log(error);
       }
     }).then(function () {
-      $.ajax({
-        url: '/setOrderAmount/'+ id + '/' + newInventory,
-        type: 'POST',
-        error: function(error){
-          console.log(error);
-        }
-      });
+      // $.ajax({
+      //   url: '/setOrderAmount/'+ id + '/' + newInventory,
+      //   type: 'POST',
+      //   error: function(error){
+      //     console.log(error);
+      //   }
+      // });
+
+      //TODO DELETE ORDER
+
+
     }).done(function (response) {
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
     });
