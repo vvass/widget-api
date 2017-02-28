@@ -151,8 +151,8 @@ $(function(){
 
     console.log("now here");
 
-    $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr > td:nth-child(6) > a").click(function () {
-      console.log("and here");
+    $("a:k-button.k-button-icontext.k-grid-delete").click(function () {
+
     });
 
 
