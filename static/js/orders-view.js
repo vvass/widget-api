@@ -34,14 +34,7 @@ $(function(){
         buttonCount: 5
       },
       editable: {
-        confirmation: function() {
-
-          $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
-            close: function () {
-              $("#grid").data('kendoGrid').refresh();
-            }
-          });
-        },
+        confirmation: true,
         confirmDelete: "Yes",
         mode: "inline"
       },
@@ -50,19 +43,23 @@ $(function(){
         // "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
         // "<div class='customer-name'>#: ContactName #</div>",
         field: "id",
-        title: "Order Id"
+        title: "Order Id",
+        editable: false
       }, {
         field: "widgetId",
-        title: "Widget Id"
+        title: "Widget Id",
+        editable: false
       }, {
         field: "name",
-        title: "Widget Name"
+        title: "Widget Name",
+        editable: false
       }, {
         field: "amount",
         title: "Order Amount"
       }, {
         field: "inventory",
-        title: "Inventory Left"
+        title: "Inventory Left",
+        editable: false
       },{
         command: ["edit", "destroy"]
       }]
