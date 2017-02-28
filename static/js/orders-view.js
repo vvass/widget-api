@@ -119,8 +119,8 @@ $(function(){
             });
 
             if(orderData.length-1 == i) {
-              dataSource.read();
               newGrid();
+              dataSource.read();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
               console.log("here");
