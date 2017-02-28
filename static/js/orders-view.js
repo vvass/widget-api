@@ -5,10 +5,6 @@ $(function(){
 
   getData();
 
-
-  // var template = kendo.template($("#template").html());
-  //
-
   var dataSource = new kendo.data.DataSource({
     data: orderData,
     pageSize: 10
