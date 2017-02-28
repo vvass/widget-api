@@ -132,7 +132,7 @@ $(function(){
       }
     }).then(function () {
       $.ajax({
-        url: '/setOrderAmount/'+ id + '/' + newInventory,
+        url: '/deleteOrder/'+ id,
         type: 'POST',
         error: function(error){
           console.log(error);
