@@ -8,13 +8,9 @@ $(function(){
 
   // var template = kendo.template($("#template").html());
   //
-  
+
   var dataSource = new kendo.data.DataSource({
-    data: orderData,
-    pageSize: 7,
-    change: function () {
-      $("#datas tbody").html(kendo.render(template, this.view()));
-    }
+    data: orderData
   });
 
   var fetchData = function(dataUrls,id) {
