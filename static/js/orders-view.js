@@ -5,23 +5,6 @@ $(function(){
 
   getData();
 
-  var dataSource = new kendo.data.DataSource({
-    data: orderData,
-    pageSize: 10,
-    schema: {
-      model: {
-        id: "id",
-        fileds: {
-          id: { type: "number", editable: false },
-          widgetId: { type: "number", editable: false },
-          name: { type: "string", editable: false },
-          amount: { type: "number", editable: true },
-          inventory: { type: "number", editable: false }
-        }
-      }
-    }
-  });
-
   var fetchData = function(dataUrls,id) {
     return $.ajax({
       type: 'GET',
@@ -56,7 +39,6 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
-      editable: "popup",
       columns: [{
         field: "id",
         title: "Order Id"
@@ -135,7 +117,6 @@ $(function(){
 
             if(orderData.length-1 == i) {
               newGrid();
-              dataSource.read();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
 
