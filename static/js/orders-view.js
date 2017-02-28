@@ -33,7 +33,7 @@ $(function(){
         type: "odata",
         pageSize: 10,
         transport:{
-          read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+          read:
         }
       },
       height: 550,
@@ -43,20 +43,24 @@ $(function(){
         buttonCount: 5
       },
       columns: [{
-        template: "<div class='customer-photo'" +
-        "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
-        "<div class='customer-name'>#: ContactName #</div>",
-        field: "ContactName",
-        title: "Contact Name",
+        // template: "<div class='customer-photo'" +
+        // "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
+        // "<div class='customer-name'>#: ContactName #</div>",
+        field: "id",
+        title: "Order Id",
         width: 240
       }, {
-        field: "ContactTitle",
-        title: "Contact Title"
+        field: "name",
+        title: "Widget Name"
       }, {
-        field: "CompanyName",
-        title: "Company Name"
+        field: "amount",
+        title: "Order Amount"
       }, {
-        field: "Country",
+        field: "Inventory Left",
+        title: "inventory"
+      }, {
+        field: "options",
+        title: ""
         width: 150
       }]
     });
@@ -134,6 +138,10 @@ $(function(){
 
             if(orderData.length-1 == i) {
               dataSource.read();
+              var grid = $("#grid").data("kendoGrid");
+              grid.setDataSource(dataSource);
+
+
             }
 
           })
