@@ -140,7 +140,7 @@ $(function(){
       });
     }).done(function (response) {
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
-      dataSource.refresh();
+      dataSource.read();
     });
 
 
