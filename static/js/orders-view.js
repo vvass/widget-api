@@ -160,31 +160,28 @@ $(function(){
 
     var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
 
+    $.ajax({
+      url: '/updateInventoryFromOrder/'+ dataItem.widgetId + '/' + dataItem.inventory,
+      type: 'POST',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function () {
+      $.ajax({
+        url: '/deleteOrder/'+ id,
+        type: 'POST',
+        error: function(error){
+          console.log(error);
+        }
+      })
+    }).done(function (response) {
+      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
+        close: function () {
+          $("#grid").data('kendoGrid').refresh();
+        }
+      });
+    });
 
-    console.log(dataItem);
-    //
-    // $.ajax({
-    //   url: '/updateInventoryFromOrder/'+ id + '/' + newInventory,
-    //   type: 'POST',
-    //   error: function(error){
-    //     console.log(error);
-    //   }
-    // }).then(function () {
-    //   $.ajax({
-    //     url: '/deleteOrder/'+ id,
-    //     type: 'POST',
-    //     error: function(error){
-    //       console.log(error);
-    //     }
-    //   })
-    // }).done(function (response) {
-    //   $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
-    //     close: function () {
-    //       $("#grid").data('kendoGrid').refresh();
-    //     }
-    //   });
-    // });
-    //
 
 
   }
