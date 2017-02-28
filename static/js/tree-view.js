@@ -29,6 +29,7 @@ $(document).ready(function () {
         });
       }
 
+      console.log(orderData);
 
       var dataSource = new kendo.data.TreeListDataSource({
         data: orderData,
