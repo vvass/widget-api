@@ -42,7 +42,6 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
-      editable: true,
       columns: [{
         field: "id",
         title: "Order Id"
@@ -150,7 +149,8 @@ $(function(){
 
   function addEventToButtons() {
 
-// <input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">
+  // <td role="gridcell" class="k-edit-cell" data-role="editable">
+    // <input type="text" class="k-input k-textbox" name="name" data-bind="value:name"></td>
 
     // $("span.ui-icon.ui-icon-circle-plus").click(function () {
     //
