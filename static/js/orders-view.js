@@ -44,6 +44,8 @@ $(function(){
           // Disable the editor of the "id" column when editing data items
           var numeric = e.container.find("input[name=inventory]").data("kendoNumericTextBox");
           numeric.enable(false);
+          var id = e.container.find("input[name=id]").data("kendoTextBox");
+          id.enable(false);
         }
       },
       columns: [{
