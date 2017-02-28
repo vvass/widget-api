@@ -124,6 +124,7 @@ $(function(){
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
 
+              addEventToButtons();
 
             }
 
@@ -148,6 +149,11 @@ $(function(){
   }
 
   function addEventToButtons() {
+
+    $("table > tbody > tr > td:nth-child(4)").click(function () {
+      alert("asdfasdf");
+    });
+
 
   // <td role="gridcell" class="k-edit-cell" data-role="editable">
     // <input type="text" class="k-input k-textbox" name="name" data-bind="value:name"></td>
