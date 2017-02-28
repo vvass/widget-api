@@ -182,17 +182,19 @@ def get_widgets():
         cursor.close()
         db.close()
 
-@app.route('/getSizes', methods=['GET'])
-def get_sizes():
+@app.route('/getSizes/<id>', methods=['GET'])
+def get_sizes(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
-    query = """SELECT * FROM sizes;"""
+    param = dict(_id=id)
+
+    query = """SELECT * FROM sizes WHERE id=%(_id)s;"""
 
     try:
 
-        cursor.execute(query)
+        cursor.execute(query,param)
         data=cursor.fetchall()
 
         return simplejson.dumps({'success':str(data)})
