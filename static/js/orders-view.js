@@ -123,6 +123,7 @@ $(function(){
             if(orderData.length-1 == i) {
               dataSource.read();
               newGrid();
+              addEventToButtons();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
 
@@ -180,10 +181,7 @@ $(function(){
         error: function(error){
           console.log(error);
         }
-      }).then(function () {
-
-
-      });
+      })
     }).done(function (response) {
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
         close: function () {
