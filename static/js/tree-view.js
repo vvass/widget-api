@@ -1,66 +1,54 @@
 $(document).ready(function () {
-  var dialog = $("#dialog").kendoDialog({
-    width: "800px",
-    height: "520px",
-    visible: false,
-    title: "Members",
-    closable: true,
-    modal: false,
-    content: "<div id='treelist'></div>",
-    actions: [
-      { text: 'Cancel' },
-      { text: 'OK', primary: true, action: actionOK }
-    ],
-    initOpen: initOpen
-  });
-
-  $("#pickEmployeesButton").kendoButton({
-    click: openDialog
-  });
-
-  var crudServiceBaseUrl = "https://demos.telerik.com/kendo-ui/service";
-
   var dataSource = new kendo.data.TreeListDataSource({
-    transport: {
-      read: {
-        url: crudServiceBaseUrl + "/EmployeeDirectory/All",
-        dataType: "jsonp"
-      },
-      update: {
-        url: crudServiceBaseUrl + "/EmployeeDirectory/Update",
-        dataType: "jsonp"
-      },
-      destroy: {
-        url: crudServiceBaseUrl + "/EmployeeDirectory/Destroy",
-        dataType: "jsonp"
-      },
-      create: {
-        url: crudServiceBaseUrl + "/EmployeeDirectory/Create",
-        dataType: "jsonp"
-      },
-      parameterMap: function (options, operation) {
-        if (operation !== "read" && options.models) {
-          return { models: kendo.stringify(options.models) };
-        }
-      }
-    },
-    batch: true,
+    data: [
+      { id: 1, Name: "Daryl Sweeney", Position: "CEO", Phone: "(555) 924-9726", parentId: null },
+      { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", Phone: "(438) 738-4935", parentId: 1 },
+      { id: 32, Name: "Buffy Weber", Position: "VP, Engineering", Phone: "(699) 838-6121", parentId: 2 },
+      { id: 11, Name: "Hyacinth Hood", Position: "Team Lead", Phone: "(889) 345-2438", parentId: 32 },
+      { id: 60, Name: "Akeem Carr", Position: "Junior Software Developer", Phone: "(738) 136-2814", parentId: 11 },
+      { id: 78, Name: "Rinah Simon", Position: "Software Developer", Phone: "(285) 912-5271", parentId: 11 },
+      { id: 42, Name: "Gage Daniels", Position: "Software Architect", Phone: "(107) 290-6260", parentId: 32 },
+      { id: 43, Name: "Constance Vazquez", Position: "Director, Engineering", Phone: "(800) 301-1978", parentId: 32 },
+      { id: 46, Name: "Darrel Solis", Position: "Team Lead", Phone: "(327) 977-0216", parentId: 43 },
+      { id: 47, Name: "Brian Yang", Position: "Senior Software Developer", Phone: "(565) 146-5435", parentId: 46 },
+      { id: 50, Name: "Lillian Bradshaw", Position: "Software Developer", Phone: "(323) 509-3479", parentId: 46 },
+      { id: 51, Name: "Christian Palmer", Position: "Technical Lead", Phone: "(490) 421-8718", parentId: 46 },
+      { id: 55, Name: "Summer Mosley", Position: "QA Engineer", Phone: "(784) 962-2301", parentId: 46 },
+      { id: 56, Name: "Barry Ayers", Position: "Software Developer", Phone: "(452) 373-9227", parentId: 46 },
+      { id: 59, Name: "Keiko Espinoza", Position: "Junior QA Engineer", Phone: "(226) 600-5305", parentId: 46 },
+      { id: 61, Name: "Candace Pickett", Position: "Support Officer", Phone: "(120) 117-7475", parentId: 46 },
+      { id: 63, Name: "Mia Caldwell", Position: "Team Lead", Phone: "(848) 636-6470", parentId: 43 },
+      { id: 65, Name: "Thomas Terry", Position: "Senior Enterprise Support Officer", Phone: "(764) 831-4248", parentId: 63 },
+      { id: 67, Name: "Ruth Downs", Position: "Senior Software Developer", Phone: "(138) 991-1440", parentId: 63 },
+      { id: 70, Name: "Yasir Wilder", Position: "Senior QA Enginner", Phone: "(759) 701-8665", parentId: 63 },
+      { id: 71, Name: "Flavia Short", Position: "Support Officer", Phone: "(370) 133-9238", parentId: 63 },
+      { id: 74, Name: "Aaron Roach", Position: "Junior Software Developer", Phone: "(958) 717-9230", parentId: 63 },
+      { id: 75, Name: "Eric Russell", Position: "Software Developer", Phone: "(516) 575-8505", parentId: 63 },
+      { id: 76, Name: "Cheyenne Olson", Position: "Software Developer", Phone: "(241) 645-0257", parentId: 63 },
+      { id: 77, Name: "Shaine Avila", Position: "UI Designer", Phone: "(844) 435-1360", parentId: 63 },
+      { id: 81, Name: "Chantale Long", Position: "Senior QA Enginner", Phone: "(252) 419-6891", parentId: 63 },
+      { id: 83, Name: "Dane Cruz", Position: "Junior Software Developer", Phone: "(946) 701-6165", parentId: 63 },
+      { id: 84, Name: "Regan Patterson", Position: "Technical Writer", Phone: "(265) 946-1765", parentId: 63 },
+      { id: 85, Name: "Drew Mckay", Position: "Senior Software Developer", Phone: "(327) 293-0162", parentId: 63 },
+      { id: 88, Name: "Bevis Miller", Position: "Senior Software Developer", Phone: "(525) 557-0169", parentId: 63 },
+      { id: 89, Name: "Bruce Mccarty", Position: "Support Officer", Phone: "(936) 777-8730", parentId: 63 },
+      { id: 90, Name: "Ocean Blair", Position: "Team Lead", Phone: "(343) 586-6614", parentId: 43 },
+      { id: 91, Name: "Guinevere Osborn", Position: "Software Developer", Phone: "(424) 741-0006", parentId: 90 },
+      { id: 92, Name: "Olga Strong", Position: "Graphic Designer", Phone: "(949) 417-1168", parentId: 90 },
+      { id: 93, Name: "Robert Orr", Position: "Support Officer", Phone: "(977) 341-3721", parentId: 90 },
+      { id: 95, Name: "Odette Sears", Position: "Senior Software Developer", Phone: "(264) 818-6576", parentId: 90 },
+      { id: 45, Name: "Zelda Medina", Position: "QA Architect", Phone: "(563) 359-6023", parentId: 32 },
+      { id: 3, Name: "Priscilla Frank", Position: "Chief Product Officer", Phone: "(217) 280-5300", parentId: 1 },
+      { id: 4, Name: "Ursula Holmes", Position: "EVP, Product Strategy", Phone: "(370) 983-8796", parentId: 3 },
+      { id: 24, Name: "Melvin Carrillo", Position: "Director, Developer Relations", Phone: "(344) 496-9555", parentId: 3 },
+      { id: 29, Name: "Martha Chavez", Position: "Developer Advocate", Phone: "(140) 772-7509", parentId: 24 },
+      { id: 30, Name: "Oren Fox", Position: "Developer Advocate", Phone: "(714) 284-2408", parentId: 24 },
+      { id: 41, Name: "Amos Barr", Position: "Developer Advocate", Phone: "(996) 587-8405", parentId: 24 }
+    ],
+
     schema: {
       model: {
-        id: "EmployeeId",
-        parentId: "ReportsTo",
-        fields: {
-          EmployeeId: { type: "number", editable: false, nullable: false },
-          ReportsTo: { nullable: true, type: "number" },
-          FirstName: { validation: { required: true } },
-          LastName: { validation: { required: true } },
-          HireDate: { type: "date" },
-          Phone: { type: "string" },
-          HireDate: { type: "date" },
-          BirthDate: { type: "date" },
-          Extension: { type: "number", validation: { min: 0, required: true } },
-          Position: { type: "string" }
-        },
+        id: "id",
         expanded: true
       }
     }
@@ -68,84 +56,11 @@ $(document).ready(function () {
 
   $("#treelist").kendoTreeList({
     dataSource: dataSource,
-    height: 380,
-    filterable: true,
-    sortable: true,
-    toolbar: ["create"],
+    height: 540,
     columns: [
-      {
-        headerTemplate: "<input type='checkbox' onclick='toggleAll(event)' />",
-        template: "<input type='checkbox' class='checkbox' data-bind='checked: checked' />",
-        width: 40,
-        filterable: false
-      },
-      {
-        field: "FirstName", title: "First Name", width: 170,
-        expandable: true
-      },
-      { field: "LastName", title: "Last Name", width: 110 },
       { field: "Position" },
-      {
-        title: "Edit", command: ["edit", "destroy"], width: 250,
-        attributes: {
-          style: "text-align: center;"
-        }
-      }
-    ],
-    dataBound: treeListDataBound
+      { field: "Name" },
+      { field: "Phone" }
+    ]
   });
 });
-
-function treeListDataBound(e) {
-  $(".checkbox").bind("change", function (e) {
-    var row = $(e.target).closest("tr");
-    this.checked ? row.addClass("k-state-selected") : row.removeClass("k-state-selected");
-  });
-}
-
-function toggleAll(e) {
-  if (e.target.checked) {
-    $("#treelist [role='row'] .checkbox").each(function () {
-      this.checked = "checked";
-    });
-  }
-  else {
-    $("#treelist [role='row'] .checkbox").removeAttr("checked");
-  }
-
-  $("#treelist [role='row'] .checkbox").trigger("change");
-}
-
-function initOpen(e) {
-  setTimeout(function () {
-    $("#treelist").data("kendoTreeList").refresh();
-  })
-}
-
-function openDialog(e) {
-  $("#dialog").data("kendoDialog").open();
-}
-
-function actionOK(e) {
-  var treelist = $("#treelist").data("kendoTreeList");
-  var items = treelist.element.find(".k-state-selected");
-  updateResult(items, treelist);
-}
-
-function updateResult(items, treelist) {
-  if (items.length > 0) {
-    var result = "";
-    for (var i = 0; i < items.length; i++) {
-      var dataItem = treelist.dataItem(items[i]);
-      result += "<span class='selectedName'>" + dataItem.FirstName + " " + dataItem.LastName + "</span>";
-    }
-  } else {
-    result = "No members selected.";
-  }
-
-  $("#result").html(result);
-}
-
-function updateSelectedCount(treeView) {
-  $(".selected-count").html(getCheckedItems(treeView).length + " Employees selected");
-}
