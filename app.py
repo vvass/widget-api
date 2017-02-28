@@ -208,7 +208,7 @@ def get_sizes(id):
         db.close()
 
 @app.route('/getFinishes/<id>', methods=['GET'])
-def get_finishes():
+def get_finishes(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
@@ -233,7 +233,7 @@ def get_finishes():
         db.close()
 
 @app.route('/getTypes/<id>', methods=['GET'])
-def get_types():
+def get_types(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
