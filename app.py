@@ -364,9 +364,9 @@ def update_inventory_from_order(id,inventory):
     try:
 
         cursor.execute(query,param)
-        data=cursor.fetchall()
+        db.commit()
 
-        return simplejson.dumps({'success':str(data)})
+        return simplejson.dumps({'success':str('you uupdated inventory for order')})
 
 
     except Exception as e:
@@ -389,9 +389,9 @@ def set_order_amount(id,amount):
     try:
 
         cursor.execute(query,param)
-        data=cursor.fetchall()
+        db.commit()
 
-        return simplejson.dumps({'success':str(data)})
+        return simplejson.dumps({'success':str('you set order amount')})
 
 
     except Exception as e:
