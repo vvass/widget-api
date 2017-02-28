@@ -38,15 +38,13 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
-      editable: "popup",
+      editable: {
+        mode: "popup",
+        template: kendo.template($("#popup_editor").html())
+      },
       edit: function(e) {
-        if (!e.model.isNew()) {
-          // Disable the editor of the "id" column when editing data items
-          var numeric = e.container.find("input[name=inventory]").data("kendoNumericTextBox");
-          numeric.enable(false);
-          var id = e.container.find("input[name=id]").data("kendoTextBox");
-          id.enable(false);
-        }
+        var numberic = $(e.container).find("input[name='inventory']").data("kendoNumericTextBox");
+        numberic.enable(false);
       },
       columns: [{
         field: "id",
