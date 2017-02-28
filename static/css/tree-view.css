@@ -1,0 +1,47 @@
+#example {
+    min-height: 200px;
+}
+
+#example .title {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.search-wrapper {
+    width: 100%;
+}
+.query-match {
+    color: red;
+}
+.select-all-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.selected-count {
+    float: right;
+    color: #aaa;
+}
+.k-treeview {
+    border-width: 1px!important;
+    padding: 5px;
+}
+.selectedName {
+    padding: 5px 10px;
+    background: #aaa;
+    color: white;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+#result {
+    padding-bottom: 15px;
+}
+
+#result:after {
+    content: '';
+    display: block;
+    clear: both;
+}
