@@ -55,7 +55,9 @@ $(function(){
         field: "inventory",
         title: "Inventory Left"
       },{
-        command: "delete"
+        command: {
+          text: "Save", click: processOrder
+        }
       }]
     });
 
@@ -163,28 +165,30 @@ $(function(){
 
   function processOrder(id,newInventory) {
 
-    $.ajax({
-      url: '/updateInventoryFromOrder/'+ id + '/' + newInventory,
-      type: 'POST',
-      error: function(error){
-        console.log(error);
-      }
-    }).then(function () {
-      $.ajax({
-        url: '/deleteOrder/'+ id,
-        type: 'POST',
-        error: function(error){
-          console.log(error);
-        }
-      })
-    }).done(function (response) {
-      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
-        close: function () {
-          $("#grid").data('kendoGrid').refresh();
-        }
-      });
-    });
-
+    console.log("here");
+    //
+    // $.ajax({
+    //   url: '/updateInventoryFromOrder/'+ id + '/' + newInventory,
+    //   type: 'POST',
+    //   error: function(error){
+    //     console.log(error);
+    //   }
+    // }).then(function () {
+    //   $.ajax({
+    //     url: '/deleteOrder/'+ id,
+    //     type: 'POST',
+    //     error: function(error){
+    //       console.log(error);
+    //     }
+    //   })
+    // }).done(function (response) {
+    //   $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
+    //     close: function () {
+    //       $("#grid").data('kendoGrid').refresh();
+    //     }
+    //   });
+    // });
+    //
 
 
   }
