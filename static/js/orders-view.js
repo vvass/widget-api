@@ -124,13 +124,11 @@ $(function(){
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
 
-              addEventToButtons();
-
             }
 
           })
           .then(function () {
-            // addEventToButtons();
+            addEventToButtons();
           }); // end of when
 
       } // end of for loop
