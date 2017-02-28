@@ -13,19 +13,7 @@ $(document).ready(function () {
     }
   });
 
-  $("#treelist").kendoTreeList({
-    dataSource: dataSource,
-    height: 540,
-    columns: [
-      { field: "id",title: "Id" },
-      { field: "name",title: "Name" },
-      { field: "inventory",title: "Inventory" },
-      { field: "finish",title: "Finish" },
-      { field: "size",title: "Size" },
-      { field: "types",title: "Types" },
-      { field: "parentId",title: "" }
-    ]
-  });
+
 
 });
 
@@ -50,6 +38,20 @@ function loadWidgets() {
         "parentId": array[i][6]
       });
     }
+
+    $("#treelist").kendoTreeList({
+      dataSource: dataSource,
+      height: 540,
+      columns: [
+        { field: "id",title: "Id" },
+        { field: "name",title: "Name" },
+        { field: "inventory",title: "Inventory" },
+        { field: "finish",title: "Finish" },
+        { field: "size",title: "Size" },
+        { field: "types",title: "Types" },
+        { field: "parentId",title: "" }
+      ]
+    });
 
     console.log(mapping);
   });
