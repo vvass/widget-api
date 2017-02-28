@@ -47,14 +47,17 @@ $(function(){
         title: "Order Id",
         width: 240
       }, {
+        field: "widgetId",
+        title: "Widget Id"
+      }, {
         field: "name",
         title: "Widget Name"
       }, {
         field: "amount",
         title: "Order Amount"
       }, {
-        field: "inventory Left",
-        title: "Inventory"
+        field: "inventory",
+        title: "Inventory Left"
       }, {
         field: "options",
         title: "Options",
@@ -66,12 +69,6 @@ $(function(){
 
 
   }
-
-
-
-
-
-
 
 
 
