@@ -126,6 +126,9 @@ $(function(){
               console.log("here");
               
               $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr").find("td:nth-child(6)").each(function (item) {
+
+                console.log($(this));
+                console.log(this);
                 $(this).kendoButton({
                   click: function() {
                     console.log("somethign");
