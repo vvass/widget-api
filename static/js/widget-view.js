@@ -141,12 +141,10 @@ $(function(){
     $(".ui-icon-plus").click(function () {
 
       var widgetName = $(this).parent().text(),
-        widgetId = 1;
-
-      console.log($(this).parent().next().find("p:first-child").text());
-
+        widgetId = $(this).parent().next().find("p:first-child").text();
 
       $("#widget-name").html(widgetName);
+      $("div > span#widget-id").html(widgetId);
       $("#spinner-tag").show();
       dialog.dialog( "open" );
 
