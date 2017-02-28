@@ -42,6 +42,7 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
+      editable: true,
       columns: [{
         field: "id",
         title: "Order Id"
@@ -53,7 +54,8 @@ $(function(){
         title: "Widget Name"
       }, {
         field: "amount",
-        title: "Order Amount"
+        title: "Order Amount",
+        template: editTemplate()
       }, {
         field: "inventory",
         title: "Inventory Left"
@@ -64,6 +66,14 @@ $(function(){
 
   }
 
+  function editTemplate() {
+
+    // <input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">
+
+    var html = '<input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">';
+
+    return html;
+  }
 
   function mapResults(result) {
     var widgets = JSON.parse(result);
@@ -151,9 +161,6 @@ $(function(){
   function addEventToButtons() {
 
 
-  // <input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">
-
-    $("")
 
     // $("span.ui-icon.ui-icon-circle-plus").click(function () {
     //
