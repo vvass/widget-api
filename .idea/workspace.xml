@@ -157,8 +157,8 @@
           <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="900">
-                  <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+                <state relative-caret-position="915">
+                  <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
                   <folding>
                     <element signature="e#155#280#0" expanded="false" />
                     <element signature="e#324#474#0" expanded="false" />
@@ -166,7 +166,7 @@
                     <element signature="e#507#930#0" expanded="false" />
                     <element signature="e#1055#1092#0" expanded="false" />
                     <element signature="e#2284#2483#0" expanded="false" />
-                    <element signature="e#3027#3064#0" expanded="false" />
+                    <element signature="e#3010#3047#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -1040,7 +1040,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116565000" />
+    <option name="totallyTimeSpent" value="116639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1522,8 +1522,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="112" column="35" lean-forward="false" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+        <state relative-caret-position="915">
+          <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
           <folding>
             <element signature="e#155#280#0" expanded="false" />
             <element signature="e#324#474#0" expanded="false" />
@@ -1531,7 +1531,7 @@
             <element signature="e#507#930#0" expanded="false" />
             <element signature="e#1055#1092#0" expanded="false" />
             <element signature="e#2284#2483#0" expanded="false" />
-            <element signature="e#3027#3064#0" expanded="false" />
+            <element signature="e#3010#3047#0" expanded="false" />
           </folding>
         </state>
       </provider>
