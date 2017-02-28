@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="" />
+    <list default="true" id="3a14e99e-ceb3-43ee-8b29-46995d899ffe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/orders-view.js" afterPath="$PROJECT_DIR$/static/js/orders-view.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +22,8 @@
           <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="949">
-                  <caret line="378" column="24" lean-forward="false" selection-start-line="378" selection-start-column="13" selection-end-line="378" selection-end-column="24" />
+                <state relative-caret-position="423">
+                  <caret line="328" column="24" lean-forward="false" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="24" />
                   <folding>
                     <element signature="e#19#89#0" expanded="true" />
                     <element signature="e#651#1152#0" expanded="false" />
@@ -118,12 +120,11 @@
           <file leaf-file-name="widget-view.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="808">
-                  <caret line="128" column="10" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="128" selection-end-column="10" />
+                <state relative-caret-position="858">
+                  <caret line="269" column="3" lean-forward="true" selection-start-line="269" selection-start-column="3" selection-end-line="269" selection-end-column="3" />
                   <folding>
                     <element signature="e#1027#1450#0" expanded="false" />
                     <element signature="e#1489#2175#0" expanded="false" />
-                    <element signature="e#3522#3750#0" expanded="false" />
                     <element signature="e#3810#4746#0" expanded="false" />
                     <element signature="e#4421#4595#0" expanded="false" />
                     <element signature="e#4640#4723#0" expanded="false" />
@@ -155,15 +156,16 @@
           <file leaf-file-name="orders-view.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1178">
-                  <caret line="143" column="38" lean-forward="false" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+                <state relative-caret-position="705">
+                  <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
                   <folding>
-                    <element signature="e#155#280#0" expanded="false" />
                     <element signature="e#324#474#0" expanded="false" />
                     <element signature="e#425#462#0" expanded="false" />
                     <element signature="e#507#930#0" expanded="false" />
+                    <element signature="e#953#2224#0" expanded="false" />
                     <element signature="e#1055#1092#0" expanded="false" />
                     <element signature="e#2284#2483#0" expanded="false" />
+                    <element signature="e#2516#2907#0" expanded="false" />
                     <element signature="e#3080#3117#0" expanded="false" />
                     <element signature="e#3245#3286#0" expanded="false" />
                   </folding>
@@ -1039,7 +1041,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117798000" />
+    <option name="totallyTimeSpent" value="118076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-638" y="-1417" width="2560" height="1417" extended-state="6" />
@@ -1224,7 +1226,6 @@
           <folding>
             <element signature="e#1027#1450#0" expanded="false" />
             <element signature="e#1489#2175#0" expanded="false" />
-            <element signature="e#3522#3750#0" expanded="false" />
             <element signature="e#3810#4746#0" expanded="false" />
             <element signature="e#4421#4595#0" expanded="false" />
             <element signature="e#4640#4723#0" expanded="false" />
@@ -1436,8 +1437,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="378" column="24" lean-forward="false" selection-start-line="378" selection-start-column="13" selection-end-line="378" selection-end-column="24" />
+        <state relative-caret-position="423">
+          <caret line="328" column="24" lean-forward="false" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="24" />
           <folding>
             <element signature="e#19#89#0" expanded="true" />
             <element signature="e#651#1152#0" expanded="false" />
@@ -1486,12 +1487,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/widget-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="128" column="10" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="128" selection-end-column="10" />
+        <state relative-caret-position="858">
+          <caret line="269" column="3" lean-forward="true" selection-start-line="269" selection-start-column="3" selection-end-line="269" selection-end-column="3" />
           <folding>
             <element signature="e#1027#1450#0" expanded="false" />
             <element signature="e#1489#2175#0" expanded="false" />
-            <element signature="e#3522#3750#0" expanded="false" />
             <element signature="e#3810#4746#0" expanded="false" />
             <element signature="e#4421#4595#0" expanded="false" />
             <element signature="e#4640#4723#0" expanded="false" />
@@ -1521,15 +1521,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/orders-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="143" column="38" lean-forward="false" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+        <state relative-caret-position="705">
+          <caret line="149" column="0" lean-forward="true" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding>
-            <element signature="e#155#280#0" expanded="false" />
             <element signature="e#324#474#0" expanded="false" />
             <element signature="e#425#462#0" expanded="false" />
             <element signature="e#507#930#0" expanded="false" />
+            <element signature="e#953#2224#0" expanded="false" />
             <element signature="e#1055#1092#0" expanded="false" />
             <element signature="e#2284#2483#0" expanded="false" />
+            <element signature="e#2516#2907#0" expanded="false" />
             <element signature="e#3080#3117#0" expanded="false" />
             <element signature="e#3245#3286#0" expanded="false" />
           </folding>
