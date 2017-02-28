@@ -184,9 +184,15 @@ $(function(){
           console.log(error);
         }
       }).then(function () {
+
+
       });
     }).done(function (response) {
-      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
+      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
+        close: function () {
+          $("#grid").data('kendoGrid').refresh();
+        }
+      });
     });
 
 
