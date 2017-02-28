@@ -9,6 +9,7 @@ $(function(){
 
   var dataSource = new kendo.data.DataSource({
     data: orderData,
+    pageSize: 7,
     change: function () {
       $("#datas tbody").html(kendo.render(template, this.view()));
     }
@@ -67,6 +68,7 @@ $(function(){
 
         $.when(array, i, getName,getInventory)
           .then(function (array, i,name,inventory) {
+            console.log(array);
 
             var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
               inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
@@ -131,14 +133,18 @@ $(function(){
         console.log(error);
       }
     }).then(function () {
+      console.log("was here");
       $.ajax({
         url: '/deleteOrder/'+ id,
         type: 'POST',
         error: function(error){
           console.log(error);
         }
+      }).then(function () {
+        console.log("now here");
       });
     }).done(function (response) {
+      console.log("here");
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
       dataSource.read();
     });
