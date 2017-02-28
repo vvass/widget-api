@@ -114,7 +114,7 @@ $(function(){
       min: 0
     });
 
-    dialog = $("#dialog-order" ).dialog({
+    dialogOrder = $("#dialog-order" ).dialog({
       autoOpen: false,
       hide: "explode",
       modal: true,
@@ -148,7 +148,7 @@ $(function(){
       $("#widget-name").html(widgetName);
       $("div > span#widget-id").html(widgetId);
       $("#spinner-tag").show();
-      dialog.dialog( "open" );
+      dialogOrder.dialog( "open" );
 
 
     });
@@ -240,7 +240,7 @@ $(function(){
   
   function setupPop() {
 
-    dialog = $("#dialog-form" ).dialog({
+    dialogForm = $("#dialog-form" ).dialog({
       autoOpen: false,
       hide: "explode",
       modal: true,
@@ -262,7 +262,7 @@ $(function(){
 
     $("#new-widget-button").append('<button type="button" class="btn btn-default create-new-widget">Create New Widget</button>');
     $("#new-widget-button" ).button().on( "click", function() {
-      dialog.dialog( "open" );
+      dialogForm.dialog( "open" );
     });
     $(".create-new-widget").click(function () {
       fillSizesCheckBoxes('/getSizes');
