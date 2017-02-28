@@ -57,7 +57,7 @@ $(function(){
         title: "inventory"
       }, {
         field: "options",
-        title: ""
+        title: "",
         width: 150
       }]
     });
