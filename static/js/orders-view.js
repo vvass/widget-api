@@ -55,7 +55,7 @@ $(function(){
         field: "inventory",
         title: "Inventory Left"
       },{
-        command: "edit"
+        command: "delete"
       }]
     });
 
