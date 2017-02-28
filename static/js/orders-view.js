@@ -57,7 +57,12 @@ $(function(){
         field: "inventory",
         title: "Inventory Left"
       },{
-        command: ["edit", "destroy"]
+        command: ["edit", {
+          name: "destroy",
+          click: function(){
+            alert("dsafsd");
+          }
+        }]
       }]
     });
 
