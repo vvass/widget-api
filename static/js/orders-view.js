@@ -42,8 +42,14 @@ $(function(){
       edit: function(e) {
         if (!e.model.isNew()) {
           // Disable the editor of the "id" column when editing data items
-          var numeric = e.container.find("input[name=inventory]").data("kendoNumericTextBox");
-          numeric.enable(false);
+          var idBox = e.container.find("input[name=id]").data("kendoNumericTextBox");
+          idBox.enable(false);
+          var widgetIdBox = e.container.find("input[name=widgetId]").data("kendoNumericTextBox");
+          widgetIdBox.enable(false);
+          var nameBox = e.container.find("input[name=name]").data("kendoNumericTextBox");
+          nameBox.enable(false);
+          var inventoryBox = e.container.find("input[name=inventory]").data("kendoNumericTextBox");
+          inventory.enable(false);
         }
       },
       columns: [{
