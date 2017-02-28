@@ -33,3 +33,8 @@ span.ui-icon.ui-icon-circle-plus:hover {
 {
     width: 100%;
 }
+
+#grid .k-grid-content
+{
+    overflow-y: visible;
+}
