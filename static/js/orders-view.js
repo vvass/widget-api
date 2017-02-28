@@ -125,7 +125,7 @@ $(function(){
               grid.setDataSource(dataSource);
               console.log("here");
               
-              $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr").find("td").each(function (item) {
+              $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr").find("td:nth-child(6)").each(function (item) {
                 $(this).kendoButton({
                   click: function() {
                     console.log("somethign");
