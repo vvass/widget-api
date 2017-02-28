@@ -29,3 +29,7 @@ span.ui-icon.ui-icon-circle-plus:hover {
     height: 100%; /* DO NOT USE !important for setting the Grid height! */
 }
 
+.k-grid
+{
+    width: 500px;
+}
