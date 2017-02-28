@@ -168,18 +168,12 @@ $(function(){
       }
     }).then(function () {
       $.ajax({
-        url: '/deleteOrder/'+ id,
+        url: '/deleteOrder/'+ dataItem.id,
         type: 'POST',
         error: function(error){
           console.log(error);
         }
       })
-    }).done(function (response) {
-      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
-        close: function () {
-          $("#grid").data('kendoGrid').refresh();
-        }
-      });
     });
 
 
