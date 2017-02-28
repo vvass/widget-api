@@ -70,7 +70,11 @@ $(function(){
     });
 
 
+    var grid = $("#grid").data("kendoGrid");
+    grid.setDataSource(dataSource);
 
+
+    console.log("in grid");
 
   }
 
@@ -132,13 +136,16 @@ $(function(){
             });
 
             if(orderData.length-1 == i) {
-              $.when(dataSource.read())
-                .then(function () {
+              $.when(function() {
+                dataSource.read();
+                console.log("in when");
+
+              }).then(function () {
+
+                console.log("in then");
                   newGrid();
 
-                  var grid = $("#grid").data("kendoGrid");
-                  // grid.setDataSource(dataSource);
-                });
+              });
 
 
             }
