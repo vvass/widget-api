@@ -34,7 +34,14 @@ $(function(){
         buttonCount: 5
       },
       editable: {
-        confirmation: true,
+        confirmation: function() {
+
+          $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
+            close: function () {
+              $("#grid").data('kendoGrid').refresh();
+            }
+          });
+        },
         confirmDelete: "Yes",
         mode: "inline"
       },
@@ -57,12 +64,7 @@ $(function(){
         field: "inventory",
         title: "Inventory Left"
       },{
-        command: ["edit", {
-          name: "destroy",
-          click: function(){
-            alert("dsafsd");
-          }
-        }]
+        command: ["edit", "destroy"]
       }]
     });
 
