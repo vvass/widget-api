@@ -38,14 +38,7 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
-      editable: "popup",
-      edit: function(e) {
-        if (!e.model.isNew()) {
-          // Disable the editor of the "id" column when editing data items
-          var numeric = e.container.find("input[name=inventory]").data("kendoNumericTextBox");
-          numeric.enable(false);
-        }
-      },
+      editable: true,
       columns: [{
         field: "id",
         title: "Order Id"
