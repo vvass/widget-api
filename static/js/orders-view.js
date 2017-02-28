@@ -49,7 +49,7 @@ $(function(){
           var nameBox = e.container.find("input[name=name]").data("kendoNumericTextBox");
           nameBox.enable(false);
           var inventoryBox = e.container.find("input[name=inventory]").data("kendoNumericTextBox");
-          inventory.enable(false);
+          inventoryBox.enable(false);
         }
       },
       columns: [{
