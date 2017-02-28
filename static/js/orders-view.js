@@ -65,16 +65,11 @@ $(function(){
         field: "inventory",
         title: "Inventory Left"
       },{
-        command: ["edit", "destroy"]
+        command: "destroy"
       }]
     });
 
-
-
-
   }
-
-
 
 
   function mapResults(result) {
