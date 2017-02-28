@@ -376,22 +376,22 @@ def update_inventory_from_order(id,inventory):
         cursor.close()
         db.close()
 
-@app.route('/setOrderAmount/<id>/<amount>', methods=['POST','GET'])
-def set_order_amount(id,amount):
+@app.route('/deleteOrder/<id>', methods=['POST','GET'])
+def set_order_amount(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
-    param = dict(_id=id,_amount=amount)
+    param = dict(_id=id)
 
-    query = """UPDATE orders SET amount=%(_amount)s where id=%(_id)s;"""
+    query = """DELETE FROM orders where id=%(_id)s;"""
 
     try:
 
         cursor.execute(query,param)
         db.commit()
 
-        return simplejson.dumps({'success':str('you set order amount')})
+        return simplejson.dumps({'success':str('you deleted order')})
 
 
     except Exception as e:
