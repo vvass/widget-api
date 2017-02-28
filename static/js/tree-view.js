@@ -2,9 +2,32 @@ $(document).ready(function () {
 
   var orderData = [];
 
+  var dataSource = new kendo.data.TreeListDataSource({
+    data: orderData,
 
+    schema: {
+      model: {
+        id: "id",
+        expanded: true
+      }
+    }
+  });
 
+  $("#treelist").kendoTreeList({
+    dataSource: dataSource,
+    height: 540,
+    columns: [
+      { field: "id",title: "Id" },
+      { field: "name",title: "Name" },
+      { field: "inventory",title: "Inventory" },
+      { field: "finish",title: "Finish" },
+      { field: "size",title: "Size" },
+      { field: "types",title: "Types" },
+      { field: "parentId",title: "" }
+    ]
+  });
 
+  loadWidgets();
 
 });
 
@@ -18,17 +41,6 @@ function loadWidgets() {
   }).then(function (result) {
     var array = mapResults(result);
 
-    var dataSource = new kendo.data.TreeListDataSource({
-      data: orderData,
-
-      schema: {
-        model: {
-          id: "id",
-          expanded: true
-        }
-      }
-    });
-
     for(var i = 0; i < array.length; i++){
       orderData.push({
         "id": array[i][0],
@@ -40,20 +52,6 @@ function loadWidgets() {
         "parentId": array[i][6]
       });
     }
-
-    $("#treelist").kendoTreeList({
-      dataSource: dataSource,
-      height: 540,
-      columns: [
-        { field: "id",title: "Id" },
-        { field: "name",title: "Name" },
-        { field: "inventory",title: "Inventory" },
-        { field: "finish",title: "Finish" },
-        { field: "size",title: "Size" },
-        { field: "types",title: "Types" },
-        { field: "parentId",title: "" }
-      ]
-    });
 
     console.log(mapping);
   });
