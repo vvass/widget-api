@@ -40,6 +40,7 @@ function loadWidgets() {
     }
   }).then(function (result) {
     var array = mapResults(result);
+    console.log(array);
 
     for(var i = 0; i < array.length; i++){
       orderData.push({
