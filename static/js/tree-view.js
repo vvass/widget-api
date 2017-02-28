@@ -25,7 +25,7 @@ $(document).ready(function () {
           $.when(array, i, getSize, getFinish, getTypes)
             .then(function (array, i, size, finish, types){
 
-              console.log(array,i, size, finish, types);
+              console.log(array,i, size[0], finish[0], types[0]);
 
 
               widgetData.push({

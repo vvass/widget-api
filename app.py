@@ -240,7 +240,7 @@ def get_types():
 
     param = dict(_id=id)
 
-    query = """SELECT types FROM types WHERE id=%(_id)s;"""
+    query = """SELECT type FROM types WHERE id=%(_id)s;"""
 
     try:
 
