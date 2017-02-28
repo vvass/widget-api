@@ -29,34 +29,36 @@ $(document).ready(function () {
 
   loadWidgets();
 
+  function loadWidgets() {
+    $.ajax({
+      url: '/getWidgets',
+      type: 'GET',
+      error: function(error){
+        console.log(error);
+      }
+    }).then(function (result) {
+      var array = mapResults(result);
+      console.log(array);
+
+      for(var i = 0; i < array.length; i++){
+        orderData.push({
+          "id": array[i][0],
+          "name": array[i][1],
+          "inventory": array[i][2],
+          "finish": array[i][3],
+          "size": array[i][4],
+          "types": array[i][5],
+          "parentId": array[i][6]
+        });
+      }
+
+    });
+  }
+
+
 });
 
-function loadWidgets() {
-  $.ajax({
-    url: '/getWidgets',
-    type: 'GET',
-    error: function(error){
-      console.log(error);
-    }
-  }).then(function (result) {
-    var array = mapResults(result);
-    console.log(array);
 
-    for(var i = 0; i < array.length; i++){
-      orderData.push({
-        "id": array[i][0],
-        "name": array[i][1],
-        "inventory": array[i][2],
-        "finish": array[i][3],
-        "size": array[i][4],
-        "types": array[i][5],
-        "parentId": array[i][6]
-      });
-    }
-
-    console.log(mapping);
-  });
-}
 
 function mapResults(result) {
   var widgets = JSON.parse(result);
