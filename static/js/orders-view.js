@@ -123,12 +123,13 @@ $(function(){
               dataSource.read();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
-              addEventToButtons();
+              console.log("here");
+
             }
 
           })
           .then(function () {
-
+            addEventToButtons();
           }); // end of when
 
       } // end of for loop
@@ -150,8 +151,8 @@ $(function(){
 
     console.log("now here");
 
-    $("a:k-button.k-button-icontext.k-grid-delete").click(function () {
-      console.log("herer");
+    $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr > td:nth-child(6) > a").click(function () {
+      console.log("and here");
     });
 
 
