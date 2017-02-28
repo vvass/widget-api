@@ -55,6 +55,10 @@ $(function(){
       }, {
         field: "inventory",
         title: "Inventory Left"
+      },{
+        command: "destroy"
+      },{
+        command: "edit"
       }]
     });
 
