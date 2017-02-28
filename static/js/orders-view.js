@@ -158,7 +158,9 @@ $(function(){
 
     e.preventDefault();
 
-    var dataItem = this.dataItem($(e.currentTarget).closest("<tr>"));
+    var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+    console.log(dataItem);
+
 
     $.ajax({
       url: '/updateInventoryFromOrder/'+ dataItem.widgetId + '/' + dataItem.inventory,
