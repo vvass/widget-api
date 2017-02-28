@@ -159,7 +159,6 @@ $(function(){
     e.preventDefault();
 
     var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
-    console.log(dataItem);
 
 
     $.ajax({
