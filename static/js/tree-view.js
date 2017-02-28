@@ -97,6 +97,9 @@ $(document).ready(function () {
     return $.ajax({
       type: 'GET',
       url: dataUrls + '/' + id,
+      success: function (resp) {
+        console.log(resp);
+      },
       error: function(error){
         console.log(error);
       }
