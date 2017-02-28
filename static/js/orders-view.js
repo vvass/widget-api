@@ -113,7 +113,7 @@ $(function(){
       var parentTR = $(this).parent().parent(),
         orderId = $(parentTR).find("td:first-child").text(),
         newInventory = $(parentTR).find("td:nth-child(4)").text();
-      processOrder(id,newInventory);
+      processOrder(orderId,newInventory);
 
     });
 
@@ -126,11 +126,18 @@ $(function(){
 
     $.ajax({
       url: '/updateInventoryFromOrder/'+ id + '/' + newInventory,
-      type: 'GET',
+      type: 'POST',
       error: function(error){
         console.log(error);
       }
-    }).then(function (response) {
+    }).then(function () {
+      $.ajax({
+        url: '/setOrderAmount/'+ id + '/' + newInventory,
+        type: 'POST',
+        error: function(error){
+          console.log(error);
+        }
+    }).done(function (response) {
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
     });
 
