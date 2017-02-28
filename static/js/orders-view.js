@@ -56,7 +56,7 @@ $(function(){
         title: "Inventory Left"
       },{
         command: {
-          text: "Save", click: processOrder
+          text: "Checkout", click: processOrder
         }
       }]
     });
@@ -134,15 +134,6 @@ $(function(){
 
   } // end of getData
 
-  function createOptionButtons(orderId) {
-
-    var html =  '<span class="ui-icon order-' + orderId + ' ui-icon-circle-plus"></span>' +
-      '<span class="ui-icon order-' + orderId + ' ui-icon-circle-close"></span>';
-
-    return html;
-
-  }
-
   function addEventToButtons() {
 
 
@@ -163,9 +154,14 @@ $(function(){
     // });
   }
 
-  function processOrder(id,newInventory) {
+  function processOrder(e) {
 
-    console.log("here");
+    e.preventDefault();
+
+    var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+
+    console.log(dataItem);
     //
     // $.ajax({
     //   url: '/updateInventoryFromOrder/'+ id + '/' + newInventory,
