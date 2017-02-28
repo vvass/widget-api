@@ -366,7 +366,7 @@ def update_inventory_from_order(id,inventory):
         cursor.execute(query,param)
         db.commit()
 
-        return simplejson.dumps({'success':str('you uupdated inventory for order')})
+        return simplejson.dumps({'success':str('you updated inventory for order')})
 
 
     except Exception as e:
