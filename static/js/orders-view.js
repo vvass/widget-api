@@ -110,10 +110,10 @@ $(function(){
     $("span.ui-icon.ui-icon-circle-plus").click(function () {
 
 
-      var parentTR = $(this).parent().parent();
-      console.log($(parentTR).find("td:first-child").text());
-      // console.log(parent.first().text());
-      // processOrder(id,newInventory);
+      var parentTR = $(this).parent().parent(),
+        orderId = $(parentTR).find("td:first-child").text(),
+        newInventory = $(parentTR).find("td:nth-child(4)").text();
+      processOrder(id,newInventory);
 
     });
 
