@@ -35,13 +35,28 @@ $(function(){
   function newGrid() {
 
     $("#grid").kendoGrid({
-      dataSource: dataSource,
-      // height: 550,
+      dataSource: {
+        data: orderData,
+        pageSize: 10,
+        schema: {
+          model: {
+            id: "id",
+            fileds: {
+              id: { type: "number", editable: false },
+              widgetId: { type: "number", editable: false },
+              name: { type: "string", editable: false },
+              amount: { type: "number", editable: true },
+              inventory: { type: "number", editable: false }
+            }
+          }
+        }
+      },
       pageable: {
         refresh: true,
         pageSize: 5,
         buttonCount: 5
       },
+      editable: "popup",
       columns: [{
         field: "id",
         title: "Order Id"
@@ -123,25 +138,6 @@ $(function(){
               dataSource.read();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
-              console.log("here");
-              
-              $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr").find("td:nth-child(6)").each(function (item) {
-
-                console.log($(this));
-                console.log(this);
-                $(this).kendoButton({
-                  click: function() {
-                    console.log("somethign");
-                  }
-                });
-              })
-
-
-              // $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(6) > a").kendoButton({
-              //   click: function() {
-              //     console.log("somethign");
-              //   }
-              // });
 
             }
 
@@ -166,14 +162,6 @@ $(function(){
   }
 
   function addEventToButtons() {
-
-    console.log("now here");
-
-    $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr").find("td:nth-child(6)").each(function (item) {
-      $(this).click(function() {
-        console.log("and here");
-      })
-    });
 
 
   // <td role="gridcell" class="k-edit-cell" data-role="editable">
