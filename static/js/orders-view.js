@@ -55,9 +55,6 @@ $(function(){
       }, {
         field: "inventory",
         title: "Inventory Left"
-      }, {
-        field: "options",
-        title: "Options"
       }]
     });
 
@@ -120,8 +117,7 @@ $(function(){
               "widgetId": array[i][1],
               "name": name,
               "amount": array[i][2],
-              "inventory": inventory - array[i][2],
-              "options": createOptionButtons(array[i][0])
+              "inventory": inventory - array[i][2]
             });
 
             if(orderData.length-1 == i) {
@@ -135,7 +131,7 @@ $(function(){
 
           })
           .then(function () {
-            addEventToButtons();
+            // addEventToButtons();
           }); // end of when
 
       } // end of for loop
