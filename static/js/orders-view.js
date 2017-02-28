@@ -4,6 +4,7 @@ $(function(){
   var orderData = [];
 
   getData();
+  newGrid();
 
   var template = kendo.template($("#template").html());
 
