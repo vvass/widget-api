@@ -51,23 +51,19 @@ $(function(){
       },
       columns: [{
         field: "id",
-        title: "Order Id",
-        editable: false
+        title: "Order Id"
       }, {
         field: "widgetId",
-        title: "Widget Id",
-        editable: false
+        title: "Widget Id"
       }, {
         field: "name",
-        title: "Widget Name",
-        editable: false
+        title: "Widget Name"
       }, {
         field: "amount",
         title: "Order Amount"
       }, {
         field: "inventory",
-        title: "Inventory Left",
-        editable: false
+        title: "Inventory Left"
       },{
         command: ["edit", "destroy"]
       }]
@@ -136,8 +132,8 @@ $(function(){
             });
 
             if(orderData.length-1 == i) {
-              dataSource.read();
               newGrid();
+              dataSource.read();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
 
