@@ -35,10 +35,7 @@ $(function(){
   function newGrid() {
 
     $("#grid").kendoGrid({
-      dataSource: {
-        type: "odata",
-        pageSize: 10,
-      },
+      dataSource: dataSource
       // height: 550,
       pageable: {
         refresh: true,
@@ -60,7 +57,8 @@ $(function(){
         title: "Widget Name"
       }, {
         field: "amount",
-        title: "Order Amount"
+        title: "Order Amount",
+        template:
       }, {
         field: "inventory",
         title: "Inventory Left"
@@ -157,18 +155,23 @@ $(function(){
 
   function addEventToButtons() {
 
-    $("span.ui-icon.ui-icon-circle-plus").click(function () {
 
-      var parentTR = $(this).parent().parent(),
-        orderId = $(parentTR).find("td:nth-child(2)").text(),
-        newInventory = $(parentTR).find("td:nth-child(5)").text();
-      processOrder(orderId,newInventory);
+  // <input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">
 
-    });
+    $("")
 
-    $("span.ui-icon.ui-icon-circle-close").click(function () {
-      alert("asdf");
-    });
+    // $("span.ui-icon.ui-icon-circle-plus").click(function () {
+    //
+    //   var parentTR = $(this).parent().parent(),
+    //     orderId = $(parentTR).find("td:nth-child(2)").text(),
+    //     newInventory = $(parentTR).find("td:nth-child(5)").text();
+    //   processOrder(orderId,newInventory);
+    //
+    // });
+    //
+    // $("span.ui-icon.ui-icon-circle-close").click(function () {
+    //   alert("asdf");
+    // });
   }
 
   function processOrder(id,newInventory) {
