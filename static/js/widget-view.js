@@ -262,7 +262,7 @@ $(function(){
 
     $("#new-widget-button").append('<button type="button" class="btn btn-default create-new-widget">Create New Widget</button>');
     $("#new-widget-button" ).button().on( "click", function() {
-
+      alert("sadf");
     });
     $(".create-new-widget").click(function () {
       fillSizesCheckBoxes('/getSizes');

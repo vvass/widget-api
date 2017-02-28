@@ -134,32 +134,11 @@ $(function(){
 
   } // end of getData
 
-  function addEventToButtons() {
-
-
-  // <td role="gridcell" class="k-edit-cell" data-role="editable">
-    // <input type="text" class="k-input k-textbox" name="name" data-bind="value:name"></td>
-
-    // $("span.ui-icon.ui-icon-circle-plus").click(function () {
-    //
-    //   var parentTR = $(this).parent().parent(),
-    //     orderId = $(parentTR).find("td:nth-child(2)").text(),
-    //     newInventory = $(parentTR).find("td:nth-child(5)").text();
-    //   processOrder(orderId,newInventory);
-    //
-    // });
-    //
-    // $("span.ui-icon.ui-icon-circle-close").click(function () {
-    //   alert("asdf");
-    // });
-  }
-
   function processOrder(e) {
 
     e.preventDefault();
 
     var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
-
 
     $.ajax({
       url: '/updateInventoryFromOrder/'+ dataItem.widgetId + '/' + dataItem.inventory,
