@@ -136,7 +136,7 @@ $(function(){
                 .then(function () {
                   newGrid();
 
-                  // var grid = $("#grid").data("kendoGrid");
+                  var grid = $("#grid").data("kendoGrid");
                   // grid.setDataSource(dataSource);
                 });
 
