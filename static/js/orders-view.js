@@ -56,7 +56,7 @@ $(function(){
         title: "Inventory Left"
       },{
         command: {
-          text: "Checkout", click: processOrder
+          text: "Checkout", imageClass: "k-icon k-i-close", click: processOrder
         }
       }]
     });
@@ -173,11 +173,15 @@ $(function(){
         type: 'POST',
         success: function (response) {
           var grid = $("#grid").data("kendoGrid");
-          // grid.removeRow($(this).closest("tr"));
+
         },
         error: function(error){
           console.log(error);
         }
+      }).then(function () {
+        var dataSource = $("#grid").data("kendoGrid").dataSource;
+        dataSource.remove(dataItem);
+        dataSource.sync();
       })
     });
 
