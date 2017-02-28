@@ -154,7 +154,7 @@ $(function(){
     $("span.ui-icon.ui-icon-circle-plus").click(function () {
 
       var parentTR = $(this).parent().parent(),
-        orderId = $(parentTR).find("td:first-child").text(),
+        orderId = $(parentTR).find("td:nth-child(2)").text(),
         newInventory = $(parentTR).find("td:nth-child(5)").text();
       processOrder(orderId,newInventory);
 
