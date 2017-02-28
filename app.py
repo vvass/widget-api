@@ -190,7 +190,7 @@ def get_sizes(id):
 
     param = dict(_id=id)
 
-    query = """SELECT * FROM sizes WHERE id=%(_id)s;"""
+    query = """SELECT size FROM sizes WHERE id=%(_id)s;"""
 
     try:
 
@@ -207,13 +207,15 @@ def get_sizes(id):
         cursor.close()
         db.close()
 
-@app.route('/getFinishes', methods=['GET'])
+@app.route('/getFinishes/<id>', methods=['GET'])
 def get_finishes():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
-    query = """SELECT * FROM finishes;"""
+    param = dict(_id=id)
+
+    query = """SELECT finish FROM finishes WHERE id=%(_id)s;"""
 
     try:
 
@@ -230,13 +232,15 @@ def get_finishes():
         cursor.close()
         db.close()
 
-@app.route('/getTypes', methods=['GET'])
+@app.route('/getTypes/<id>', methods=['GET'])
 def get_types():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
-    query = """SELECT * FROM types;"""
+    param = dict(_id=id)
+
+    query = """SELECT types FROM types WHERE id=%(_id)s;"""
 
     try:
 
