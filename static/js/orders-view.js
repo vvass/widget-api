@@ -132,11 +132,13 @@ $(function(){
             });
 
             if(orderData.length-1 == i) {
-              $.when(dataSource.read()).then(function () {
-                newGrid();
-              })
-              var grid = $("#grid").data("kendoGrid");
-              grid.setDataSource(dataSource);
+              $.when(dataSource.read())
+                .then(function () {
+                  newGrid();
+
+                  // var grid = $("#grid").data("kendoGrid");
+                  // grid.setDataSource(dataSource);
+                });
 
 
             }
