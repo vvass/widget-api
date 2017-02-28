@@ -70,7 +70,8 @@ $(function(){
 
     // <input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">
 
-    var html = '<input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">';
+    var html = '<td role="gridcell" class="k-edit-cell" data-role="editable">' +
+      '<input type="text" class="k-input k-textbox" name="name" data-bind="value:name"></td>';
 
     return html;
   }
