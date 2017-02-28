@@ -38,6 +38,14 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
+      editable: "popup",
+      edit: function(e) {
+        if (!e.model.isNew()) {
+          // Disable the editor of the "id" column when editing data items
+          var numeric = e.container.find("input[name=id]").data("kendoNumericTextBox");
+          numeric.enable(false);
+        }
+      }
       columns: [{
         field: "id",
         title: "Order Id"
@@ -54,7 +62,7 @@ $(function(){
         field: "inventory",
         title: "Inventory Left"
       },{
-        command: "destroy"
+        command: "edit"
       }]
     });
 
