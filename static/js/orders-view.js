@@ -137,9 +137,11 @@ $(function(){
         error: function(error){
           console.log(error);
         }
+      });
     }).done(function (response) {
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
     });
+
 
 
   }
