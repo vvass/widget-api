@@ -35,7 +35,7 @@ $(function(){
   function newGrid() {
 
     $("#grid").kendoGrid({
-      dataSource: dataSource
+      dataSource: dataSource,
       // height: 550,
       pageable: {
         refresh: true,
