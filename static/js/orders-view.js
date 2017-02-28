@@ -56,7 +56,7 @@ $(function(){
         field: "Inventory Left",
         title: "inventory"
       }, {
-        field: "options",
+        field: "Options",
         title: "",
         width: 150
       }]
@@ -65,7 +65,7 @@ $(function(){
 
 
 
-  }
+  };
 
 
 
