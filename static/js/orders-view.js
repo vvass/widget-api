@@ -35,7 +35,8 @@ $(function(){
       },
       editable: {
         confirmation: true,
-        cancelDelete: "No"
+        confirmDelete: "Yes",
+        mode: "inline"
       },
       columns: [{
         // template: "<div class='customer-photo'" +
