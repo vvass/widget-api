@@ -1,6 +1,6 @@
 $(function(){
 
-  loadWidgets();
+  // loadWidgets();
 
   var ENUMFINISHES = new Object();
   ENUMFINISHES[1] = "Gold";
@@ -397,5 +397,11 @@ $(function(){
 
   }
 
+
+  // NEW LOOK
+
+  function treeView() {
+
+  }
 
 });
