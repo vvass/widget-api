@@ -151,7 +151,7 @@ $(function(){
 
     console.log("now here");
 
-    $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr > td:nth-child(6) > a").click(function () {
+    $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(6) > a").click(function () {
       console.log("and here");
     });
 
