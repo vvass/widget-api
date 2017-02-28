@@ -32,9 +32,6 @@ $(function(){
       dataSource: {
         type: "odata",
         pageSize: 10,
-        transport:{
-          read:
-        }
       },
       height: 550,
       pageable: {
