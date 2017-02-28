@@ -139,7 +139,11 @@ $(function(){
         }
       });
     }).done(function (response) {
-      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
+      $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog({
+        Ok: function() {
+          $( this ).dialog( "close" );
+        },
+      });
     });
 
 
