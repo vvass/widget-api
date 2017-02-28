@@ -121,7 +121,6 @@ $(function(){
       buttons: {
         Ok: function() {
 
-          console.log("widget id",$("#widget-id").text());
           createOrder($("#widget-id").text(),spinner.spinner( "value" ));
 
           $("#spinner-tag").hide();
@@ -144,7 +143,7 @@ $(function(){
       var widgetName = $(this).parent().text(),
         widgetId = 1;
 
-      console.log($(this));
+      console.log($(this).parent().next());
 
 
       $("#widget-name").html(widgetName);
