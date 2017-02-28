@@ -158,7 +158,7 @@ $(function(){
 
     e.preventDefault();
 
-    var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+    var dataItem = this.dataItem($(e.currentTarget).closest("<tr>"));
 
     $.ajax({
       url: '/updateInventoryFromOrder/'+ dataItem.widgetId + '/' + dataItem.inventory,
@@ -172,7 +172,7 @@ $(function(){
         type: 'POST',
         success: function (response) {
           var grid = $("#grid").data("kendoGrid");
-          grid.removeRow($(this).closest("tr"));
+          // grid.removeRow($(this).closest("tr"));
         },
         error: function(error){
           console.log(error);
