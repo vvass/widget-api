@@ -42,8 +42,8 @@ $(function(){
       edit: function(e) {
         if (!e.model.isNew()) {
           // Disable the editor of the "id" column when editing data items
-          var numeric = e.container.find("input[name=id]").data("kendoNumericTextBox");
-          numeric.enable(false);
+          var numeric = e.container.find("input[name=amount]").data("kendoNumericTextBox");
+          numeric.enable(true);
         }
       }
       columns: [{
