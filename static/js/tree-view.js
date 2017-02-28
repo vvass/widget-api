@@ -2,16 +2,7 @@ $(document).ready(function () {
 
   var orderData = [];
 
-  var dataSource = new kendo.data.TreeListDataSource({
-    data: orderData,
 
-    schema: {
-      model: {
-        id: "id",
-        expanded: true
-      }
-    }
-  });
 
 
 
@@ -26,6 +17,17 @@ function loadWidgets() {
     }
   }).then(function (result) {
     var array = mapResults(result);
+
+    var dataSource = new kendo.data.TreeListDataSource({
+      data: orderData,
+
+      schema: {
+        model: {
+          id: "id",
+          expanded: true
+        }
+      }
+    });
 
     for(var i = 0; i < array.length; i++){
       orderData.push({
