@@ -141,7 +141,11 @@ $(function(){
 
     $(".ui-icon-plus").click(function () {
 
-      var widgetName = $(this).parent().text();
+      var widgetName = $(this).parent().text(),
+        widgetId = 1;
+
+      console.log($(this));
+
 
       $("#widget-name").html(widgetName);
       $("#spinner-tag").show();
