@@ -54,8 +54,7 @@ $(function(){
         title: "Widget Name"
       }, {
         field: "amount",
-        title: "Order Amount",
-        template: editTemplate()
+        title: "Order Amount"
       }, {
         field: "inventory",
         title: "Inventory Left"
@@ -64,16 +63,6 @@ $(function(){
       }]
     });
 
-  }
-
-  function editTemplate() {
-
-    // <input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">
-
-    var html = '<td role="gridcell" class="k-edit-cell" data-role="editable">' +
-      '<input type="text" class="k-input k-textbox" name="name" data-bind="value:name"></td>';
-
-    return html;
   }
 
   function mapResults(result) {
@@ -161,7 +150,7 @@ $(function(){
 
   function addEventToButtons() {
 
-
+// <input type="text" class="k-input k-textbox" name="amount" data-bind="value:amount">
 
     // $("span.ui-icon.ui-icon-circle-plus").click(function () {
     //
