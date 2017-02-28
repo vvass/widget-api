@@ -2,30 +2,7 @@ $(document).ready(function () {
 
   var orderData = [];
 
-  var dataSource = new kendo.data.TreeListDataSource({
-    data: orderData,
 
-    schema: {
-      model: {
-        id: "id",
-        expanded: true
-      }
-    }
-  });
-
-  $("#treelist").kendoTreeList({
-    dataSource: dataSource,
-    height: 540,
-    columns: [
-      { field: "id",title: "Id" },
-      { field: "name",title: "Name" },
-      { field: "inventory",title: "Inventory" },
-      { field: "finish",title: "Finish" },
-      { field: "size",title: "Size" },
-      { field: "types",title: "Types" },
-      { field: "parentId",title: "" }
-    ]
-  });
 
   loadWidgets();
 
@@ -52,7 +29,52 @@ $(document).ready(function () {
         });
       }
 
+
+      var dataSource = new kendo.data.TreeListDataSource({
+        data: orderData,
+
+        schema: {
+          model: {
+            id: "id",
+            expanded: true
+          }
+        }
+      });
+
+      $("#treelist").kendoTreeList({
+        dataSource: dataSource,
+        height: 540,
+        columns: [
+          { field: "id",title: "Id" },
+          { field: "name",title: "Name" },
+          { field: "inventory",title: "Inventory" },
+          { field: "finish",title: "Finish" },
+          { field: "size",title: "Size" },
+          { field: "types",title: "Types" },
+          { field: "parentId",title: "" }
+        ]
+      });
+
     });
+  }
+
+  function mapResults(result) {
+    var widgets = JSON.parse(result);
+    var data = widgets.success
+      .replace(/'/g,'')
+      .replace(/, /g,',')
+      .replace(/L,/g,',')
+      .replace(/L\)/g,')')
+      .replace(/\(\(/g,'(')
+      .replace(/\)\)/g,')')
+      .replace(/\),\(/g,")*(");
+
+    var array = data.split('*');
+    for(var i=0;i < array.length; i++){
+      array[i] = array[i].replace(/\)|\(/g,'').split(',');
+    }
+
+    return array;
   }
 
 
@@ -60,21 +82,3 @@ $(document).ready(function () {
 
 
 
-function mapResults(result) {
-  var widgets = JSON.parse(result);
-  var data = widgets.success
-    .replace(/'/g,'')
-    .replace(/, /g,',')
-    .replace(/L,/g,',')
-    .replace(/L\)/g,')')
-    .replace(/\(\(/g,'(')
-    .replace(/\)\)/g,')')
-    .replace(/\),\(/g,")*(");
-
-  var array = data.split('*');
-  for(var i=0;i < array.length; i++){
-    array[i] = array[i].replace(/\)|\(/g,'').split(',');
-  }
-
-  return array;
-}
