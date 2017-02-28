@@ -4,7 +4,7 @@ $(function(){
   var orderData = [];
 
   getData();
-  
+
 
   var template = kendo.template($("#template").html());
 
@@ -111,7 +111,6 @@ $(function(){
       for(var i=0; i < array.length; i++) {
 
         var id = array[i][1];
-        // var inventory = getInventory(array[1], array);
 
 
         var getName = fetchData('/getWidgetName', id),
@@ -135,6 +134,7 @@ $(function(){
 
             if(orderData.length-1 == i) {
               dataSource.read();
+              newGrid();
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
 
@@ -198,7 +198,6 @@ $(function(){
       });
     }).done(function (response) {
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
-      dataSource.read();
     });
 
 
