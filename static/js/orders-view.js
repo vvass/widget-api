@@ -134,14 +134,7 @@ $(function(){
                     console.log("somethign");
                   }
                 });
-              })
-              
-              
-              // $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(6) > a").kendoButton({
-              //   click: function() {
-              //     console.log("somethign");
-              //   }
-              // });
+              });
 
             }
 
@@ -166,12 +159,6 @@ $(function(){
   }
 
   function addEventToButtons() {
-
-    console.log("now here");
-
-    $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(6) > a").click(function () {
-      console.log("and here");
-    });
 
 
   // <td role="gridcell" class="k-edit-cell" data-role="editable">
