@@ -93,6 +93,8 @@ $(document).ready(function () {
         }
       });
 
+      console.log(data);
+
       $("#treelist").kendoTreeList({
         dataSource: dataSource,
         height: 540,
