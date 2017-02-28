@@ -23,7 +23,7 @@ $(function(){
         schema: {
           model: {
             id: "id",
-            fileds: {
+            fields: {
               id: { type: "number", editable: false },
               widgetId: { type: "number", editable: false },
               name: { type: "string", editable: false },
@@ -38,13 +38,13 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
-      editable: {
-        mode: "popup",
-        template: kendo.template($("#popup_editor").html())
-      },
+      editable: "popup",
       edit: function(e) {
-        var numberic = $(e.container).find("input[name='inventory']").data("kendoNumericTextBox");
-        numberic.enable(false);
+        if (!e.model.isNew()) {
+          // Disable the editor of the "id" column when editing data items
+          var numeric = e.container.find("input[name=inventory]").data("kendoNumericTextBox");
+          numeric.enable(false);
+        }
       },
       columns: [{
         field: "id",
