@@ -31,7 +31,7 @@ $(function(){
         type: "odata",
         pageSize: 10,
       },
-      height: 550,
+      // height: 550,
       pageable: {
         refresh: true,
         pageSize: 5,
@@ -57,8 +57,7 @@ $(function(){
         title: "Inventory Left"
       }, {
         field: "options",
-        title: "Options",
-        width: 25
+        title: "Options"
       }]
     });
 
