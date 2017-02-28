@@ -7,7 +7,19 @@ $(function(){
 
   var dataSource = new kendo.data.DataSource({
     data: orderData,
-    pageSize: 10
+    pageSize: 10,
+    schema: {
+      model: {
+        id: "id",
+        fileds: {
+          id: { type: "number", editable: false },
+          widgetId: { type: "number", editable: false },
+          name: { type: "string", editable: false },
+          amount: { type: "number", editable: true },
+          inventory: { type: "number", editable: false }
+        }
+      }
+    }
   });
 
   var fetchData = function(dataUrls,id) {
@@ -39,9 +51,6 @@ $(function(){
         mode: "inline"
       },
       columns: [{
-        // template: "<div class='customer-photo'" +
-        // "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
-        // "<div class='customer-name'>#: ContactName #</div>",
         field: "id",
         title: "Order Id",
         editable: false
