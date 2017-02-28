@@ -42,10 +42,6 @@ $(function(){
         pageSize: 5,
         buttonCount: 5
       },
-      editable: {
-        confirmation: true,
-        confirmDelete: "Yes"
-      },
       columns: [{
         field: "id",
         title: "Order Id"
