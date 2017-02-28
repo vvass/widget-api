@@ -94,13 +94,13 @@ $(document).ready(function () {
           dataSource: dataSource,
           height: 540,
           columns: [
-            { field: "id",title: "Id" },
+            { field: "id",title: "Id",hidden: true },
             { field: "name",title: "Name" },
             { field: "inventory",title: "Inventory" },
             { field: "finish",title: "Finish" },
             { field: "size",title: "Size" },
             { field: "types",title: "Types" },
-            { field: "parentId",title: "" }
+            { field: "parentId",title: "",hidden: true }
           ]
         });
 
