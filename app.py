@@ -219,7 +219,7 @@ def get_finishes():
 
     try:
 
-        cursor.execute(query)
+        cursor.execute(query,param)
         data=cursor.fetchall()
 
         return simplejson.dumps({'success':str(data)})
@@ -244,7 +244,7 @@ def get_types():
 
     try:
 
-        cursor.execute(query)
+        cursor.execute(query,param)
         data=cursor.fetchall()
 
         return simplejson.dumps({'success':str(data)})
