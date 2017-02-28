@@ -47,8 +47,7 @@ $(function(){
       },
       editable: {
         confirmation: true,
-        confirmDelete: "Yes",
-        mode: "inline"
+        confirmDelete: "Yes"
       },
       columns: [{
         field: "id",
