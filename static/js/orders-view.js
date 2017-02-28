@@ -10,7 +10,8 @@ $(function(){
   //
 
   var dataSource = new kendo.data.DataSource({
-    data: orderData
+    data: orderData,
+    pageSize: 10
   });
 
   var fetchData = function(dataUrls,id) {
@@ -41,8 +42,7 @@ $(function(){
         // "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
         // "<div class='customer-name'>#: ContactName #</div>",
         field: "id",
-        title: "Order Id",
-        width: 240
+        title: "Order Id"
       }, {
         field: "widgetId",
         title: "Widget Id"
@@ -58,7 +58,7 @@ $(function(){
       }, {
         field: "options",
         title: "Options",
-        width: 150
+        width: 25
       }]
     });
 
