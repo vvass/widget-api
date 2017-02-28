@@ -25,6 +25,55 @@ $(function(){
     });
   };
 
+  function newGrid() {
+
+    $("#grid").kendoGrid({
+      dataSource: {
+        type: "odata",
+        pageSize: 10,
+        transport:{
+          read: "https://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+        }
+      },
+      height: 550,
+      pageable: {
+        refresh: true,
+        pageSize: 5,
+        buttonCount: 5
+      },
+      columns: [{
+        template: "<div class='customer-photo'" +
+        "style='background-image: url(../content/web/Customers/#:data.CustomerID#.jpg);'></div>" +
+        "<div class='customer-name'>#: ContactName #</div>",
+        field: "ContactName",
+        title: "Contact Name",
+        width: 240
+      }, {
+        field: "ContactTitle",
+        title: "Contact Title"
+      }, {
+        field: "CompanyName",
+        title: "Company Name"
+      }, {
+        field: "Country",
+        width: 150
+      }]
+    });
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
   function mapResults(result) {
     var widgets = JSON.parse(result);
     var data = widgets.success
@@ -133,7 +182,6 @@ $(function(){
         console.log(error);
       }
     }).then(function () {
-      console.log("was here");
       $.ajax({
         url: '/deleteOrder/'+ id,
         type: 'POST',
@@ -141,10 +189,8 @@ $(function(){
           console.log(error);
         }
       }).then(function () {
-        console.log("now here");
       });
     }).done(function (response) {
-      console.log("here");
       $("<div title='Basic dialog'>Order Sent. Thank you!</div>").dialog();
       dataSource.read();
     });
