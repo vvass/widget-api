@@ -45,7 +45,7 @@ $(function(){
           var numeric = e.container.find("input[name=amount]").data("kendoNumericTextBox");
           numeric.enable(true);
         }
-      }
+      },
       columns: [{
         field: "id",
         title: "Order Id"
