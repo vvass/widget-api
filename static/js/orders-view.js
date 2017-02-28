@@ -107,7 +107,6 @@ $(function(){
 
         $.when(array, i, getName,getInventory)
           .then(function (array, i,name,inventory) {
-            console.log(array);
 
             var name = JSON.parse(name[0]).success.replace(/\(+|,|\)|'/g,''),
               inventory = JSON.parse(inventory[0]).success.replace(/\(+|,|\)|L|'/g, '');
@@ -152,13 +151,11 @@ $(function(){
 
   function addEventToButtons() {
 
-
     $("span.ui-icon.ui-icon-circle-plus").click(function () {
-
 
       var parentTR = $(this).parent().parent(),
         orderId = $(parentTR).find("td:first-child").text(),
-        newInventory = $(parentTR).find("td:nth-child(4)").text();
+        newInventory = $(parentTR).find("td:nth-child(5)").text();
       processOrder(orderId,newInventory);
 
     });
