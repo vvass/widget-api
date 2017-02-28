@@ -121,7 +121,7 @@ $(function(){
       buttons: {
         Ok: function() {
 
-          createOrder($("#widget-id").text(),spinner.spinner( "value" ));
+          createOrder($("div > span#widget-id").text(),spinner.spinner( "value" ));
 
           $("#spinner-tag").hide();
           $( this ).dialog( "close" );
