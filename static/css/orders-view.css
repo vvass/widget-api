@@ -26,7 +26,6 @@ span.ui-icon.ui-icon-circle-plus:hover {
 #grid
 {
     border-width: 0;
-    weigth: 90%;
     height: 100%; /* DO NOT USE !important for setting the Grid height! */
 }
 
