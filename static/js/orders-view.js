@@ -56,7 +56,7 @@ $(function(){
         title: "Inventory Left"
       },{
         command: {
-          text: "Checkout", imageClass: "k-icon k-i-close", click: processOrder
+          text: "Checkout", click: processOrder
         }
       }]
     });
