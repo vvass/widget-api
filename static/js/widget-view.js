@@ -121,6 +121,7 @@ $(function(){
       buttons: {
         Ok: function() {
 
+          console.log("widget id",$("#widget-id").text());
           createOrder($("#widget-id").text(),spinner.spinner( "value" ));
 
           $("#spinner-tag").hide();
