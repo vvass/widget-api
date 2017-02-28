@@ -124,11 +124,21 @@ $(function(){
               var grid = $("#grid").data("kendoGrid");
               grid.setDataSource(dataSource);
               console.log("here");
-              $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(6) > a").kendoButton({
-                click: function() {
-                  console.log("somethign");
-                }
-              });
+              
+              $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr").find("td").each(function (item) {
+                $(this).kendoButton({
+                  click: function() {
+                    console.log("somethign");
+                  }
+                });
+              })
+              
+              
+              // $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(6) > a").kendoButton({
+              //   click: function() {
+              //     console.log("somethign");
+              //   }
+              // });
 
             }
 
@@ -158,7 +168,6 @@ $(function(){
 
     $("#grid > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(1) > td:nth-child(6) > a").click(function () {
       console.log("and here");
-      alert("asdfasdf");
     });
 
 
