@@ -69,7 +69,7 @@ $(document).ready(function () {
                     { field: "parentId",title: "",hidden: true },
                     { title: "Edit", command: [ "edit", "destroy" ], width: 250,
                       attributes: {
-                        style: "text-align: center;"
+                        style: "text-align: center; width:170px;"
                       }
                     }
                   ]
