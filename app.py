@@ -25,6 +25,11 @@ def orders_view():
     return render_template('orders.html')
 
 
+@app.route('/tree', methods=['GET'])
+def orders_view():
+    return render_template('tree.html')
+
+
 
 
 

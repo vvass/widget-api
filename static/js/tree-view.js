@@ -23,8 +23,6 @@ $(document).ready(function () {
           $.when(array, i, getSize, getFinish, getTypes)
             .then(function (array, i, size, finish, types) {
 
-              console.log("finish",finish);
-
               widgetData.push({
                 "id": array[i][0],
                 "name": array[i][1],
