@@ -67,9 +67,9 @@ $(document).ready(function () {
                     { field: "size",title: "Size" },
                     { field: "types",title: "Type" },
                     { field: "parentId",title: "",hidden: true },
-                    { title: "Edit", command: [ "edit", "destroy" ], width: 250,
+                    { title: "Edit", command: [ "edit", "destroy" ], 
                       attributes: {
-                        style: "text-align: center; width:170px;"
+                        style: "text-align: center; "
                       }
                     }
                   ]
