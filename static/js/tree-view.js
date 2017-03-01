@@ -136,7 +136,6 @@ $(document).ready(function () {
 
                     for(var i = 0; i < array.length; i++) {
                       categoryData.push({
-                        "CategoryID": array[i][1],
                         "CategoryName": array[i][1]
                       });
                     }
