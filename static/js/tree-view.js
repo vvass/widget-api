@@ -114,7 +114,7 @@ $(document).ready(function () {
                       .kendoDropDownList({
                         autoBind: false,
                         dataValueField: "CategoryName",
-                        dataTextField: "CategoryID",
+                        dataTextField: "CategoryName",
                         dataSource: categoryData
                       });
                   });
