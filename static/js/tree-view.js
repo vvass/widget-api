@@ -92,17 +92,34 @@ $(document).ready(function () {
 
                 function categoryDropDownEditor(container, options) {
 
-                  console.log("field" ,options.field);
-                  $('<input required name="' + options.field + '"/>')
-                    .appendTo(container)
-                    .kendoDropDownList({
-                      autoBind: false,
-                      dataTextField: "CategoryName",
-                      dataValueField: "CategoryID"
-                    });
+                  var path = "";
+
+                  switch (options.field) {
+                    case 'finish':
+                      path = '/getFinishes';
+                    case 'type':
+                      path = '/getTypes';
+                    case 'size':
+                      path = '/getSizes';
+                    default:
+                      alert('No category!!!');
+                  }
+
+
+                  $.when(getCategory(path)).then(function (results) {
+
+                    $('<input required name="' + options.field + '"/>')
+                      .appendTo(container)
+                      .kendoDropDownList({
+                        autoBind: false,
+                        dataTextField: "CategoryName",
+                        dataValueField: "CategoryID"
+                      });
+                  });
                 }
 
                 function getCategory(path) {
+
                   $.ajax({
                     url: path,
                     type: 'GET',
