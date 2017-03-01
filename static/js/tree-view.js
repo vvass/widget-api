@@ -49,6 +49,7 @@ $(document).ready(function () {
                       }
                     }
                   },
+                  editable: true,
                   error: function (e) {
                     console.log("Error");
                   },
