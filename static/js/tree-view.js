@@ -42,12 +42,20 @@ $(document).ready(function () {
 
         var dataSource = new kendo.data.TreeListDataSource({
           data: widgetData,
-
           schema: {
             model: {
               id: "id",
               expanded: true
             }
+          },
+          error: function (e) {
+            alert("Error");
+          },
+          change: function (e) {
+            alert("Change");
+          },
+          requestStart: function (e) {
+            alert("Request Start");
           }
         });
 
