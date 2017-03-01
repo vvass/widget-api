@@ -133,7 +133,7 @@ $(document).ready(function () {
                     error: function(error){
                       console.log(error);
                     }
-                  }).then(function (results) {
+                  }).then(function (result) {
                     var array = mapResults(result);
 
                     console.log(array);
