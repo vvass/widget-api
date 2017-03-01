@@ -106,13 +106,7 @@ $(document).ready(function () {
                     default:
                       break;
                   }
-
-                  getCategory(path, options);
-
-                }
-
-                function getCategory(path, options) {
-
+                  
                   console.log("path", path);
 
                   $.ajax({
@@ -143,7 +137,9 @@ $(document).ready(function () {
                       console.log(error);
                     }
                   });
+
                 }
+
 
               }
 
