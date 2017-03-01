@@ -113,7 +113,7 @@ $(document).ready(function () {
                   $.ajax({
                     url: path,
                     type: 'GET',
-                    success: function (result, ) {
+                    success: function (result) {
 
                       var array = mapResults(result);
 
