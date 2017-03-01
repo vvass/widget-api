@@ -34,7 +34,6 @@ $(document).ready(function () {
               });
 
               if(widgetData.length-1 == array.length-1) {
-                console.log(widgetData);
 
                 var dataSource = new kendo.data.TreeListDataSource({
                   data: widgetData,
@@ -45,6 +44,8 @@ $(document).ready(function () {
                       fields: {
                         inventory: { type: "number", editable: false },
                         finish: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Gold"} },
+                        types: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Wid Ext Edition"} },
+                        size: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Large"} },
                         name: { type: "string", editable: false }
                       }
                     }
@@ -113,7 +114,7 @@ $(document).ready(function () {
                     url: path,
                     type: 'GET',
                     success: function (result) {
-                      console.log(result);
+
                       var array = mapResults(result);
 
                       for(var i = 0; i < array.length; i++) {
