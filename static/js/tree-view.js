@@ -107,11 +107,11 @@ $(document).ready(function () {
                       break;
                   }
 
-                  getCategory(path);
+                  getCategory(path, options);
 
                 }
 
-                function getCategory(path) {
+                function getCategory(path, options) {
 
                   console.log("path", path);
 
