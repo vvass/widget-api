@@ -99,10 +99,13 @@ $(document).ready(function () {
                   switch (options.field) {
                     case 'finish':
                       path = '/getFinishes';
+                      break;
                     case 'type':
                       path = '/getTypes';
+                      break;
                     case 'size':
                       path = '/getSizes';
+                      break;
                     default:
                       break;
                   }
