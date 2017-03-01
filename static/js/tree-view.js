@@ -29,9 +29,7 @@ $(document).ready(function () {
                 "id": array[i][0],
                 "name": array[i][1],
                 "inventory": array[i][2],
-                "finish": {
-                  "value": JSON.parse(finish[0]).success.replace(/\(+|,|\)|'/g,'')
-                },
+                "finish": JSON.parse(finish[0]).success.replace(/\(+|,|\)|'/g,''),
                 "size": JSON.parse(size[0]).success.replace(/\(+|,|\)|'/g,''),
                 "types": JSON.parse(types[0]).success.replace(/\(+|,|\)|'/g,''),
                 "parentId": array[i][6]
@@ -47,7 +45,7 @@ $(document).ready(function () {
                       expanded: true,
                       fields: {
                         inventory: { type: "number", editable: false },
-                        finish: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Gold"}, template: "#=finish.value#" },
+                        finish: {value: { type: "string", defaultValue: { id: 1, value: "Gold"} } },
                         types: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Wid Ext Edition"} },
                         size: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Large"} },
                         name: { type: "string", editable: false }
@@ -123,6 +121,7 @@ $(document).ready(function () {
 
                       for(var i = 0; i < array.length; i++) {
                         categoryData.push({
+                          "id": array[i][0],
                           "value": array[i][1]
                         });
                       }
