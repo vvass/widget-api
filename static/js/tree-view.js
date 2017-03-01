@@ -79,8 +79,8 @@ $(document).ready(function () {
                     { field: "name",title: "Name" },
                     { field: "inventory",title: "Inventory"},
                     { field: "finish",title: "Finish", editor: categoryDropDownEditor},
-                    { field: "size",title: "Size" },
-                    { field: "types",title: "Type" },
+                    { field: "size",title: "Size" , editor: categoryDropDownEditor},
+                    { field: "types",title: "Type" , editor: categoryDropDownEditor},
                     { field: "parentId",title: "",hidden: true },
                     { title: "Edit", command: [ "edit", "destroy" ], width: 160,
                       attributes: {
