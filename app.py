@@ -182,8 +182,31 @@ def get_widgets():
         cursor.close()
         db.close()
 
+@app.route('/getSizes', methods=['GET'])
+def get_sizes():
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    query = """SELECT * FROM sizes;"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 @app.route('/getSizes/<id>', methods=['GET'])
-def get_sizes(id):
+def get_sizes_with_id(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
@@ -207,8 +230,31 @@ def get_sizes(id):
         cursor.close()
         db.close()
 
+@app.route('/getFinishes', methods=['GET'])
+def get_finsihes():
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    query = """SELECT * FROM finishes;"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 @app.route('/getFinishes/<id>', methods=['GET'])
-def get_finishes(id):
+def get_finishes_with_id(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
@@ -232,8 +278,31 @@ def get_finishes(id):
         cursor.close()
         db.close()
 
+@app.route('/getSizes', methods=['GET'])
+def get_types():
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    query = """SELECT * FROM types;"""
+
+    try:
+
+        cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 @app.route('/getTypes/<id>', methods=['GET'])
-def get_types(id):
+def get_types_with_id(id):
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()

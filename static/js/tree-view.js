@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-  var widgetData = [];
+  var widgetData = [],
+    categoryData = [];
 
   loadWidgets();
 
@@ -76,7 +77,7 @@ $(document).ready(function () {
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
                     { field: "inventory",title: "Inventory"},
-                    { field: "finish",title: "Finish" },
+                    { field: "finish",title: "Finish", editor: categoryDropDownEditor, template: "#=Category.CategoryName#" },
                     { field: "size",title: "Size" },
                     { field: "types",title: "Type" },
                     { field: "parentId",title: "",hidden: true },
@@ -87,6 +88,41 @@ $(document).ready(function () {
                     }
                   ]
                 });
+
+                function categoryDropDownEditor(container, options) {
+
+                  console.log("conta" ,container);
+                  $('<input required name="' + options.field + '"/>')
+                    .appendTo(container)
+                    .kendoDropDownList({
+                      autoBind: false,
+                      dataTextField: "CategoryName",
+                      dataValueField: "CategoryID"
+                    });
+                }
+
+                function getCategory(path) {
+                  $.ajax({
+                    url: path,
+                    type: 'GET',
+                    error: function(error){
+                      console.log(error);
+                    }
+                  }).then(function (results) {
+                    var array = mapResults(result);
+                    for(var i = 0; i < array.length; i++) {
+                      categoryData.push({
+                        "CategoryID": array[i][0],
+                        "CategoryName": array[i][1]
+                      });
+                    }
+
+                    console.log("categ", categoryData);
+
+                  });
+                }
+
+
 
               }
 
