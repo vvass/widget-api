@@ -23,11 +23,16 @@ $(document).ready(function () {
           $.when(array, i, getSize, getFinish, getTypes)
             .then(function (array, i, size, finish, types) {
 
+              console.log("finish",finish);
+
               widgetData.push({
                 "id": array[i][0],
                 "name": array[i][1],
                 "inventory": array[i][2],
-                "finish": JSON.parse(finish[0]).success.replace(/\(+|,|\)|'/g,''),
+                "finish": {
+                  "id": JSON.parse(finish[0]).success.replace(/\(+|,|\)|'/g,''),
+                  "value": JSON.parse(finish[1]).success.replace(/\(+|,|\)|'/g,''),
+                },
                 "size": JSON.parse(size[0]).success.replace(/\(+|,|\)|'/g,''),
                 "types": JSON.parse(types[0]).success.replace(/\(+|,|\)|'/g,''),
                 "parentId": array[i][6]
