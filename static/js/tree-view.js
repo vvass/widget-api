@@ -56,8 +56,8 @@ $(document).ready(function () {
                     console.log("Change");
 
                     // var dataItem = this.dataItem($(e.currentTarget).closest("td"));
-                    var dataRow = this.dataItem($(e.currentTarget).closest("tr"));
-                    console.log(dataItem, dataRow);
+                    // var dataRow = this.dataItem($(e.currentTarget).closest("tr"));
+                    // console.log(dataItem, dataRow);
 
                   },
                   requestStart: function (e) {
