@@ -53,6 +53,11 @@ $(document).ready(function () {
                   },
                   change: function (e) {
                     console.log("Change");
+
+                    var dataItem = this.dataItem($(e.currentTarget).closest("td"));
+                    var dataRow = this.dataItem($(e.currentTarget).closest("tr"));
+                    console.log(dataItem, dataRow);
+
                   },
                   requestStart: function (e) {
                     console.log("Request Start");
