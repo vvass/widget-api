@@ -43,7 +43,7 @@ $(document).ready(function () {
                       id: "id",
                       expanded: true,
                       fields: {
-                        inventory: { type: "number", editable: false }
+                        inventory: { type: "number", editable: false },
                         name: { type: "string", editable: false }
                       }
                     }
