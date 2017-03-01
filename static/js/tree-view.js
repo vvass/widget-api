@@ -132,7 +132,6 @@ $(document).ready(function () {
                     success: function (result) {
                       console.log(results);
                       var array = mapResults(result);
-                      categoryData = [];
 
                       for(var i = 0; i < array.length; i++) {
                         categoryData.push({
@@ -160,8 +159,6 @@ $(document).ready(function () {
       error: function(error){
         console.log(error);
       }
-    }).then(function (result) {
-
     });
   }
 
