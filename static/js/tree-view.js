@@ -45,6 +45,7 @@ $(document).ready(function () {
                       expanded: true,
                       fields: {
                         inventory: { type: "number", editable: false },
+                        finish: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Gold"} },
                         name: { type: "string", editable: false }
                       }
                     }
