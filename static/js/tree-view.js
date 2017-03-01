@@ -102,7 +102,7 @@ $(document).ready(function () {
                     case 'size':
                       path = '/getSizes';
                     default:
-                      alert('No category!!!');
+                      break;
                   }
 
 
@@ -134,8 +134,6 @@ $(document).ready(function () {
                         "CategoryName": array[i][1]
                       });
                     }
-
-                    console.log("categ", categoryData);
 
                   });
                 }
