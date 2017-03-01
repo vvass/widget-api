@@ -129,21 +129,20 @@ $(document).ready(function () {
                   $.ajax({
                     url: path,
                     type: 'GET',
+                    success: function (result) {
+                      console.log(results);
+                      var array = mapResults(result);
+                      categoryData = [];
+
+                      for(var i = 0; i < array.length; i++) {
+                        categoryData.push({
+                          "CategoryName": array[i][1]
+                        });
+                      }
+                    },
                     error: function(error) {
                       console.log(error);
                     }
-                  }).then(function (result) {
-
-                    console.log(results);
-                    var array = mapResults(result);
-                    categoryData = [];
-
-                    for(var i = 0; i < array.length; i++) {
-                      categoryData.push({
-                        "CategoryName": array[i][1]
-                      });
-                    }
-
                   });
                 }
 
