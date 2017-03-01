@@ -38,6 +38,7 @@ $(document).ready(function () {
 
                 var dataSource = new kendo.data.TreeListDataSource({
                   data: widgetData,
+                  pageSize: 5,
                   schema: {
                     model: {
                       id: "id",
