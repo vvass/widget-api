@@ -63,7 +63,7 @@ $(document).ready(function () {
                   columns: [
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
-                    { field: "inventory",title: "Inventory" },
+                    { field: "inventory",title: "Inventory", editable: false },
                     { field: "finish",title: "Finish" },
                     { field: "size",title: "Size" },
                     { field: "types",title: "Type" },
