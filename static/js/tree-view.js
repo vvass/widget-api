@@ -119,7 +119,7 @@ $(document).ready(function () {
                     url: path,
                     type: 'GET',
                     success: function (result) {
-                      console.log(results);
+                      console.log(result);
                       var array = mapResults(result);
 
                       for(var i = 0; i < array.length; i++) {
