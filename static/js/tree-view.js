@@ -97,7 +97,7 @@ $(document).ready(function () {
                     case 'finish':
                       path = '/getFinishes';
                       break;
-                    case 'type':
+                    case 'types':
                       path = '/getTypes';
                       break;
                     case 'size':
@@ -108,7 +108,7 @@ $(document).ready(function () {
                   }
 
                   getCategory(path);
-                  
+
                 }
 
                 function getCategory(path) {
