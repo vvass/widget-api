@@ -45,9 +45,9 @@ $(document).ready(function () {
                       expanded: true,
                       fields: {
                         inventory: { type: "number", editable: false },
-                        finish: {value: { type: "string", defaultValue: { id: 1, value: "Gold"} } },
-                        types: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Wid Ext Edition"} },
-                        size: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Large"} },
+                        finish: { type: "string" },
+                        types: { type: "string" },
+                        size: { type: "string" },
                         name: { type: "string", editable: false }
                       }
                     }
@@ -79,10 +79,10 @@ $(document).ready(function () {
                   columns: [
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
-                    { field: "inventory",title: "Inventory"},
-                    { field: "finish",title: "Finish", editor: categoryDropDownEditor, template: "#=finish.value#"},
-                    { field: "size",title: "Size" , editor: categoryDropDownEditor},
-                    { field: "types",title: "Type" , editor: categoryDropDownEditor},
+                    { field: "inventory",title: "Inventory" },
+                    { field: "finish",title: "Finish" },
+                    { field: "size",title: "Size" },
+                    { field: "types",title: "Type" },
                     { field: "parentId",title: "",hidden: true },
                     { title: "Edit", command: [ "edit", "destroy" ], width: 160,
                       attributes: {
