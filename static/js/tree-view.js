@@ -64,7 +64,7 @@ $(document).ready(function () {
                     { field: "inventory",title: "Inventory" },
                     { field: "finish",title: "Finish" },
                     { field: "size",title: "Size" },
-                    { field: "types",title: "Types" },
+                    { field: "types",title: "Type" },
                     { field: "parentId",title: "",hidden: true }
                   ]
                 });
