@@ -135,6 +135,8 @@ $(document).ready(function () {
                     }
                   }).then(function (results) {
                     var array = mapResults(result);
+
+                    console.log(array);
                     for(var i = 0; i < array.length; i++) {
                       categoryData.push({
                         "CategoryID": array[i][0],
