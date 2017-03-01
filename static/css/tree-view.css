@@ -27,3 +27,9 @@
     display: block;
     clear: both;
 }
+
+.k-grid > table > tbody > tr:hover,
+.k-grid-content > table > tbody > tr:hover
+{
+    background: #bedeff;
+}
