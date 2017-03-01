@@ -114,7 +114,8 @@ $(document).ready(function () {
                       .kendoDropDownList({
                         autoBind: false,
                         dataTextField: "CategoryName",
-                        dataValueField: "CategoryID"
+                        dataValueField: "CategoryID",
+                        dataSource: categoryData
                       });
                   });
                 }
@@ -126,10 +127,11 @@ $(document).ready(function () {
                   $.ajax({
                     url: path,
                     type: 'GET',
-                    error: function(error){
+                    error: function(error) {
                       console.log(error);
                     }
                   }).then(function (result) {
+
                     var array = mapResults(result);
 
                     for(var i = 0; i < array.length; i++) {
@@ -138,8 +140,6 @@ $(document).ready(function () {
                         "CategoryName": array[i][1]
                       });
                     }
-
-                    $('<input required name="' + option + '"/>').data("kendoDropDownList").dataSource.data(categoryData);
 
                   });
                 }
