@@ -32,9 +32,9 @@ $(document).ready(function () {
                 "id": array[i][0],
                 "name": array[i][1],
                 "inventory": array[i][2],
-                "finish": 1,
-                "size": 1,
-                "types": 1,
+                "finish": JSON.parse(size[0]).success.replace(/\(+|,|\)|'/g,''),
+                "size": JSON.parse(finish[0]).success.replace(/\(+|,|\)|'/g,''),
+                "types": JSON.parse(types[0]).success.replace(/\(+|,|\)|'/g,''),
                 "parentId": array[i][6]
               });
 
@@ -97,9 +97,6 @@ $(document).ready(function () {
     return $.ajax({
       type: 'GET',
       url: dataUrls + '/' + id,
-      success: function (resp) {
-        console.log(resp);
-      },
       error: function(error){
         console.log(error);
       }
