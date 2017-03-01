@@ -58,6 +58,7 @@ $(document).ready(function () {
                 $("#treelist").kendoTreeList({
                   dataSource: dataSource,
                   height: 540,
+                  editable: true,
                   columns: [
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
@@ -65,7 +66,12 @@ $(document).ready(function () {
                     { field: "finish",title: "Finish" },
                     { field: "size",title: "Size" },
                     { field: "types",title: "Type" },
-                    { field: "parentId",title: "",hidden: true }
+                    { field: "parentId",title: "",hidden: true },
+                    { title: "Edit", command: [ "edit", "destroy" ], width: 250,
+                      attributes: {
+                        style: "text-align: center;"
+                      }
+                    }
                   ]
                 });
 
