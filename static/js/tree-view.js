@@ -107,7 +107,7 @@ $(document).ready(function () {
                       break;
                   }
 
-                  $.when(getCategory(path, options.field)).then(function (results) {
+                  $.when(getCategory(path, options.field)).then(function () {
 
                     console.log(categoryData);
 
