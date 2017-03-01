@@ -47,7 +47,7 @@ $(document).ready(function () {
                       expanded: true,
                       fields: {
                         inventory: { type: "number", editable: false },
-                        finish: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Gold"}  template: "#=finish.value#" },
+                        finish: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Gold"}, template: "#=finish.value#" },
                         types: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Wid Ext Edition"} },
                         size: { type: "string", defaultValue: { CategoryID: 1, CategoryName: "Large"} },
                         name: { type: "string", editable: false }
