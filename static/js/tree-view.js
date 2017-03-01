@@ -93,9 +93,6 @@ $(document).ready(function () {
                 function categoryDropDownEditor(container, options) {
 
                   var path = "";
-
-                  console.log(options.field);
-
                   switch (options.field) {
                     case 'finish':
                       path = '/getFinishes';
@@ -110,8 +107,7 @@ $(document).ready(function () {
                       break;
                   }
 
-
-                  $.when(getCategory(path)).then(function (results) {
+                  $.when(getCategory(path, options.field)).then(function (results) {
 
                     $('<input required name="' + options.field + '"/>')
                       .appendTo(container)
@@ -123,7 +119,7 @@ $(document).ready(function () {
                   });
                 }
 
-                function getCategory(path) {
+                function getCategory(path, option) {
 
                   console.log("path", path);
 
@@ -136,13 +132,14 @@ $(document).ready(function () {
                   }).then(function (result) {
                     var array = mapResults(result);
 
-                    console.log(array);
                     for(var i = 0; i < array.length; i++) {
                       categoryData.push({
                         "CategoryID": array[i][0],
                         "CategoryName": array[i][1]
                       });
                     }
+
+                    $('<input required name="' + option + '"/>').data("kendoGrid").dataSource.data(result);
 
                   });
                 }
