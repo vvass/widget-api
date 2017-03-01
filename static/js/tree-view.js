@@ -78,7 +78,7 @@ $(document).ready(function () {
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
                     { field: "inventory",title: "Inventory"},
-                    { field: "finish",title: "Finish", editor: categoryDropDownEditor, template: "#=finish.CategoryName#" },
+                    { field: "finish",title: "Finish", editor: categoryDropDownEditor},
                     { field: "size",title: "Size" },
                     { field: "types",title: "Type" },
                     { field: "parentId",title: "",hidden: true },
@@ -144,8 +144,6 @@ $(document).ready(function () {
 
                   });
                 }
-
-
 
               }
 
