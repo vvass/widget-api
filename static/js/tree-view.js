@@ -41,7 +41,10 @@ $(document).ready(function () {
                   schema: {
                     model: {
                       id: "id",
-                      expanded: true
+                      expanded: true,
+                      fields: {
+                        inventory: { type: "number", editable: false }
+                      }
                     }
                   },
                   error: function (e) {
@@ -63,7 +66,7 @@ $(document).ready(function () {
                   columns: [
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
-                    { field: "inventory",title: "Inventory", editable: false },
+                    { field: "inventory",title: "Inventory"},
                     { field: "finish",title: "Finish" },
                     { field: "size",title: "Size" },
                     { field: "types",title: "Type" },
