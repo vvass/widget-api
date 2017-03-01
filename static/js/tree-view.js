@@ -139,7 +139,7 @@ $(document).ready(function () {
                       });
                     }
 
-                    $('<input required name="' + option + '"/>').data("kendoGrid").dataSource.data(result);
+                    $('<input required name="' + option + '"/>').data("kendoDropDownList").dataSource.data(categoryData);
 
                   });
                 }
