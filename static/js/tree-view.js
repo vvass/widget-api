@@ -109,6 +109,8 @@ $(document).ready(function () {
 
                   $.when(getCategory(path, options.field)).then(function (results) {
 
+                    console.log(categoryData);
+
                     $('<input required name="' + options.field + '"/>')
                       .appendTo(container)
                       .kendoDropDownList({
@@ -132,6 +134,7 @@ $(document).ready(function () {
                     }
                   }).then(function (result) {
 
+                    console.log(results);
                     var array = mapResults(result);
                     categoryData = [];
 
