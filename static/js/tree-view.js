@@ -64,6 +64,8 @@ $(document).ready(function () {
                   height: 500,
                   width: 800,
                   editable: true,
+                  filterable: true,
+                  columnMenu: true,
                   sortable: true,
                   columns: [
                     { field: "id",title: "Id",hidden: true },
