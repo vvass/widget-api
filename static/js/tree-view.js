@@ -118,17 +118,16 @@ $(document).ready(function () {
 
                       for(var i = 0; i < array.length; i++) {
                         categoryData.push({
+                          "CategoryID": array[i][0],
                           "CategoryName": array[i][1]
                         });
                       }
-
-                      console.log(categoryData);
 
                       $('<input required name="' + options.field + '"/>')
                         .appendTo(container)
                         .kendoDropDownList({
                           autoBind: false,
-                          dataValueField: "CategoryName",
+                          dataValueField: "CategoryID",
                           dataTextField: "CategoryName",
                           dataSource: categoryData
                         });
