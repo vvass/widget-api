@@ -72,7 +72,7 @@ $(document).ready(function () {
                   dataSource: dataSource,
                   height: 500,
                   width: 800,
-                  editable: true,
+                  editable: "popup",
                   filterable: true,
                   columnMenu: true,
                   sortable: true,
@@ -84,11 +84,7 @@ $(document).ready(function () {
                     { field: "size",title: "Size" },
                     { field: "types",title: "Type" },
                     { field: "parentId",title: "",hidden: true },
-                    { title: "Edit", command: [ "edit", "destroy" ], width: 160,
-                      attributes: {
-                        style: "text-align: center; "
-                      }
-                    }
+                    { title: "Edit", command: [ "edit", "destroy" ], width: 160 }
                   ]
                 });
 
