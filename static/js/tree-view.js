@@ -133,7 +133,7 @@ $(document).ready(function () {
                   }).then(function (result) {
 
                     var array = mapResults(result);
-                    categoryData.= [];
+                    categoryData = [];
 
                     for(var i = 0; i < array.length; i++) {
                       categoryData.push({
