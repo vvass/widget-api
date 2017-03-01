@@ -107,22 +107,11 @@ $(document).ready(function () {
                       break;
                   }
 
-                  $.when(getCategory(path, options.field)).then(function () {
-
-                    console.log(categoryData);
-
-                    $('<input required name="' + options.field + '"/>')
-                      .appendTo(container)
-                      .kendoDropDownList({
-                        autoBind: false,
-                        dataValueField: "CategoryName",
-                        dataTextField: "CategoryName",
-                        dataSource: categoryData
-                      });
-                  });
+                  getCategory(path);
+                  
                 }
 
-                function getCategory(path, option) {
+                function getCategory(path) {
 
                   console.log("path", path);
 
@@ -138,6 +127,17 @@ $(document).ready(function () {
                           "CategoryName": array[i][1]
                         });
                       }
+
+                      console.log(categoryData);
+
+                      $('<input required name="' + options.field + '"/>')
+                        .appendTo(container)
+                        .kendoDropDownList({
+                          autoBind: false,
+                          dataValueField: "CategoryName",
+                          dataTextField: "CategoryName",
+                          dataSource: categoryData
+                        });
                     },
                     error: function(error) {
                       console.log(error);
