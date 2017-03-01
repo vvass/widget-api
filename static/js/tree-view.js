@@ -94,6 +94,8 @@ $(document).ready(function () {
 
                   var path = "";
 
+                  console.log(options.field);
+
                   switch (options.field) {
                     case 'finish':
                       path = '/getFinishes';
