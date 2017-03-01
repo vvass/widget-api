@@ -30,7 +30,7 @@ $(document).ready(function () {
                 "name": array[i][1],
                 "inventory": array[i][2],
                 "finish": {
-                  "values": JSON.parse(finish[0]).success.replace(/\(+|,|\)|'/g,'')
+                  "value": JSON.parse(finish[0]).success.replace(/\(+|,|\)|'/g,'')
                 },
                 "size": JSON.parse(size[0]).success.replace(/\(+|,|\)|'/g,''),
                 "types": JSON.parse(types[0]).success.replace(/\(+|,|\)|'/g,''),
