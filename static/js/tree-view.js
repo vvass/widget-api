@@ -34,7 +34,7 @@ $(document).ready(function () {
               });
 
             }).then(function () {
-              console.log(widgetData);
+              dataSource.read();
             });
         }
 
