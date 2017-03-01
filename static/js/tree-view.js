@@ -44,6 +44,7 @@ $(document).ready(function () {
                       expanded: true,
                       fields: {
                         inventory: { type: "number", editable: false }
+                        name: { type: "string", editable: false }
                       }
                     }
                   },
