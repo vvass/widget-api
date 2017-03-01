@@ -78,7 +78,7 @@ $(document).ready(function () {
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
                     { field: "inventory",title: "Inventory"},
-                    { field: "finish",title: "Finish", editor: categoryDropDownEditor, template: "#=finish.CategoryName#"},
+                    { field: "finish",title: "Finish", editor: categoryDropDownEditor, template: "#=finish.value#"},
                     { field: "size",title: "Size" , editor: categoryDropDownEditor},
                     { field: "types",title: "Type" , editor: categoryDropDownEditor},
                     { field: "parentId",title: "",hidden: true },
@@ -113,14 +113,14 @@ $(document).ready(function () {
                   $.ajax({
                     url: path,
                     type: 'GET',
-                    success: function (result) {
+                    success: function (result, ) {
 
                       var array = mapResults(result);
 
                       for(var i = 0; i < array.length; i++) {
                         categoryData.push({
-                          "CategoryID": array[i][0],
-                          "CategoryName": array[i][1]
+                          "id": array[i][0],
+                          "value": array[i][1]
                         });
                       }
 
@@ -128,8 +128,8 @@ $(document).ready(function () {
                         .appendTo(container)
                         .kendoDropDownList({
                           autoBind: false,
-                          dataValueField: "CategoryID",
-                          dataTextField: "CategoryName",
+                          dataValueField: "id",
+                          dataTextField: "value",
                           dataSource: categoryData
                         });
                     },
