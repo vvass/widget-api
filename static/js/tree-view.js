@@ -23,8 +23,6 @@ $(document).ready(function () {
           $.when(array, i, getSize, getFinish, getTypes)
             .then(function (array, i, size, finish, types){
 
-              console.log(array,i, size[0], finish[0], types[0]);
-
               widgetData.push({
                 "id": array[i][0],
                 "name": array[i][1],
@@ -35,9 +33,13 @@ $(document).ready(function () {
                 "parentId": array[i][6]
               });
 
+            }).then(function () {
+              console.log(widgetData);
             });
         }
-        
+
+        console.log(widgetData);
+
         var dataSource = new kendo.data.TreeListDataSource({
           data: widgetData,
 
