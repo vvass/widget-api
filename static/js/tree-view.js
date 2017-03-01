@@ -49,7 +49,6 @@ $(document).ready(function () {
                       }
                     }
                   },
-                  editable: true,
                   error: function (e) {
                     console.log("Error");
                   },
@@ -78,7 +77,7 @@ $(document).ready(function () {
                     { field: "id",title: "Id",hidden: true },
                     { field: "name",title: "Name" },
                     { field: "inventory",title: "Inventory"},
-                    { field: "finish",title: "Finish", editor: categoryDropDownEditor},
+                    { field: "finish",title: "Finish", editor: categoryDropDownEditor, template: "#=finish.CategoryName#"},
                     { field: "size",title: "Size" , editor: categoryDropDownEditor},
                     { field: "types",title: "Type" , editor: categoryDropDownEditor},
                     { field: "parentId",title: "",hidden: true },
