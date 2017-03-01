@@ -33,7 +33,7 @@ $(document).ready(function () {
                 "parentId": array[i][6]
               });
 
-              if(orderData.length-1 == i) {
+              if(widgetData.length-1 == i) {
                 console.log("done", widgetData);
               }
 
