@@ -34,46 +34,47 @@ $(document).ready(function () {
               });
 
               if(widgetData.length-1 == array.length-1) {
-                console.log("done", widgetData);
+                console.log(widgetData);
+
+                var dataSource = new kendo.data.TreeListDataSource({
+                  data: widgetData,
+                  schema: {
+                    model: {
+                      id: "id",
+                      expanded: true
+                    }
+                  },
+                  error: function (e) {
+                    console.log("Error");
+                  },
+                  change: function (e) {
+                    console.log("Change");
+                  },
+                  requestStart: function (e) {
+                    console.log("Request Start");
+                  }
+                });
+
+                $("#treelist").kendoTreeList({
+                  dataSource: dataSource,
+                  height: 540,
+                  columns: [
+                    { field: "id",title: "Id",hidden: false },
+                    { field: "name",title: "Name" },
+                    { field: "inventory",title: "Inventory" },
+                    { field: "finish",title: "Finish" },
+                    { field: "size",title: "Size" },
+                    { field: "types",title: "Types" },
+                    { field: "parentId",title: "",hidden: true }
+                  ]
+                });
+
               }
 
             });
         }
 
-        console.log(widgetData);
 
-        var dataSource = new kendo.data.TreeListDataSource({
-          data: widgetData,
-          schema: {
-            model: {
-              id: "id",
-              expanded: true
-            }
-          },
-          error: function (e) {
-            console.log("Error");
-          },
-          change: function (e) {
-            console.log("Change");
-          },
-          requestStart: function (e) {
-            console.log("Request Start");
-          }
-        });
-
-        $("#treelist").kendoTreeList({
-          dataSource: dataSource,
-          height: 540,
-          columns: [
-            { field: "id",title: "Id",hidden: false },
-            { field: "name",title: "Name" },
-            { field: "inventory",title: "Inventory" },
-            { field: "finish",title: "Finish" },
-            { field: "size",title: "Size" },
-            { field: "types",title: "Types" },
-            { field: "parentId",title: "",hidden: true }
-          ]
-        });
 
 
 
