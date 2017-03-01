@@ -57,7 +57,8 @@ $(document).ready(function () {
 
                 $("#treelist").kendoTreeList({
                   dataSource: dataSource,
-                  height: 700,
+                  height: 500,
+                  width: 800,
                   editable: true,
                   columns: [
                     { field: "id",title: "Id",hidden: true },
