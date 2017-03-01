@@ -124,6 +124,8 @@ $(document).ready(function () {
                         });
                       }
 
+                      console.log(categoryData);
+
                       $('<input required name="' + options.field + '"/>')
                         .appendTo(container)
                         .kendoDropDownList({
