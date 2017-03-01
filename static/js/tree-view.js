@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
-  var widgetData = [],
-    categoryData = [];
+  var widgetData = [];
 
   loadWidgets();
 
@@ -92,6 +91,9 @@ $(document).ready(function () {
 
                 function categoryDropDownEditor(container, options) {
 
+                  var categoryData = [];
+
+
                   var path = "";
                   switch (options.field) {
                     case 'finish':
@@ -105,9 +107,7 @@ $(document).ready(function () {
                       break;
                     default:
                       break;
-                  }
-                  
-                  console.log("path", path);
+                  };
 
                   $.ajax({
                     url: path,
