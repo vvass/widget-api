@@ -1,0 +1,35 @@
+#example {
+    min-height: 200px;
+}
+
+
+#example .title {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.selectedName {
+    padding: 5px 10px;
+    background: #aaa;
+    color: white;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+#result {
+    padding-bottom: 15px;
+}
+
+#result:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.k-grid > table > tbody > tr:hover,
+.k-grid-content > table > tbody > tr:hover
+{
+    background: #bedeff;
+}

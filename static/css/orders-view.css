@@ -1,0 +1,40 @@
+.grid-section {
+    overflow: auto;
+}
+
+.metrotable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.metrotable > thead > tr > th {
+    font-size: 1.3em;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+span.ui-icon.ui-icon-circle-close:hover,
+span.ui-icon.ui-icon-circle-plus:hover {
+    cursor: pointer;
+    background-color: #dbddff;
+}
+
+.metrotable > tbody > tr:hover {
+    background-color: #b7bee0;
+}
+
+#grid
+{
+    border-width: 0;
+    height: 100%; /* DO NOT USE !important for setting the Grid height! */
+}
+
+.k-grid
+{
+    width: 100%;
+}
+
+#grid .k-grid-content
+{
+    overflow-y: visible;
+}

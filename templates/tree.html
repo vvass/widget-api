@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Widget View</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.default-v2.min.css" rel="stylesheet">
+
+    <link href="{{url_for('static', filename='css/widget-view.css')}}" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" ><a href="enter">Home</a></li>
+                <li role="presentation" class="active"><a href="widgetView">Widgets</a></li>
+                <li role="presentation" class="active"><a href="/orders">Orders</a></li>
+                <li role="presentation" class="active"><a href="/tree">Tree</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Widgets in Our System</h3>
+    </div>
+
+    <div class="container" id="filter-buttons"></div>
+
+    <div class="col-lg-6" id="widget-grid"></div>
+
+    <div id="dialog-form" title="Create Widget">
+        <p class="validateTips">Please fill out all fields.</p>
+        <div id="checkbox-form"></div>
+        <div id="checkbox-options"></div>
+    </div>
+
+    <div id="dialog-order" title="Order a Widget">
+        <h4 id="widget-name"></h4>
+        <span id="widget-id" style="display: none"></span>
+        <p id="spinner-tag">
+            <label for="spinner">Select order amount:</label>
+            <input id="spinner" name="value">
+        </p>
+
+    </div>
+
+    <div id="new-widget-button"></div>
+
+
+
+</div>
+
+<div id="example">
+    <div id="treelist"></div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
+<script src="{{url_for('static', filename='js/tree-view.js')}}"></script>
+</html>
