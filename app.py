@@ -25,6 +25,11 @@ def orders_view():
     return render_template('orders.html')
 
 
+@app.route('/tree', methods=['GET'])
+def tree_view():
+    return render_template('tree.html')
+
+
 
 
 
@@ -165,7 +170,7 @@ def get_widgets():
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
 
-    query = """SELECT id,name,inventory,finish,size,types FROM widget"""
+    query = """SELECT * FROM widget"""
 
     try:
 
@@ -205,8 +210,33 @@ def get_sizes():
         cursor.close()
         db.close()
 
+@app.route('/getSizes/<id>', methods=['GET'])
+def get_sizes_with_id(id):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id)
+
+    query = """SELECT size FROM sizes WHERE id=%(_id)s;"""
+
+    try:
+
+        cursor.execute(query,param)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
 @app.route('/getFinishes', methods=['GET'])
-def get_finishes():
+def get_finsihes():
 
     db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
     cursor=db.cursor()
@@ -216,6 +246,31 @@ def get_finishes():
     try:
 
         cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+@app.route('/getFinishes/<id>', methods=['GET'])
+def get_finishes_with_id(id):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id)
+
+    query = """SELECT finish FROM finishes WHERE id=%(_id)s;"""
+
+    try:
+
+        cursor.execute(query,param)
         data=cursor.fetchall()
 
         return simplejson.dumps({'success':str(data)})
@@ -239,6 +294,31 @@ def get_types():
     try:
 
         cursor.execute(query)
+        data=cursor.fetchall()
+
+        return simplejson.dumps({'success':str(data)})
+
+
+    except Exception as e:
+        return simplejson.dumps({'error':str(e)})
+
+    finally:
+        cursor.close()
+        db.close()
+
+@app.route('/getTypes/<id>', methods=['GET'])
+def get_types_with_id(id):
+
+    db=MySQLdb.connect(host="localhost", user="root", passwd="565d7a7ced00c01e37edf4eb6dd05f3f7e607d1f2b49acb2", db="widgets")
+    cursor=db.cursor()
+
+    param = dict(_id=id)
+
+    query = """SELECT type FROM types WHERE id=%(_id)s;"""
+
+    try:
+
+        cursor.execute(query,param)
         data=cursor.fetchall()
 
         return simplejson.dumps({'success':str(data)})

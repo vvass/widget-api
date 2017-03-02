@@ -123,9 +123,6 @@ $(function(){
 
             }
 
-          })
-          .then(function () {
-            addEventToButtons();
           }); // end of when
 
       } // end of for loop
