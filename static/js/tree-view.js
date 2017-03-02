@@ -46,7 +46,8 @@ $(document).ready(function () {
                         finish: { type: "string" },
                         types: { type: "string" },
                         size: { type: "string" },
-                        name: { type: "string", editable: false }
+                        name: { type: "string", editable: false },
+                        parentId: { type: "string", editable: false }
                       }
                     }
                   },
